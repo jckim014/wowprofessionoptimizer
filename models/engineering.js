@@ -4,29 +4,23 @@ const Schema = mongoose.Schema;
 // Schemas define the structure of the documents, models "wrap around"
 // Work on validation letter as a "nice to have"
 
-const engineerRecipeSchema = new Schema(
+const engineeringRecipeSchema = new Schema(
   {
     itemName: String,
     recipeID: Number,
     craftedItemID: Number,
     reagentList: [{ reagentID: Number, reagentQuantity: Number }],
     learnedAt: Number,
-    difficultyColors: {
-      // Orange, Yellow, Green, Gray
-      orange: Number,
-      yellow: Number,
-      green: Number,
-      gray: Number,
-    },
+    difficultyColors: [], // 4 element array: Orange, Yellow, Green, Gray
     craftingCost: Number,
     quantityCreated: Number,
   },
   { timestamps: true } // not sure if this is helpful
 );
 
-const engineerRecipe = mongoose.model(
+const engineeringRecipe = mongoose.model(
   "engineering_recipe",
-  engineerRecipeSchema
+  engineeringRecipeSchema
 );
 
-module.exports = engineerRecipe;
+module.exports = engineeringRecipe;

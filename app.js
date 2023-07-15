@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const EngineerRecipe = require("./models/engineer.js");
+const EngineeringRecipe = require("./models/engineering.js");
 const fetch = require("node-fetch-commonjs");
 const recipesObject = require("./recipe_jsons/engineer.json");
 
@@ -32,31 +32,51 @@ async function fetchTest(url) {
   return marketValue;
 }
 
-async function testFunction(url) {
-  marketValue = await fetchTest(url);
+// Testing nexushub price data
+url2 = "https://api.nexushub.co/wow-classic/v1/items/benediction-alliance";
+
+async function fetchTest2(url2) {
+  const response = await fetch(url2);
+  let object = await response.json();
+  itemID = object.data[0].itemId;
+  previous = object.data[0];
+  console.log(itemID);
+  console.log(previous);
 }
-testFunction(url);
+// fetchTest2(url2);
 
-function convertRecipes(recipe) {
-  // express Route to be called 1 time to populate the database
-  // for loop
-  // this function
-  //
-  // This function will convert the recipe to match the model/schema and return a json object
-  // to send to the database
-}
-// let currentRecipe = recipesObject[0];
+// Take a recipe
+// Grab reagent price data
+// Calculate crafting cost
+// Update database
 
-// let skillLevel = currentRecipe.colors[0];
+// Iterate through all recipes and update their crafting costs
+app.get("/update-crafting-costs", (req, res) => {
+  console.log(test);
+  EngineeringRecipe.find()
+    .lean()
+    .then((result) => {
+      // result contains all the recipes
+      // loop through all recipes
 
-// let color = "orange";
-// let testarr = [];
-// testarr.push({ [color]: skillLevel });
-// console.log(currentRecipe);
+      // calculate total cost
+      // push the update
+      numRecipes = result.length;
 
-app.get("/upload-engineer-recipes", (req, res) => {
+      for (let i = 0; i < numRecipes; i++) {
+        // get the reagents
+        // look up the cost of each reagent
+        // Maintain database of reagent costs
+      }
+      res.send("finished");
+      //
+    });
+});
+
+// Should this be a post request? using get for convenience right now
+app.get("/upload-engineering-recipes", (req, res) => {
   numRecipes = Object.keys(recipesObject).length;
-  let counter = 0;
+
   // Convert all recipes according to the schema and upload to database
   for (let i = 0; i < numRecipes; i++) {
     currentRecipe = recipesObject[i];
@@ -72,35 +92,23 @@ app.get("/upload-engineer-recipes", (req, res) => {
 
     // Assign reagentListVar as an array of key-value pair objects, reagent: quantity
     let reagentListVar = [];
-    for (let j = 0; i < currentRecipe.reagents.length; i++) {
+    for (let j = 0; j < currentRecipe.reagents.length; j++) {
       let reagentID = currentRecipe.reagents[j][0];
       let reagentQuantity = currentRecipe.reagents[j][1];
 
       reagentListVar.push({ reagentID, reagentQuantity });
     }
-    // Assign difficultyColorsVar as an array of key-value pair objects, color: skillLevel
+    // Assign difficultyColorsVar as an array of integers [Orange, Yellow, Green, Gray]
     let difficultyColorsVar = [];
-    for (let j = 0; i < 4; i++) {
-      let color;
-
-      if (j == 0) {
-        color = "orange";
-      } else if (j == 1) {
-        color = "yellow";
-      } else if (j == 2) {
-        color = "green";
-      } else {
-        color = "gray";
-      }
+    for (let j = 0; j < 4; j++) {
       let skillLevel = currentRecipe.colors[j];
-
-      difficultyColorsVar.push({ [color]: skillLevel });
+      difficultyColorsVar.push(skillLevel);
     }
 
     let craftingCostVar = 0; // Placeholder cost of 0 for now
     let quantityCreatedVar = currentRecipe.creates[1]; // Need to work on this for uncertain amounts
 
-    const engineerRecipe = new EngineerRecipe({
+    const engineeringRecipe = new EngineeringRecipe({
       itemName: itemNameVar,
       recipeID: recipeIDVar,
       craftedItemID: craftedItemIDVar,
@@ -110,16 +118,20 @@ app.get("/upload-engineer-recipes", (req, res) => {
       craftingCost: craftingCostVar,
       quantityCreated: quantityCreatedVar,
     });
-    counter += 1;
-    engineerRecipe.save();
+    engineeringRecipe.save();
   }
   res.send("finished");
 });
 
-app.get("/retrieve-recipes", (req, res) => {
-  EngineerRecipe.find().then((result) => {
-    // Manipulate the object here
-
-    res.send(result);
-  });
+// Testing database retrieval
+app.get("/retrieve-recipes", async (req, res) => {
+  let test = await EngineeringRecipe.find()
+    .lean()
+    .then((result) => {
+      return result;
+    });
+  console.log("reagent list: ", test[0].reagentList);
+  console.log("reagentID: ", test[0].reagentList[0].reagentID);
+  console.log("reagentquantity", test[0].reagentList[0].reagentQuantity);
+  res.send(test);
 });
