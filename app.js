@@ -113,43 +113,7 @@ app.get("/upload-engineer-recipes", (req, res) => {
     counter += 1;
     engineerRecipe.save();
   }
-  console.log(counter);
   res.send("finished");
-});
-
-// Sandbox mongoose testing routes
-app.get("/add-engineer-recipe", (req, res) => {
-  for (let i = 0; i < 3; i++) {
-    // add function or code to set all the properties correctly in the loop
-
-    const engineerRecipe = new EngineerRecipe({
-      itemName: "Rough Blasting Powder",
-      recipeID: i,
-      craftedItemID: 4357,
-      reagentList: [
-        { reagentID: 2835, reagentCost: 25, quantity: 1 },
-        // { reagentID: 999, reagentCost: 30, quantity: 2 },
-      ],
-      learnedAt: 1,
-      difficultyColors: {
-        orange: 1,
-        yellow: 20,
-        green: 30,
-        gray: 40,
-      },
-      craftingCost: 25,
-    });
-
-    engineerRecipe.save();
-    // .then((result) => {
-    //   console.log(i);
-    //   res.send(result);
-    // })
-    // .catch((err) => {
-    //   console.log(err);
-    // });
-  }
-  res.send("uploaded");
 });
 
 app.get("/retrieve-recipes", (req, res) => {
@@ -159,25 +123,3 @@ app.get("/retrieve-recipes", (req, res) => {
     res.send(result);
   });
 });
-
-// .find    .findById   .where
-
-// // Listening for get requests
-// app.get("/", (req, res) => {
-//   //res.send("<p>home page</p>");
-//   res.sendFile("./views/index.html", { root: __dirname });
-// });
-
-// app.get("/about", (req, res) => {
-//   res.sendFile("./views/about.html", { root: __dirname });
-// });
-
-// // Redirects
-// app.get("/about-us", (req, res) => {
-//   res.redirect("/about");
-// });
-
-// // 404
-// app.use((req, res) => {
-//   res.status(404).sendFile("./views/404.html", { root: __dirname });
-// });
