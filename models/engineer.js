@@ -9,7 +9,7 @@ const engineerRecipeSchema = new Schema(
     itemName: String,
     recipeID: Number,
     craftedItemID: Number,
-    reagentList: [{ reagentID: Number, reagentCost: Number, quantity: Number }],
+    reagentList: [{ reagentID: Number, reagentQuantity: Number }],
     learnedAt: Number,
     difficultyColors: {
       // Orange, Yellow, Green, Gray
@@ -19,6 +19,7 @@ const engineerRecipeSchema = new Schema(
       gray: Number,
     },
     craftingCost: Number,
+    quantityCreated: Number,
   },
   { timestamps: true } // not sure if this is helpful
 );

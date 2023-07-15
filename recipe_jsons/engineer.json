@@ -1719,40 +1719,6 @@
     "trainingcost": 1500
   },
   {
-    "cat": 0,
-    "creates": [10580, 1, 1],
-    "id": 12720,
-    "level": 0,
-    "name": "Goblin \"Boom\" Box",
-    "nskillup": 1,
-    "quality": 1,
-    "reagents": [
-      [10561, 1],
-      [10505, 2],
-      [10558, 1],
-      [3860, 2]
-    ],
-    "schools": 1,
-    "skill": [202]
-  },
-  {
-    "cat": 0,
-    "creates": [10585, 1, 1],
-    "id": 12722,
-    "level": 0,
-    "name": "Goblin Radio",
-    "nskillup": 1,
-    "quality": 1,
-    "reagents": [
-      [10561, 1],
-      [3860, 2],
-      [4389, 1],
-      [10560, 1]
-    ],
-    "schools": 1,
-    "skill": [202]
-  },
-  {
     "cat": 11,
     "colors": [230, 230, 250, 270],
     "creates": [10587, 1, 1],
@@ -1909,22 +1875,6 @@
     "trainingcost": 1500
   },
   {
-    "cat": 0,
-    "creates": [10719, 1, 1],
-    "id": 12900,
-    "level": 0,
-    "name": "Mobile Alarm",
-    "nskillup": 1,
-    "quality": 1,
-    "reagents": [
-      [10559, 1],
-      [10560, 1],
-      [3860, 4]
-    ],
-    "schools": 1,
-    "skill": [202]
-  },
-  {
     "cat": 11,
     "colors": [210, 230, 240, 250],
     "creates": [10720, 1, 1],
@@ -1969,23 +1919,6 @@
     "source": [6],
     "specialization": 20219,
     "trainingcost": 2000
-  },
-  {
-    "cat": 0,
-    "creates": [10723, 1, 1],
-    "id": 12904,
-    "level": 0,
-    "name": "Gnomish Ham Radio",
-    "nskillup": 1,
-    "quality": 1,
-    "reagents": [
-      [10561, 1],
-      [3860, 2],
-      [4389, 1],
-      [10560, 1]
-    ],
-    "schools": 1,
-    "skill": [202]
   },
   {
     "cat": 11,
@@ -3581,38 +3514,6 @@
     "source": [5]
   },
   {
-    "cat": 0,
-    "creates": [23769, 3, 3],
-    "id": 30342,
-    "level": 0,
-    "name": "Red Smoke Flare",
-    "nskillup": 1,
-    "quality": 1,
-    "reagents": [
-      [23781, 1],
-      [21877, 1],
-      [2604, 1]
-    ],
-    "schools": 1,
-    "skill": [202]
-  },
-  {
-    "cat": 0,
-    "creates": [23770, 3, 3],
-    "id": 30343,
-    "level": 0,
-    "name": "Blue Smoke Flare",
-    "nskillup": 1,
-    "quality": 1,
-    "reagents": [
-      [23781, 1],
-      [21877, 1],
-      [6260, 1]
-    ],
-    "schools": 1,
-    "skill": [202]
-  },
-  {
     "cat": 11,
     "colors": [335, 335, 345, 355],
     "creates": [23771, 3, 3],
@@ -3868,22 +3769,6 @@
     "source": [4]
   },
   {
-    "cat": 0,
-    "creates": [23820, 1, 1],
-    "id": 30549,
-    "level": 0,
-    "name": "Critter Enlarger",
-    "nskillup": 1,
-    "quality": 2,
-    "reagents": [
-      [23784, 1],
-      [23783, 2],
-      [10558, 1]
-    ],
-    "schools": 1,
-    "skill": [202]
-  },
-  {
     "cat": 11,
     "colors": [330, 330, 340, 350],
     "creates": [33092, 20, 20],
@@ -3985,22 +3870,6 @@
     "source": [6],
     "specialization": 20222,
     "trainingcost": 35000
-  },
-  {
-    "cat": 0,
-    "creates": [23831, 1, 1],
-    "id": 30561,
-    "level": 0,
-    "name": "Goblin Tonk Controller",
-    "nskillup": 1,
-    "quality": 1,
-    "reagents": [
-      [23782, 1],
-      [23783, 4],
-      [10558, 1]
-    ],
-    "schools": 1,
-    "skill": [202]
   },
   {
     "cat": 11,
@@ -4134,22 +4003,6 @@
     "source": [6],
     "specialization": 20219,
     "trainingcost": 50000
-  },
-  {
-    "cat": 0,
-    "creates": [23832, 1, 1],
-    "id": 30573,
-    "level": 0,
-    "name": "Gnomish Tonk Controller",
-    "nskillup": 1,
-    "quality": 1,
-    "reagents": [
-      [23782, 1],
-      [23783, 4],
-      [10558, 1]
-    ],
-    "schools": 1,
-    "skill": [202]
   },
   {
     "cat": 11,
@@ -5977,25 +5830,6 @@
     "skill": [202],
     "source": [6],
     "trainingcost": 100000
-  },
-  {
-    "cat": 0,
-    "creates": [48933, 1, 1],
-    "id": 67790,
-    "level": 0,
-    "name": "Dimensional Folder: K3",
-    "nskillup": 1,
-    "quality": 3,
-    "reagents": [
-      [39683, 2],
-      [35623, 2],
-      [36860, 2],
-      [35622, 2],
-      [39681, 10],
-      [42546, 5]
-    ],
-    "schools": 1,
-    "skill": [202]
   },
   {
     "cat": 11,
