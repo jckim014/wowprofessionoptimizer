@@ -1,14 +1,20 @@
 const express = require("express");
-const mongoose = require("mongoose");
-const EngineeringRecipe = require("./models/engineering.js");
 const fetch = require("node-fetch-commonjs");
-const recipesObject = require("./recipe_jsons/engineer.json");
+const fs = require("fs");
 
 const dotenv = require("dotenv");
 dotenv.config();
-const mongoURL = process.env.MONGODB_CONNECT_STRING;
+
+const mongoose = require("mongoose");
+const EngineeringRecipe = require("./models/engineering.js");
+
+const recipesObject = require("./recipe_jsons/engineer.json");
+
 // Express app
 const app = express();
+
+const mongoURL = process.env.MONGODB_CONNECT_STRING;
+const tsmToken = process.env.TSM_BEARER_TOKEN;
 
 // Connect to mongodb with mongoose
 const dbURI = mongoURL;
@@ -22,32 +28,62 @@ mongoose
   .catch((err) => console.log(err));
 
 // Testing Fetch: grabbing price data from nexushub
-url =
-  "https://api.nexushub.co/wow-classic/v1/items/benediction-alliance/2835/prices";
+// url =
+//   "https://api.nexushub.co/wow-classic/v1/items/benediction-alliance/2835/prices";
 
-async function fetchTest(url) {
-  const response = await fetch(url);
-  let object = await response.json();
-  marketValue = object.data[0].marketValue;
-  return marketValue;
+// async function fetchTest(url) {
+//   const response = await fetch(url);
+//   let object = await response.json();
+//   marketValue = object.data[0].marketValue;
+//   return marketValue;
+// }
+
+// // Testing nexushub price data
+// url2 = "https://api.nexushub.co/wow-classic/v1/items/benediction-alliance";
+
+// async function fetchTest2(url2) {
+//   const response = await fetch(url2);
+//   let object = await response.json();
+//   itemID = object.data[0].itemId;
+//   previous = object.data[0];
+//   console.log(itemID);
+//   console.log(previous);
+// }
+
+// Going to use TSM API directly
+
+// Get request to TSM api for realm (Benediction) auction house data
+url = "https://pricing-api.tradeskillmaster.com/ah/347"; // need to make the realm ID a variable
+
+async function fetchRealmData(url) {
+  const response = await fetch(url, {
+    headers: { Authorization: `Bearer ${tsmToken}` },
+  });
+  let ah_object = await response.json();
+  let ah_content = JSON.stringify(ah_object);
+
+  realm_name = "benediction-ally";
+  fs.writeFile(
+    `./ah_data/${realm_name}.json`,
+    ah_content,
+    "utf8",
+    function (err) {
+      if (err) {
+        console.log("Error while writing JSON object to file");
+        return console.log(err);
+      }
+      console.log("JSON file saved to", `${realm_name}.json`);
+    }
+  );
 }
 
-// Testing nexushub price data
-url2 = "https://api.nexushub.co/wow-classic/v1/items/benediction-alliance";
+app.get("/fetch-realm-data", async (req, res) => {
+  fetchRealmData(url);
+  res.send("Fetched realm data");
+});
 
-async function fetchTest2(url2) {
-  const response = await fetch(url2);
-  let object = await response.json();
-  itemID = object.data[0].itemId;
-  previous = object.data[0];
-  console.log(itemID);
-  console.log(previous);
-}
-// fetchTest2(url2);
-
-// Take a recipe
-// Grab reagent price data
-// Calculate crafting cost
+// Grab the realm auction house data and store into file (allowed 100/24 hours)
+// Get recipe reagents, lookup from auction house data variable, calculate the cost
 // Update database
 
 // Iterate through all recipes and update their crafting costs
