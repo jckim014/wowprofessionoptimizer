@@ -9,6 +9,8 @@ const mongoose = require("mongoose");
 const EngineeringRecipe = require("./models/engineering.js");
 
 const recipesObject = require("./recipe_jsons/engineer.json");
+const ah_data = require("./ah_data/benediction-ally.json");
+const engineeringRecipe = require("./models/engineering.js");
 
 // Express app
 const app = express();
@@ -26,31 +28,6 @@ mongoose
     console.log("mongoose connected to db");
   })
   .catch((err) => console.log(err));
-
-// Testing Fetch: grabbing price data from nexushub
-// url =
-//   "https://api.nexushub.co/wow-classic/v1/items/benediction-alliance/2835/prices";
-
-// async function fetchTest(url) {
-//   const response = await fetch(url);
-//   let object = await response.json();
-//   marketValue = object.data[0].marketValue;
-//   return marketValue;
-// }
-
-// // Testing nexushub price data
-// url2 = "https://api.nexushub.co/wow-classic/v1/items/benediction-alliance";
-
-// async function fetchTest2(url2) {
-//   const response = await fetch(url2);
-//   let object = await response.json();
-//   itemID = object.data[0].itemId;
-//   previous = object.data[0];
-//   console.log(itemID);
-//   console.log(previous);
-// }
-
-// Going to use TSM API directly
 
 // Get request to TSM api for realm (Benediction) auction house data
 url = "https://pricing-api.tradeskillmaster.com/ah/347"; // need to make the realm ID a variable
@@ -77,36 +54,55 @@ async function fetchRealmData(url) {
   );
 }
 
+// Grab the realm auction house data and store into file (allowed 100/24 hours)
 app.get("/fetch-realm-data", async (req, res) => {
   fetchRealmData(url);
   res.send("Fetched realm data");
 });
 
-// Grab the realm auction house data and store into file (allowed 100/24 hours)
-// Get recipe reagents, lookup from auction house data variable, calculate the cost
-// Update database
+// Need to expand on this
+// Add logic for BOP items, vendor items, etc - will tie in with source I think (as an arg)
+function priceLookup(reagentID, ah_data) {
+  for (let i = 0; i < ah_data.length; i++) {
+    if (ah_data[i].itemId == reagentID) {
+      let price = ah_data[i].marketValue;
+      return price;
+    }
+    // Maybe error handling would be good here?
+  }
+  return 999999999; // Hack to ignore Bind on Pickup crafted reagents by making them too expensive
+}
 
 // Iterate through all recipes and update their crafting costs
-app.get("/update-crafting-costs", (req, res) => {
-  console.log(test);
-  EngineeringRecipe.find()
-    .lean()
-    .then((result) => {
-      // result contains all the recipes
-      // loop through all recipes
+app.get("/update-crafting-costs", async (req, res) => {
+  // Retrieve all recipes from database
+  let allRecipes = await EngineeringRecipe.find().lean();
 
-      // calculate total cost
-      // push the update
-      numRecipes = result.length;
+  // For each recipe
+  for (let i = 0; i < allRecipes.length; i++) {
+    let reagents = allRecipes[i].reagentList;
+    let totalCost = 0;
 
-      for (let i = 0; i < numRecipes; i++) {
-        // get the reagents
-        // look up the cost of each reagent
-        // Maintain database of reagent costs
-      }
-      res.send("finished");
-      //
-    });
+    // For each reagent in the recipe, lookup the cost and add to total cost
+    for (let j = 0; j < reagents.length; j++) {
+      let reagent = reagents[j].reagentID;
+      let numReagents = reagents[j].reagentQuantity;
+
+      let price = priceLookup(reagent, ah_data); // Price of individual reagent
+      price *= numReagents; // Individual price * quantity needed
+
+      totalCost += price; // Running total cost of this crafted item
+    }
+
+    // Update the cost of the recipe in database
+    const updatePrice = await engineeringRecipe.findOneAndUpdate(
+      {
+        recipeID: allRecipes[i].recipeID,
+      },
+      { craftingCost: totalCost }
+    );
+  }
+  res.send("done");
 });
 
 // Should this be a post request? using get for convenience right now
@@ -155,19 +151,18 @@ app.get("/upload-engineering-recipes", (req, res) => {
       quantityCreated: quantityCreatedVar,
     });
     engineeringRecipe.save();
+
+    // await engineeringRecipe.save() ??
   }
   res.send("finished");
 });
 
 // Testing database retrieval
 app.get("/retrieve-recipes", async (req, res) => {
-  let test = await EngineeringRecipe.find()
-    .lean()
-    .then((result) => {
-      return result;
-    });
-  console.log("reagent list: ", test[0].reagentList);
-  console.log("reagentID: ", test[0].reagentList[0].reagentID);
-  console.log("reagentquantity", test[0].reagentList[0].reagentQuantity);
+  let test = await EngineeringRecipe.find().lean();
+  // .then((result) => {
+  //   return result;
+  // });
+
   res.send(test);
 });
