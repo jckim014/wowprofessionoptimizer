@@ -75,6 +75,27 @@ function priceLookup(reagentID, ah_data) {
 
 // Iterate through all recipes and update their crafting costs
 app.get("/update-crafting-costs", async (req, res) => {
+  // For each recipe(map)
+  // For each reagent
+  // function calculateCost()
+  // If vendor item, get fixed cost, return
+  // If purchasable, look up the AH cost
+  // If craftable, function calculateCost()
+  // function ifCraftable()
+  // lookup item in allrecipes
+  // for now, we can discount multi nested items (return a third option that bricks crafting as a choice)
+  // Edge case handler for weird things like abomination stitching or w/e
+  // Get min of the first 2/3 and return cost + purchase or craft
+  // ItemID, totalcost, crafted [][][][] vs itemID, totalcost, bought
+  // [reagentID, 25 copper, crafted, [[reagent1, 25 copper, crafted,[[rawmaterial1, 25c, bought], [rawmaterial2, 25c, bought]]], [reagent2, 25 copper, bought]
+  // [reagentID, 25 copper, bought]
+
+  // if crafting, we want to return
+  // item we are crafting
+  // total cost
+  // each reagent
+  // source(craft/buy) of each reagent
+
   // Retrieve all recipes from database
   let allRecipes = await EngineeringRecipe.find().lean();
 
@@ -105,55 +126,28 @@ app.get("/update-crafting-costs", async (req, res) => {
   res.send("done");
 });
 
-// Should this be a post request? using get for convenience right now
 app.get("/upload-engineering-recipes", (req, res) => {
-  numRecipes = Object.keys(recipesObject).length;
+  // Filter out uncraftable items
+  filteredRecipes = recipesObject.filter(
+    (recipe) => recipe.hasOwnProperty("creates") // need to update this - personal enchantments don't create but can be used for skillups
+  );
+  // Convert all recipes into mongoose model format
+  formattedRecipes = filteredRecipes.map(
+    (recipe) =>
+      new EngineeringRecipe({
+        itemName: recipe.name,
+        recipeID: recipe.id,
+        craftedItemID: recipe.creates[0],
+        reagentList: recipe.reagents,
+        learnedAt: recipe.learnedat,
+        difficultyColors: recipe.colors,
+        craftingCost: 0, // Placeholder, can call price calculator function here?
+        quantityCreated: recipe.creates[1], // Part of the creates property, TODO: update for variable quantity
+      })
+  );
+  // Save recipes to mongoDB atlas
+  formattedRecipes.forEach((recipe) => recipe.save());
 
-  // Convert all recipes according to the schema and upload to database
-  for (let i = 0; i < numRecipes; i++) {
-    currentRecipe = recipesObject[i];
-
-    if (!currentRecipe.hasOwnProperty("creates")) {
-      continue;
-    }
-
-    let itemNameVar = currentRecipe.name;
-    let recipeIDVar = currentRecipe.id;
-    let craftedItemIDVar = currentRecipe.creates[0];
-    let learnedAtVar = currentRecipe.learnedat;
-
-    // Assign reagentListVar as an array of key-value pair objects, reagent: quantity
-    let reagentListVar = [];
-    for (let j = 0; j < currentRecipe.reagents.length; j++) {
-      let reagentID = currentRecipe.reagents[j][0];
-      let reagentQuantity = currentRecipe.reagents[j][1];
-
-      reagentListVar.push({ reagentID, reagentQuantity });
-    }
-    // Assign difficultyColorsVar as an array of integers [Orange, Yellow, Green, Gray]
-    let difficultyColorsVar = [];
-    for (let j = 0; j < 4; j++) {
-      let skillLevel = currentRecipe.colors[j];
-      difficultyColorsVar.push(skillLevel);
-    }
-
-    let craftingCostVar = 0; // Placeholder cost of 0 for now
-    let quantityCreatedVar = currentRecipe.creates[1]; // Need to work on this for uncertain amounts
-
-    const engineeringRecipe = new EngineeringRecipe({
-      itemName: itemNameVar,
-      recipeID: recipeIDVar,
-      craftedItemID: craftedItemIDVar,
-      reagentList: reagentListVar,
-      learnedAt: learnedAtVar,
-      difficultyColors: difficultyColorsVar,
-      craftingCost: craftingCostVar,
-      quantityCreated: quantityCreatedVar,
-    });
-    engineeringRecipe.save();
-
-    // await engineeringRecipe.save() ??
-  }
   res.send("finished");
 });
 
