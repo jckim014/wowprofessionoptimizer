@@ -97,7 +97,24 @@ app.get("/update-crafting-costs", async (req, res) => {
   // source(craft/buy) of each reagent
 
   // Retrieve all recipes from database
-  let allRecipes = await EngineeringRecipe.find().lean();
+  const allRecipes = await EngineeringRecipe.find().lean();
+
+  // Calculate the total cost and whether to craft or buy each reagent: return an object/array with this info
+  const updatedRecipes = allRecipes.map((recipe) => {
+    // Call calculateCost function
+  });
+  // Update each recipe in mongodb
+  updatedRecipes.forEach(async (recipe) => {
+    recipe
+      .findOneAndUpdate
+      // {
+      //   recipeID: recipe.recipeID,
+      // },
+      // { craftingCost: totalCost }
+      ();
+  });
+
+  //-------------------------------
 
   // For each recipe
   for (let i = 0; i < allRecipes.length; i++) {
@@ -128,11 +145,11 @@ app.get("/update-crafting-costs", async (req, res) => {
 
 app.get("/upload-engineering-recipes", (req, res) => {
   // Filter out uncraftable items
-  filteredRecipes = recipesObject.filter(
+  const filteredRecipes = recipesObject.filter(
     (recipe) => recipe.hasOwnProperty("creates") // need to update this - personal enchantments don't create but can be used for skillups
   );
   // Convert all recipes into mongoose model format
-  formattedRecipes = filteredRecipes.map(
+  const formattedRecipes = filteredRecipes.map(
     (recipe) =>
       new EngineeringRecipe({
         itemName: recipe.name,
