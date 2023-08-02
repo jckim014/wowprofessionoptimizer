@@ -60,6 +60,7 @@ app.get("/fetch-realm-data", async (req, res) => {
   res.send("Fetched realm data");
 });
 
+// Extremely basic for now - assumes buying all reagents and ignores unbuyable
 // Need to expand on this
 // Add logic for BOP items, vendor items, etc - will tie in with source I think (as an arg)
 function priceLookup(reagentID, ah_data) {
@@ -70,7 +71,7 @@ function priceLookup(reagentID, ah_data) {
     }
     // Maybe error handling would be good here?
   }
-  return 999999999; // Hack to ignore Bind on Pickup crafted reagents by making them too expensive
+  return 999999999; // Hack to ignore unavailable items such as Bind on Pickup crafted reagents
 }
 
 // Iterate through all recipes and update their crafting costs
@@ -100,47 +101,38 @@ app.get("/update-crafting-costs", async (req, res) => {
   const allRecipes = await EngineeringRecipe.find().lean();
 
   // Calculate the total cost and whether to craft or buy each reagent: return an object/array with this info
+  // Attempting functional programming, need feedback
   const updatedRecipes = allRecipes.map((recipe) => {
-    // Call calculateCost function
+    const currentReagents = recipe.reagentList;
+
+    const reagentCosts = currentReagents.map((reagent) => {
+      individualCost = priceLookup(reagent[0], ah_data);
+      return individualCost * reagent[1]; // individual cost x quantity
+    });
+
+    const totalCost = reagentCosts.reduce((a, b) => {
+      return a + b;
+    });
+
+    recipe.craftingCost = totalCost;
+    return recipe;
   });
+
   // Update each recipe in mongodb
   updatedRecipes.forEach(async (recipe) => {
-    recipe
-      .findOneAndUpdate
-      // {
-      //   recipeID: recipe.recipeID,
-      // },
-      // { craftingCost: totalCost }
-      ();
+    const recipeDoc = await EngineeringRecipe.findOneAndUpdate(
+      {
+        recipeID: recipe.recipeID,
+      },
+      { craftingCost: recipe.craftingCost }
+    );
   });
 
-  //-------------------------------
+  res.send("Recipe costs updated");
+});
 
-  // For each recipe
-  for (let i = 0; i < allRecipes.length; i++) {
-    let reagents = allRecipes[i].reagentList;
-    let totalCost = 0;
-
-    // For each reagent in the recipe, lookup the cost and add to total cost
-    for (let j = 0; j < reagents.length; j++) {
-      let reagent = reagents[j].reagentID;
-      let numReagents = reagents[j].reagentQuantity;
-
-      let price = priceLookup(reagent, ah_data); // Price of individual reagent
-      price *= numReagents; // Individual price * quantity needed
-
-      totalCost += price; // Running total cost of this crafted item
-    }
-
-    // Update the cost of the recipe in database
-    const updatePrice = await engineeringRecipe.findOneAndUpdate(
-      {
-        recipeID: allRecipes[i].recipeID,
-      },
-      { craftingCost: totalCost }
-    );
-  }
-  res.send("done");
+app.get("/calculate-optimal-path", (req, res) => {
+  res.send("placeholder");
 });
 
 app.get("/upload-engineering-recipes", (req, res) => {
@@ -174,6 +166,8 @@ app.get("/retrieve-recipes", async (req, res) => {
   // .then((result) => {
   //   return result;
   // });
+  console.log(test.length);
+  console.log(recipesObject.length);
 
   res.send(test);
 });
