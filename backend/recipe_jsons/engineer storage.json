@@ -2832,6 +2832,49 @@
   },
   {
     "cat": 11,
+    "colors": [0, 285, 295, 305],
+    "creates": [18986, 1, 1],
+    "id": 23489,
+    "learnedat": 285,
+    "level": 0,
+    "name": "Ultrasafe Transporter - Gadgetzan",
+    "nskillup": 1,
+    "quality": 2,
+    "reagents": [
+      [3860, 12],
+      [18631, 2],
+      [7075, 4],
+      [7079, 2],
+      [7909, 4],
+      [9060, 1]
+    ],
+    "schools": 1,
+    "skill": [202],
+    "specialization": 20219
+  },
+  {
+    "cat": 11,
+    "colors": [0, 285, 295, 305],
+    "creates": [18984, 1, 1],
+    "id": 23486,
+    "learnedat": 285,
+    "level": 0,
+    "name": "Dimensional Ripper - Everlook",
+    "nskillup": 1,
+    "quality": 2,
+    "reagents": [
+      [3860, 10],
+      [18631, 1],
+      [7077, 4],
+      [7910, 2],
+      [10586, 1]
+    ],
+    "schools": 1,
+    "skill": [202],
+    "specialization": 20222
+  },
+  {
+    "cat": 11,
     "colors": [250, 250, 260, 270],
     "creates": [19026, 4, 4],
     "id": 23507,
@@ -4026,6 +4069,48 @@
     "schools": 1,
     "skill": [202],
     "source": [2]
+  },
+  {
+    "cat": 11,
+    "colors": [0, 350, 360, 370],
+    "creates": [30542, 1, 1],
+    "id": 36954,
+    "learnedat": 350,
+    "level": 0,
+    "name": "Dimensional Ripper - Area 52",
+    "nskillup": 1,
+    "quality": 2,
+    "reagents": [
+      [23784, 1],
+      [21884, 2],
+      [23826, 2],
+      [23783, 4],
+      [23786, 1]
+    ],
+    "schools": 1,
+    "skill": [202],
+    "specialization": 20222
+  },
+  {
+    "cat": 11,
+    "colors": [0, 350, 360, 370],
+    "creates": [30544, 1, 1],
+    "id": 36955,
+    "learnedat": 350,
+    "level": 0,
+    "name": "Ultrasafe Transporter - Toshley's Station",
+    "nskillup": 1,
+    "quality": 2,
+    "reagents": [
+      [23784, 1],
+      [22451, 2],
+      [23787, 2],
+      [23783, 4],
+      [23786, 1]
+    ],
+    "schools": 1,
+    "skill": [202],
+    "specialization": 20219
   },
   {
     "cat": 11,

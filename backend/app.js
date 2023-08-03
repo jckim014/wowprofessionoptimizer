@@ -118,7 +118,7 @@ app.get("/update-crafting-costs", async (req, res) => {
     return recipe;
   });
 
-  // Update each recipe in mongodb
+  // Update each craftingCost of each recipe in mongodb
   updatedRecipes.forEach(async (recipe) => {
     const recipeDoc = await EngineeringRecipe.findOneAndUpdate(
       {
@@ -127,12 +127,29 @@ app.get("/update-crafting-costs", async (req, res) => {
       { craftingCost: recipe.craftingCost }
     );
   });
-
   res.send("Recipe costs updated");
 });
 
-app.get("/calculate-optimal-path", (req, res) => {
+app.get("/calculate-optimal-path", async (req, res) => {
+  // Need to add goblin vs gnomish filter (or ignore entirely)
+  // Manually ignore dimensional rippers and teleporters
+
+  let currentSkill = 1;
+  let skillFloor = 0;
+
+  const craftableRecipes = await EngineeringRecipe.where("difficultyColors.0")
+    .lte(currentSkill)
+    .gte(skillFloor);
+  // const craftableRecipes = await EngineeringRecipe.where("itemName").equals(
+  //   "Handful of Copper Bolts"
+  // );
+
+  console.log(craftableRecipes);
   res.send("placeholder");
+
+  //Inventory
+
+  // At each point, check the skill bounds - grab all those recipes, take the cheapest one
 });
 
 app.get("/upload-engineering-recipes", (req, res) => {
@@ -166,8 +183,5 @@ app.get("/retrieve-recipes", async (req, res) => {
   // .then((result) => {
   //   return result;
   // });
-  console.log(test.length);
-  console.log(recipesObject.length);
-
   res.send(test);
 });
