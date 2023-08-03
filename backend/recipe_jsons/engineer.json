@@ -2015,27 +2015,6 @@
   },
   {
     "cat": 11,
-    "colors": [0, 0, 0, 205],
-    "creates": [10577, 1, 1],
-    "id": 13240,
-    "learnedat": 205,
-    "level": 0,
-    "name": "The Mortar: Reloaded",
-    "nskillup": 1,
-    "quality": 2,
-    "reagents": [
-      [10577, 1],
-      [3860, 1],
-      [10505, 3]
-    ],
-    "schools": 1,
-    "skill": [202],
-    "source": [6],
-    "specialization": 20222,
-    "trainingcost": 1500
-  },
-  {
-    "cat": 11,
     "colors": [200, 200, 220, 240],
     "creates": [11590, 1, 1],
     "id": 15255,

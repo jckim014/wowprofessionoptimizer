@@ -21,6 +21,8 @@ const tsmToken = process.env.TSM_BEARER_TOKEN;
 // Connect to mongodb with mongoose
 const dbURI = mongoURL;
 
+const MAX_SKILL_LEVEL = 450;
+
 mongoose
   .connect(dbURI)
   .then((result) => {
@@ -130,19 +132,51 @@ app.get("/update-crafting-costs", async (req, res) => {
   res.send("Recipe costs updated");
 });
 
+// Need to work on this, inventory functionality, etc
+function getOptimalRecipe(recipes, inventory) {
+  minCost = recipes[0].craftingCost;
+  minIndex = 0;
+
+  for (let i = 1; i < recipes.length; i++) {
+    if (recipes[i].craftingCost < minCost) {
+      minCost = recipes[i].craftingCost;
+      minIndex = i;
+    }
+  }
+  return recipes[minIndex];
+}
+
+// Add floor logic, filter out non orange recipes (set floor to difficutlyColors.1 for now)
 app.get("/calculate-optimal-path", async (req, res) => {
   // Need to add goblin vs gnomish filter (or ignore entirely)
-
   let currentSkill = 1;
-  let skillFloor = 0;
+  //let skillFloor = 0;
 
-  const craftableRecipes = await EngineeringRecipe.where("difficultyColors.0")
-    .lte(currentSkill)
-    .gte(skillFloor);
+  let recipePath = [];
+  while (currentSkill < MAX_SKILL_LEVEL) {
+    const craftableRecipes = await EngineeringRecipe.where(
+      "difficultyColors.0"
+    ).lte(currentSkill);
+    //.gte(skillFloor);
 
-  console.log(craftableRecipes);
-  res.send("placeholder");
+    // Filter false positives (recipes without orange skill)
+    const filteredRecipes = craftableRecipes.filter((recipe) => {
+      // Hack to filter out weird recipes, may have to revisit
+      return recipe.difficultyColors[1] - recipe.difficultyColors[0] < 50;
+    });
 
+    let inventory = [];
+
+    // Find the cheapest recipe
+    const cheapestRecipe = getOptimalRecipe(filteredRecipes, inventory);
+
+    // Record
+    recipePath.push(cheapestRecipe.craftedItemID);
+    currentSkill += 1;
+    console.log(currentSkill);
+  }
+  console.log(recipePath);
+  res.send("Calculated optimal path");
   //Inventory
 });
 
@@ -168,7 +202,7 @@ app.get("/upload-engineering-recipes", (req, res) => {
   // Save recipes to mongoDB atlas
   formattedRecipes.forEach((recipe) => recipe.save());
 
-  res.send("Recipes uploaded.");
+  res.send("Recipes uploaded");
 });
 
 // Testing database retrieval
