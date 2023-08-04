@@ -150,14 +150,13 @@ function getOptimalRecipe(recipes, inventory) {
 app.get("/calculate-optimal-path", async (req, res) => {
   // Need to add goblin vs gnomish filter (or ignore entirely)
   let currentSkill = 1;
-  //let skillFloor = 0;
 
   let recipePath = [];
   while (currentSkill < MAX_SKILL_LEVEL) {
-    const craftableRecipes = await EngineeringRecipe.where(
-      "difficultyColors.0"
-    ).lte(currentSkill);
-    //.gte(skillFloor);
+    const craftableRecipes = await EngineeringRecipe.where("difficultyColors.0")
+      .lte(currentSkill)
+      .where("difficultyColors.1")
+      .gt(currentSkill);
 
     // Filter false positives (recipes without orange skill)
     const filteredRecipes = craftableRecipes.filter((recipe) => {
@@ -171,12 +170,12 @@ app.get("/calculate-optimal-path", async (req, res) => {
     const cheapestRecipe = getOptimalRecipe(filteredRecipes, inventory);
 
     // Record
-    recipePath.push(cheapestRecipe.craftedItemID);
+    recipePath.push(cheapestRecipe.itemName); // Can include other information as an array of arrays
     currentSkill += 1;
     console.log(currentSkill);
   }
-  console.log(recipePath);
-  res.send("Calculated optimal path");
+  //console.log(recipePath);
+  res.send(recipePath);
   //Inventory
 });
 
