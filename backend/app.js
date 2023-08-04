@@ -132,18 +132,41 @@ app.get("/update-crafting-costs", async (req, res) => {
   res.send("Recipe costs updated");
 });
 
-// Need to work on this, inventory functionality, etc
+// No idea how to apply functional programming
+// Might have to calculate the crafting cost here - maybe what Angelo was saying
 function getOptimalRecipe(recipes, inventory) {
-  minCost = recipes[0].craftingCost;
+  minCost = Infinity;
   minIndex = 0;
 
-  for (let i = 1; i < recipes.length; i++) {
-    if (recipes[i].craftingCost < minCost) {
-      minCost = recipes[i].craftingCost;
+  // Find the cheapest recipe factoring in reagents from inventory
+  for (let i = 0; i < recipes.length; i++) {
+    const currentRecipe = recipes[i];
+    let currentCost = recipes[i].craftingCost;
+
+    // Check if we have the reagent
+    for (let j = 0; j < currentRecipe.reagentList.length; j++) {
+      const currentReagent = currentRecipe.reagentList[j][0];
+      let requiredQuantity = currentRecipe.reagentList[j][1];
+
+      // Reduce cost for each already owned reagent
+      while (inventory.get(currentReagent) > 0) {
+        inventory.set(currentReagent, inventory.get(currentReagent) - 1);
+        reagentCost = priceLookup(currentReagent, ah_data);
+        console.log(reagentCost);
+        currentCost -= reagentCost;
+        console.log(currentCost);
+      }
+    }
+
+    if (currentCost < minCost) {
+      minCost = currentCost;
       minIndex = i;
     }
   }
-  return recipes[minIndex];
+  const recipeObject = recipes[minIndex];
+  const quantityCreated = recipes[minIndex].quantityCreated;
+
+  return [recipeObject, quantityCreated];
 }
 
 // Add floor logic, filter out non orange recipes (set floor to difficutlyColors.1 for now)
@@ -152,7 +175,9 @@ app.get("/calculate-optimal-path", async (req, res) => {
   let currentSkill = 1;
 
   let recipePath = [];
-  while (currentSkill < MAX_SKILL_LEVEL) {
+  let inventory = new Map();
+
+  while (currentSkill < 21) {
     const craftableRecipes = await EngineeringRecipe.where("difficultyColors.0")
       .lte(currentSkill)
       .where("difficultyColors.1")
@@ -164,19 +189,26 @@ app.get("/calculate-optimal-path", async (req, res) => {
       return recipe.difficultyColors[1] - recipe.difficultyColors[0] < 50;
     });
 
-    let inventory = [];
+    // Find cheapest recipe
+    const [cheapestRecipe, quantityCreated] = getOptimalRecipe(
+      filteredRecipes,
+      inventory
+    );
 
-    // Find the cheapest recipe
-    const cheapestRecipe = getOptimalRecipe(filteredRecipes, inventory);
+    // Update inventory
+    const inventoryItem = cheapestRecipe.craftedItemID;
 
-    // Record
+    inventory.set(
+      inventoryItem,
+      (inventory.get(inventoryItem) || 0) + quantityCreated
+    );
+
+    // Record cheapest recipe
     recipePath.push(cheapestRecipe.itemName); // Can include other information as an array of arrays
     currentSkill += 1;
-    console.log(currentSkill);
+    // console.log(currentSkill);
   }
-  //console.log(recipePath);
   res.send(recipePath);
-  //Inventory
 });
 
 app.get("/upload-engineering-recipes", (req, res) => {
