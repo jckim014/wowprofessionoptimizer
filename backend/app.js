@@ -133,40 +133,52 @@ app.get("/update-crafting-costs", async (req, res) => {
 });
 
 // No idea how to apply functional programming
-// Might have to calculate the crafting cost here - maybe what Angelo was saying
 function getOptimalRecipe(recipes, inventory) {
   minCost = Infinity;
   minIndex = 0;
+
+  let usedInventory = [];
 
   // Find the cheapest recipe factoring in reagents from inventory
   for (let i = 0; i < recipes.length; i++) {
     const currentRecipe = recipes[i];
     let currentCost = recipes[i].craftingCost;
 
+    const tempInventory = [];
+
     // Check if we have the reagent
     for (let j = 0; j < currentRecipe.reagentList.length; j++) {
       const currentReagent = currentRecipe.reagentList[j][0];
+
       let requiredQuantity = currentRecipe.reagentList[j][1];
+      let inventoryQuantity = inventory.get(currentReagent);
+      let usedQuantity = 0;
 
       // Reduce cost for each already owned reagent
-      while (inventory.get(currentReagent) > 0) {
-        inventory.set(currentReagent, inventory.get(currentReagent) - 1);
+      while (inventoryQuantity > 0 && requiredQuantity > 0) {
         reagentCost = priceLookup(currentReagent, ah_data);
-        console.log(reagentCost);
         currentCost -= reagentCost;
-        console.log(currentCost);
+        inventoryQuantity -= 1;
+        requiredQuantity -= 1;
+        usedQuantity += 1;
+      }
+      if (usedQuantity > 0) {
+        tempInventory.push([currentReagent, usedQuantity]);
       }
     }
 
+    // Update the current cheapest recipe
+    // Add logic to check which recipes are less negative (more negative means using more expensive inventory)
     if (currentCost < minCost) {
       minCost = currentCost;
       minIndex = i;
+      usedInventory = tempInventory;
     }
   }
   const recipeObject = recipes[minIndex];
   const quantityCreated = recipes[minIndex].quantityCreated;
 
-  return [recipeObject, quantityCreated];
+  return [recipeObject, quantityCreated, usedInventory];
 }
 
 // Add floor logic, filter out non orange recipes (set floor to difficutlyColors.1 for now)
@@ -177,7 +189,7 @@ app.get("/calculate-optimal-path", async (req, res) => {
   let recipePath = [];
   let inventory = new Map();
 
-  while (currentSkill < 21) {
+  while (currentSkill < 20) {
     const craftableRecipes = await EngineeringRecipe.where("difficultyColors.0")
       .lte(currentSkill)
       .where("difficultyColors.1")
@@ -190,17 +202,23 @@ app.get("/calculate-optimal-path", async (req, res) => {
     });
 
     // Find cheapest recipe
-    const [cheapestRecipe, quantityCreated] = getOptimalRecipe(
+    const [cheapestRecipe, quantityCreated, usedInventory] = getOptimalRecipe(
       filteredRecipes,
       inventory
     );
-
-    // Update inventory
-    const inventoryItem = cheapestRecipe.craftedItemID;
-
+    console.log("Starting inventory:", inventory);
+    // Remove used items from inventory
+    for (let i = 0; i < usedInventory.length; i++) {
+      const usedItem = usedInventory[i][0];
+      const usedQuantity = usedInventory[i][1];
+      inventory.set(usedItem, inventory.get(usedItem) - usedQuantity);
+    }
+    console.log("Ending Inventory:", inventory);
+    // Add crafted items to inventory
+    const craftedItem = cheapestRecipe.craftedItemID;
     inventory.set(
-      inventoryItem,
-      (inventory.get(inventoryItem) || 0) + quantityCreated
+      craftedItem,
+      inventory.get(craftedItem) + quantityCreated || 1
     );
 
     // Record cheapest recipe
@@ -208,6 +226,7 @@ app.get("/calculate-optimal-path", async (req, res) => {
     currentSkill += 1;
     // console.log(currentSkill);
   }
+
   res.send(recipePath);
 });
 
