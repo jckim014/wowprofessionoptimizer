@@ -9,6 +9,7 @@ const mongoose = require("mongoose");
 const EngineeringRecipe = require("./models/engineering.js");
 
 const recipesObject = require("./recipe_jsons/engineer.json");
+const iconsObject = require("./icons/icons.json");
 const ah_data = require("./ah_data/benediction-ally.json");
 const engineeringRecipe = require("./models/engineering.js");
 
@@ -181,7 +182,6 @@ function getOptimalRecipe(recipes, inventory) {
   return [recipeObject, quantityCreated, usedInventory];
 }
 
-// Add floor logic, filter out non orange recipes (set floor to difficutlyColors.1 for now)
 app.get("/calculate-optimal-path", async (req, res) => {
   // Need to add goblin vs gnomish filter (or ignore entirely)
   let currentSkill = 1;
@@ -189,7 +189,7 @@ app.get("/calculate-optimal-path", async (req, res) => {
   let recipePath = [];
   let inventory = new Map();
 
-  while (currentSkill < 20) {
+  while (currentSkill < MAX_SKILL_LEVEL) {
     const craftableRecipes = await EngineeringRecipe.where("difficultyColors.0")
       .lte(currentSkill)
       .where("difficultyColors.1")
@@ -206,14 +206,12 @@ app.get("/calculate-optimal-path", async (req, res) => {
       filteredRecipes,
       inventory
     );
-    console.log("Starting inventory:", inventory);
     // Remove used items from inventory
     for (let i = 0; i < usedInventory.length; i++) {
       const usedItem = usedInventory[i][0];
       const usedQuantity = usedInventory[i][1];
       inventory.set(usedItem, inventory.get(usedItem) - usedQuantity);
     }
-    console.log("Ending Inventory:", inventory);
     // Add crafted items to inventory
     const craftedItem = cheapestRecipe.craftedItemID;
     inventory.set(
@@ -223,14 +221,23 @@ app.get("/calculate-optimal-path", async (req, res) => {
 
     // Record cheapest recipe
     recipePath.push(cheapestRecipe.itemName); // Can include other information as an array of arrays
-    currentSkill += 1;
-    // console.log(currentSkill);
-  }
+    // Researching sorting by 2 fields to clean up the path ([skill level, recipenamestring])
+    // Maybe just sort by orange skill - will naturally prioritize correctly?
 
+    // Level break points
+    // Metadata for each item - itemID + metadata map
+
+    // render page that shows an optimal path 0-450
+    // sections - list of items
+
+    // prefer recipes that require engineering
+    currentSkill += 1;
+  }
   res.send(recipePath);
 });
 
 app.get("/upload-engineering-recipes", (req, res) => {
+  console.log(iconsObject[4357]);
   // Filter out uncraftable items
   const filteredRecipes = recipesObject.filter(
     (recipe) => recipe.hasOwnProperty("creates") // need to update this - personal enchantments don't create but can be used for skillups
@@ -245,14 +252,28 @@ app.get("/upload-engineering-recipes", (req, res) => {
         reagentList: recipe.reagents,
         learnedAt: recipe.learnedat,
         difficultyColors: recipe.colors,
-        craftingCost: 0, // Placeholder, can call price calculator function here?
+        craftingCost: 0, // Need to run update-crafting-costs afterwards
         quantityCreated: recipe.creates[1], // Part of the creates property, TODO: update for variable quantity
+        icon: `https://wow.zamimg.com/images/wow/icons/large/${
+          iconsObject[recipe.creates[0]].icon
+        }.jpg`,
       })
   );
   // Save recipes to mongoDB atlas
   formattedRecipes.forEach((recipe) => recipe.save());
 
   res.send("Recipes uploaded");
+});
+
+// Icon Testing
+app.get("/icon-test", (req, res) => {
+  testID = 0900000;
+  if (iconsObject[testID] !== undefined) {
+    console.log(iconsObject[testID]);
+  } else {
+    console.log("doesnt exist");
+  }
+  res.send("test");
 });
 
 // Testing database retrieval

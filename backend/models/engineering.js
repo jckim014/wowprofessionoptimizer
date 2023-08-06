@@ -14,6 +14,7 @@ const engineeringRecipeSchema = new Schema(
     difficultyColors: [], // 4 element array: Orange, Yellow, Green, Gray
     craftingCost: Number, //[]
     quantityCreated: Number,
+    icon: String,
   },
   { timestamps: true } // not sure if this is helpful
 );
