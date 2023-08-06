@@ -1,15 +1,24 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import Home from "./components/Home";
+
+// Add a navbar later
 
 function App() {
-  const [count, setCount] = useState(0);
+  const title = "Welcome to the Profession Optimizer";
+  const array = [1, 2, 3];
 
+  const link = "http://www.google.com";
+  const specialLink = "http://localhost:3000/calculate-optimal-path";
+
+  // { allows for any valid javascript}
   return (
     <>
-      <div>
-        <h1>Hello World!</h1>
+      <div className="App">
+        <div className="content">
+          <Home></Home>
+        </div>
+        <a href={specialLink}>Calculate Optimal Path</a>
       </div>
     </>
   );

@@ -189,7 +189,8 @@ app.get("/calculate-optimal-path", async (req, res) => {
   let recipePath = [];
   let inventory = new Map();
 
-  while (currentSkill < MAX_SKILL_LEVEL) {
+  while (currentSkill < 50) {
+    //MAX_SKILL_LEVEL) {
     const craftableRecipes = await EngineeringRecipe.where("difficultyColors.0")
       .lte(currentSkill)
       .where("difficultyColors.1")
@@ -263,17 +264,6 @@ app.get("/upload-engineering-recipes", (req, res) => {
   formattedRecipes.forEach((recipe) => recipe.save());
 
   res.send("Recipes uploaded");
-});
-
-// Icon Testing
-app.get("/icon-test", (req, res) => {
-  testID = 0900000;
-  if (iconsObject[testID] !== undefined) {
-    console.log(iconsObject[testID]);
-  } else {
-    console.log("doesnt exist");
-  }
-  res.send("test");
 });
 
 // Testing database retrieval
