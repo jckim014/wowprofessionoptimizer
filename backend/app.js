@@ -1,6 +1,7 @@
 const express = require("express");
 const fetch = require("node-fetch-commonjs");
 const fs = require("fs");
+const cors = require("cors");
 
 const dotenv = require("dotenv");
 dotenv.config();
@@ -11,7 +12,7 @@ const EngineeringRecipe = require("./models/engineering.js");
 const recipesObject = require("./recipe_jsons/engineer.json");
 const iconsObject = require("./icons/icons.json");
 const ah_data = require("./ah_data/benediction-ally.json");
-const engineeringRecipe = require("./models/engineering.js");
+const optimalPathData = require("./optimal_path/optimal_path.json");
 
 // Express app
 const app = express();
@@ -56,6 +57,8 @@ async function fetchRealmData(url) {
     }
   );
 }
+
+app.use(cors({ origin: "http://localhost:5173" }));
 
 // Grab the realm auction house data and store into file (allowed 100/24 hours)
 app.get("/fetch-realm-data", async (req, res) => {
@@ -189,7 +192,7 @@ app.get("/calculate-optimal-path", async (req, res) => {
   let recipePath = [];
   let inventory = new Map();
 
-  while (currentSkill < 50) {
+  while (currentSkill < MAX_SKILL_LEVEL) {
     //MAX_SKILL_LEVEL) {
     const craftableRecipes = await EngineeringRecipe.where("difficultyColors.0")
       .lte(currentSkill)
@@ -234,7 +237,26 @@ app.get("/calculate-optimal-path", async (req, res) => {
     // prefer recipes that require engineering
     currentSkill += 1;
   }
-  res.send(recipePath);
+  console.log(recipePath);
+  let storedPath = JSON.stringify(recipePath);
+
+  res.send("Optimal path calculated");
+  fs.writeFile(
+    `./optimal_path/optimal_path.json`,
+    storedPath,
+    "utf8",
+    function (err) {
+      if (err) {
+        console.log("Error while writing JSON object to file");
+        return console.log(err);
+      }
+      console.log("JSON file saved to optimal_path.json");
+    }
+  );
+});
+
+app.get("/fetch-optimal-path", (req, res) => {
+  res.status(200).json(optimalPathData); // need to learn more about this
 });
 
 app.get("/upload-engineering-recipes", (req, res) => {
