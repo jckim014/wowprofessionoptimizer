@@ -19,17 +19,21 @@ const OptimalPathTable = () => {
     fetchOptimalPath();
   }, []);
   return (
-    <div className="home">
-      <h2>Homepage - Optimal Path</h2>
-      <div className="optimalPath">
+    <div className="OptimalPathTable">
+      <h2>Optimal Path</h2>
+      <div>
         <table>
-          <tr>
-            <th>List of Recipes</th>
-          </tr>
-          {optimalPath &&
-            optimalPath.map((recipeName, index) => (
-              <Recipe key={index} recipeName={recipeName} />
-            ))}
+          <thead>
+            <tr>
+              <th>List of Recipes</th>
+            </tr>
+          </thead>
+          <tbody>
+            {optimalPath &&
+              optimalPath.map((recipeName, index) => (
+                <Recipe key={index} recipeName={recipeName} />
+              ))}
+          </tbody>
         </table>
       </div>
     </div>
