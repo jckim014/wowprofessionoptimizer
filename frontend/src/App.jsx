@@ -1,20 +1,23 @@
-import { useState } from "react";
-import "./App.css";
-import OptimalPathMain from "./components/OptimalPathMain";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// Add a navbar later
+import "./App.css";
+
+// Pages and components
+import Home from "./pages/Home";
+import Nav from "./components/Nav";
 
 function App() {
-  const specialLink = "/fetch-optimal-path";
-
-  // { allows for any valid javascript}
   return (
     <>
       <div className="App">
-        <div className="content">
-          <OptimalPathMain />
-        </div>
-        <a href={specialLink}>Calculate Optimal Path</a>
+        <BrowserRouter>
+          <Nav />
+          <div className="pages">
+            <Routes>
+              <Route path="/" element={<Home />} />
+            </Routes>
+          </div>
+        </BrowserRouter>
       </div>
     </>
   );

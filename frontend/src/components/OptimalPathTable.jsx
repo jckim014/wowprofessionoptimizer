@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+// Components
+import Recipe from "./Recipe";
 
-const OptimalPathMain = () => {
+const OptimalPathTable = () => {
   const [optimalPath, setOptimalPath] = useState(null);
 
   useEffect(() => {
@@ -20,11 +22,18 @@ const OptimalPathMain = () => {
     <div className="home">
       <h2>Homepage - Optimal Path</h2>
       <div className="optimalPath">
-        {optimalPath &&
-          optimalPath.map((recipe, index) => <p key={index}>{recipe}</p>)}
+        <table>
+          <tr>
+            <th>List of Recipes</th>
+          </tr>
+          {optimalPath &&
+            optimalPath.map((recipeName, index) => (
+              <Recipe key={index} recipeName={recipeName} />
+            ))}
+        </table>
       </div>
     </div>
   );
 };
 
-export default OptimalPathMain;
+export default OptimalPathTable;
