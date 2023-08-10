@@ -193,7 +193,6 @@ app.get("/calculate-optimal-path", async (req, res) => {
   let inventory = new Map();
 
   while (currentSkill < MAX_SKILL_LEVEL) {
-    //MAX_SKILL_LEVEL) {
     const craftableRecipes = await EngineeringRecipe.where("difficultyColors.0")
       .lte(currentSkill)
       .where("difficultyColors.1")
@@ -223,8 +222,11 @@ app.get("/calculate-optimal-path", async (req, res) => {
       inventory.get(craftedItem) + quantityCreated || 1
     );
 
+    //cheapestRecipe is the mongoose model
+
     // Record cheapest recipe
-    recipePath.push(cheapestRecipe.itemName); // Can include other information as an array of arrays
+    recipePath.push(cheapestRecipe); // Can include other information as an array of arrays
+
     // Researching sorting by 2 fields to clean up the path ([skill level, recipenamestring])
     // Maybe just sort by orange skill - will naturally prioritize correctly?
 
@@ -237,7 +239,7 @@ app.get("/calculate-optimal-path", async (req, res) => {
     // prefer recipes that require engineering
     currentSkill += 1;
   }
-  console.log(recipePath);
+  console.log(recipePath[0]);
   let storedPath = JSON.stringify(recipePath);
 
   res.send("Optimal path calculated");
@@ -256,7 +258,7 @@ app.get("/calculate-optimal-path", async (req, res) => {
 });
 
 app.get("/fetch-optimal-path", (req, res) => {
-  res.status(200).json(optimalPathData); // need to learn more about this
+  res.status(200).json(optimalPathData);
 });
 
 app.get("/upload-engineering-recipes", (req, res) => {

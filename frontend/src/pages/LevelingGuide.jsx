@@ -1,7 +1,7 @@
 import OptimalPathTable from "../components/OptimalPathTable";
 import { useLocation } from "react-router-dom";
 
-const DisplayOptimalPath = () => {
+const LevelingGuide = () => {
   const location = useLocation();
   const data = location.state;
   return (
@@ -11,9 +11,10 @@ const DisplayOptimalPath = () => {
       <p name="server">{data.server}</p>
       <p name="faction">{data.faction}</p>
       <p>***************</p>
+      {/* pass profession/server/faction props to optimalpathtable */}
       <OptimalPathTable></OptimalPathTable>
     </div>
   );
 };
 
-export default DisplayOptimalPath;
+export default LevelingGuide;

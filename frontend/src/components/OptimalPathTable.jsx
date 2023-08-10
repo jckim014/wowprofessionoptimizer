@@ -8,8 +8,8 @@ const OptimalPathTable = () => {
   useEffect(() => {
     const fetchOptimalPath = async () => {
       const response = await fetch("http://localhost:3000/fetch-optimal-path");
-      console.log(response);
       const json = await response.json();
+      console.log(json[0]);
 
       if (response.ok) {
         setOptimalPath(json);
@@ -30,8 +30,9 @@ const OptimalPathTable = () => {
           </thead>
           <tbody>
             {optimalPath &&
-              optimalPath.map((recipeName, index) => (
-                <Recipe key={index} recipeName={recipeName} />
+              optimalPath.map((recipe, index) => (
+                <Recipe key={index} recipe={recipe} />
+                // add more info than just the recipe name (from the backend to use here)
               ))}
           </tbody>
         </table>

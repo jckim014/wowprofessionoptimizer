@@ -1,7 +1,8 @@
-const Recipe = ({ recipeName }) => {
+const Recipe = ({ recipe }) => {
   return (
-    <tr className="recipeName">
-      <td>{recipeName}</td>
+    <tr className="recipe">
+      <td>{recipe.itemName}</td>
+      <td>{recipe.craftedItemID}</td>
     </tr>
   );
 };
