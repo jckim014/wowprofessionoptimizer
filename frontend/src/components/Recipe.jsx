@@ -20,6 +20,7 @@ const Recipe = ({ recipe }) => {
   // Eventually add gold/silver/copper coin icons - maybe this can be a local img resource
   return (
     <tr className="recipe">
+      <td>Available at: {recipe.difficultyColors[0]}</td>
       <td>{recipe.itemName}</td>
       <td>{recipe.craftedItemID}</td>
       <td>

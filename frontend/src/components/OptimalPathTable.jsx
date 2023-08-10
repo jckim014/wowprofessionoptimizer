@@ -4,6 +4,11 @@ import Recipe from "./Recipe";
 
 const OptimalPathTable = () => {
   const [optimalPath, setOptimalPath] = useState(null);
+  const [totalCost, setTotalCost] = useState(0);
+
+  // const cost = optimalPath.reduce(function (acc, obj) {
+  //   return acc + obj.craftingCost;
+  // }, 0);
 
   useEffect(() => {
     const fetchOptimalPath = async () => {
@@ -18,6 +23,7 @@ const OptimalPathTable = () => {
 
     fetchOptimalPath();
   }, []);
+
   return (
     <div className="OptimalPathTable">
       <h2>Optimal Path</h2>
@@ -29,10 +35,12 @@ const OptimalPathTable = () => {
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <td>Total cost is {totalCost}</td>
+            </tr>
             {optimalPath &&
               optimalPath.map((recipe, index) => (
                 <Recipe key={index} recipe={recipe} />
-                // add more info than just the recipe name (from the backend to use here)
               ))}
           </tbody>
         </table>

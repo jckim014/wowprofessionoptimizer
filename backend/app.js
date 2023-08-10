@@ -222,24 +222,18 @@ app.get("/calculate-optimal-path", async (req, res) => {
       inventory.get(craftedItem) + quantityCreated || 1
     );
 
-    //cheapestRecipe is the mongoose model
-
     // Record cheapest recipe
     recipePath.push(cheapestRecipe); // Can include other information as an array of arrays
-
-    // Researching sorting by 2 fields to clean up the path ([skill level, recipenamestring])
-    // Maybe just sort by orange skill - will naturally prioritize correctly?
-
-    // Level break points
-    // Metadata for each item - itemID + metadata map
-
-    // render page that shows an optimal path 0-450
-    // sections - list of items
-
-    // prefer recipes that require engineering
     currentSkill += 1;
   }
   console.log(recipePath[0]);
+
+  // Sort recipes
+  recipePath.sort((a, b) => {
+    // Somewhat janky but I believe reagents always yellow out before crafted components
+    //    - may have to manually double check
+    return a.difficultyColors[1] - b.difficultyColors[1];
+  });
   let storedPath = JSON.stringify(recipePath);
 
   res.send("Optimal path calculated");
@@ -256,6 +250,29 @@ app.get("/calculate-optimal-path", async (req, res) => {
     }
   );
 });
+
+// app.get("/sort", (req, res) => {
+//   const test = optimalPathData;
+//   // Sort recipes
+//   test.sort((a, b) => {
+//     return a.difficultyColors[1] - b.difficultyColors[1];
+//   });
+
+//   let storedPath = JSON.stringify(test);
+//   fs.writeFile(
+//     `./optimal_path/optimal_path.json`,
+//     storedPath,
+//     "utf8",
+//     function (err) {
+//       if (err) {
+//         console.log("Error while writing JSON object to file");
+//         return console.log(err);
+//       }
+//       console.log("JSON file saved to optimal_path.json");
+//     }
+//   );
+//   res.send("Sorted");
+// });
 
 app.get("/fetch-optimal-path", (req, res) => {
   res.status(200).json(optimalPathData);
@@ -293,9 +310,6 @@ app.get("/upload-engineering-recipes", (req, res) => {
 // Testing database retrieval
 app.get("/retrieve-recipes", async (req, res) => {
   let test = await EngineeringRecipe.find().lean();
-  // .then((result) => {
-  //   return result;
-  // });
   console.log(test.length);
   res.send(test);
 });
