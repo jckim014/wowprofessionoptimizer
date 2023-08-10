@@ -9,11 +9,11 @@ const Recipe = ({ recipe }) => {
   let copper = 0;
 
   // Calculate gold
-  gold = Math.floor(unconvertedCost / 100);
-  let remainder = unconvertedCost % 100;
+  gold = Math.floor(unconvertedCost / 10000);
+  let remainder = unconvertedCost % 10000;
   // Calculate silver
-  silver = remainder;
-  remainder = Math.floor(remainder / 100);
+  silver = Math.floor(remainder / 100);
+  remainder = remainder % 100;
   // Calculate copper
   copper = remainder;
 
@@ -27,7 +27,9 @@ const Recipe = ({ recipe }) => {
         <img src={`${recipe.icon}`}></img>
       </td>
       <td>
-        This item costs {gold} gold, {silver} silver, and {copper} copper.
+        Total: {unconvertedCost} This item costs {gold} gold, {silver} silver,
+        and {copper} copper.
+        {/* Possibly render these as components to display conditionally */}
       </td>
     </tr>
   );
