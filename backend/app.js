@@ -13,6 +13,7 @@ const recipesObject = require("./recipe_jsons/engineer.json");
 const iconsObject = require("./icons/icons.json");
 const ah_data = require("./ah_data/benediction-ally.json");
 const optimalPathData = require("./optimal_path/optimal_path.json");
+const groupedPathData = require("./optimal_path/grouped_path.json");
 
 // Express app
 const app = express();
@@ -67,9 +68,11 @@ app.get("/fetch-realm-data", async (req, res) => {
 });
 
 // Extremely basic for now - assumes buying all reagents and ignores unbuyable
-// Need to expand on this
-// Add logic for BOP items, vendor items, etc - will tie in with source I think (as an arg)
 function priceLookup(reagentID, ah_data) {
+  // Check if item is craftable (possibly recursive, 1 layer for now)
+  //--- if item is craftable, priceLookup on each reagent? add up all the costs
+
+  // Check the cost on the auction house
   for (let i = 0; i < ah_data.length; i++) {
     if (ah_data[i].itemId == reagentID) {
       let price = ah_data[i].marketValue;
@@ -77,6 +80,8 @@ function priceLookup(reagentID, ah_data) {
     }
     // Maybe error handling would be good here?
   }
+
+  // Compare crafted vs bought and return (price + method)
   return 999999999; // Hack to ignore unavailable items such as Bind on Pickup crafted reagents
 }
 
@@ -251,31 +256,52 @@ app.get("/calculate-optimal-path", async (req, res) => {
   );
 });
 
-// app.get("/sort", (req, res) => {
-//   const test = optimalPathData;
-//   // Sort recipes
-//   test.sort((a, b) => {
-//     return a.difficultyColors[1] - b.difficultyColors[1];
-//   });
+// Temporary
+app.get("/group-like-items", (req, res) => {
+  const ungroupedItems = optimalPathData;
+  const groupedItems = [];
 
-//   let storedPath = JSON.stringify(test);
-//   fs.writeFile(
-//     `./optimal_path/optimal_path.json`,
-//     storedPath,
-//     "utf8",
-//     function (err) {
-//       if (err) {
-//         console.log("Error while writing JSON object to file");
-//         return console.log(err);
-//       }
-//       console.log("JSON file saved to optimal_path.json");
-//     }
-//   );
-//   res.send("Sorted");
-// });
+  let duplicateCount = 1;
+  let currentItem = ungroupedItems[0].craftedItemID;
+
+  for (i = 1; i < ungroupedItems.length; i++) {
+    // Count identical items
+    if (ungroupedItems[i].craftedItemID == currentItem) {
+      duplicateCount += 1;
+      if (i == ungroupedItems.length - 1) {
+        // Add the quantity as a property
+        ungroupedItems[i - 1].quantityToCraft = duplicateCount;
+        groupedItems.push(ungroupedItems[i - 1]);
+      }
+    }
+    // Push item and quantity to craft *** will probably have to edit later for uncertainty
+    else {
+      ungroupedItems[i - 1].quantityToCraft = duplicateCount;
+      groupedItems.push(ungroupedItems[i - 1]);
+      duplicateCount = 1;
+      currentItem = ungroupedItems[i].craftedItemID;
+    }
+  }
+
+  let storedPath = JSON.stringify(groupedItems);
+
+  fs.writeFile(
+    `./optimal_path/grouped_path.json`,
+    storedPath,
+    "utf8",
+    function (err) {
+      if (err) {
+        console.log("Error while writing JSON object to file");
+        return console.log(err);
+      }
+      console.log("JSON file saved to optimal_path.json");
+    }
+  );
+  res.send("Identical items grouped");
+});
 
 app.get("/fetch-optimal-path", (req, res) => {
-  res.status(200).json(optimalPathData);
+  res.status(200).json(groupedPathData);
 });
 
 app.get("/upload-engineering-recipes", (req, res) => {

@@ -19,6 +19,10 @@ const Recipe = ({ recipe }) => {
 
   // Eventually add gold/silver/copper coin icons - maybe this can be a local img resource
   return (
+    // <div>
+
+    // </div>
+
     <tr className="recipe">
       <td>Available at: {recipe.difficultyColors[0]}</td>
       <td>{recipe.itemName}</td>
@@ -27,8 +31,7 @@ const Recipe = ({ recipe }) => {
         <img src={`${recipe.icon}`}></img>
       </td>
       <td>
-        Total: {unconvertedCost} This item costs {gold} gold, {silver} silver,
-        and {copper} copper.
+        This item costs {gold} gold, {silver} silver, and {copper} copper.
         {/* Possibly render these as components to display conditionally */}
       </td>
     </tr>
