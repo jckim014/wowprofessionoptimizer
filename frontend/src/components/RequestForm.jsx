@@ -5,9 +5,15 @@ const RequestForm = () => {
   const [profession, setProfession] = useState("Engineering");
   const [server, setServer] = useState("Benediction");
   const [faction, setFaction] = useState("Alliance");
+  const [startingLevel, setStartingLevel] = useState(1);
 
   const navigate = useNavigate();
-  const data = { profession: profession, server: server, faction: faction };
+  const data = {
+    profession: profession,
+    server: server,
+    faction: faction,
+    startingLevel: startingLevel,
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -37,6 +43,17 @@ const RequestForm = () => {
         <option value="Tailoring">Tailoring</option>
         <option value="Alchemy">Alchemy</option>
       </select>
+
+      <label>Starting Skill Level</label>
+      <input
+        type="number"
+        name="startingLevel"
+        id="startingLevel"
+        onChange={(e) => setStartingLevel(e.target.value)}
+        defaultValue={startingLevel}
+        min="1"
+        max="449"
+      ></input>
 
       {/* figure out a way to populate dozens of servers */}
       {/* https://bobbyhadz.com/blog/react-warning-use-the-defaultvalue-or-value-props-on-select */}
