@@ -1,12 +1,32 @@
 import { useEffect, useState } from "react";
 // Components
-import Recipe from "./Recipe";
+import OptimalPathRow from "./OptimalPathRow";
 
 const OptimalPathTable = (startingLevel) => {
   const [optimalPath, setOptimalPath] = useState(null);
   const [skillRanges, setSkillRanges] = useState(null);
+  const [totalCost, setTotalCost] = useState(0);
 
-  console.log(skillRanges);
+  // Reusing this function from recipe - clean it up later?
+  function convertPrice(total) {
+    let gold = 0;
+    let silver = 0;
+    let copper = 0;
+
+    // Calculate gold
+    gold = Math.floor(total / 10000);
+    let remainder = total % 10000;
+    // Calculate silver
+    silver = Math.floor(remainder / 100);
+    remainder = remainder % 100;
+    // Calculate copper
+    copper = remainder;
+
+    return { gold: gold, silver: silver, copper: copper };
+  }
+
+  const readableCost = convertPrice(totalCost);
+
   useEffect(() => {
     const fetchOptimalPath = async () => {
       // *** Make this a request with a variable starting level
@@ -29,6 +49,13 @@ const OptimalPathTable = (startingLevel) => {
         start = end;
       }
       setSkillRanges(tempArray);
+
+      // Calculate total cost
+      let currentCost = 0;
+      for (let i = 0; i < json.length; i++) {
+        currentCost += json[i].craftingCost;
+      }
+      setTotalCost(currentCost);
     };
 
     fetchOptimalPath();
@@ -46,11 +73,15 @@ const OptimalPathTable = (startingLevel) => {
           </thead>
           <tbody>
             <tr>
-              <td>Total cost is $$$</td>
+              <td>
+                Total cost: {readableCost.gold.toLocaleString("en-us")} gold,{" "}
+                {readableCost.silver.toLocaleString("en-us")} silver, and{" "}
+                {readableCost.copper.toLocaleString("en-us")} copper.
+              </td>
             </tr>
             {optimalPath &&
               optimalPath.map((recipe, index) => (
-                <Recipe
+                <OptimalPathRow
                   key={index}
                   recipe={recipe}
                   skillRange={skillRanges[index]}

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const RequestForm = () => {
-  const [profession, setProfession] = useState("Engineering");
+  const [profession, setProfession] = useState("engineering");
   const [server, setServer] = useState("Benediction");
   const [faction, setFaction] = useState("Alliance");
   const [startingLevel, setStartingLevel] = useState(1);
@@ -17,12 +17,12 @@ const RequestForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    navigate("/optimal-path", {
+    navigate(`/${profession}`, {
       state: data,
     });
   };
   return (
-    <form className="requestOptimalPath" onSubmit={handleSubmit}>
+    <form className="requestOptimalPath container" onSubmit={handleSubmit}>
       <h3>Calculate the cheapest way to level a profession!</h3>
       {/* add something for secondary professions later */}
 
@@ -33,15 +33,15 @@ const RequestForm = () => {
         onChange={(e) => setProfession(e.target.value)}
         defaultValue={profession}
       >
-        <option value="Alchemy">Alchemy</option>
-        <option value="Blacksmithing">Blacksmithing</option>
-        <option value="Enchanting">Enchanting</option>
-        <option value="Engineering">Engineering</option>
-        <option value="Inscription">Inscription</option>
-        <option value="Jewelcrafting">Jewelcrafting</option>
-        <option value="Leatherworking">Leatherworking</option>
-        <option value="Tailoring">Tailoring</option>
-        <option value="Alchemy">Alchemy</option>
+        <option value="alchemy">Alchemy</option>
+        <option value="blacksmithing">Blacksmithing</option>
+        <option value="enchanting">Enchanting</option>
+        <option value="engineering">Engineering</option>
+        <option value="inscription">Inscription</option>
+        <option value="jewelcrafting">Jewelcrafting</option>
+        <option value="leatherworking">Leatherworking</option>
+        <option value="tailoring">Tailoring</option>
+        <option value="alchemy">Alchemy</option>
       </select>
 
       <label>Starting Skill Level</label>

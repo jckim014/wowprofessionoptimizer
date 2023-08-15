@@ -1,22 +1,20 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import "./App.css";
-
 // Pages and components
-import OptimalPath from "./pages/OptimalPath";
+import Engineering from "./pages/Engineering";
 import Home from "./pages/Home";
-import Nav from "./components/Nav";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (
     <>
       <div className="App">
         <BrowserRouter>
-          <Nav />
-          <div className="pages">
+          <Navbar />
+          <div className="pages margin-top">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/optimal-path" element={<OptimalPath />} />
+              <Route path="/engineering" element={<Engineering />} />
             </Routes>
           </div>
         </BrowserRouter>

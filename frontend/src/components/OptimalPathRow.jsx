@@ -1,4 +1,4 @@
-const Recipe = ({ recipe, skillRange }) => {
+const OptimalPathRow = ({ recipe, skillRange }) => {
   const start = skillRange[0];
   const end = skillRange[1];
   const quantity = end - start;
@@ -34,20 +34,22 @@ const Recipe = ({ recipe, skillRange }) => {
         <img src={`${recipe.icon}`}></img>
       </td>
       <td>{recipe.itemName}</td>
-      <td>{recipe.craftedItemID}</td>
+      {/* <td>{recipe.craftedItemID}</td> */}
       <td>
         Craft {quantity} of this item from {start} to {end}.
       </td>
       {/* <td>Available at: {recipe.difficultyColors[0]}</td> */}
 
       <td>
-        Individual cost: {individualCost.gold} gold, {individualCost.silver}{" "}
-        silver, and {individualCost.copper} copper.
+        Individual cost: {individualCost.gold.toLocaleString("en-us")} gold,{" "}
+        {individualCost.silver.toLocaleString("en-us")} silver, and{" "}
+        {individualCost.copper.toLocaleString("en-us")} copper.
         {/* Possibly render these as components to display conditionally */}
       </td>
       <td>
-        Total cost: {totalCost.gold} gold, {totalCost.silver} silver, and{" "}
-        {totalCost.copper} copper.
+        Total cost: {totalCost.gold.toLocaleString("en-us")} gold,{" "}
+        {totalCost.silver.toLocaleString("en-us")} silver, and{" "}
+        {totalCost.copper.toLocaleString("en-us")} copper.
       </td>
     </tr>
   );
@@ -65,4 +67,4 @@ const Recipe = ({ recipe, skillRange }) => {
 //   </div>
 // </div>
 
-export default Recipe;
+export default OptimalPathRow;

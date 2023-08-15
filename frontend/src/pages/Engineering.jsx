@@ -1,7 +1,8 @@
 import { useLocation } from "react-router-dom";
 import OptimalPathTable from "../components/OptimalPathTable";
 
-const LevelingGuide = () => {
+// This page only works on redirect from request form - edit it a bit for extraneous information because its a engi specific page
+const Engineering = () => {
   const location = useLocation();
   const data = location.state;
 
@@ -18,4 +19,4 @@ const LevelingGuide = () => {
   );
 };
 
-export default LevelingGuide;
+export default Engineering;

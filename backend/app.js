@@ -283,6 +283,19 @@ app.get("/group-like-items", (req, res) => {
     }
   }
 
+  // build reagent list
+  //  -lookup in the recipe list, if exists, ignore, else [fetch from nexushub (20 per 5 seconds)] and add to reagent list
+  //  - have the itemID, need the name and icon
+
+  // for each item - look up the reagents and replace in the array with reagent object (mongoose find?)
+  // Go through the entire recipe list 1 time, iterate through
+
+  // Just permanently update this in the model? will have a function to set this either separately or during upload recipes
+  // "reagentList": [
+  //   [{object}, 2],
+  //   [{object}, 1]
+  // ],
+
   let storedPath = JSON.stringify(groupedItems);
 
   fs.writeFile(
@@ -297,7 +310,7 @@ app.get("/group-like-items", (req, res) => {
       console.log("JSON file saved to optimal_path.json");
     }
   );
-  res.send("Identical items grouped");
+  res.send("Identical items grouped and reagents updated");
 });
 
 app.get("/fetch-optimal-path", (req, res) => {
