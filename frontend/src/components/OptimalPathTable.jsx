@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import useConvert from "../customhooks/useConvert";
 // Components
 import OptimalPathRow from "./OptimalPathRow";
 
@@ -7,25 +8,7 @@ const OptimalPathTable = (startingLevel) => {
   const [skillRanges, setSkillRanges] = useState(null);
   const [totalCost, setTotalCost] = useState(0);
 
-  // Reusing this function from recipe - clean it up later?
-  function convertPrice(total) {
-    let gold = 0;
-    let silver = 0;
-    let copper = 0;
-
-    // Calculate gold
-    gold = Math.floor(total / 10000);
-    let remainder = total % 10000;
-    // Calculate silver
-    silver = Math.floor(remainder / 100);
-    remainder = remainder % 100;
-    // Calculate copper
-    copper = remainder;
-
-    return { gold: gold, silver: silver, copper: copper };
-  }
-
-  const readableCost = convertPrice(totalCost);
+  const readableCost = useConvert(totalCost);
 
   useEffect(() => {
     const fetchOptimalPath = async () => {
