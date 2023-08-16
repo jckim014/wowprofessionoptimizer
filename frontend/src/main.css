@@ -13,13 +13,40 @@
 }
 
 .margin-top {
-  margin-top: 4rem;
+  margin-top: 5rem;
+}
+
+.bg-darkest {
+  background-color: rgba(28, 30, 37);
+}
+
+.bg-light-gray {
+  background-color: rgba(44, 45, 51);
+}
+
+.bg-medium-gray {
+  background-color: rgba(35, 37, 43);
+}
+
+.border-color {
+  border-color: rgba(49, 50, 57);
 }
 
 body,
 html {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
     sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+.text-currency-gold {
+  color: rgba(255, 215, 0);
+}
+.text-currency-silver {
+  color: rgba(189, 189, 189);
+}
+
+.text-currency-copper {
+  color: rgb(127, 60, 28);
 }
 
 /* .navbar {

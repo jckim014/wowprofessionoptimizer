@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react";
 import useConvert from "../customhooks/useConvert";
 // Components
+import ShoppingList from "./ShoppingList";
 import OptimalPathRow from "./OptimalPathRow";
 
-const OptimalPathTable = (startingLevel) => {
+const OptimalPathContent = (startingLevel) => {
   const [optimalPath, setOptimalPath] = useState(null);
   const [skillRanges, setSkillRanges] = useState(null);
   const [totalCost, setTotalCost] = useState(0);
-
-  const readableCost = useConvert(totalCost);
 
   useEffect(() => {
     const fetchOptimalPath = async () => {
@@ -43,24 +42,23 @@ const OptimalPathTable = (startingLevel) => {
 
     fetchOptimalPath();
   }, []);
-  //console.log(currentLevel);
+
   return (
-    <div className="OptimalPathTable">
-      <h2>Optimal Path</h2>
-      <div>
-        <table>
-          <thead>
-            <tr>
-              <th>List of Recipes</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                Total cost: {readableCost.gold.toLocaleString("en-us")} gold,{" "}
-                {readableCost.silver.toLocaleString("en-us")} silver, and{" "}
-                {readableCost.copper.toLocaleString("en-us")} copper.
-              </td>
+    <div className="content-container flex flex-col">
+      <div className="self-center flex flex-col w-3/5 bg-light-gray border border-separate border-color rounded-lg">
+        {/* can do border-gray-700 */}
+        <h2 className="self-center text-lg font-bold">Shopping List</h2>
+        <ShoppingList totalCost={totalCost}></ShoppingList>
+      </div>
+      <div className="optimal-path-container flex flex-col self-center mt-20 w-3/5 bg-darkest">
+        <table className="justify-around border border-separate border-color rounded-lg bg-light-gray">
+          <tbody className="">
+            <tr className="grid grid-cols-5 font-bold pt-2 px-2">
+              <td>Skill Level</td>
+              <td>Item</td>
+              <td className="flex justify-center">Quantity</td>
+              <td>Required Materials</td>
+              <td>Learned From:</td>
             </tr>
             {optimalPath &&
               optimalPath.map((recipe, index) => (
@@ -77,4 +75,4 @@ const OptimalPathTable = (startingLevel) => {
   );
 };
 
-export default OptimalPathTable;
+export default OptimalPathContent;

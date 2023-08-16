@@ -15,6 +15,7 @@ const engineeringRecipeSchema = new Schema(
     craftingCost: Number, //[]
     quantityCreated: Number,
     icon: String,
+    link: String,
   },
   { timestamps: true } // not sure if this is helpful
 );

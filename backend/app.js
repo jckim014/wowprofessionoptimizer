@@ -318,35 +318,40 @@ app.get("/fetch-optimal-path", (req, res) => {
 });
 
 app.get("/upload-engineering-recipes", (req, res) => {
-  console.log(iconsObject[4357]);
   // Filter out uncraftable items
   const filteredRecipes = recipesObject.filter(
     (recipe) => recipe.hasOwnProperty("creates") // need to update this - personal enchantments don't create but can be used for skillups
   );
   // Convert all recipes into mongoose model format
-  const formattedRecipes = filteredRecipes.map(
-    (recipe) =>
-      new EngineeringRecipe({
-        itemName: recipe.name,
-        recipeID: recipe.id,
-        craftedItemID: recipe.creates[0],
-        reagentList: recipe.reagents,
-        learnedAt: recipe.learnedat,
-        difficultyColors: recipe.colors,
-        craftingCost: 0, // Need to run update-crafting-costs afterwards
-        quantityCreated: recipe.creates[1], // Part of the creates property, TODO: update for variable quantity
-        icon: `https://wow.zamimg.com/images/wow/icons/large/${
-          iconsObject[recipe.creates[0]].icon
-        }.jpg`,
-      })
-  );
+  const formattedRecipes = filteredRecipes.map((recipe) => {
+    let convertedString = recipe.name.replace(/\s/g, "-");
+
+    if (recipe.id == 3918) {
+      console.log(convertedString);
+    }
+
+    return new EngineeringRecipe({
+      itemName: recipe.name,
+      recipeID: recipe.id,
+      craftedItemID: recipe.creates[0],
+      reagentList: recipe.reagents,
+      learnedAt: recipe.learnedat,
+      difficultyColors: recipe.colors,
+      craftingCost: 0, // Need to run update-crafting-costs afterwards
+      quantityCreated: recipe.creates[1], // Part of the creates property, TODO: update for variable quantity
+      icon: `https://wow.zamimg.com/images/wow/icons/large/${
+        iconsObject[recipe.creates[0]].icon
+      }.jpg`,
+      link: `https://wowhead.com/wotlk/spell=${recipe.id}/${convertedString}`,
+    });
+  });
   // Save recipes to mongoDB atlas
   formattedRecipes.forEach((recipe) => recipe.save());
 
   res.send("Recipes uploaded");
 });
 
-// Testing database retrieval
+// Testing database retrieval, should log 275
 app.get("/retrieve-recipes", async (req, res) => {
   let test = await EngineeringRecipe.find().lean();
   console.log(test.length);
