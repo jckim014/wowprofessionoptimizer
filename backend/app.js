@@ -10,10 +10,12 @@ const mongoose = require("mongoose");
 const EngineeringRecipe = require("./models/engineering.js");
 
 const recipesObject = require("./recipe_jsons/engineer.json");
+const processedRecipes = require("./recipe_storage/stored_recipes.json");
 const iconsObject = require("./icons/icons.json");
 const ah_data = require("./ah_data/benediction-ally.json");
 const optimalPathData = require("./optimal_path/optimal_path.json");
 const groupedPathData = require("./optimal_path/grouped_path.json");
+const { group } = require("console");
 
 // Express app
 const app = express();
@@ -112,7 +114,6 @@ app.get("/update-crafting-costs", async (req, res) => {
   const allRecipes = await EngineeringRecipe.find().lean();
 
   // Calculate the total cost and whether to craft or buy each reagent: return an object/array with this info
-  // Attempting functional programming, need feedback
   const updatedRecipes = allRecipes.map((recipe) => {
     const currentReagents = recipe.reagentList;
 
@@ -198,10 +199,16 @@ app.get("/calculate-optimal-path", async (req, res) => {
   let inventory = new Map();
 
   while (currentSkill < MAX_SKILL_LEVEL) {
-    const craftableRecipes = await EngineeringRecipe.where("difficultyColors.0")
-      .lte(currentSkill)
-      .where("difficultyColors.1")
-      .gt(currentSkill);
+    // const craftableRecipes = await EngineeringRecipe.where("difficultyColors.0")
+    //   .lte(currentSkill)
+    //   .where("difficultyColors.1")
+    //   .gt(currentSkill);
+    const craftableRecipes = processedRecipes.filter((recipe) => {
+      return (
+        recipe.difficultyColors[0] <= currentSkill &&
+        recipe.difficultyColors[1] > currentSkill
+      );
+    });
 
     // Filter false positives (recipes without orange skill)
     const filteredRecipes = craftableRecipes.filter((recipe) => {
@@ -231,15 +238,34 @@ app.get("/calculate-optimal-path", async (req, res) => {
     recipePath.push(cheapestRecipe); // Can include other information as an array of arrays
     currentSkill += 1;
   }
-  console.log(recipePath[0]);
 
   // Sort recipes
-  recipePath.sort((a, b) => {
-    // Somewhat janky but I believe reagents always yellow out before crafted components
-    //    - may have to manually double check
-    return a.difficultyColors[1] - b.difficultyColors[1];
-  });
-  let storedPath = JSON.stringify(recipePath);
+  // recipePath.sort((a, b) => {
+  //   // Doesn't always work
+  //   return a.difficultyColors[1] - b.difficultyColors[1];
+  // });
+
+  // Group identical items
+  const groupedPath = [];
+  const seen = new Set();
+
+  for (let i = 0; i < recipePath.length; i++) {
+    let currentID = recipePath[i].craftedItemID;
+    let count = 0;
+    if (seen.has(currentID)) {
+      continue;
+    }
+    for (let j = i; j < recipePath.length; j++) {
+      if (currentID == recipePath[j].craftedItemID) {
+        count += 1;
+      }
+    }
+    recipePath[i].quantityToCraft = count;
+    groupedPath.push(recipePath[i]);
+    seen.add(currentID);
+  }
+
+  const storedPath = JSON.stringify(groupedPath);
 
   res.send("Optimal path calculated");
   fs.writeFile(
@@ -296,7 +322,7 @@ app.get("/group-like-items", (req, res) => {
   //   [{object}, 1]
   // ],
 
-  let storedPath = JSON.stringify(groupedItems);
+  const storedPath = JSON.stringify(groupedItems);
 
   fs.writeFile(
     `./optimal_path/grouped_path.json`,
@@ -307,14 +333,14 @@ app.get("/group-like-items", (req, res) => {
         console.log("Error while writing JSON object to file");
         return console.log(err);
       }
-      console.log("JSON file saved to optimal_path.json");
+      console.log("JSON file saved to grouped_path.json");
     }
   );
   res.send("Identical items grouped and reagents updated");
 });
 
 app.get("/fetch-optimal-path", (req, res) => {
-  res.status(200).json(groupedPathData);
+  res.status(200).json(optimalPathData);
 });
 
 app.get("/upload-engineering-recipes", (req, res) => {
@@ -353,7 +379,22 @@ app.get("/upload-engineering-recipes", (req, res) => {
 
 // Testing database retrieval, should log 275
 app.get("/retrieve-recipes", async (req, res) => {
-  let test = await EngineeringRecipe.find().lean();
-  console.log(test.length);
-  res.send(test);
+  let allRecipes = await EngineeringRecipe.find().lean();
+  console.log(allRecipes.length);
+
+  const storedRecipes = JSON.stringify(allRecipes);
+
+  fs.writeFile(
+    `./recipe_storage/stored_recipes.json`,
+    storedRecipes,
+    "utf8",
+    function (err) {
+      if (err) {
+        console.log("Error while writing JSON object to file");
+        return console.log(err);
+      }
+      console.log("JSON file saved to stored_recipes.json");
+    }
+  );
+  res.send(allRecipes);
 });

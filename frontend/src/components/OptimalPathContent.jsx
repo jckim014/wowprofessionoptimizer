@@ -51,6 +51,7 @@ const OptimalPathContent = (startingLevel) => {
         <ShoppingList totalCost={totalCost}></ShoppingList>
       </div>
       <div className="optimal-path-container flex flex-col self-center mt-20 w-3/5 bg-darkest">
+        {/* add in "header" divs and break path into multiple tables */}
         <table className="justify-around border border-separate border-color rounded-lg bg-light-gray">
           <tbody className="">
             <tr className="grid grid-cols-5 font-bold pt-2 px-2">

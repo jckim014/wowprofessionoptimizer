@@ -21,7 +21,7 @@ const OptimalPathRow = ({ recipe, skillRange }) => {
 
   // Eventually add gold/silver/copper coin icons - maybe this can be a local img resource
   return (
-    <tr className="grid grid-cols-5 py-6 px-2">
+    <tr className="grid grid-cols-5 py-6 px-2 hover:bg-gray-700">
       <td className="flex items-center font-bold">
         <p>
           {start} to {end}
@@ -29,7 +29,9 @@ const OptimalPathRow = ({ recipe, skillRange }) => {
       </td>
       <td className="flex items-center justify-start">
         <img className="m-0" src={`${icon}`}></img>
-        <p className="pl-2">{recipe.itemName}</p>
+        <a className="pl-2 wowhead-link" href={recipe.link}>
+          {recipe.itemName}
+        </a>
       </td>
       <td className="flex items-center justify-center">x{end - start}</td>
       <td className="flex items-center">Placeholder</td>

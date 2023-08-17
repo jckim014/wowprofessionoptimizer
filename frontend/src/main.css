@@ -32,6 +32,14 @@
   border-color: rgba(49, 50, 57);
 }
 
+.wowhead-link {
+  color: #ffd100;
+}
+
+.wowhead-link:hover {
+  color: white;
+}
+
 body,
 html {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
