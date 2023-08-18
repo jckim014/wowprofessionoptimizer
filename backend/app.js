@@ -265,7 +265,7 @@ app.get("/calculate-optimal-path", async (req, res) => {
       }
     }
 
-    // Subtract finished product from required reagent list
+    // Subtract finished product from required reagent list, ignore items that aren't on the list
     let craftedItemID = currentRecipe.craftedItemID;
     let craftedQuantity = currentRecipe.quantityCreated;
 
@@ -275,24 +275,26 @@ app.get("/calculate-optimal-path", async (req, res) => {
       tempQuantity -= craftedQuantity;
       tempObject.requiredAmount = tempQuantity;
       shoppingList.set(craftedItemID, tempObject);
-    } else {
-      let tempObject = {};
-      tempObject.id = craftedItemID;
-      tempObject.name = iconsObject[craftedItemID].name_enus;
-      tempObject.icon = iconsObject[craftedItemID].icon;
-      tempObject.requiredAmount = 0 - craftedQuantity;
-      shoppingList.set(craftedItemID, tempObject);
     }
+    //else {
+    //   let tempObject = {};
+    //   tempObject.id = craftedItemID;
+    //   tempObject.name = iconsObject[craftedItemID].name_enus;
+    //   tempObject.icon = iconsObject[craftedItemID].icon;
+    //   tempObject.requiredAmount = 0 - craftedQuantity;
+    //   shoppingList.set(craftedItemID, tempObject);
+    // }
   }
 
   const shoppingArray = [];
 
   shoppingList.forEach((value, key, map) => {
-    // let arrayObject = { key: value };
     shoppingArray.push(value);
   });
 
-  console.log(shoppingArray);
+  const orderedShoppingList = shoppingArray.reverse();
+
+  storeLocal(orderedShoppingList, "optimal_path", "shopping_list");
 
   // Group identical items
   const groupedPath = [];
@@ -313,8 +315,8 @@ app.get("/calculate-optimal-path", async (req, res) => {
     groupedPath.push(recipePath[i]);
     seenItems.add(currentID);
   }
-  const storedPath = JSON.stringify(groupedPath);
-  storeLocal(storedPath, "optimal_path", "optimal_path");
+
+  storeLocal(groupedPath, "optimal_path", "optimal_path");
 
   res.send("Optimal path calculated");
 });
@@ -396,7 +398,7 @@ app.get("/group-like-items", (req, res) => {
     }
   }
 
-  const storedPath = JSON.stringify(groupedItems);
+  // const storedPath = JSON.stringify(groupedItems);
 
   fs.writeFile(
     `./optimal_path/grouped_path.json`,
@@ -414,9 +416,10 @@ app.get("/group-like-items", (req, res) => {
 });
 
 function storeLocal(storedItem, folder, filename) {
+  const convertedItem = JSON.stringify(storedItem);
   fs.writeFile(
     `./${folder}/${filename}.json`,
-    storedItem,
+    convertedItem,
     "utf8",
     function (err) {
       if (err) {

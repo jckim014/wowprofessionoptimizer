@@ -1,0 +1,554 @@
+[
+  {
+    "id": 2835,
+    "name": "Rough Stone",
+    "icon": "inv_stone_06",
+    "requiredAmount": 10
+  },
+  {
+    "id": 4357,
+    "name": "Rough Blasting Powder",
+    "icon": "inv_misc_dust_01",
+    "requiredAmount": 72
+  },
+  {
+    "id": 2880,
+    "name": "Weak Flux",
+    "icon": "inv_misc_ammo_gunpowder_02",
+    "requiredAmount": 10
+  },
+  {
+    "id": 4399,
+    "name": "Wooden Stock",
+    "icon": "inv_mace_11",
+    "requiredAmount": 10
+  },
+  {
+    "id": 4361,
+    "name": "Copper Tube",
+    "icon": "inv_gizmo_pipe_02",
+    "requiredAmount": 0
+  },
+  {
+    "id": 2589,
+    "name": "Linen Cloth",
+    "icon": "inv_fabric_linen_01",
+    "requiredAmount": 57
+  },
+  {
+    "id": 774,
+    "name": "Malachite",
+    "icon": "inv_misc_gem_emerald_03",
+    "requiredAmount": 34
+  },
+  {
+    "id": 2840,
+    "name": "Copper Bar",
+    "icon": "inv_ingot_02",
+    "requiredAmount": 75
+  },
+  {
+    "id": 2592,
+    "name": "Wool Cloth",
+    "icon": "inv_fabric_wool_01",
+    "requiredAmount": 10
+  },
+  {
+    "id": 2841,
+    "name": "Bronze Bar",
+    "icon": "inv_ingot_bronze",
+    "requiredAmount": 10
+  },
+  {
+    "id": 159,
+    "name": "Refreshing Spring Water",
+    "icon": "inv_drink_07",
+    "requiredAmount": 15
+  },
+  {
+    "id": 2318,
+    "name": "Light Leather",
+    "icon": "inv_misc_leatherscrap_03",
+    "requiredAmount": 15
+  },
+  {
+    "id": 4363,
+    "name": "Copper Modulator",
+    "icon": "inv_gizmo_03",
+    "requiredAmount": 34
+  },
+  {
+    "id": 4364,
+    "name": "Coarse Blasting Powder",
+    "icon": "inv_misc_dust_02",
+    "requiredAmount": 30
+  },
+  {
+    "id": 4359,
+    "name": "Handful of Copper Bolts",
+    "icon": "inv_misc_gear_06",
+    "requiredAmount": 97
+  },
+  {
+    "id": 2842,
+    "name": "Silver Bar",
+    "icon": "inv_ingot_01",
+    "requiredAmount": 30
+  },
+  {
+    "id": 1705,
+    "name": "Lesser Moonstone",
+    "icon": "inv_misc_gem_crystal_01",
+    "requiredAmount": 10
+  },
+  {
+    "id": 4368,
+    "name": "Flying Tiger Goggles",
+    "icon": "inv_helmet_47",
+    "requiredAmount": 5
+  },
+  {
+    "id": 1206,
+    "name": "Moss Agate",
+    "icon": "inv_misc_gem_emerald_02",
+    "requiredAmount": 55
+  },
+  {
+    "id": 4306,
+    "name": "Silk Cloth",
+    "icon": "inv_fabric_silk_01",
+    "requiredAmount": 10
+  },
+  {
+    "id": 4375,
+    "name": "Whirring Bronze Gizmo",
+    "icon": "inv_gizmo_02",
+    "requiredAmount": 70
+  },
+  {
+    "id": 2319,
+    "name": "Medium Leather",
+    "icon": "inv_misc_leatherscrap_05",
+    "requiredAmount": 60
+  },
+  {
+    "id": 4377,
+    "name": "Heavy Blasting Powder",
+    "icon": "classic_inv_misc_dust_06",
+    "requiredAmount": 20
+  },
+  {
+    "id": 4371,
+    "name": "Bronze Tube",
+    "icon": "inv_gizmo_pipe_01",
+    "requiredAmount": 110
+  },
+  {
+    "id": 4389,
+    "name": "Gyrochronatom",
+    "icon": "inv_misc_pocketwatch_02",
+    "requiredAmount": 10
+  },
+  {
+    "id": 4387,
+    "name": "Iron Strut",
+    "icon": "inv_spear_05",
+    "requiredAmount": 15
+  },
+  {
+    "id": 4382,
+    "name": "Bronze Framework",
+    "icon": "inv_gizmo_bronzeframework_01",
+    "requiredAmount": 5
+  },
+  {
+    "id": 7068,
+    "name": "Elemental Fire",
+    "icon": "spell_fire_fire",
+    "requiredAmount": 16
+  },
+  {
+    "id": 3864,
+    "name": "Citrine",
+    "icon": "inv_misc_gem_opal_02",
+    "requiredAmount": 46
+  },
+  {
+    "id": 4385,
+    "name": "Green Tinted Goggles",
+    "icon": "inv_helmet_47",
+    "requiredAmount": 3
+  },
+  {
+    "id": 8151,
+    "name": "Flask of Mojo",
+    "icon": "inv_potion_15",
+    "requiredAmount": 16
+  },
+  {
+    "id": 10500,
+    "name": "Fire Goggles",
+    "icon": "inv_helmet_47",
+    "requiredAmount": 0
+  },
+  {
+    "id": 10560,
+    "name": "Unstable Trigger",
+    "icon": "inv_battery_01",
+    "requiredAmount": 19
+  },
+  {
+    "id": 9061,
+    "name": "Goblin Rocket Fuel",
+    "icon": "inv_cask_02",
+    "requiredAmount": 38
+  },
+  {
+    "id": 4234,
+    "name": "Heavy Leather",
+    "icon": "inv_misc_leatherscrap_07",
+    "requiredAmount": 154
+  },
+  {
+    "id": 10026,
+    "name": "Black Mageweave Boots",
+    "icon": "inv_boots_05",
+    "requiredAmount": 19
+  },
+  {
+    "id": 10559,
+    "name": "Mithril Tube",
+    "icon": "inv_musket_01",
+    "requiredAmount": 56
+  },
+  {
+    "id": 8153,
+    "name": "Wildvine",
+    "icon": "inv_misc_herb_03",
+    "requiredAmount": 10
+  },
+  {
+    "id": 10286,
+    "name": "Heart of the Wild",
+    "icon": "inv_misc_herb_08",
+    "requiredAmount": 10
+  },
+  {
+    "id": 7909,
+    "name": "Aquamarine",
+    "icon": "inv_misc_gem_crystal_02",
+    "requiredAmount": 15
+  },
+  {
+    "id": 1529,
+    "name": "Jade",
+    "icon": "inv_misc_gem_stone_01",
+    "requiredAmount": 35
+  },
+  {
+    "id": 4304,
+    "name": "Thick Leather",
+    "icon": "inv_misc_leatherscrap_08",
+    "requiredAmount": 70
+  },
+  {
+    "id": 6037,
+    "name": "Truesilver Bar",
+    "icon": "inv_ingot_08",
+    "requiredAmount": 40
+  },
+  {
+    "id": 7077,
+    "name": "Heart of Fire",
+    "icon": "spell_fire_lavaspawn",
+    "requiredAmount": 10
+  },
+  {
+    "id": 3860,
+    "name": "Mithril Bar",
+    "icon": "inv_ingot_06",
+    "requiredAmount": 20
+  },
+  {
+    "id": 15992,
+    "name": "Dense Blasting Powder",
+    "icon": "inv_misc_ammo_gunpowder_01",
+    "requiredAmount": 30
+  },
+  {
+    "id": 12359,
+    "name": "Thorium Bar",
+    "icon": "inv_ingot_07",
+    "requiredAmount": 30
+  },
+  {
+    "id": 8170,
+    "name": "Rugged Leather",
+    "icon": "inv_misc_leatherscrap_02",
+    "requiredAmount": 5
+  },
+  {
+    "id": 12803,
+    "name": "Living Essence",
+    "icon": "spell_nature_abolishmagic",
+    "requiredAmount": 5
+  },
+  {
+    "id": 14047,
+    "name": "Runecloth",
+    "icon": "inv_fabric_purplefire_01",
+    "requiredAmount": 70
+  },
+  {
+    "id": 12810,
+    "name": "Enchanted Leather",
+    "icon": "inv_misc_rune_05",
+    "requiredAmount": 10
+  },
+  {
+    "id": 7910,
+    "name": "Star Ruby",
+    "icon": "inv_misc_gem_ruby_02",
+    "requiredAmount": 45
+  },
+  {
+    "id": 10502,
+    "name": "Spellpower Goggles Xtreme",
+    "icon": "inv_helmet_47",
+    "requiredAmount": 5
+  },
+  {
+    "id": 14227,
+    "name": "Ironweb Spider Silk",
+    "icon": "spell_nature_web",
+    "requiredAmount": 5
+  },
+  {
+    "id": 12360,
+    "name": "Arcanite Bar",
+    "icon": "inv_misc_stonetablet_05",
+    "requiredAmount": 5
+  },
+  {
+    "id": 12799,
+    "name": "Large Opal",
+    "icon": "inv_misc_gem_opal_01",
+    "requiredAmount": 10
+  },
+  {
+    "id": 15994,
+    "name": "Thorium Widget",
+    "icon": "inv_gizmo_04",
+    "requiredAmount": 40
+  },
+  {
+    "id": 16006,
+    "name": "Delicate Arcanite Converter",
+    "icon": "inv_gizmo_07",
+    "requiredAmount": 75
+  },
+  {
+    "id": 10576,
+    "name": "Mithril Mechanical Dragonling",
+    "icon": "inv_misc_head_dragon_blue",
+    "requiredAmount": 10
+  },
+  {
+    "id": 4400,
+    "name": "Heavy Stock",
+    "icon": "inv_mace_11",
+    "requiredAmount": 35
+  },
+  {
+    "id": 10558,
+    "name": "Gold Power Core",
+    "icon": "inv_battery_02",
+    "requiredAmount": 36
+  },
+  {
+    "id": 23112,
+    "name": "Golden Draenite",
+    "icon": "inv_misc_gem_goldendraenite_03",
+    "requiredAmount": 10
+  },
+  {
+    "id": 23446,
+    "name": "Adamantite Bar",
+    "icon": "inv_ingot_10",
+    "requiredAmount": 40
+  },
+  {
+    "id": 22445,
+    "name": "Arcane Dust",
+    "icon": "inv_enchant_dustarcane",
+    "requiredAmount": 80
+  },
+  {
+    "id": 23077,
+    "name": "Blood Garnet",
+    "icon": "inv_misc_gem_bloodgem_03",
+    "requiredAmount": 20
+  },
+  {
+    "id": 23793,
+    "name": "Heavy Knothide Leather",
+    "icon": "inv_misc_leatherscrap_11",
+    "requiredAmount": 40
+  },
+  {
+    "id": 23784,
+    "name": "Adamantite Frame",
+    "icon": "inv_gizmo_adamantiteframe",
+    "requiredAmount": 25
+  },
+  {
+    "id": 23782,
+    "name": "Fel Iron Casing",
+    "icon": "inv_gizmo_felironcasing",
+    "requiredAmount": 70
+  },
+  {
+    "id": 23783,
+    "name": "Handful of Fel Iron Bolts",
+    "icon": "inv_gizmo_felironbolts",
+    "requiredAmount": 150
+  },
+  {
+    "id": 39690,
+    "name": "Volatile Blasting Trigger",
+    "icon": "inv_misc_enggizmos_04",
+    "requiredAmount": 5
+  },
+  {
+    "id": 23438,
+    "name": "Star of Elune",
+    "icon": "inv_jewelcrafting_starofelune_02",
+    "requiredAmount": 20
+  },
+  {
+    "id": 23787,
+    "name": "Felsteel Stabilizer",
+    "icon": "inv_gizmo_felstabilizer",
+    "requiredAmount": 100
+  },
+  {
+    "id": 23785,
+    "name": "Hardened Adamantite Tube",
+    "icon": "inv_gizmo_hardenedadamantitetube",
+    "requiredAmount": 30
+  },
+  {
+    "id": 23572,
+    "name": "Primal Nether",
+    "icon": "inv_elemental_primal_nether",
+    "requiredAmount": 20
+  },
+  {
+    "id": 21884,
+    "name": "Primal Fire",
+    "icon": "inv_elemental_primal_fire",
+    "requiredAmount": 50
+  },
+  {
+    "id": 32461,
+    "name": "Furious Gizmatic Goggles",
+    "icon": "inv_gizmo_newgoggles",
+    "requiredAmount": 5
+  },
+  {
+    "id": 37705,
+    "name": "Crystallized Water",
+    "icon": "inv_elemental_crystal_water",
+    "requiredAmount": 3
+  },
+  {
+    "id": 36916,
+    "name": "Cobalt Bar",
+    "icon": "inv_ingot_cobalt",
+    "requiredAmount": 24
+  },
+  {
+    "id": 40533,
+    "name": "Walnut Stock",
+    "icon": "inv_mace_11",
+    "requiredAmount": 5
+  },
+  {
+    "id": 39684,
+    "name": "Hair Trigger",
+    "icon": "inv_misc_enggizmos_25",
+    "requiredAmount": 5
+  },
+  {
+    "id": 39681,
+    "name": "Handful of Cobalt Bolts",
+    "icon": "inv_misc_enggizmos_29",
+    "requiredAmount": 124
+  },
+  {
+    "id": 39682,
+    "name": "Overcharged Capacitor",
+    "icon": "inv_misc_enggizmos_27",
+    "requiredAmount": 40
+  },
+  {
+    "id": 39683,
+    "name": "Froststeel Tube",
+    "icon": "inv_misc_enggizmos_28",
+    "requiredAmount": 34
+  },
+  {
+    "id": 5956,
+    "name": "Blacksmith Hammer",
+    "icon": "inv_hammer_20",
+    "requiredAmount": 5
+  },
+  {
+    "id": 2901,
+    "name": "Mining Pick",
+    "icon": "inv_pick_02",
+    "requiredAmount": 5
+  },
+  {
+    "id": 7005,
+    "name": "Skinning Knife",
+    "icon": "inv_weapon_shortblade_01",
+    "requiredAmount": 5
+  },
+  {
+    "id": 36913,
+    "name": "Saronite Bar",
+    "icon": "inv_ingot_yoggthorite",
+    "requiredAmount": 260
+  },
+  {
+    "id": 43102,
+    "name": "Frozen Orb",
+    "icon": "spell_frost_frozencore",
+    "requiredAmount": 10
+  },
+  {
+    "id": 35624,
+    "name": "Eternal Earth",
+    "icon": "inv_elemental_eternal_earth",
+    "requiredAmount": 40
+  },
+  {
+    "id": 36924,
+    "name": "Sky Sapphire",
+    "icon": "inv_jewelcrafting_gem_05",
+    "requiredAmount": 20
+  },
+  {
+    "id": 38425,
+    "name": "Heavy Borean Leather",
+    "icon": "inv_misc_leatherscrap_19",
+    "requiredAmount": 40
+  },
+  {
+    "id": 41163,
+    "name": "Titanium Bar",
+    "icon": "inv_ingot_platinum",
+    "requiredAmount": 240
+  }
+]
