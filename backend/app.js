@@ -199,10 +199,6 @@ app.get("/calculate-optimal-path", async (req, res) => {
   let inventory = new Map();
 
   while (currentSkill < MAX_SKILL_LEVEL) {
-    // const craftableRecipes = await EngineeringRecipe.where("difficultyColors.0")
-    //   .lte(currentSkill)
-    //   .where("difficultyColors.1")
-    //   .gt(currentSkill);
     const craftableRecipes = processedRecipes.filter((recipe) => {
       return (
         recipe.difficultyColors[0] <= currentSkill &&
@@ -239,22 +235,75 @@ app.get("/calculate-optimal-path", async (req, res) => {
     currentSkill += 1;
   }
 
-  // Sort recipes
-  // recipePath.sort((a, b) => {
-  //   // Doesn't always work
-  //   return a.difficultyColors[1] - b.difficultyColors[1];
-  // });
+  // Record shoppingList working backwards
+  // {reagentID: {property values}}
+  const shoppingList = new Map();
+
+  for (let i = recipePath.length - 1; i >= 0; i--) {
+    let currentRecipe = recipePath[i];
+    let reagentList = currentRecipe.reagentList;
+
+    // Add the required amount of reagents for crafting
+    for (let j = 0; j < reagentList.length; j++) {
+      let currentReagentID = reagentList[j][0];
+      let reagentQuantity = reagentList[j][1];
+
+      let reagentObject = {};
+      reagentObject.id = currentReagentID;
+      reagentObject.name = iconsObject[currentReagentID].name_enus;
+      reagentObject.icon = iconsObject[currentReagentID].icon;
+      reagentObject.requiredAmount = reagentQuantity;
+
+      if (shoppingList.has(currentReagentID)) {
+        let tempObject = shoppingList.get(currentReagentID);
+        let tempQuantity = tempObject.requiredAmount;
+        tempQuantity += reagentQuantity;
+        tempObject.requiredAmount = tempQuantity;
+        shoppingList.set(currentReagentID, tempObject);
+      } else {
+        shoppingList.set(currentReagentID, reagentObject);
+      }
+    }
+
+    // Subtract finished product from required reagent list
+    let craftedItemID = currentRecipe.craftedItemID;
+    let craftedQuantity = currentRecipe.quantityCreated;
+
+    if (shoppingList.has(craftedItemID)) {
+      let tempObject = shoppingList.get(craftedItemID);
+      let tempQuantity = tempObject.requiredAmount;
+      tempQuantity -= craftedQuantity;
+      tempObject.requiredAmount = tempQuantity;
+      shoppingList.set(craftedItemID, tempObject);
+    } else {
+      let tempObject = {};
+      tempObject.id = craftedItemID;
+      tempObject.name = iconsObject[craftedItemID].name_enus;
+      tempObject.icon = iconsObject[craftedItemID].icon;
+      tempObject.requiredAmount = 0 - craftedQuantity;
+      shoppingList.set(craftedItemID, tempObject);
+    }
+  }
+
+  const shoppingArray = [];
+
+  shoppingList.forEach((value, key, map) => {
+    // let arrayObject = { key: value };
+    shoppingArray.push(value);
+  });
+
+  console.log(shoppingArray);
 
   // Group identical items
   const groupedPath = [];
-  const seen = new Set();
+  const seenItems = new Set();
 
   for (let i = 0; i < recipePath.length; i++) {
     let currentID = recipePath[i].craftedItemID;
-    let count = 0;
-    if (seen.has(currentID)) {
+    if (seenItems.has(currentID)) {
       continue;
     }
+    let count = 0;
     for (let j = i; j < recipePath.length; j++) {
       if (currentID == recipePath[j].craftedItemID) {
         count += 1;
@@ -262,81 +311,12 @@ app.get("/calculate-optimal-path", async (req, res) => {
     }
     recipePath[i].quantityToCraft = count;
     groupedPath.push(recipePath[i]);
-    seen.add(currentID);
+    seenItems.add(currentID);
   }
-
   const storedPath = JSON.stringify(groupedPath);
+  storeLocal(storedPath, "optimal_path", "optimal_path");
 
   res.send("Optimal path calculated");
-  fs.writeFile(
-    `./optimal_path/optimal_path.json`,
-    storedPath,
-    "utf8",
-    function (err) {
-      if (err) {
-        console.log("Error while writing JSON object to file");
-        return console.log(err);
-      }
-      console.log("JSON file saved to optimal_path.json");
-    }
-  );
-});
-
-// Temporary
-app.get("/group-like-items", (req, res) => {
-  const ungroupedItems = optimalPathData;
-  const groupedItems = [];
-
-  let duplicateCount = 1;
-  let currentItem = ungroupedItems[0].craftedItemID;
-
-  for (i = 1; i < ungroupedItems.length; i++) {
-    // Count identical items
-    if (ungroupedItems[i].craftedItemID == currentItem) {
-      duplicateCount += 1;
-      if (i == ungroupedItems.length - 1) {
-        // Add the quantity as a property
-        ungroupedItems[i - 1].quantityToCraft = duplicateCount;
-        groupedItems.push(ungroupedItems[i - 1]);
-      }
-    }
-    // Push item and quantity to craft *** will probably have to edit later for uncertainty
-    else {
-      ungroupedItems[i - 1].quantityToCraft = duplicateCount;
-      groupedItems.push(ungroupedItems[i - 1]);
-      duplicateCount = 1;
-      currentItem = ungroupedItems[i].craftedItemID;
-    }
-  }
-
-  // build reagent list
-  //  -lookup in the recipe list, if exists, ignore, else [fetch from nexushub (20 per 5 seconds)] and add to reagent list
-  //  - have the itemID, need the name and icon
-
-  // for each item - look up the reagents and replace in the array with reagent object (mongoose find?)
-  // Go through the entire recipe list 1 time, iterate through
-
-  // Just permanently update this in the model? will have a function to set this either separately or during upload recipes
-  // "reagentList": [
-  //   [{object}, 2],
-  //   [{object}, 1]
-  // ],
-
-  const storedPath = JSON.stringify(groupedItems);
-
-  fs.writeFile(
-    `./optimal_path/grouped_path.json`,
-    storedPath,
-    "utf8",
-    function (err) {
-      if (err) {
-        console.log("Error while writing JSON object to file");
-        return console.log(err);
-      }
-      console.log("JSON file saved to grouped_path.json");
-    }
-  );
-  res.send("Identical items grouped and reagents updated");
 });
 
 app.get("/fetch-optimal-path", (req, res) => {
@@ -384,17 +364,66 @@ app.get("/retrieve-recipes", async (req, res) => {
 
   const storedRecipes = JSON.stringify(allRecipes);
 
+  storeLocal(storedRecipes, "recipe_storage", "stored_recipes");
+
+  res.send(allRecipes);
+});
+
+// Deprecated
+app.get("/group-like-items", (req, res) => {
+  const ungroupedItems = optimalPathData;
+  const groupedItems = [];
+
+  let duplicateCount = 1;
+  let currentItem = ungroupedItems[0].craftedItemID;
+
+  for (i = 1; i < ungroupedItems.length; i++) {
+    // Count identical items
+    if (ungroupedItems[i].craftedItemID == currentItem) {
+      duplicateCount += 1;
+      if (i == ungroupedItems.length - 1) {
+        // Add the quantity as a property
+        ungroupedItems[i - 1].quantityToCraft = duplicateCount;
+        groupedItems.push(ungroupedItems[i - 1]);
+      }
+    }
+    // Push item and quantity to craft *** will probably have to edit later for uncertainty
+    else {
+      ungroupedItems[i - 1].quantityToCraft = duplicateCount;
+      groupedItems.push(ungroupedItems[i - 1]);
+      duplicateCount = 1;
+      currentItem = ungroupedItems[i].craftedItemID;
+    }
+  }
+
+  const storedPath = JSON.stringify(groupedItems);
+
   fs.writeFile(
-    `./recipe_storage/stored_recipes.json`,
-    storedRecipes,
+    `./optimal_path/grouped_path.json`,
+    storedPath,
     "utf8",
     function (err) {
       if (err) {
         console.log("Error while writing JSON object to file");
         return console.log(err);
       }
-      console.log("JSON file saved to stored_recipes.json");
+      console.log("JSON file saved to grouped_path.json");
     }
   );
-  res.send(allRecipes);
+  res.send("Identical items grouped and reagents updated");
 });
+
+function storeLocal(storedItem, folder, filename) {
+  fs.writeFile(
+    `./${folder}/${filename}.json`,
+    storedItem,
+    "utf8",
+    function (err) {
+      if (err) {
+        console.log("Error while writing JSON object to file");
+        return console.log(err);
+      }
+      console.log(`JSON file saved to ${filename}.json`);
+    }
+  );
+}

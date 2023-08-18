@@ -660,30 +660,6 @@
     "quantityToCraft": 5
   },
   {
-    "_id": "64dd53f0a5cab358e80fcdcf",
-    "itemName": "Dark Iron Rifle",
-    "recipeID": 19796,
-    "craftedItemID": 16004,
-    "reagentList": [
-      [16000, 2],
-      [11371, 6],
-      [10546, 2],
-      [12361, 2],
-      [12799, 2],
-      [8170, 4]
-    ],
-    "learnedAt": 275,
-    "difficultyColors": [275, 295, 305, 315],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_weapon_rifle_08.jpg",
-    "link": "https://wowhead.com/wotlk/spell=19796/Dark-Iron-Rifle",
-    "createdAt": "2023-08-16T22:55:44.680Z",
-    "updatedAt": "2023-08-16T22:55:44.680Z",
-    "__v": 0,
-    "quantityToCraft": 5
-  },
-  {
     "_id": "64dd53f0a5cab358e80fcdd2",
     "itemName": "Delicate Arcanite Converter",
     "recipeID": 19815,
@@ -701,7 +677,7 @@
     "createdAt": "2023-08-16T22:55:44.680Z",
     "updatedAt": "2023-08-16T22:55:44.680Z",
     "__v": 0,
-    "quantityToCraft": 3
+    "quantityToCraft": 5
   },
   {
     "_id": "64dd53f0a5cab358e80fcdd5",
@@ -723,7 +699,7 @@
     "createdAt": "2023-08-16T22:55:44.681Z",
     "updatedAt": "2023-08-16T22:55:44.681Z",
     "__v": 0,
-    "quantityToCraft": 2
+    "quantityToCraft": 10
   },
   {
     "_id": "64dd53f0a5cab358e80fcdd7",
@@ -744,27 +720,6 @@
     "updatedAt": "2023-08-16T22:55:44.681Z",
     "__v": 0,
     "quantityToCraft": 15
-  },
-  {
-    "_id": "64dd53f0a5cab358e80fcdd8",
-    "itemName": "Master Engineer's Goggles",
-    "recipeID": 19825,
-    "craftedItemID": 16008,
-    "reagentList": [
-      [10500, 1],
-      [12364, 2],
-      [12810, 4]
-    ],
-    "learnedAt": 290,
-    "difficultyColors": [290, 310, 320, 330],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_47.jpg",
-    "link": "https://wowhead.com/wotlk/spell=19825/Master-Engineer's-Goggles",
-    "createdAt": "2023-08-16T22:55:44.681Z",
-    "updatedAt": "2023-08-16T22:55:44.681Z",
-    "__v": 0,
-    "quantityToCraft": 5
   },
   {
     "_id": "64dd53f0a5cab358e80fce02",

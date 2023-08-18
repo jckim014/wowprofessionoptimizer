@@ -541,6 +541,25 @@
     "__v": 0
   },
   {
+    "_id": "64dd53f0a5cab358e80fcd7b",
+    "itemName": "Crafted Solid Shot",
+    "recipeID": 3947,
+    "craftedItemID": 8069,
+    "reagentList": [
+      [4377, 1],
+      [2841, 1]
+    ],
+    "learnedAt": 125,
+    "difficultyColors": [125, 125, 135, 145],
+    "craftingCost": 0,
+    "quantityCreated": 200,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_ammo_bullet_02.jpg",
+    "link": "https://wowhead.com/wotlk/spell=3947/Crafted-Solid-Shot",
+    "createdAt": "2023-08-16T22:55:44.678Z",
+    "updatedAt": "2023-08-16T22:55:44.678Z",
+    "__v": 0
+  },
+  {
     "_id": "64dd53f0a5cab358e80fcd7e",
     "itemName": "Minor Recombobulator",
     "recipeID": 3952,
@@ -557,25 +576,6 @@
     "quantityCreated": 1,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_07.jpg",
     "link": "https://wowhead.com/wotlk/spell=3952/Minor-Recombobulator",
-    "createdAt": "2023-08-16T22:55:44.678Z",
-    "updatedAt": "2023-08-16T22:55:44.678Z",
-    "__v": 0
-  },
-  {
-    "_id": "64dd53f0a5cab358e80fcd7b",
-    "itemName": "Crafted Solid Shot",
-    "recipeID": 3947,
-    "craftedItemID": 8069,
-    "reagentList": [
-      [4377, 1],
-      [2841, 1]
-    ],
-    "learnedAt": 125,
-    "difficultyColors": [125, 125, 135, 145],
-    "craftingCost": 0,
-    "quantityCreated": 200,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_ammo_bullet_02.jpg",
-    "link": "https://wowhead.com/wotlk/spell=3947/Crafted-Solid-Shot",
     "createdAt": "2023-08-16T22:55:44.678Z",
     "updatedAt": "2023-08-16T22:55:44.678Z",
     "__v": 0
@@ -759,26 +759,6 @@
     "__v": 0
   },
   {
-    "_id": "64dd53f0a5cab358e80fcd88",
-    "itemName": "Iron Grenade",
-    "recipeID": 3962,
-    "craftedItemID": 4390,
-    "reagentList": [
-      [3575, 1],
-      [4377, 1],
-      [4306, 1]
-    ],
-    "learnedAt": 175,
-    "difficultyColors": [175, 175, 195, 215],
-    "craftingCost": 0,
-    "quantityCreated": 2,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bomb_08.jpg",
-    "link": "https://wowhead.com/wotlk/spell=3962/Iron-Grenade",
-    "createdAt": "2023-08-16T22:55:44.678Z",
-    "updatedAt": "2023-08-16T22:55:44.678Z",
-    "__v": 0
-  },
-  {
     "_id": "64dd53f0a5cab358e80fcd89",
     "itemName": "Compact Harvest Reaper Kit",
     "recipeID": 3963,
@@ -795,6 +775,26 @@
     "quantityCreated": 1,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_08.jpg",
     "link": "https://wowhead.com/wotlk/spell=3963/Compact-Harvest-Reaper-Kit",
+    "createdAt": "2023-08-16T22:55:44.678Z",
+    "updatedAt": "2023-08-16T22:55:44.678Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fcd88",
+    "itemName": "Iron Grenade",
+    "recipeID": 3962,
+    "craftedItemID": 4390,
+    "reagentList": [
+      [3575, 1],
+      [4377, 1],
+      [4306, 1]
+    ],
+    "learnedAt": 175,
+    "difficultyColors": [175, 175, 195, 215],
+    "craftingCost": 0,
+    "quantityCreated": 2,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bomb_08.jpg",
+    "link": "https://wowhead.com/wotlk/spell=3962/Iron-Grenade",
     "createdAt": "2023-08-16T22:55:44.678Z",
     "updatedAt": "2023-08-16T22:55:44.678Z",
     "__v": 0
@@ -1034,25 +1034,6 @@
     "__v": 0
   },
   {
-    "_id": "64dd53f0a5cab358e80fcd96",
-    "itemName": "EZ-Thro Dynamite",
-    "recipeID": 8339,
-    "craftedItemID": 6714,
-    "reagentList": [
-      [4364, 4],
-      [2592, 1]
-    ],
-    "learnedAt": 100,
-    "difficultyColors": [100, 115, 122, 130],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bomb_06.jpg",
-    "link": "https://wowhead.com/wotlk/spell=8339/EZ-Thro-Dynamite",
-    "createdAt": "2023-08-16T22:55:44.678Z",
-    "updatedAt": "2023-08-16T22:55:44.678Z",
-    "__v": 0
-  },
-  {
     "_id": "64dd53f0a5cab358e80fcd98",
     "itemName": "Gnomish Universal Remote",
     "recipeID": 9269,
@@ -1072,6 +1053,25 @@
     "link": "https://wowhead.com/wotlk/spell=9269/Gnomish-Universal-Remote",
     "createdAt": "2023-08-16T22:55:44.679Z",
     "updatedAt": "2023-08-16T22:55:44.679Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fcd96",
+    "itemName": "EZ-Thro Dynamite",
+    "recipeID": 8339,
+    "craftedItemID": 6714,
+    "reagentList": [
+      [4364, 4],
+      [2592, 1]
+    ],
+    "learnedAt": 100,
+    "difficultyColors": [100, 115, 122, 130],
+    "craftingCost": 0,
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bomb_06.jpg",
+    "link": "https://wowhead.com/wotlk/spell=8339/EZ-Thro-Dynamite",
+    "createdAt": "2023-08-16T22:55:44.678Z",
+    "updatedAt": "2023-08-16T22:55:44.678Z",
     "__v": 0
   },
   {
@@ -1097,6 +1097,26 @@
     "__v": 0
   },
   {
+    "_id": "64dd53f0a5cab358e80fcd99",
+    "itemName": "Aquadynamic Fish Attractor",
+    "recipeID": 9271,
+    "craftedItemID": 6533,
+    "reagentList": [
+      [2841, 2],
+      [6530, 1],
+      [4364, 1]
+    ],
+    "learnedAt": 150,
+    "difficultyColors": [150, 150, 160, 170],
+    "craftingCost": 0,
+    "quantityCreated": 3,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_food_26.jpg",
+    "link": "https://wowhead.com/wotlk/spell=9271/Aquadynamic-Fish-Attractor",
+    "createdAt": "2023-08-16T22:55:44.679Z",
+    "updatedAt": "2023-08-16T22:55:44.679Z",
+    "__v": 0
+  },
+  {
     "_id": "64dd53f0a5cab358e80fcd9a",
     "itemName": "Goblin Jumper Cables",
     "recipeID": 9273,
@@ -1115,26 +1135,6 @@
     "quantityCreated": 1,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_10.jpg",
     "link": "https://wowhead.com/wotlk/spell=9273/Goblin-Jumper-Cables",
-    "createdAt": "2023-08-16T22:55:44.679Z",
-    "updatedAt": "2023-08-16T22:55:44.679Z",
-    "__v": 0
-  },
-  {
-    "_id": "64dd53f0a5cab358e80fcd99",
-    "itemName": "Aquadynamic Fish Attractor",
-    "recipeID": 9271,
-    "craftedItemID": 6533,
-    "reagentList": [
-      [2841, 2],
-      [6530, 1],
-      [4364, 1]
-    ],
-    "learnedAt": 150,
-    "difficultyColors": [150, 150, 160, 170],
-    "craftingCost": 0,
-    "quantityCreated": 3,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_food_26.jpg",
-    "link": "https://wowhead.com/wotlk/spell=9271/Aquadynamic-Fish-Attractor",
     "createdAt": "2023-08-16T22:55:44.679Z",
     "updatedAt": "2023-08-16T22:55:44.679Z",
     "__v": 0
@@ -1360,26 +1360,6 @@
     "__v": 0
   },
   {
-    "_id": "64dd53f0a5cab358e80fcda7",
-    "itemName": "Mithril Frag Bomb",
-    "recipeID": 12603,
-    "craftedItemID": 10514,
-    "reagentList": [
-      [10561, 1],
-      [10560, 1],
-      [10505, 1]
-    ],
-    "learnedAt": 215,
-    "difficultyColors": [215, 215, 235, 255],
-    "craftingCost": 0,
-    "quantityCreated": 3,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bomb_02.jpg",
-    "link": "https://wowhead.com/wotlk/spell=12603/Mithril-Frag-Bomb",
-    "createdAt": "2023-08-16T22:55:44.679Z",
-    "updatedAt": "2023-08-16T22:55:44.679Z",
-    "__v": 0
-  },
-  {
     "_id": "64dd53f0a5cab358e80fcda8",
     "itemName": "Catseye Ultra Goggles",
     "recipeID": 12607,
@@ -1395,6 +1375,26 @@
     "quantityCreated": 1,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_47.jpg",
     "link": "https://wowhead.com/wotlk/spell=12607/Catseye-Ultra-Goggles",
+    "createdAt": "2023-08-16T22:55:44.679Z",
+    "updatedAt": "2023-08-16T22:55:44.679Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fcda7",
+    "itemName": "Mithril Frag Bomb",
+    "recipeID": 12603,
+    "craftedItemID": 10514,
+    "reagentList": [
+      [10561, 1],
+      [10560, 1],
+      [10505, 1]
+    ],
+    "learnedAt": 215,
+    "difficultyColors": [215, 215, 235, 255],
+    "craftingCost": 0,
+    "quantityCreated": 3,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bomb_02.jpg",
+    "link": "https://wowhead.com/wotlk/spell=12603/Mithril-Frag-Bomb",
     "createdAt": "2023-08-16T22:55:44.679Z",
     "updatedAt": "2023-08-16T22:55:44.679Z",
     "__v": 0
@@ -1581,6 +1581,26 @@
     "__v": 0
   },
   {
+    "_id": "64dd53f0a5cab358e80fcdb6",
+    "itemName": "Goblin Construction Helmet",
+    "recipeID": 12718,
+    "craftedItemID": 10543,
+    "reagentList": [
+      [3860, 8],
+      [3864, 1],
+      [7068, 4]
+    ],
+    "learnedAt": 205,
+    "difficultyColors": [205, 225, 235, 245],
+    "craftingCost": 0,
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_60.jpg",
+    "link": "https://wowhead.com/wotlk/spell=12718/Goblin-Construction-Helmet",
+    "createdAt": "2023-08-16T22:55:44.679Z",
+    "updatedAt": "2023-08-16T22:55:44.679Z",
+    "__v": 0
+  },
+  {
     "_id": "64dd53f0a5cab358e80fcdb1",
     "itemName": "Green Lens",
     "recipeID": 12622,
@@ -1598,26 +1618,6 @@
     "quantityCreated": 1,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_44.jpg",
     "link": "https://wowhead.com/wotlk/spell=12622/Green-Lens",
-    "createdAt": "2023-08-16T22:55:44.679Z",
-    "updatedAt": "2023-08-16T22:55:44.679Z",
-    "__v": 0
-  },
-  {
-    "_id": "64dd53f0a5cab358e80fcdb6",
-    "itemName": "Goblin Construction Helmet",
-    "recipeID": 12718,
-    "craftedItemID": 10543,
-    "reagentList": [
-      [3860, 8],
-      [3864, 1],
-      [7068, 4]
-    ],
-    "learnedAt": 205,
-    "difficultyColors": [205, 225, 235, 245],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_60.jpg",
-    "link": "https://wowhead.com/wotlk/spell=12718/Goblin-Construction-Helmet",
     "createdAt": "2023-08-16T22:55:44.679Z",
     "updatedAt": "2023-08-16T22:55:44.679Z",
     "__v": 0
@@ -1666,6 +1666,26 @@
     "__v": 0
   },
   {
+    "_id": "64dd53f0a5cab358e80fcdb7",
+    "itemName": "Goblin Sapper Charge",
+    "recipeID": 12760,
+    "craftedItemID": 10646,
+    "reagentList": [
+      [4338, 1],
+      [10505, 3],
+      [10560, 1]
+    ],
+    "learnedAt": 205,
+    "difficultyColors": [205, 205, 225, 245],
+    "craftingCost": 0,
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_selfdestruct.jpg",
+    "link": "https://wowhead.com/wotlk/spell=12760/Goblin-Sapper-Charge",
+    "createdAt": "2023-08-16T22:55:44.679Z",
+    "updatedAt": "2023-08-16T22:55:44.679Z",
+    "__v": 0
+  },
+  {
     "_id": "64dd53f0a5cab358e80fcdb9",
     "itemName": "The Big One",
     "recipeID": 12754,
@@ -1704,26 +1724,6 @@
     "quantityCreated": 1,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_musket_01.jpg",
     "link": "https://wowhead.com/wotlk/spell=12716/Goblin-Mortar",
-    "createdAt": "2023-08-16T22:55:44.679Z",
-    "updatedAt": "2023-08-16T22:55:44.679Z",
-    "__v": 0
-  },
-  {
-    "_id": "64dd53f0a5cab358e80fcdb7",
-    "itemName": "Goblin Sapper Charge",
-    "recipeID": 12760,
-    "craftedItemID": 10646,
-    "reagentList": [
-      [4338, 1],
-      [10505, 3],
-      [10560, 1]
-    ],
-    "learnedAt": 205,
-    "difficultyColors": [205, 205, 225, 245],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_selfdestruct.jpg",
-    "link": "https://wowhead.com/wotlk/spell=12760/Goblin-Sapper-Charge",
     "createdAt": "2023-08-16T22:55:44.679Z",
     "updatedAt": "2023-08-16T22:55:44.679Z",
     "__v": 0
@@ -2188,24 +2188,20 @@
     "__v": 0
   },
   {
-    "_id": "64dd53f0a5cab358e80fcdcf",
-    "itemName": "Dark Iron Rifle",
-    "recipeID": 19796,
-    "craftedItemID": 16004,
+    "_id": "64dd53f0a5cab358e80fcdd2",
+    "itemName": "Delicate Arcanite Converter",
+    "recipeID": 19815,
+    "craftedItemID": 16006,
     "reagentList": [
-      [16000, 2],
-      [11371, 6],
-      [10546, 2],
-      [12361, 2],
-      [12799, 2],
-      [8170, 4]
+      [12360, 1],
+      [14227, 1]
     ],
-    "learnedAt": 275,
-    "difficultyColors": [275, 295, 305, 315],
+    "learnedAt": 285,
+    "difficultyColors": [285, 305, 315, 325],
     "craftingCost": 0,
     "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_weapon_rifle_08.jpg",
-    "link": "https://wowhead.com/wotlk/spell=19796/Dark-Iron-Rifle",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_07.jpg",
+    "link": "https://wowhead.com/wotlk/spell=19815/Delicate-Arcanite-Converter",
     "createdAt": "2023-08-16T22:55:44.680Z",
     "updatedAt": "2023-08-16T22:55:44.680Z",
     "__v": 0
@@ -2233,20 +2229,24 @@
     "__v": 0
   },
   {
-    "_id": "64dd53f0a5cab358e80fcdd2",
-    "itemName": "Delicate Arcanite Converter",
-    "recipeID": 19815,
-    "craftedItemID": 16006,
+    "_id": "64dd53f0a5cab358e80fcdcf",
+    "itemName": "Dark Iron Rifle",
+    "recipeID": 19796,
+    "craftedItemID": 16004,
     "reagentList": [
-      [12360, 1],
-      [14227, 1]
+      [16000, 2],
+      [11371, 6],
+      [10546, 2],
+      [12361, 2],
+      [12799, 2],
+      [8170, 4]
     ],
-    "learnedAt": 285,
-    "difficultyColors": [285, 305, 315, 325],
+    "learnedAt": 275,
+    "difficultyColors": [275, 295, 305, 315],
     "craftingCost": 0,
     "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_07.jpg",
-    "link": "https://wowhead.com/wotlk/spell=19815/Delicate-Arcanite-Converter",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_weapon_rifle_08.jpg",
+    "link": "https://wowhead.com/wotlk/spell=19796/Dark-Iron-Rifle",
     "createdAt": "2023-08-16T22:55:44.680Z",
     "updatedAt": "2023-08-16T22:55:44.680Z",
     "__v": 0
@@ -2284,6 +2284,46 @@
     "quantityCreated": 3,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bomb_05.jpg",
     "link": "https://wowhead.com/wotlk/spell=19799/Dark-Iron-Bomb",
+    "createdAt": "2023-08-16T22:55:44.681Z",
+    "updatedAt": "2023-08-16T22:55:44.681Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fcdd5",
+    "itemName": "Voice Amplification Modulator",
+    "recipeID": 19819,
+    "craftedItemID": 16009,
+    "reagentList": [
+      [16006, 2],
+      [10558, 1],
+      [15994, 1],
+      [12799, 1]
+    ],
+    "learnedAt": 290,
+    "difficultyColors": [290, 310, 320, 330],
+    "craftingCost": 0,
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_amulet_07.jpg",
+    "link": "https://wowhead.com/wotlk/spell=19819/Voice-Amplification-Modulator",
+    "createdAt": "2023-08-16T22:55:44.681Z",
+    "updatedAt": "2023-08-16T22:55:44.681Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fcdd4",
+    "itemName": "Thorium Shells",
+    "recipeID": 19800,
+    "craftedItemID": 15997,
+    "reagentList": [
+      [12359, 2],
+      [15992, 1]
+    ],
+    "learnedAt": 285,
+    "difficultyColors": [285, 295, 300, 305],
+    "craftingCost": 0,
+    "quantityCreated": 200,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_ammo_bullet_03.jpg",
+    "link": "https://wowhead.com/wotlk/spell=19800/Thorium-Shells",
     "createdAt": "2023-08-16T22:55:44.681Z",
     "updatedAt": "2023-08-16T22:55:44.681Z",
     "__v": 0
@@ -2343,46 +2383,6 @@
     "quantityCreated": 3,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_mindbomb.jpg",
     "link": "https://wowhead.com/wotlk/spell=19831/Arcane-Bomb",
-    "createdAt": "2023-08-16T22:55:44.681Z",
-    "updatedAt": "2023-08-16T22:55:44.681Z",
-    "__v": 0
-  },
-  {
-    "_id": "64dd53f0a5cab358e80fcdd5",
-    "itemName": "Voice Amplification Modulator",
-    "recipeID": 19819,
-    "craftedItemID": 16009,
-    "reagentList": [
-      [16006, 2],
-      [10558, 1],
-      [15994, 1],
-      [12799, 1]
-    ],
-    "learnedAt": 290,
-    "difficultyColors": [290, 310, 320, 330],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_amulet_07.jpg",
-    "link": "https://wowhead.com/wotlk/spell=19819/Voice-Amplification-Modulator",
-    "createdAt": "2023-08-16T22:55:44.681Z",
-    "updatedAt": "2023-08-16T22:55:44.681Z",
-    "__v": 0
-  },
-  {
-    "_id": "64dd53f0a5cab358e80fcdd4",
-    "itemName": "Thorium Shells",
-    "recipeID": 19800,
-    "craftedItemID": 15997,
-    "reagentList": [
-      [12359, 2],
-      [15992, 1]
-    ],
-    "learnedAt": 285,
-    "difficultyColors": [285, 295, 300, 305],
-    "craftingCost": 0,
-    "quantityCreated": 200,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_ammo_bullet_03.jpg",
-    "link": "https://wowhead.com/wotlk/spell=19800/Thorium-Shells",
     "createdAt": "2023-08-16T22:55:44.681Z",
     "updatedAt": "2023-08-16T22:55:44.681Z",
     "__v": 0
@@ -2654,26 +2654,6 @@
     "__v": 0
   },
   {
-    "_id": "64dd53f0a5cab358e80fcde7",
-    "itemName": "Major Recombobulator",
-    "recipeID": 23079,
-    "craftedItemID": 18637,
-    "reagentList": [
-      [16000, 2],
-      [18631, 1],
-      [14047, 2]
-    ],
-    "learnedAt": 275,
-    "difficultyColors": [275, 285, 290, 295],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_09.jpg",
-    "link": "https://wowhead.com/wotlk/spell=23079/Major-Recombobulator",
-    "createdAt": "2023-08-16T22:55:44.681Z",
-    "updatedAt": "2023-08-16T22:55:44.681Z",
-    "__v": 0
-  },
-  {
     "_id": "64dd53f0a5cab358e80fcde5",
     "itemName": "Gyrofreeze Ice Reflector",
     "recipeID": 23077,
@@ -2692,6 +2672,26 @@
     "quantityCreated": 1,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_02.jpg",
     "link": "https://wowhead.com/wotlk/spell=23077/Gyrofreeze-Ice-Reflector",
+    "createdAt": "2023-08-16T22:55:44.681Z",
+    "updatedAt": "2023-08-16T22:55:44.681Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fcde7",
+    "itemName": "Major Recombobulator",
+    "recipeID": 23079,
+    "craftedItemID": 18637,
+    "reagentList": [
+      [16000, 2],
+      [18631, 1],
+      [14047, 2]
+    ],
+    "learnedAt": 275,
+    "difficultyColors": [275, 285, 290, 295],
+    "craftingCost": 0,
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_09.jpg",
+    "link": "https://wowhead.com/wotlk/spell=23079/Major-Recombobulator",
     "createdAt": "2023-08-16T22:55:44.681Z",
     "updatedAt": "2023-08-16T22:55:44.681Z",
     "__v": 0
@@ -2944,25 +2944,6 @@
     "__v": 0
   },
   {
-    "_id": "64dd53f0a5cab358e80fcdf5",
-    "itemName": "Large Green Rocket",
-    "recipeID": 26421,
-    "craftedItemID": 21590,
-    "reagentList": [
-      [4377, 1],
-      [4234, 1]
-    ],
-    "learnedAt": 175,
-    "difficultyColors": [175, 175, 187, 200],
-    "craftingCost": 0,
-    "quantityCreated": 3,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_missilelarge_green.jpg",
-    "link": "https://wowhead.com/wotlk/spell=26421/Large-Green-Rocket",
-    "createdAt": "2023-08-16T22:55:44.683Z",
-    "updatedAt": "2023-08-16T22:55:44.683Z",
-    "__v": 0
-  },
-  {
     "_id": "64dd53f0a5cab358e80fcdf4",
     "itemName": "Large Blue Rocket",
     "recipeID": 26420,
@@ -2977,6 +2958,25 @@
     "quantityCreated": 3,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_missilelarge_blue.jpg",
     "link": "https://wowhead.com/wotlk/spell=26420/Large-Blue-Rocket",
+    "createdAt": "2023-08-16T22:55:44.683Z",
+    "updatedAt": "2023-08-16T22:55:44.683Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fcdf5",
+    "itemName": "Large Green Rocket",
+    "recipeID": 26421,
+    "craftedItemID": 21590,
+    "reagentList": [
+      [4377, 1],
+      [4234, 1]
+    ],
+    "learnedAt": 175,
+    "difficultyColors": [175, 175, 187, 200],
+    "craftingCost": 0,
+    "quantityCreated": 3,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_missilelarge_green.jpg",
+    "link": "https://wowhead.com/wotlk/spell=26421/Large-Green-Rocket",
     "createdAt": "2023-08-16T22:55:44.683Z",
     "updatedAt": "2023-08-16T22:55:44.683Z",
     "__v": 0
@@ -3136,25 +3136,6 @@
     "__v": 0
   },
   {
-    "_id": "64dd53f0a5cab358e80fcdff",
-    "itemName": "Steam Tonk Controller",
-    "recipeID": 28327,
-    "craftedItemID": 22728,
-    "reagentList": [
-      [3860, 3],
-      [10558, 1]
-    ],
-    "learnedAt": 275,
-    "difficultyColors": [275, 275, 280, 285],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_goblingtonkcontroller.jpg",
-    "link": "https://wowhead.com/wotlk/spell=28327/Steam-Tonk-Controller",
-    "createdAt": "2023-08-16T22:55:44.683Z",
-    "updatedAt": "2023-08-16T22:55:44.683Z",
-    "__v": 0
-  },
-  {
     "_id": "64dd53f0a5cab358e80fcdfe",
     "itemName": "Firework Cluster Launcher",
     "recipeID": 26443,
@@ -3169,6 +3150,25 @@
     "quantityCreated": 2,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_03.jpg",
     "link": "https://wowhead.com/wotlk/spell=26443/Firework-Cluster-Launcher",
+    "createdAt": "2023-08-16T22:55:44.683Z",
+    "updatedAt": "2023-08-16T22:55:44.683Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fcdff",
+    "itemName": "Steam Tonk Controller",
+    "recipeID": 28327,
+    "craftedItemID": 22728,
+    "reagentList": [
+      [3860, 3],
+      [10558, 1]
+    ],
+    "learnedAt": 275,
+    "difficultyColors": [275, 275, 280, 285],
+    "craftingCost": 0,
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_goblingtonkcontroller.jpg",
+    "link": "https://wowhead.com/wotlk/spell=28327/Steam-Tonk-Controller",
     "createdAt": "2023-08-16T22:55:44.683Z",
     "updatedAt": "2023-08-16T22:55:44.683Z",
     "__v": 0
@@ -3360,25 +3360,6 @@
     "__v": 0
   },
   {
-    "_id": "64dd53f0a5cab358e80fce0a",
-    "itemName": "Adamantite Scope",
-    "recipeID": 30329,
-    "craftedItemID": 23764,
-    "reagentList": [
-      [23446, 8],
-      [23112, 2]
-    ],
-    "learnedAt": 335,
-    "difficultyColors": [335, 345, 355, 365],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_spyglass_02.jpg",
-    "link": "https://wowhead.com/wotlk/spell=30329/Adamantite-Scope",
-    "createdAt": "2023-08-16T22:55:44.684Z",
-    "updatedAt": "2023-08-16T22:55:44.684Z",
-    "__v": 0
-  },
-  {
     "_id": "64dd53f0a5cab358e80fce08",
     "itemName": "Ultra-Spectropic Detection Goggles",
     "recipeID": 30318,
@@ -3395,6 +3376,25 @@
     "quantityCreated": 1,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_newgoggles.jpg",
     "link": "https://wowhead.com/wotlk/spell=30318/Ultra-Spectropic-Detection-Goggles",
+    "createdAt": "2023-08-16T22:55:44.684Z",
+    "updatedAt": "2023-08-16T22:55:44.684Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fce0a",
+    "itemName": "Adamantite Scope",
+    "recipeID": 30329,
+    "craftedItemID": 23764,
+    "reagentList": [
+      [23446, 8],
+      [23112, 2]
+    ],
+    "learnedAt": 335,
+    "difficultyColors": [335, 345, 355, 365],
+    "craftingCost": 0,
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_spyglass_02.jpg",
+    "link": "https://wowhead.com/wotlk/spell=30329/Adamantite-Scope",
     "createdAt": "2023-08-16T22:55:44.684Z",
     "updatedAt": "2023-08-16T22:55:44.684Z",
     "__v": 0
@@ -3501,41 +3501,6 @@
     "__v": 0
   },
   {
-    "_id": "64dd53f0a5cab358e80fce0e",
-    "itemName": "White Smoke Flare",
-    "recipeID": 30341,
-    "craftedItemID": 23768,
-    "reagentList": [
-      [23781, 1],
-      [21877, 1]
-    ],
-    "learnedAt": 335,
-    "difficultyColors": [335, 335, 345, 355],
-    "craftingCost": 0,
-    "quantityCreated": 3,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_missilesmall_white.jpg",
-    "link": "https://wowhead.com/wotlk/spell=30341/White-Smoke-Flare",
-    "createdAt": "2023-08-16T22:55:44.685Z",
-    "updatedAt": "2023-08-16T22:55:44.685Z",
-    "__v": 0
-  },
-  {
-    "_id": "64dd53f0a5cab358e80fce18",
-    "itemName": "Hardened Adamantite Tube",
-    "recipeID": 30307,
-    "craftedItemID": 23785,
-    "reagentList": [[23573, 3]],
-    "learnedAt": 340,
-    "difficultyColors": [340, 350, 360, 370],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_hardenedadamantitetube.jpg",
-    "link": "https://wowhead.com/wotlk/spell=30307/Hardened-Adamantite-Tube",
-    "createdAt": "2023-08-16T22:55:44.685Z",
-    "updatedAt": "2023-08-16T22:55:44.685Z",
-    "__v": 0
-  },
-  {
     "_id": "64dd53f0a5cab358e80fce1b",
     "itemName": "Elemental Seaforium Charge",
     "recipeID": 30547,
@@ -3551,25 +3516,6 @@
     "quantityCreated": 2,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_detectinvisibility.jpg",
     "link": "https://wowhead.com/wotlk/spell=30547/Elemental-Seaforium-Charge",
-    "createdAt": "2023-08-16T22:55:44.685Z",
-    "updatedAt": "2023-08-16T22:55:44.685Z",
-    "__v": 0
-  },
-  {
-    "_id": "64dd53f0a5cab358e80fce10",
-    "itemName": "Fel Iron Shells",
-    "recipeID": 30346,
-    "craftedItemID": 23772,
-    "reagentList": [
-      [23445, 2],
-      [23781, 1]
-    ],
-    "learnedAt": 310,
-    "difficultyColors": [310, 310, 320, 330],
-    "craftingCost": 0,
-    "quantityCreated": 200,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_felironshell.jpg",
-    "link": "https://wowhead.com/wotlk/spell=30346/Fel-Iron-Shells",
     "createdAt": "2023-08-16T22:55:44.685Z",
     "updatedAt": "2023-08-16T22:55:44.685Z",
     "__v": 0
@@ -3611,17 +3557,36 @@
     "__v": 0
   },
   {
-    "_id": "64dd53f0a5cab358e80fce1a",
-    "itemName": "Felsteel Stabilizer",
-    "recipeID": 30309,
-    "craftedItemID": 23787,
-    "reagentList": [[23448, 2]],
+    "_id": "64dd53f0a5cab358e80fce18",
+    "itemName": "Hardened Adamantite Tube",
+    "recipeID": 30307,
+    "craftedItemID": 23785,
+    "reagentList": [[23573, 3]],
     "learnedAt": 340,
     "difficultyColors": [340, 350, 360, 370],
     "craftingCost": 0,
     "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_felstabilizer.jpg",
-    "link": "https://wowhead.com/wotlk/spell=30309/Felsteel-Stabilizer",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_hardenedadamantitetube.jpg",
+    "link": "https://wowhead.com/wotlk/spell=30307/Hardened-Adamantite-Tube",
+    "createdAt": "2023-08-16T22:55:44.685Z",
+    "updatedAt": "2023-08-16T22:55:44.685Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fce0e",
+    "itemName": "White Smoke Flare",
+    "recipeID": 30341,
+    "craftedItemID": 23768,
+    "reagentList": [
+      [23781, 1],
+      [21877, 1]
+    ],
+    "learnedAt": 335,
+    "difficultyColors": [335, 335, 345, 355],
+    "craftingCost": 0,
+    "quantityCreated": 3,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_missilesmall_white.jpg",
+    "link": "https://wowhead.com/wotlk/spell=30341/White-Smoke-Flare",
     "createdAt": "2023-08-16T22:55:44.685Z",
     "updatedAt": "2023-08-16T22:55:44.685Z",
     "__v": 0
@@ -3666,6 +3631,41 @@
     "__v": 0
   },
   {
+    "_id": "64dd53f0a5cab358e80fce10",
+    "itemName": "Fel Iron Shells",
+    "recipeID": 30346,
+    "craftedItemID": 23772,
+    "reagentList": [
+      [23445, 2],
+      [23781, 1]
+    ],
+    "learnedAt": 310,
+    "difficultyColors": [310, 310, 320, 330],
+    "craftingCost": 0,
+    "quantityCreated": 200,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_felironshell.jpg",
+    "link": "https://wowhead.com/wotlk/spell=30346/Fel-Iron-Shells",
+    "createdAt": "2023-08-16T22:55:44.685Z",
+    "updatedAt": "2023-08-16T22:55:44.685Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fce1a",
+    "itemName": "Felsteel Stabilizer",
+    "recipeID": 30309,
+    "craftedItemID": 23787,
+    "reagentList": [[23448, 2]],
+    "learnedAt": 340,
+    "difficultyColors": [340, 350, 360, 370],
+    "craftingCost": 0,
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_felstabilizer.jpg",
+    "link": "https://wowhead.com/wotlk/spell=30309/Felsteel-Stabilizer",
+    "createdAt": "2023-08-16T22:55:44.685Z",
+    "updatedAt": "2023-08-16T22:55:44.685Z",
+    "__v": 0
+  },
+  {
     "_id": "64dd53f0a5cab358e80fce1c",
     "itemName": "Zapthrottle Mote Extractor",
     "recipeID": 30548,
@@ -3703,25 +3703,6 @@
     "__v": 0
   },
   {
-    "_id": "64dd53f0a5cab358e80fce14",
-    "itemName": "Elemental Blasting Powder",
-    "recipeID": 30303,
-    "craftedItemID": 23781,
-    "reagentList": [
-      [22574, 1],
-      [22573, 2]
-    ],
-    "learnedAt": 300,
-    "difficultyColors": [300, 300, 310, 320],
-    "craftingCost": 0,
-    "quantityCreated": 4,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_ammo_gunpowder_07.jpg",
-    "link": "https://wowhead.com/wotlk/spell=30303/Elemental-Blasting-Powder",
-    "createdAt": "2023-08-16T22:55:44.685Z",
-    "updatedAt": "2023-08-16T22:55:44.685Z",
-    "__v": 0
-  },
-  {
     "_id": "64dd53f0a5cab358e80fce19",
     "itemName": "Khorium Power Core",
     "recipeID": 30308,
@@ -3736,6 +3717,25 @@
     "quantityCreated": 1,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_khoriumpowercore.jpg",
     "link": "https://wowhead.com/wotlk/spell=30308/Khorium-Power-Core",
+    "createdAt": "2023-08-16T22:55:44.685Z",
+    "updatedAt": "2023-08-16T22:55:44.685Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fce14",
+    "itemName": "Elemental Blasting Powder",
+    "recipeID": 30303,
+    "craftedItemID": 23781,
+    "reagentList": [
+      [22574, 1],
+      [22573, 2]
+    ],
+    "learnedAt": 300,
+    "difficultyColors": [300, 300, 310, 320],
+    "craftingCost": 0,
+    "quantityCreated": 4,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_ammo_gunpowder_07.jpg",
+    "link": "https://wowhead.com/wotlk/spell=30303/Elemental-Blasting-Powder",
     "createdAt": "2023-08-16T22:55:44.685Z",
     "updatedAt": "2023-08-16T22:55:44.685Z",
     "__v": 0
@@ -3868,26 +3868,6 @@
     "__v": 0
   },
   {
-    "_id": "64dd53f0a5cab358e80fce24",
-    "itemName": "Foreman's Reinforced Helmet",
-    "recipeID": 30566,
-    "craftedItemID": 23839,
-    "reagentList": [
-      [23573, 8],
-      [22452, 12],
-      [21884, 12]
-    ],
-    "learnedAt": 375,
-    "difficultyColors": [375, 375, 385, 395],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_60.jpg",
-    "link": "https://wowhead.com/wotlk/spell=30566/Foreman's-Reinforced-Helmet",
-    "createdAt": "2023-08-16T22:55:44.685Z",
-    "updatedAt": "2023-08-16T22:55:44.685Z",
-    "__v": 0
-  },
-  {
     "_id": "64dd53f0a5cab358e80fce23",
     "itemName": "Foreman's Enchanted Helmet",
     "recipeID": 30565,
@@ -3903,6 +3883,26 @@
     "quantityCreated": 1,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_60.jpg",
     "link": "https://wowhead.com/wotlk/spell=30565/Foreman's-Enchanted-Helmet",
+    "createdAt": "2023-08-16T22:55:44.685Z",
+    "updatedAt": "2023-08-16T22:55:44.685Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fce24",
+    "itemName": "Foreman's Reinforced Helmet",
+    "recipeID": 30566,
+    "craftedItemID": 23839,
+    "reagentList": [
+      [23573, 8],
+      [22452, 12],
+      [21884, 12]
+    ],
+    "learnedAt": 375,
+    "difficultyColors": [375, 375, 385, 395],
+    "craftingCost": 0,
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_60.jpg",
+    "link": "https://wowhead.com/wotlk/spell=30566/Foreman's-Reinforced-Helmet",
     "createdAt": "2023-08-16T22:55:44.685Z",
     "updatedAt": "2023-08-16T22:55:44.685Z",
     "__v": 0
@@ -4142,6 +4142,29 @@
     "__v": 0
   },
   {
+    "_id": "64dd53f0a5cab358e80fce32",
+    "itemName": "Surestrike Goggles v2.0",
+    "recipeID": 41314,
+    "craftedItemID": 32474,
+    "reagentList": [
+      [23793, 6],
+      [23786, 1],
+      [23785, 2],
+      [23787, 4],
+      [23572, 1],
+      [23441, 2]
+    ],
+    "learnedAt": 350,
+    "difficultyColors": [350, 370, 380, 390],
+    "craftingCost": 0,
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_newgoggles.jpg",
+    "link": "https://wowhead.com/wotlk/spell=41314/Surestrike-Goggles-v2.0",
+    "createdAt": "2023-08-16T22:55:44.686Z",
+    "updatedAt": "2023-08-16T22:55:44.686Z",
+    "__v": 0
+  },
+  {
     "_id": "64dd53f0a5cab358e80fce31",
     "itemName": "Tankatronic Goggles",
     "recipeID": 41312,
@@ -4205,29 +4228,6 @@
     "link": "https://wowhead.com/wotlk/spell=30311/Adamantite-Grenade",
     "createdAt": "2023-08-16T22:55:44.683Z",
     "updatedAt": "2023-08-16T22:55:44.683Z",
-    "__v": 0
-  },
-  {
-    "_id": "64dd53f0a5cab358e80fce32",
-    "itemName": "Surestrike Goggles v2.0",
-    "recipeID": 41314,
-    "craftedItemID": 32474,
-    "reagentList": [
-      [23793, 6],
-      [23786, 1],
-      [23785, 2],
-      [23787, 4],
-      [23572, 1],
-      [23441, 2]
-    ],
-    "learnedAt": 350,
-    "difficultyColors": [350, 370, 380, 390],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_newgoggles.jpg",
-    "link": "https://wowhead.com/wotlk/spell=41314/Surestrike-Goggles-v2.0",
-    "createdAt": "2023-08-16T22:55:44.686Z",
-    "updatedAt": "2023-08-16T22:55:44.686Z",
     "__v": 0
   },
   {
@@ -4323,29 +4323,6 @@
     "__v": 0
   },
   {
-    "_id": "64dd53f0a5cab358e80fce38",
-    "itemName": "Destruction Holo-gogs",
-    "recipeID": 41320,
-    "craftedItemID": 32494,
-    "reagentList": [
-      [23793, 6],
-      [23786, 1],
-      [23785, 2],
-      [23787, 4],
-      [23572, 1],
-      [23438, 2]
-    ],
-    "learnedAt": 350,
-    "difficultyColors": [350, 370, 380, 390],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_newgoggles.jpg",
-    "link": "https://wowhead.com/wotlk/spell=41320/Destruction-Holo-gogs",
-    "createdAt": "2023-08-16T22:55:44.686Z",
-    "updatedAt": "2023-08-16T22:55:44.686Z",
-    "__v": 0
-  },
-  {
     "_id": "64dd53f0a5cab358e80fce39",
     "itemName": "Powerheal 4000 Lens",
     "recipeID": 41321,
@@ -4364,6 +4341,29 @@
     "quantityCreated": 1,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_newgoggles.jpg",
     "link": "https://wowhead.com/wotlk/spell=41321/Powerheal-4000-Lens",
+    "createdAt": "2023-08-16T22:55:44.686Z",
+    "updatedAt": "2023-08-16T22:55:44.686Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fce38",
+    "itemName": "Destruction Holo-gogs",
+    "recipeID": 41320,
+    "craftedItemID": 32494,
+    "reagentList": [
+      [23793, 6],
+      [23786, 1],
+      [23785, 2],
+      [23787, 4],
+      [23572, 1],
+      [23438, 2]
+    ],
+    "learnedAt": 350,
+    "difficultyColors": [350, 370, 380, 390],
+    "craftingCost": 0,
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_newgoggles.jpg",
+    "link": "https://wowhead.com/wotlk/spell=41320/Destruction-Holo-gogs",
     "createdAt": "2023-08-16T22:55:44.686Z",
     "updatedAt": "2023-08-16T22:55:44.686Z",
     "__v": 0
@@ -4450,27 +4450,6 @@
     "__v": 0
   },
   {
-    "_id": "64dd53f0a5cab358e80fce42",
-    "itemName": "Lightning Etched Specs",
-    "recipeID": 46112,
-    "craftedItemID": 34355,
-    "reagentList": [
-      [32476, 1],
-      [23571, 2],
-      [22451, 2],
-      [23572, 4]
-    ],
-    "learnedAt": 375,
-    "difficultyColors": [375, 390, 410, 430],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_newgoggles.jpg",
-    "link": "https://wowhead.com/wotlk/spell=46112/Lightning-Etched-Specs",
-    "createdAt": "2023-08-16T22:55:44.686Z",
-    "updatedAt": "2023-08-16T22:55:44.686Z",
-    "__v": 0
-  },
-  {
     "_id": "64dd53f0a5cab358e80fce44",
     "itemName": "Powerheal 9000 Lens",
     "recipeID": 46108,
@@ -4492,15 +4471,14 @@
     "__v": 0
   },
   {
-    "_id": "64dd53f0a5cab358e80fce45",
-    "itemName": "Primal-Attuned Goggles",
-    "recipeID": 46110,
-    "craftedItemID": 35184,
+    "_id": "64dd53f0a5cab358e80fce42",
+    "itemName": "Lightning Etched Specs",
+    "recipeID": 46112,
+    "craftedItemID": 34355,
     "reagentList": [
-      [32475, 1],
-      [21886, 5],
-      [22457, 5],
-      [21885, 5],
+      [32476, 1],
+      [23571, 2],
+      [22451, 2],
       [23572, 4]
     ],
     "learnedAt": 375,
@@ -4508,7 +4486,7 @@
     "craftingCost": 0,
     "quantityCreated": 1,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_newgoggles.jpg",
-    "link": "https://wowhead.com/wotlk/spell=46110/Primal-Attuned-Goggles",
+    "link": "https://wowhead.com/wotlk/spell=46112/Lightning-Etched-Specs",
     "createdAt": "2023-08-16T22:55:44.686Z",
     "updatedAt": "2023-08-16T22:55:44.686Z",
     "__v": 0
@@ -4531,6 +4509,112 @@
     "quantityCreated": 1,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_newgoggles.jpg",
     "link": "https://wowhead.com/wotlk/spell=46111/Annihilator-Holo-Gogs",
+    "createdAt": "2023-08-16T22:55:44.686Z",
+    "updatedAt": "2023-08-16T22:55:44.686Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fce41",
+    "itemName": "Justicebringer 3000 Specs",
+    "recipeID": 46107,
+    "craftedItemID": 35185,
+    "reagentList": [
+      [32472, 1],
+      [21886, 8],
+      [22457, 8],
+      [22452, 8],
+      [23572, 4]
+    ],
+    "learnedAt": 375,
+    "difficultyColors": [375, 390, 410, 430],
+    "craftingCost": 0,
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_newgoggles.jpg",
+    "link": "https://wowhead.com/wotlk/spell=46107/Justicebringer-3000-Specs",
+    "createdAt": "2023-08-16T22:55:44.686Z",
+    "updatedAt": "2023-08-16T22:55:44.686Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fce40",
+    "itemName": "Hyper-Magnified Moon Specs",
+    "recipeID": 46109,
+    "craftedItemID": 35182,
+    "reagentList": [
+      [32480, 1],
+      [21885, 6],
+      [21886, 12],
+      [23572, 4]
+    ],
+    "learnedAt": 375,
+    "difficultyColors": [375, 390, 410, 430],
+    "craftingCost": 0,
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_newgoggles.jpg",
+    "link": "https://wowhead.com/wotlk/spell=46109/Hyper-Magnified-Moon-Specs",
+    "createdAt": "2023-08-16T22:55:44.686Z",
+    "updatedAt": "2023-08-16T22:55:44.686Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fce3f",
+    "itemName": "Hard Khorium Goggles",
+    "recipeID": 46115,
+    "craftedItemID": 34357,
+    "reagentList": [
+      [32473, 1],
+      [35128, 2],
+      [23571, 1],
+      [23572, 4]
+    ],
+    "learnedAt": 375,
+    "difficultyColors": [375, 390, 410, 430],
+    "craftingCost": 0,
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_newgoggles.jpg",
+    "link": "https://wowhead.com/wotlk/spell=46115/Hard-Khorium-Goggles",
+    "createdAt": "2023-08-16T22:55:44.686Z",
+    "updatedAt": "2023-08-16T22:55:44.686Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fce47",
+    "itemName": "Surestrike Goggles v3.0",
+    "recipeID": 46113,
+    "craftedItemID": 34356,
+    "reagentList": [
+      [32474, 1],
+      [22451, 12],
+      [23572, 4]
+    ],
+    "learnedAt": 375,
+    "difficultyColors": [375, 390, 410, 430],
+    "craftingCost": 0,
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_newgoggles.jpg",
+    "link": "https://wowhead.com/wotlk/spell=46113/Surestrike-Goggles-v3.0",
+    "createdAt": "2023-08-16T22:55:44.686Z",
+    "updatedAt": "2023-08-16T22:55:44.686Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fce45",
+    "itemName": "Primal-Attuned Goggles",
+    "recipeID": 46110,
+    "craftedItemID": 35184,
+    "reagentList": [
+      [32475, 1],
+      [21886, 5],
+      [22457, 5],
+      [21885, 5],
+      [23572, 4]
+    ],
+    "learnedAt": 375,
+    "difficultyColors": [375, 390, 410, 430],
+    "craftingCost": 0,
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_newgoggles.jpg",
+    "link": "https://wowhead.com/wotlk/spell=46110/Primal-Attuned-Goggles",
     "createdAt": "2023-08-16T22:55:44.686Z",
     "updatedAt": "2023-08-16T22:55:44.686Z",
     "__v": 0
@@ -4572,90 +4656,6 @@
     "quantityCreated": 1,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_mount_gyrocoptorelite.jpg",
     "link": "https://wowhead.com/wotlk/spell=44157/Turbo-Charged-Flying-Machine",
-    "createdAt": "2023-08-16T22:55:44.686Z",
-    "updatedAt": "2023-08-16T22:55:44.686Z",
-    "__v": 0
-  },
-  {
-    "_id": "64dd53f0a5cab358e80fce41",
-    "itemName": "Justicebringer 3000 Specs",
-    "recipeID": 46107,
-    "craftedItemID": 35185,
-    "reagentList": [
-      [32472, 1],
-      [21886, 8],
-      [22457, 8],
-      [22452, 8],
-      [23572, 4]
-    ],
-    "learnedAt": 375,
-    "difficultyColors": [375, 390, 410, 430],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_newgoggles.jpg",
-    "link": "https://wowhead.com/wotlk/spell=46107/Justicebringer-3000-Specs",
-    "createdAt": "2023-08-16T22:55:44.686Z",
-    "updatedAt": "2023-08-16T22:55:44.686Z",
-    "__v": 0
-  },
-  {
-    "_id": "64dd53f0a5cab358e80fce3f",
-    "itemName": "Hard Khorium Goggles",
-    "recipeID": 46115,
-    "craftedItemID": 34357,
-    "reagentList": [
-      [32473, 1],
-      [35128, 2],
-      [23571, 1],
-      [23572, 4]
-    ],
-    "learnedAt": 375,
-    "difficultyColors": [375, 390, 410, 430],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_newgoggles.jpg",
-    "link": "https://wowhead.com/wotlk/spell=46115/Hard-Khorium-Goggles",
-    "createdAt": "2023-08-16T22:55:44.686Z",
-    "updatedAt": "2023-08-16T22:55:44.686Z",
-    "__v": 0
-  },
-  {
-    "_id": "64dd53f0a5cab358e80fce40",
-    "itemName": "Hyper-Magnified Moon Specs",
-    "recipeID": 46109,
-    "craftedItemID": 35182,
-    "reagentList": [
-      [32480, 1],
-      [21885, 6],
-      [21886, 12],
-      [23572, 4]
-    ],
-    "learnedAt": 375,
-    "difficultyColors": [375, 390, 410, 430],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_newgoggles.jpg",
-    "link": "https://wowhead.com/wotlk/spell=46109/Hyper-Magnified-Moon-Specs",
-    "createdAt": "2023-08-16T22:55:44.686Z",
-    "updatedAt": "2023-08-16T22:55:44.686Z",
-    "__v": 0
-  },
-  {
-    "_id": "64dd53f0a5cab358e80fce47",
-    "itemName": "Surestrike Goggles v3.0",
-    "recipeID": 46113,
-    "craftedItemID": 34356,
-    "reagentList": [
-      [32474, 1],
-      [22451, 12],
-      [23572, 4]
-    ],
-    "learnedAt": 375,
-    "difficultyColors": [375, 390, 410, 430],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_newgoggles.jpg",
-    "link": "https://wowhead.com/wotlk/spell=46113/Surestrike-Goggles-v3.0",
     "createdAt": "2023-08-16T22:55:44.686Z",
     "updatedAt": "2023-08-16T22:55:44.686Z",
     "__v": 0
@@ -4741,6 +4741,22 @@
     "__v": 0
   },
   {
+    "_id": "64dd53f0a5cab358e80fce4c",
+    "itemName": "Scrapbot Construction Kit",
+    "recipeID": 55252,
+    "craftedItemID": 40769,
+    "reagentList": [[36913, 10]],
+    "learnedAt": 415,
+    "difficultyColors": [0, 415, 417, 420],
+    "craftingCost": 0,
+    "quantityCreated": 5,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_14.jpg",
+    "link": "https://wowhead.com/wotlk/spell=55252/Scrapbot-Construction-Kit",
+    "createdAt": "2023-08-16T22:55:44.686Z",
+    "updatedAt": "2023-08-16T22:55:44.686Z",
+    "__v": 0
+  },
+  {
     "_id": "64dd53f0a5cab358e80fce4b",
     "itemName": "Mark \"S\" Boomstick",
     "recipeID": 54353,
@@ -4762,41 +4778,6 @@
     "__v": 0
   },
   {
-    "_id": "64dd53f0a5cab358e80fce4c",
-    "itemName": "Scrapbot Construction Kit",
-    "recipeID": 55252,
-    "craftedItemID": 40769,
-    "reagentList": [[36913, 10]],
-    "learnedAt": 415,
-    "difficultyColors": [0, 415, 417, 420],
-    "craftingCost": 0,
-    "quantityCreated": 5,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_14.jpg",
-    "link": "https://wowhead.com/wotlk/spell=55252/Scrapbot-Construction-Kit",
-    "createdAt": "2023-08-16T22:55:44.686Z",
-    "updatedAt": "2023-08-16T22:55:44.686Z",
-    "__v": 0
-  },
-  {
-    "_id": "64dd53f0a5cab358e80fce51",
-    "itemName": "Overcharged Capacitor",
-    "recipeID": 56464,
-    "craftedItemID": 39682,
-    "reagentList": [
-      [36916, 4],
-      [37701, 1]
-    ],
-    "learnedAt": 375,
-    "difficultyColors": [375, 380, 385, 390],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_27.jpg",
-    "link": "https://wowhead.com/wotlk/spell=56464/Overcharged-Capacitor",
-    "createdAt": "2023-08-16T22:55:44.687Z",
-    "updatedAt": "2023-08-16T22:55:44.687Z",
-    "__v": 0
-  },
-  {
     "_id": "64dd53f0a5cab358e80fce52",
     "itemName": "Explosive Decoy",
     "recipeID": 56463,
@@ -4811,41 +4792,6 @@
     "quantityCreated": 5,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/ability_seal.jpg",
     "link": "https://wowhead.com/wotlk/spell=56463/Explosive-Decoy",
-    "createdAt": "2023-08-16T22:55:44.687Z",
-    "updatedAt": "2023-08-16T22:55:44.687Z",
-    "__v": 0
-  },
-  {
-    "_id": "64dd53f0a5cab358e80fce4f",
-    "itemName": "Hammer Pick",
-    "recipeID": 56459,
-    "craftedItemID": 40892,
-    "reagentList": [[36916, 5]],
-    "learnedAt": 375,
-    "difficultyColors": [375, 380, 385, 390],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_pick_05.jpg",
-    "link": "https://wowhead.com/wotlk/spell=56459/Hammer-Pick",
-    "createdAt": "2023-08-16T22:55:44.687Z",
-    "updatedAt": "2023-08-16T22:55:44.687Z",
-    "__v": 0
-  },
-  {
-    "_id": "64dd53f0a5cab358e80fce54",
-    "itemName": "Froststeel Tube",
-    "recipeID": 56471,
-    "craftedItemID": 39683,
-    "reagentList": [
-      [36916, 8],
-      [37705, 1]
-    ],
-    "learnedAt": 390,
-    "difficultyColors": [390, 395, 400, 405],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_28.jpg",
-    "link": "https://wowhead.com/wotlk/spell=56471/Froststeel-Tube",
     "createdAt": "2023-08-16T22:55:44.687Z",
     "updatedAt": "2023-08-16T22:55:44.687Z",
     "__v": 0
@@ -4884,6 +4830,60 @@
     "link": "https://wowhead.com/wotlk/spell=56349/Handful-of-Cobalt-Bolts",
     "createdAt": "2023-08-16T22:55:44.686Z",
     "updatedAt": "2023-08-16T22:55:44.686Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fce4f",
+    "itemName": "Hammer Pick",
+    "recipeID": 56459,
+    "craftedItemID": 40892,
+    "reagentList": [[36916, 5]],
+    "learnedAt": 375,
+    "difficultyColors": [375, 380, 385, 390],
+    "craftingCost": 0,
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_pick_05.jpg",
+    "link": "https://wowhead.com/wotlk/spell=56459/Hammer-Pick",
+    "createdAt": "2023-08-16T22:55:44.687Z",
+    "updatedAt": "2023-08-16T22:55:44.687Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fce51",
+    "itemName": "Overcharged Capacitor",
+    "recipeID": 56464,
+    "craftedItemID": 39682,
+    "reagentList": [
+      [36916, 4],
+      [37701, 1]
+    ],
+    "learnedAt": 375,
+    "difficultyColors": [375, 380, 385, 390],
+    "craftingCost": 0,
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_27.jpg",
+    "link": "https://wowhead.com/wotlk/spell=56464/Overcharged-Capacitor",
+    "createdAt": "2023-08-16T22:55:44.687Z",
+    "updatedAt": "2023-08-16T22:55:44.687Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fce54",
+    "itemName": "Froststeel Tube",
+    "recipeID": 56471,
+    "craftedItemID": 39683,
+    "reagentList": [
+      [36916, 8],
+      [37705, 1]
+    ],
+    "learnedAt": 390,
+    "difficultyColors": [390, 395, 400, 405],
+    "craftingCost": 0,
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_28.jpg",
+    "link": "https://wowhead.com/wotlk/spell=56471/Froststeel-Tube",
+    "createdAt": "2023-08-16T22:55:44.687Z",
+    "updatedAt": "2023-08-16T22:55:44.687Z",
     "__v": 0
   },
   {
@@ -5001,26 +5001,6 @@
     "__v": 0
   },
   {
-    "_id": "64dd53f0a5cab358e80fce5b",
-    "itemName": "Gnomish X-Ray Specs",
-    "recipeID": 56473,
-    "craftedItemID": 40895,
-    "reagentList": [
-      [41163, 6],
-      [34052, 2],
-      [39681, 2]
-    ],
-    "learnedAt": 425,
-    "difficultyColors": [425, 430, 435, 440],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_44.jpg",
-    "link": "https://wowhead.com/wotlk/spell=56473/Gnomish-X-Ray-Specs",
-    "createdAt": "2023-08-16T22:55:44.687Z",
-    "updatedAt": "2023-08-16T22:55:44.687Z",
-    "__v": 0
-  },
-  {
     "_id": "64dd53f0a5cab358e80fce5a",
     "itemName": "Global Thermal Sapper Charge",
     "recipeID": 56514,
@@ -5059,6 +5039,42 @@
     "__v": 0
   },
   {
+    "_id": "64dd53f0a5cab358e80fce5b",
+    "itemName": "Gnomish X-Ray Specs",
+    "recipeID": 56473,
+    "craftedItemID": 40895,
+    "reagentList": [
+      [41163, 6],
+      [34052, 2],
+      [39681, 2]
+    ],
+    "learnedAt": 425,
+    "difficultyColors": [425, 430, 435, 440],
+    "craftingCost": 0,
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_helmet_44.jpg",
+    "link": "https://wowhead.com/wotlk/spell=56473/Gnomish-X-Ray-Specs",
+    "createdAt": "2023-08-16T22:55:44.687Z",
+    "updatedAt": "2023-08-16T22:55:44.687Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fce5d",
+    "itemName": "Saronite Razorheads",
+    "recipeID": 56475,
+    "craftedItemID": 41165,
+    "reagentList": [[36913, 2]],
+    "learnedAt": 415,
+    "difficultyColors": [0, 415, 417, 425],
+    "craftingCost": 0,
+    "quantityCreated": 1000,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_ammo_arrow_01.jpg",
+    "link": "https://wowhead.com/wotlk/spell=56475/Saronite-Razorheads",
+    "createdAt": "2023-08-16T22:55:44.687Z",
+    "updatedAt": "2023-08-16T22:55:44.687Z",
+    "__v": 0
+  },
+  {
     "_id": "64dd53f0a5cab358e80fce5e",
     "itemName": "Gnomish Army Knife",
     "recipeID": 56462,
@@ -5080,17 +5096,22 @@
     "__v": 0
   },
   {
-    "_id": "64dd53f0a5cab358e80fce5d",
-    "itemName": "Saronite Razorheads",
-    "recipeID": 56475,
-    "craftedItemID": 41165,
-    "reagentList": [[36913, 2]],
-    "learnedAt": 415,
-    "difficultyColors": [0, 415, 417, 425],
+    "_id": "64dd53f0a5cab358e80fce61",
+    "itemName": "Gnomish Lightning Generator",
+    "recipeID": 56469,
+    "craftedItemID": 41121,
+    "reagentList": [
+      [41163, 2],
+      [36913, 8],
+      [35622, 2],
+      [35623, 2]
+    ],
+    "learnedAt": 425,
+    "difficultyColors": [425, 430, 435, 440],
     "craftingCost": 0,
-    "quantityCreated": 1000,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_ammo_arrow_01.jpg",
-    "link": "https://wowhead.com/wotlk/spell=56475/Saronite-Razorheads",
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_lightningoverload.jpg",
+    "link": "https://wowhead.com/wotlk/spell=56469/Gnomish-Lightning-Generator",
     "createdAt": "2023-08-16T22:55:44.687Z",
     "updatedAt": "2023-08-16T22:55:44.687Z",
     "__v": 0
@@ -5115,22 +5136,20 @@
     "__v": 0
   },
   {
-    "_id": "64dd53f0a5cab358e80fce61",
-    "itemName": "Gnomish Lightning Generator",
-    "recipeID": 56469,
-    "craftedItemID": 41121,
+    "_id": "64dd53f0a5cab358e80fce62",
+    "itemName": "Heartseeker Scope",
+    "recipeID": 56478,
+    "craftedItemID": 41167,
     "reagentList": [
-      [41163, 2],
-      [36913, 8],
-      [35622, 2],
-      [35623, 2]
+      [36913, 10],
+      [36927, 2]
     ],
-    "learnedAt": 425,
-    "difficultyColors": [425, 430, 435, 440],
+    "learnedAt": 430,
+    "difficultyColors": [430, 435, 445, 455],
     "craftingCost": 0,
     "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_lightningoverload.jpg",
-    "link": "https://wowhead.com/wotlk/spell=56469/Gnomish-Lightning-Generator",
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_spyglass_02.jpg",
+    "link": "https://wowhead.com/wotlk/spell=56478/Heartseeker-Scope",
     "createdAt": "2023-08-16T22:55:44.687Z",
     "updatedAt": "2023-08-16T22:55:44.687Z",
     "__v": 0
@@ -5158,25 +5177,6 @@
     "__v": 0
   },
   {
-    "_id": "64dd53f0a5cab358e80fce62",
-    "itemName": "Heartseeker Scope",
-    "recipeID": 56478,
-    "craftedItemID": 41167,
-    "reagentList": [
-      [36913, 10],
-      [36927, 2]
-    ],
-    "learnedAt": 430,
-    "difficultyColors": [430, 435, 445, 455],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_spyglass_02.jpg",
-    "link": "https://wowhead.com/wotlk/spell=56478/Heartseeker-Scope",
-    "createdAt": "2023-08-16T22:55:44.687Z",
-    "updatedAt": "2023-08-16T22:55:44.687Z",
-    "__v": 0
-  },
-  {
     "_id": "64dd53f0a5cab358e80fce5f",
     "itemName": "Healing Injector Kit",
     "recipeID": 56476,
@@ -5191,6 +5191,28 @@
     "quantityCreated": 8,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_05.jpg",
     "link": "https://wowhead.com/wotlk/spell=56476/Healing-Injector-Kit",
+    "createdAt": "2023-08-16T22:55:44.687Z",
+    "updatedAt": "2023-08-16T22:55:44.687Z",
+    "__v": 0
+  },
+  {
+    "_id": "64dd53f0a5cab358e80fce64",
+    "itemName": "Weakness Spectralizers",
+    "recipeID": 56481,
+    "craftedItemID": 42550,
+    "reagentList": [
+      [41163, 8],
+      [38425, 4],
+      [36918, 2],
+      [35623, 4],
+      [43102, 1]
+    ],
+    "learnedAt": 440,
+    "difficultyColors": [440, 450, 455, 460],
+    "craftingCost": 0,
+    "quantityCreated": 1,
+    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_newgoggles.jpg",
+    "link": "https://wowhead.com/wotlk/spell=56481/Weakness-Spectralizers",
     "createdAt": "2023-08-16T22:55:44.687Z",
     "updatedAt": "2023-08-16T22:55:44.687Z",
     "__v": 0
@@ -5235,28 +5257,6 @@
     "quantityCreated": 1,
     "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_newgoggles.jpg",
     "link": "https://wowhead.com/wotlk/spell=56483/Charged-Titanium-Specs",
-    "createdAt": "2023-08-16T22:55:44.687Z",
-    "updatedAt": "2023-08-16T22:55:44.687Z",
-    "__v": 0
-  },
-  {
-    "_id": "64dd53f0a5cab358e80fce64",
-    "itemName": "Weakness Spectralizers",
-    "recipeID": 56481,
-    "craftedItemID": 42550,
-    "reagentList": [
-      [41163, 8],
-      [38425, 4],
-      [36918, 2],
-      [35623, 4],
-      [43102, 1]
-    ],
-    "learnedAt": 440,
-    "difficultyColors": [440, 450, 455, 460],
-    "craftingCost": 0,
-    "quantityCreated": 1,
-    "icon": "https://wow.zamimg.com/images/wow/icons/large/inv_gizmo_newgoggles.jpg",
-    "link": "https://wowhead.com/wotlk/spell=56481/Weakness-Spectralizers",
     "createdAt": "2023-08-16T22:55:44.687Z",
     "updatedAt": "2023-08-16T22:55:44.687Z",
     "__v": 0
