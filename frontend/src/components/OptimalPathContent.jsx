@@ -38,8 +38,12 @@ const OptimalPathContent = (startingLevel) => {
 
       // Calculate total cost
       let currentCost = 0;
+      console.log(shoppingListObject[0]);
       for (let i = 0; i < shoppingListObject.length; i++) {
-        currentCost += shoppingListObject[i].price;
+        let individualCost = shoppingListObject[i].price;
+        let quantity = shoppingListObject[i].requiredAmount;
+        let totalCost = individualCost * quantity;
+        currentCost += totalCost;
       }
       setTotalCost(currentCost);
     };
@@ -52,7 +56,6 @@ const OptimalPathContent = (startingLevel) => {
       <div className="self-center flex flex-col w-3/5 bg-light-gray border border-separate border-color rounded-lg">
         {/* can do border-gray-700 */}
         <h2 className="self-center text-lg font-bold">Shopping List</h2>
-        {console.log(shoppingList)}
         <ShoppingListContainer
           totalCost={totalCost}
           shoppingList={shoppingList}

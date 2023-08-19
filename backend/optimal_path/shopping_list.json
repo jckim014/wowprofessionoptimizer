@@ -28,13 +28,6 @@
     "requiredAmount": 10
   },
   {
-    "id": 4361,
-    "name": "Copper Tube",
-    "icon": "inv_gizmo_pipe_02",
-    "price": 598,
-    "requiredAmount": 0
-  },
-  {
     "id": 2589,
     "name": "Linen Cloth",
     "icon": "inv_fabric_linen_01",
@@ -215,13 +208,6 @@
     "icon": "inv_potion_15",
     "price": 2005,
     "requiredAmount": 16
-  },
-  {
-    "id": 10500,
-    "name": "Fire Goggles",
-    "icon": "inv_helmet_47",
-    "price": 999999999,
-    "requiredAmount": 0
   },
   {
     "id": 10560,

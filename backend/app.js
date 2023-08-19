@@ -285,7 +285,9 @@ app.get("/calculate-optimal-path", async (req, res) => {
   const shoppingArray = [];
 
   shoppingList.forEach((value, key, map) => {
-    shoppingArray.push(value);
+    if (value.requiredAmount > 0) {
+      shoppingArray.push(value);
+    }
   });
 
   const orderedShoppingList = shoppingArray.reverse();

@@ -21,7 +21,7 @@ const OptimalPathRow = ({ recipe, skillRange }) => {
 
   // Eventually add gold/silver/copper coin icons - maybe this can be a local img resource
   return (
-    <tr className="grid grid-cols-5 py-6 px-2 hover:bg-gray-700">
+    <tr className="grid grid-cols-5 py-6 px-2 hover:bg-gray-700 border border-color border-l-0 border-r-0">
       <td className="flex items-center font-bold">
         <p>
           {start} to {end}
