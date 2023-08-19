@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import useConvert from "../customhooks/useConvert";
 // Components
 import ShoppingListContainer from "./ShoppingListContainer";
-import OptimalPathRow from "./OptimalPathRow";
+import OptimalPathSection from "./OptimalPathSection";
 
 const OptimalPathContent = (startingLevel) => {
   const [optimalPath, setOptimalPath] = useState(null);
@@ -38,7 +38,6 @@ const OptimalPathContent = (startingLevel) => {
 
       // Calculate total cost
       let currentCost = 0;
-      console.log(shoppingListObject[0]);
       for (let i = 0; i < shoppingListObject.length; i++) {
         let individualCost = shoppingListObject[i].price;
         let quantity = shoppingListObject[i].requiredAmount;
@@ -72,15 +71,15 @@ const OptimalPathContent = (startingLevel) => {
               <td>Required Materials</td>
               <td>Learned From:</td>
             </tr>
-            {optimalPath &&
-              optimalPath.map((recipe, index) => (
-                <OptimalPathRow
-                  key={index}
-                  recipe={recipe}
-                  skillRange={skillRanges[index]}
-                />
-              ))}
           </tbody>
+          {optimalPath &&
+            optimalPath.map((recipe, index) => (
+              <OptimalPathSection
+                key={index}
+                recipe={recipe}
+                skillRange={skillRanges[index]}
+              />
+            ))}
         </table>
       </div>
     </div>

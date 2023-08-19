@@ -1,6 +1,11 @@
-import useConvert from "../customhooks/useConvert";
+import ExpandedRow from "./ExpandedRow";
 
-const OptimalPathRow = ({ recipe, skillRange }) => {
+import useConvert from "../customhooks/useConvert";
+import useRowToggle from "../customhooks/useRowToggle";
+
+const OptimalPathSection = ({ recipe, skillRange }) => {
+  const { isOpen, toggle } = useRowToggle(false);
+
   const start = skillRange[0];
   const end = skillRange[1];
   const quantity = end - start;
@@ -21,22 +26,35 @@ const OptimalPathRow = ({ recipe, skillRange }) => {
 
   // Eventually add gold/silver/copper coin icons - maybe this can be a local img resource
   return (
-    <tr className="grid grid-cols-5 py-6 px-2 hover:bg-gray-700 border border-color border-l-0 border-r-0">
-      <td className="flex items-center font-bold">
-        <p>
-          {start} to {end}
-        </p>
-      </td>
-      <td className="flex items-center justify-start">
-        <img className="m-0" src={`${icon}`}></img>
-        <a className="pl-2 wowhead-link" href={recipe.link}>
-          {recipe.itemName}
-        </a>
-      </td>
-      <td className="flex items-center justify-center">x{end - start}</td>
-      <td className="flex items-center">Placeholder</td>
-      <td className="flex items-center">Vendor/Trainer</td>
-    </tr>
+    <tbody>
+      <tr
+        className="grid grid-cols-5 py-6 px-2 cursor-pointer hover:bg-gray-700 
+        border border-color border-l-0 border-r-0"
+        onClick={toggle}
+      >
+        <td className="flex items-center font-bold">
+          <p>
+            {start} to {end}
+          </p>
+        </td>
+        <td className="flex items-center justify-start">
+          <img className="m-0" src={`${icon}`}></img>
+          <a className="pl-2 wowhead-link" href={recipe.link}>
+            {recipe.itemName}
+          </a>
+        </td>
+        <td className="flex items-center justify-center">x{end - start}</td>
+        <td className="flex items-center">Placeholder</td>
+        <td className="flex items-center">Vendor/Trainer</td>
+      </tr>
+      {isOpen && (
+        <ExpandedRow
+          recipe={recipe}
+          individualCost={individualCost}
+          totalCost={totalCost}
+        ></ExpandedRow>
+      )}
+    </tbody>
   );
 };
 
@@ -71,4 +89,4 @@ const OptimalPathRow = ({ recipe, skillRange }) => {
 //   </div>
 // </div>
 
-export default OptimalPathRow;
+export default OptimalPathSection;
