@@ -3,552 +3,644 @@
     "id": 2835,
     "name": "Rough Stone",
     "icon": "inv_stone_06",
+    "price": 609,
     "requiredAmount": 10
   },
   {
     "id": 4357,
     "name": "Rough Blasting Powder",
     "icon": "inv_misc_dust_01",
+    "price": 406,
     "requiredAmount": 72
   },
   {
     "id": 2880,
     "name": "Weak Flux",
     "icon": "inv_misc_ammo_gunpowder_02",
+    "price": 10170,
     "requiredAmount": 10
   },
   {
     "id": 4399,
     "name": "Wooden Stock",
     "icon": "inv_mace_11",
+    "price": 74017,
     "requiredAmount": 10
   },
   {
     "id": 4361,
     "name": "Copper Tube",
     "icon": "inv_gizmo_pipe_02",
+    "price": 598,
     "requiredAmount": 0
   },
   {
     "id": 2589,
     "name": "Linen Cloth",
     "icon": "inv_fabric_linen_01",
+    "price": 567,
     "requiredAmount": 57
   },
   {
     "id": 774,
     "name": "Malachite",
     "icon": "inv_misc_gem_emerald_03",
+    "price": 5330,
     "requiredAmount": 34
   },
   {
     "id": 2840,
     "name": "Copper Bar",
     "icon": "inv_ingot_02",
+    "price": 8109,
     "requiredAmount": 75
   },
   {
     "id": 2592,
     "name": "Wool Cloth",
     "icon": "inv_fabric_wool_01",
+    "price": 4873,
     "requiredAmount": 10
   },
   {
     "id": 2841,
     "name": "Bronze Bar",
     "icon": "inv_ingot_bronze",
+    "price": 15373,
     "requiredAmount": 10
   },
   {
     "id": 159,
     "name": "Refreshing Spring Water",
     "icon": "inv_drink_07",
+    "price": 11234,
     "requiredAmount": 15
   },
   {
     "id": 2318,
     "name": "Light Leather",
     "icon": "inv_misc_leatherscrap_03",
+    "price": 1450,
     "requiredAmount": 15
   },
   {
     "id": 4363,
     "name": "Copper Modulator",
     "icon": "inv_gizmo_03",
+    "price": 2342,
     "requiredAmount": 34
   },
   {
     "id": 4364,
     "name": "Coarse Blasting Powder",
     "icon": "inv_misc_dust_02",
+    "price": 989,
     "requiredAmount": 30
   },
   {
     "id": 4359,
     "name": "Handful of Copper Bolts",
     "icon": "inv_misc_gear_06",
+    "price": 7467,
     "requiredAmount": 97
   },
   {
     "id": 2842,
     "name": "Silver Bar",
     "icon": "inv_ingot_01",
+    "price": 39761,
     "requiredAmount": 30
   },
   {
     "id": 1705,
     "name": "Lesser Moonstone",
     "icon": "inv_misc_gem_crystal_01",
+    "price": 38563,
     "requiredAmount": 10
   },
   {
     "id": 4368,
     "name": "Flying Tiger Goggles",
     "icon": "inv_helmet_47",
+    "price": 28565,
     "requiredAmount": 5
   },
   {
     "id": 1206,
     "name": "Moss Agate",
     "icon": "inv_misc_gem_emerald_02",
+    "price": 170975,
     "requiredAmount": 55
   },
   {
     "id": 4306,
     "name": "Silk Cloth",
     "icon": "inv_fabric_silk_01",
+    "price": 3372,
     "requiredAmount": 10
   },
   {
     "id": 4375,
     "name": "Whirring Bronze Gizmo",
     "icon": "inv_gizmo_02",
+    "price": 13463,
     "requiredAmount": 70
   },
   {
     "id": 2319,
     "name": "Medium Leather",
     "icon": "inv_misc_leatherscrap_05",
+    "price": 6609,
     "requiredAmount": 60
   },
   {
     "id": 4377,
     "name": "Heavy Blasting Powder",
     "icon": "classic_inv_misc_dust_06",
+    "price": 9861,
     "requiredAmount": 20
   },
   {
     "id": 4371,
     "name": "Bronze Tube",
     "icon": "inv_gizmo_pipe_01",
+    "price": 1616,
     "requiredAmount": 110
   },
   {
     "id": 4389,
     "name": "Gyrochronatom",
     "icon": "inv_misc_pocketwatch_02",
+    "price": 10186,
     "requiredAmount": 10
   },
   {
     "id": 4387,
     "name": "Iron Strut",
     "icon": "inv_spear_05",
+    "price": 27030,
     "requiredAmount": 15
   },
   {
     "id": 4382,
     "name": "Bronze Framework",
     "icon": "inv_gizmo_bronzeframework_01",
+    "price": 53976,
     "requiredAmount": 5
   },
   {
     "id": 7068,
     "name": "Elemental Fire",
     "icon": "spell_fire_fire",
+    "price": 1722,
     "requiredAmount": 16
   },
   {
     "id": 3864,
     "name": "Citrine",
     "icon": "inv_misc_gem_opal_02",
+    "price": 38358,
     "requiredAmount": 46
   },
   {
     "id": 4385,
     "name": "Green Tinted Goggles",
     "icon": "inv_helmet_47",
+    "price": 90493,
     "requiredAmount": 3
   },
   {
     "id": 8151,
     "name": "Flask of Mojo",
     "icon": "inv_potion_15",
+    "price": 2005,
     "requiredAmount": 16
   },
   {
     "id": 10500,
     "name": "Fire Goggles",
     "icon": "inv_helmet_47",
+    "price": 999999999,
     "requiredAmount": 0
   },
   {
     "id": 10560,
     "name": "Unstable Trigger",
     "icon": "inv_battery_01",
+    "price": 34296,
     "requiredAmount": 19
   },
   {
     "id": 9061,
     "name": "Goblin Rocket Fuel",
     "icon": "inv_cask_02",
+    "price": 64514,
     "requiredAmount": 38
   },
   {
     "id": 4234,
     "name": "Heavy Leather",
     "icon": "inv_misc_leatherscrap_07",
+    "price": 4505,
     "requiredAmount": 154
   },
   {
     "id": 10026,
     "name": "Black Mageweave Boots",
     "icon": "inv_boots_05",
+    "price": 419742,
     "requiredAmount": 19
   },
   {
     "id": 10559,
     "name": "Mithril Tube",
     "icon": "inv_musket_01",
+    "price": 3857,
     "requiredAmount": 56
   },
   {
     "id": 8153,
     "name": "Wildvine",
     "icon": "inv_misc_herb_03",
+    "price": 13291,
     "requiredAmount": 10
   },
   {
     "id": 10286,
     "name": "Heart of the Wild",
     "icon": "inv_misc_herb_08",
+    "price": 6907,
     "requiredAmount": 10
   },
   {
     "id": 7909,
     "name": "Aquamarine",
     "icon": "inv_misc_gem_crystal_02",
+    "price": 244258,
     "requiredAmount": 15
   },
   {
     "id": 1529,
     "name": "Jade",
     "icon": "inv_misc_gem_stone_01",
+    "price": 39756,
     "requiredAmount": 35
   },
   {
     "id": 4304,
     "name": "Thick Leather",
     "icon": "inv_misc_leatherscrap_08",
+    "price": 6101,
     "requiredAmount": 70
   },
   {
     "id": 6037,
     "name": "Truesilver Bar",
     "icon": "inv_ingot_08",
+    "price": 24238,
     "requiredAmount": 40
   },
   {
     "id": 7077,
     "name": "Heart of Fire",
     "icon": "spell_fire_lavaspawn",
+    "price": 5036,
     "requiredAmount": 10
   },
   {
     "id": 3860,
     "name": "Mithril Bar",
     "icon": "inv_ingot_06",
+    "price": 42349,
     "requiredAmount": 20
   },
   {
     "id": 15992,
     "name": "Dense Blasting Powder",
     "icon": "inv_misc_ammo_gunpowder_01",
+    "price": 1997,
     "requiredAmount": 30
   },
   {
     "id": 12359,
     "name": "Thorium Bar",
     "icon": "inv_ingot_07",
+    "price": 8699,
     "requiredAmount": 30
   },
   {
     "id": 8170,
     "name": "Rugged Leather",
     "icon": "inv_misc_leatherscrap_02",
+    "price": 9578,
     "requiredAmount": 5
   },
   {
     "id": 12803,
     "name": "Living Essence",
     "icon": "spell_nature_abolishmagic",
+    "price": 16880,
     "requiredAmount": 5
   },
   {
     "id": 14047,
     "name": "Runecloth",
     "icon": "inv_fabric_purplefire_01",
+    "price": 3267,
     "requiredAmount": 70
   },
   {
     "id": 12810,
     "name": "Enchanted Leather",
     "icon": "inv_misc_rune_05",
+    "price": 58682,
     "requiredAmount": 10
   },
   {
     "id": 7910,
     "name": "Star Ruby",
     "icon": "inv_misc_gem_ruby_02",
+    "price": 34104,
     "requiredAmount": 45
   },
   {
     "id": 10502,
     "name": "Spellpower Goggles Xtreme",
     "icon": "inv_helmet_47",
+    "price": 36593,
     "requiredAmount": 5
   },
   {
     "id": 14227,
     "name": "Ironweb Spider Silk",
     "icon": "spell_nature_web",
+    "price": 33737,
     "requiredAmount": 5
   },
   {
     "id": 12360,
     "name": "Arcanite Bar",
     "icon": "inv_misc_stonetablet_05",
+    "price": 30615,
     "requiredAmount": 5
   },
   {
     "id": 12799,
     "name": "Large Opal",
     "icon": "inv_misc_gem_opal_01",
+    "price": 82574,
     "requiredAmount": 10
   },
   {
     "id": 15994,
     "name": "Thorium Widget",
     "icon": "inv_gizmo_04",
+    "price": 4804,
     "requiredAmount": 40
   },
   {
     "id": 16006,
     "name": "Delicate Arcanite Converter",
     "icon": "inv_gizmo_07",
+    "price": 99816,
     "requiredAmount": 75
   },
   {
     "id": 10576,
     "name": "Mithril Mechanical Dragonling",
     "icon": "inv_misc_head_dragon_blue",
+    "price": 991357,
     "requiredAmount": 10
   },
   {
     "id": 4400,
     "name": "Heavy Stock",
     "icon": "inv_mace_11",
+    "price": 70250,
     "requiredAmount": 35
   },
   {
     "id": 10558,
     "name": "Gold Power Core",
     "icon": "inv_battery_02",
+    "price": 2021,
     "requiredAmount": 36
   },
   {
     "id": 23112,
     "name": "Golden Draenite",
     "icon": "inv_misc_gem_goldendraenite_03",
+    "price": 48457,
     "requiredAmount": 10
   },
   {
     "id": 23446,
     "name": "Adamantite Bar",
     "icon": "inv_ingot_10",
+    "price": 26916,
     "requiredAmount": 40
   },
   {
     "id": 22445,
     "name": "Arcane Dust",
     "icon": "inv_enchant_dustarcane",
+    "price": 7504,
     "requiredAmount": 80
   },
   {
     "id": 23077,
     "name": "Blood Garnet",
     "icon": "inv_misc_gem_bloodgem_03",
+    "price": 30636,
     "requiredAmount": 20
   },
   {
     "id": 23793,
     "name": "Heavy Knothide Leather",
     "icon": "inv_misc_leatherscrap_11",
+    "price": 79171,
     "requiredAmount": 40
   },
   {
     "id": 23784,
     "name": "Adamantite Frame",
     "icon": "inv_gizmo_adamantiteframe",
+    "price": 67050,
     "requiredAmount": 25
   },
   {
     "id": 23782,
     "name": "Fel Iron Casing",
     "icon": "inv_gizmo_felironcasing",
+    "price": 168878,
     "requiredAmount": 70
   },
   {
     "id": 23783,
     "name": "Handful of Fel Iron Bolts",
     "icon": "inv_gizmo_felironbolts",
+    "price": 78761,
     "requiredAmount": 150
   },
   {
     "id": 39690,
     "name": "Volatile Blasting Trigger",
     "icon": "inv_misc_enggizmos_04",
+    "price": 28375,
     "requiredAmount": 5
   },
   {
     "id": 23438,
     "name": "Star of Elune",
     "icon": "inv_jewelcrafting_starofelune_02",
+    "price": 41691,
     "requiredAmount": 20
   },
   {
     "id": 23787,
     "name": "Felsteel Stabilizer",
     "icon": "inv_gizmo_felstabilizer",
+    "price": 579139,
     "requiredAmount": 100
   },
   {
     "id": 23785,
     "name": "Hardened Adamantite Tube",
     "icon": "inv_gizmo_hardenedadamantitetube",
+    "price": 1479253,
     "requiredAmount": 30
   },
   {
     "id": 23572,
     "name": "Primal Nether",
     "icon": "inv_elemental_primal_nether",
+    "price": 32796,
     "requiredAmount": 20
   },
   {
     "id": 21884,
     "name": "Primal Fire",
     "icon": "inv_elemental_primal_fire",
+    "price": 127388,
     "requiredAmount": 50
   },
   {
     "id": 32461,
     "name": "Furious Gizmatic Goggles",
     "icon": "inv_gizmo_newgoggles",
+    "price": 999999999,
     "requiredAmount": 5
   },
   {
     "id": 37705,
     "name": "Crystallized Water",
     "icon": "inv_elemental_crystal_water",
+    "price": 1676,
     "requiredAmount": 3
   },
   {
     "id": 36916,
     "name": "Cobalt Bar",
     "icon": "inv_ingot_cobalt",
+    "price": 13508,
     "requiredAmount": 24
   },
   {
     "id": 40533,
     "name": "Walnut Stock",
     "icon": "inv_mace_11",
+    "price": 144534,
     "requiredAmount": 5
   },
   {
     "id": 39684,
     "name": "Hair Trigger",
     "icon": "inv_misc_enggizmos_25",
+    "price": 127499,
     "requiredAmount": 5
   },
   {
     "id": 39681,
     "name": "Handful of Cobalt Bolts",
     "icon": "inv_misc_enggizmos_29",
+    "price": 21574,
     "requiredAmount": 124
   },
   {
     "id": 39682,
     "name": "Overcharged Capacitor",
     "icon": "inv_misc_enggizmos_27",
+    "price": 87075,
     "requiredAmount": 40
   },
   {
     "id": 39683,
     "name": "Froststeel Tube",
     "icon": "inv_misc_enggizmos_28",
+    "price": 75502,
     "requiredAmount": 34
   },
   {
     "id": 5956,
     "name": "Blacksmith Hammer",
     "icon": "inv_hammer_20",
+    "price": 13705,
     "requiredAmount": 5
   },
   {
     "id": 2901,
     "name": "Mining Pick",
     "icon": "inv_pick_02",
+    "price": 6871,
     "requiredAmount": 5
   },
   {
     "id": 7005,
     "name": "Skinning Knife",
     "icon": "inv_weapon_shortblade_01",
+    "price": 8412,
     "requiredAmount": 5
   },
   {
     "id": 36913,
     "name": "Saronite Bar",
     "icon": "inv_ingot_yoggthorite",
+    "price": 14731,
     "requiredAmount": 260
   },
   {
     "id": 43102,
     "name": "Frozen Orb",
     "icon": "spell_frost_frozencore",
+    "price": 238008,
     "requiredAmount": 10
   },
   {
     "id": 35624,
     "name": "Eternal Earth",
     "icon": "inv_elemental_eternal_earth",
+    "price": 74510,
     "requiredAmount": 40
   },
   {
     "id": 36924,
     "name": "Sky Sapphire",
     "icon": "inv_jewelcrafting_gem_05",
+    "price": 44097,
     "requiredAmount": 20
   },
   {
     "id": 38425,
     "name": "Heavy Borean Leather",
     "icon": "inv_misc_leatherscrap_19",
+    "price": 69387,
     "requiredAmount": 40
   },
   {
     "id": 41163,
     "name": "Titanium Bar",
     "icon": "inv_ingot_platinum",
+    "price": 121365,
     "requiredAmount": 240
   }
 ]

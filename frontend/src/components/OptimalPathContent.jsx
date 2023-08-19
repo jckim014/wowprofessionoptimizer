@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import useConvert from "../customhooks/useConvert";
 // Components
-import ShoppingList from "./ShoppingList";
+import ShoppingListContainer from "./ShoppingListContainer";
 import OptimalPathRow from "./OptimalPathRow";
 
 const OptimalPathContent = (startingLevel) => {
   const [optimalPath, setOptimalPath] = useState(null);
+  const [shoppingList, setShoppingList] = useState(null);
   const [skillRanges, setSkillRanges] = useState(null);
   const [totalCost, setTotalCost] = useState(0);
 
@@ -14,10 +15,13 @@ const OptimalPathContent = (startingLevel) => {
       // *** Make this a request with a variable starting level
       const response = await fetch("http://localhost:3000/fetch-optimal-path");
       const json = await response.json();
-      console.log(json[0]);
+
+      const optimalPathObject = json.optimalPathData;
+      const shoppingListObject = json.shoppingListData;
 
       if (response.ok) {
-        setOptimalPath(json);
+        setOptimalPath(optimalPathObject);
+        setShoppingList(shoppingListObject);
       }
 
       // Initialize skill ranges
@@ -25,8 +29,8 @@ const OptimalPathContent = (startingLevel) => {
       let start = startingLevel.startingLevel ? startingLevel.startingLevel : 1;
       let end = 0;
 
-      for (let i = 0; i < json.length; i++) {
-        end = start + json[i].quantityToCraft;
+      for (let i = 0; i < optimalPathObject.length; i++) {
+        end = start + optimalPathObject[i].quantityToCraft;
         tempArray.push([start, end]);
         start = end;
       }
@@ -34,8 +38,8 @@ const OptimalPathContent = (startingLevel) => {
 
       // Calculate total cost
       let currentCost = 0;
-      for (let i = 0; i < json.length; i++) {
-        currentCost += json[i].craftingCost;
+      for (let i = 0; i < shoppingListObject.length; i++) {
+        currentCost += shoppingListObject[i].price;
       }
       setTotalCost(currentCost);
     };
@@ -48,7 +52,11 @@ const OptimalPathContent = (startingLevel) => {
       <div className="self-center flex flex-col w-3/5 bg-light-gray border border-separate border-color rounded-lg">
         {/* can do border-gray-700 */}
         <h2 className="self-center text-lg font-bold">Shopping List</h2>
-        <ShoppingList totalCost={totalCost}></ShoppingList>
+        {console.log(shoppingList)}
+        <ShoppingListContainer
+          totalCost={totalCost}
+          shoppingList={shoppingList}
+        ></ShoppingListContainer>
       </div>
       <div className="optimal-path-container flex flex-col self-center mt-20 w-3/5 bg-darkest">
         {/* add in "header" divs and break path into multiple tables */}

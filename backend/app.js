@@ -11,11 +11,13 @@ const EngineeringRecipe = require("./models/engineering.js");
 
 const recipesObject = require("./recipe_jsons/engineer.json");
 const processedRecipes = require("./recipe_storage/stored_recipes.json");
+
 const iconsObject = require("./icons/icons.json");
 const ah_data = require("./ah_data/benediction-ally.json");
+
 const optimalPathData = require("./optimal_path/optimal_path.json");
 const groupedPathData = require("./optimal_path/grouped_path.json");
-const { group } = require("console");
+const shoppingListData = require("./optimal_path/shopping_list.json");
 
 // Express app
 const app = express();
@@ -248,10 +250,12 @@ app.get("/calculate-optimal-path", async (req, res) => {
       let currentReagentID = reagentList[j][0];
       let reagentQuantity = reagentList[j][1];
 
+      // Initialize reagentObject for new reagents
       let reagentObject = {};
       reagentObject.id = currentReagentID;
       reagentObject.name = iconsObject[currentReagentID].name_enus;
       reagentObject.icon = iconsObject[currentReagentID].icon;
+      reagentObject.price = priceLookup(currentReagentID, ah_data);
       reagentObject.requiredAmount = reagentQuantity;
 
       if (shoppingList.has(currentReagentID)) {
@@ -276,14 +280,6 @@ app.get("/calculate-optimal-path", async (req, res) => {
       tempObject.requiredAmount = tempQuantity;
       shoppingList.set(craftedItemID, tempObject);
     }
-    //else {
-    //   let tempObject = {};
-    //   tempObject.id = craftedItemID;
-    //   tempObject.name = iconsObject[craftedItemID].name_enus;
-    //   tempObject.icon = iconsObject[craftedItemID].icon;
-    //   tempObject.requiredAmount = 0 - craftedQuantity;
-    //   shoppingList.set(craftedItemID, tempObject);
-    // }
   }
 
   const shoppingArray = [];
@@ -322,7 +318,11 @@ app.get("/calculate-optimal-path", async (req, res) => {
 });
 
 app.get("/fetch-optimal-path", (req, res) => {
-  res.status(200).json(optimalPathData);
+  responseObject = {
+    optimalPathData: optimalPathData,
+    shoppingListData: shoppingListData,
+  };
+  res.status(200).json(responseObject);
 });
 
 app.get("/upload-engineering-recipes", (req, res) => {
