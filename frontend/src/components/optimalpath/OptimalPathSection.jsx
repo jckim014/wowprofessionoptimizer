@@ -1,7 +1,7 @@
 import ExpandedRow from "./ExpandedRow";
 
-import useConvert from "../customhooks/useConvert";
-import useRowToggle from "../customhooks/useRowToggle";
+import useConvert from "../../customhooks/useConvert";
+import useRowToggle from "../../customhooks/useRowToggle";
 
 const OptimalPathSection = ({ recipe, skillRange }) => {
   const { isOpen, toggle } = useRowToggle(false);

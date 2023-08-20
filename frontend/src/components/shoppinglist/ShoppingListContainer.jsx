@@ -1,4 +1,4 @@
-import useConvert from "../customhooks/useConvert";
+import useConvert from "../../customhooks/useConvert";
 import ShoppingItem from "./ShoppingItem";
 
 const ShoppingListContainer = ({ totalCost, shoppingList }) => {

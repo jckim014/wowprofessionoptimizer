@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import useConvert from "../customhooks/useConvert";
+import useConvert from "../../customhooks/useConvert";
 // Components
-import ShoppingListContainer from "./ShoppingListContainer";
+import ShoppingListContainer from "../shoppinglist/ShoppingListContainer";
 import OptimalPathSection from "./OptimalPathSection";
 
-const OptimalPathContent = (startingLevel) => {
+const OptimalPathContent = ({ startingLevel }) => {
   const [optimalPath, setOptimalPath] = useState(null);
   const [shoppingList, setShoppingList] = useState(null);
   const [skillRanges, setSkillRanges] = useState(null);
@@ -26,7 +26,7 @@ const OptimalPathContent = (startingLevel) => {
 
       // Initialize skill ranges
       const tempArray = [];
-      let start = startingLevel.startingLevel ? startingLevel.startingLevel : 1;
+      let start = startingLevel ? startingLevel : 1;
       let end = 0;
 
       for (let i = 0; i < optimalPathObject.length; i++) {
@@ -52,7 +52,7 @@ const OptimalPathContent = (startingLevel) => {
 
   return (
     <div className="content-container flex flex-col">
-      <div className="self-center flex flex-col w-3/5 bg-light-gray border border-separate border-color rounded-lg">
+      <div className="self-center flex flex-col w-4/5 bg-light-gray border border-separate border-color rounded-lg">
         {/* can do border-gray-700 */}
         <h2 className="self-center text-lg font-bold">Shopping List</h2>
         <ShoppingListContainer
@@ -60,7 +60,7 @@ const OptimalPathContent = (startingLevel) => {
           shoppingList={shoppingList}
         ></ShoppingListContainer>
       </div>
-      <div className="optimal-path-container flex flex-col self-center mt-20 w-3/5 bg-darkest">
+      <div className="optimal-path-container flex flex-col self-center mt-20 w-4/5 bg-darkest">
         {/* add in "header" divs and break path into multiple tables */}
         <table className="justify-around border border-separate border-color rounded-lg bg-light-gray">
           <tbody className="">
