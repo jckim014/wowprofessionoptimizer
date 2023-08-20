@@ -17,7 +17,8 @@ const RequestForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    navigate(`/${profession}`, {
+    let slug = profession.toLocaleLowerCase();
+    navigate(`/profession/${slug}`, {
       state: data,
     });
   };

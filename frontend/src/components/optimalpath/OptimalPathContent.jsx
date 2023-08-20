@@ -4,16 +4,36 @@ import useConvert from "../../customhooks/useConvert";
 import ShoppingListContainer from "../shoppinglist/ShoppingListContainer";
 import OptimalPathSection from "./OptimalPathSection";
 
-const OptimalPathContent = ({ startingLevel }) => {
+const OptimalPathContent = ({ data }) => {
   const [optimalPath, setOptimalPath] = useState(null);
   const [shoppingList, setShoppingList] = useState(null);
   const [skillRanges, setSkillRanges] = useState(null);
   const [totalCost, setTotalCost] = useState(0);
 
+  let profession = data.profession;
+  let server = data.server;
+  let faction = data.faction;
+  let startingLevel = data.startingLevel;
+
   useEffect(() => {
     const fetchOptimalPath = async () => {
-      // *** Make this a request with a variable starting level
-      const response = await fetch("http://localhost:3000/fetch-optimal-path");
+      const data = {
+        profession: profession,
+        sever: server,
+        faction: faction,
+        startingLevel: startingLevel,
+      };
+
+      const request = JSON.stringify(data);
+
+      const response = await fetch(
+        "http://localhost:3000/calculate-optimal-path",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: request,
+        }
+      );
       const json = await response.json();
 
       const optimalPathObject = json.optimalPathData;

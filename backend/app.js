@@ -64,6 +64,7 @@ async function fetchRealmData(url) {
 }
 
 app.use(cors({ origin: "http://localhost:5173" }));
+app.use(express.json());
 
 // Grab the realm auction house data and store into file (allowed 100/24 hours)
 app.get("/fetch-realm-data", async (req, res) => {
@@ -193,8 +194,10 @@ function getOptimalRecipe(recipes, inventory) {
   return [recipeObject, quantityCreated, usedInventory];
 }
 
-app.get("/calculate-optimal-path", async (req, res) => {
+app.post("/calculate-optimal-path", async (req, res) => {
   // Need to add goblin vs gnomish filter (or ignore entirely)
+  let data = req.body;
+
   let currentSkill = 1;
 
   let recipePath = [];
@@ -316,11 +319,8 @@ app.get("/calculate-optimal-path", async (req, res) => {
 
   storeLocal(groupedPath, "optimal_path", "optimal_path");
 
-  res.send("Optimal path calculated");
-});
-
-app.get("/fetch-optimal-path", (req, res) => {
-  responseObject = {
+  // Send data to frontend
+  let responseObject = {
     optimalPathData: optimalPathData,
     shoppingListData: shoppingListData,
   };
@@ -374,6 +374,13 @@ app.get("/retrieve-recipes", async (req, res) => {
 });
 
 // Deprecated
+app.get("/fetch-optimal-path", (req, res) => {
+  let responseObject = {
+    optimalPathData: optimalPathData,
+    shoppingListData: shoppingListData,
+  };
+  res.status(200).json(responseObject);
+});
 app.get("/group-like-items", (req, res) => {
   const ungroupedItems = optimalPathData;
   const groupedItems = [];

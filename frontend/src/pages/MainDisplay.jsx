@@ -4,7 +4,7 @@ import OptimalPathContent from "../components/optimalpath/OptimalPathContent";
 import SelectForm from "../components/selectform/SelectForm";
 
 // This page only works on redirect from request form
-const Engineering = () => {
+const MainDisplay = () => {
   const location = useLocation();
   const data = location.state;
 
@@ -21,12 +21,10 @@ const Engineering = () => {
         ></SelectForm>
       </div>
       <div className="optimalPathMain flex items-center flex-col ">
-        <OptimalPathContent
-          startingLevel={data.startingLevel}
-        ></OptimalPathContent>
+        <OptimalPathContent data={data}></OptimalPathContent>
       </div>
     </div>
   );
 };
 
-export default Engineering;
+export default MainDisplay;
