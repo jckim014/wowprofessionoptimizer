@@ -5,6 +5,12 @@ import SelectForm from "../components/selectform/SelectForm";
 
 // This page only works on redirect from request form
 const MainDisplay = () => {
+  const [fetchToggle, setFetchToggle] = useState(false);
+
+  function updateFetchToggle(currentToggle) {
+    setFetchToggle(!currentToggle);
+  }
+
   const location = useLocation();
   const data = location.state;
 
@@ -18,10 +24,15 @@ const MainDisplay = () => {
           server={data.server}
           faction={data.faction}
           startingLevel={data.startingLevel}
+          fetchToggle={fetchToggle}
+          updateFetchToggle={updateFetchToggle}
         ></SelectForm>
       </div>
       <div className="optimalPathMain flex items-center flex-col ">
-        <OptimalPathContent data={data}></OptimalPathContent>
+        <OptimalPathContent
+          data={data}
+          fetchToggle={fetchToggle}
+        ></OptimalPathContent>
       </div>
     </div>
   );

@@ -28,10 +28,21 @@ const OptimalPathSection = ({ recipe, skillRange }) => {
   return (
     <tbody>
       <tr
-        className="grid grid-cols-5 py-6 px-2 cursor-pointer hover:bg-gray-700 
+        className="grid grid-cols-6 py-6 px-2 cursor-pointer hover:bg-gray-700 
         border border-color border-l-0 border-r-0"
         onClick={toggle}
       >
+        <td className="flex items-center">
+          <span
+            className="material-symbols-outlined"
+            style={{
+              transform: `rotate(${isOpen ? 180 : 0}deg)`,
+              transition: "all",
+            }}
+          >
+            expand_more
+          </span>
+        </td>
         <td className="flex items-center font-bold">
           <p>
             {start} to {end}

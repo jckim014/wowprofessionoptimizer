@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 import { GiAnvilImpact } from "react-icons/gi";
-import FactionSelect from "./FactionSelect";
-import ServerSelect from "./ServerSelect";
 
 const Navbar = () => {
   return (
@@ -14,7 +12,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="placeholder/spacer"></div>
+        {/* <div className="placeholder/spacer"></div>
         <div className="flex">
           <div className="text-white">
             <FactionSelect />
@@ -22,7 +20,7 @@ const Navbar = () => {
           <div className="text-white">
             <ServerSelect />
           </div>
-        </div>
+        </div> */}
       </div>
     </header>
   );

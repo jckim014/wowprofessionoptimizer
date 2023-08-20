@@ -1,6 +1,6 @@
 import ProfessionListItem from "./ProfessionListItem";
 
-const ProfessionDropdown = () => {
+const ProfessionDropdown = ({ updateProfession, closeDropdown }) => {
   const professionList = [
     "Alchemy",
     "Blacksmithing",
@@ -20,7 +20,12 @@ const ProfessionDropdown = () => {
     ring-opacity-5 focus:outline-none sm:text-sm"
     >
       {professionList.map((profession, index) => (
-        <ProfessionListItem key={index} profession={profession} />
+        <ProfessionListItem
+          key={index}
+          profession={profession}
+          updateProfession={updateProfession}
+          closeDropdown={closeDropdown}
+        />
       ))}
     </ul>
   );

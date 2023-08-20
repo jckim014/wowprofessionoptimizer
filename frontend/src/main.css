@@ -40,10 +40,15 @@
   color: white;
 }
 
+.inherit-width {
+  width: inherit;
+}
+
 /* for wowhead tooltips */
 table {
-  background-color: transparent !important;
 }
+
+/* Faction Button Styling */
 
 body,
 html {

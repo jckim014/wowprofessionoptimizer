@@ -1,4 +1,10 @@
-const ProfessionListItem = ({ profession }) => {
+import useRowToggle from "../../customhooks/useRowToggle";
+
+const ProfessionListItem = ({
+  profession,
+  updateProfession,
+  closeDropdown,
+}) => {
   return (
     <li
       className="text-white bg-brand-dark hover:bg-gray-600 
@@ -6,6 +12,10 @@ const ProfessionListItem = ({ profession }) => {
       focus:bg-gray-600 focus:outline-none ring-inset focus:ring-2 
       focus:ring-brand-main focus:border-brand-main"
       value={{ profession }}
+      onClick={() => {
+        updateProfession(profession);
+        closeDropdown();
+      }}
     >
       {profession}
     </li>

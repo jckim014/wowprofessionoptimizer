@@ -261,6 +261,12 @@ app.post("/calculate-optimal-path", async (req, res) => {
       reagentObject.price = priceLookup(currentReagentID, ah_data);
       reagentObject.requiredAmount = reagentQuantity;
 
+      let convertedString = iconsObject[currentReagentID].name_enus.replace(
+        /\s/g,
+        "-"
+      );
+      reagentObject.link = `https://wowhead.com/wotlk/item=${currentReagentID}/${convertedString}`;
+
       if (shoppingList.has(currentReagentID)) {
         let tempObject = shoppingList.get(currentReagentID);
         let tempQuantity = tempObject.requiredAmount;
@@ -336,10 +342,6 @@ app.get("/upload-engineering-recipes", (req, res) => {
   const formattedRecipes = filteredRecipes.map((recipe) => {
     let convertedString = recipe.name.replace(/\s/g, "-");
 
-    if (recipe.id == 3918) {
-      console.log(convertedString);
-    }
-
     return new EngineeringRecipe({
       itemName: recipe.name,
       recipeID: recipe.id,
@@ -361,9 +363,10 @@ app.get("/upload-engineering-recipes", (req, res) => {
   res.send("Recipes uploaded");
 });
 
-// Testing database retrieval, should log 275
+// Testing database retrieval
 app.get("/retrieve-recipes", async (req, res) => {
   let allRecipes = await EngineeringRecipe.find().lean();
+  // Should be 275
   console.log(allRecipes.length);
 
   const storedRecipes = JSON.stringify(allRecipes);
