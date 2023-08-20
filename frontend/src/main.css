@@ -40,6 +40,11 @@
   color: white;
 }
 
+/* for wowhead tooltips */
+table {
+  background-color: transparent !important;
+}
+
 body,
 html {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
