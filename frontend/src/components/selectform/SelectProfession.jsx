@@ -15,7 +15,7 @@ const SelectProfession = ({ professionState, updateProfession }) => {
   return (
     <div className="">
       <button
-        className="flex justify-between items-center relative w-full py-2 px-3 text-left bg-gray-700 
+        className="flex justify-between items-center relative w-full mb-3 text-left bg-gray-700 
       border border-gray-700 rounded-md shadow-sm cursor-pointer 
       hover:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-brand-main 
       focus:border-brand-main sm:text-sm"

@@ -1,7 +1,7 @@
 const SelectStartingLevel = ({ startingLevelState, updateStartingLevel }) => {
   return (
     <div
-      className="flex justify-around relative w-full py-1 mt-1 overflow-auto text-base 
+      className="flex justify-around relative w-full py-1 mb-3 overflow-auto text-base 
   bg-gray-700 shadow-lg max-h-80 ring-1 ring-black 
   ring-opacity-5 focus:outline-none sm:text-sm
   rounded-md"

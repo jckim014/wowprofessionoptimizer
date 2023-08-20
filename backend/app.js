@@ -198,7 +198,7 @@ app.post("/calculate-optimal-path", async (req, res) => {
   // Need to add goblin vs gnomish filter (or ignore entirely)
   let data = req.body;
 
-  let currentSkill = 1;
+  let currentSkill = parseInt(data.startingLevel);
 
   let recipePath = [];
   let inventory = new Map();
@@ -237,7 +237,7 @@ app.post("/calculate-optimal-path", async (req, res) => {
 
     // Record cheapest recipe
     recipePath.push(cheapestRecipe); // Can include other information as an array of arrays
-    currentSkill += 1;
+    currentSkill = currentSkill + 1;
   }
 
   // Record shoppingList working backwards
@@ -327,8 +327,8 @@ app.post("/calculate-optimal-path", async (req, res) => {
 
   // Send data to frontend
   let responseObject = {
-    optimalPathData: optimalPathData,
-    shoppingListData: shoppingListData,
+    optimalPathData: groupedPath,
+    shoppingListData: orderedShoppingList,
   };
   res.status(200).json(responseObject);
 });
@@ -421,7 +421,7 @@ app.get("/group-like-items", (req, res) => {
         console.log("Error while writing JSON object to file");
         return console.log(err);
       }
-      console.log("JSON file saved to grouped_path.json");
+      // console.log("JSON file saved to grouped_path.json");
     }
   );
   res.send("Identical items grouped and reagents updated");
@@ -438,7 +438,7 @@ function storeLocal(storedItem, folder, filename) {
         console.log("Error while writing JSON object to file");
         return console.log(err);
       }
-      console.log(`JSON file saved to ${filename}.json`);
+      // console.log(`JSON file saved to ${filename}.json`);
     }
   );
 }
