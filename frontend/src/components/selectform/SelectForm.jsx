@@ -5,6 +5,7 @@ import SelectProfession from "./SelectProfession";
 import SelectStartingLevel from "./SelectStartingLevel";
 import SelectServer from "./SelectServer";
 import SelectFaction from "./SelectFaction";
+import RiskToleranceToggle from "./RiskToleranceToggle";
 
 const SelectForm = ({
   profession,
@@ -18,6 +19,7 @@ const SelectForm = ({
   const [serverState, setServerState] = useState(server);
   const [factionState, setFactionState] = useState(faction);
   const [startingLevelState, setStartingLevelState] = useState(startingLevel);
+  const [riskToleranceState, setRiskToleranceState] = useState(false);
 
   function updateProfession(newProfession) {
     setProfessionState(newProfession);
@@ -30,6 +32,9 @@ const SelectForm = ({
   }
   function updateFaction(newFaction) {
     setFactionState(newFaction);
+  }
+  function updateRiskTolerance(newRiskTolerance) {
+    setRiskToleranceState(!newRiskTolerance);
   }
 
   const navigate = useNavigate();
@@ -44,6 +49,7 @@ const SelectForm = ({
       server: serverState,
       faction: factionState,
       startingLevel: startingLevelState,
+      riskTolerance: riskToleranceState,
     };
     navigate(`/profession/${path}`, {
       state: data,
@@ -71,17 +77,18 @@ const SelectForm = ({
           serverState={serverState}
           updateServer={updateServer}
         ></SelectServer>
+        <RiskToleranceToggle
+          riskToleranceState={riskToleranceState}
+          updateRiskTolerance={updateRiskTolerance}
+        ></RiskToleranceToggle>
+        <div>
+          {riskToleranceState && "True"}
+          {!riskToleranceState && "False"}
+        </div>
         <SelectFaction
           factionState={factionState}
           updateFaction={updateFaction}
         ></SelectFaction>
-        <div>
-          Temporary state display for backend request:
-          <div>{professionState}</div>
-          <div>{startingLevelState}</div>
-          <div>{factionState}</div>
-          <div>{serverState}</div>
-        </div>
         <button
           type="submit"
           className="place-self-center mt-8 relative w-1/3 py-1 mt-1 overflow-auto text-base 
