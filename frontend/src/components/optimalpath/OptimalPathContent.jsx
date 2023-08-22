@@ -14,14 +14,16 @@ const OptimalPathContent = ({ data, fetchToggle }) => {
   let server = data.server;
   let faction = data.faction;
   let startingLevel = data.startingLevel;
+  let riskTolerance = data.riskTolerance; // this isn't in the home page request form yet
 
   useEffect(() => {
     const fetchOptimalPath = async () => {
       const data = {
         profession: profession,
-        sever: server,
+        server: server,
         faction: faction,
         startingLevel: startingLevel,
+        riskTolerance: riskTolerance,
       };
 
       const request = JSON.stringify(data);
