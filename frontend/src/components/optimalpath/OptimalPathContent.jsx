@@ -85,6 +85,8 @@ const OptimalPathContent = ({ data, fetchToggle }) => {
         <ShoppingListContainer
           totalCost={totalCost}
           shoppingList={shoppingList}
+          server={server}
+          faction={faction}
         ></ShoppingListContainer>
       </div>
       <div className="optimal-path-container flex flex-col self-center m-24">

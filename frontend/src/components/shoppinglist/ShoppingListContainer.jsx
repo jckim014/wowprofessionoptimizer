@@ -1,13 +1,20 @@
 import useConvert from "../../customhooks/useConvert";
 import ShoppingItem from "./ShoppingItem";
 
-const ShoppingListContainer = ({ totalCost, shoppingList }) => {
+const ShoppingListContainer = ({
+  totalCost,
+  shoppingList,
+  server,
+  faction,
+}) => {
   const readableCost = useConvert(totalCost);
   return (
     <div className="">
       <div className="">
         <p>
-          <span className="font-bold">Total Cost: </span>
+          <span className="font-bold">
+            Total Cost on {server} - {faction}{" "}
+          </span>
           <span className="text-currency-gold">
             {readableCost.gold.toLocaleString("en-us")}g{" "}
           </span>
