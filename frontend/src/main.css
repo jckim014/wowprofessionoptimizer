@@ -33,16 +33,30 @@
   color: var(--gray);
 }
 
+.button-color {
+  background-color: #648fff;
+}
+
 .border-color {
   border-color: #c6d6df;
 }
 
+.switch-size {
+  height: 64px;
+  width: 32px;
+}
 select {
   -o-appearance: none;
   -ms-appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* .bg-darkest {

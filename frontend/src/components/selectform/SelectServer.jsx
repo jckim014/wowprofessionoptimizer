@@ -1,22 +1,42 @@
+import { useEffect, useState } from "react";
+import { PiCaretUpDownBold } from "react-icons/pi";
+
+import SelectServerDropdown from "./SelectServerDropdown";
+import useRowToggle from "../../customhooks/useRowToggle";
+
 const SelectServer = ({ serverState, updateServer }) => {
+  const [openState, setOpenState] = useState(false);
+
+  function closeDropdown() {
+    toggle();
+  }
+  const { isOpen, toggle } = useRowToggle(openState);
+
   // Need to somehow generate server list later
   // Turn these into option components
   return (
-    <div className="pb-2">
+    <div className="pb-4">
       <p className="text-lg font-bold">Server</p>
-      <select
+      <button
         className="flex justify-between items-center relative w-full text-left 
-        border border-color rounded-md cursor-pointer hover py-1 pl-3 focus:outline-none"
-        defaultValue={serverState}
-        onChange={(e) => {
-          console.log("click");
-          console.log("click");
-          updateServer(e.target.value);
-        }}
+        border border-color rounded-md cursor-pointer hover p-1 pl-3"
+        type="button"
+        onClick={toggle}
       >
-        <option value="Benediction">Benediction</option>
-        <option value="Faerlina">Faerlina</option>
-      </select>
+        {serverState}
+        <PiCaretUpDownBold
+          className="item-color"
+          size="1.75em"
+        ></PiCaretUpDownBold>
+      </button>
+      <div className="relative">
+        {isOpen && (
+          <SelectServerDropdown
+            updateServer={updateServer}
+            closeDropdown={closeDropdown}
+          />
+        )}
+      </div>
     </div>
   );
 };

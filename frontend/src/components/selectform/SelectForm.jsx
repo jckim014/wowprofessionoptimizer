@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import SelectProfession from "./SelectProfession";
 import SelectStartingLevel from "./SelectStartingLevel";
 import SelectServer from "./SelectServer";
-import SelectFaction from "./SelectFaction";
+import SelectFactionSwitch from "./SelectFactionSwitch";
 import RiskToleranceToggle from "./RiskToleranceToggle";
 
 const SelectForm = ({
@@ -73,21 +73,19 @@ const SelectForm = ({
           startingLevelState={startingLevelState}
           updateStartingLevel={updateStartingLevel}
         ></SelectStartingLevel>
-        {/* need to add EU vs NA functionality */}
-
+        <SelectFactionSwitch
+          factionState={factionState}
+          updateFaction={updateFaction}
+        ></SelectFactionSwitch>
         <RiskToleranceToggle
           riskToleranceState={riskToleranceState}
           updateRiskTolerance={updateRiskTolerance}
         ></RiskToleranceToggle>
-        <SelectFaction
-          factionState={factionState}
-          updateFaction={updateFaction}
-        ></SelectFaction>
+
         <button
           type="submit"
-          className="place-self-center mt-8 relative w-1/3 py-1 mt-1 overflow-auto text-base 
-          bg-gray-700 shadow-lg max-h-80 ring-1 ring-black 
-          ring-opacity-5 focus:outline-none sm:text-sm
+          className="item-bg place-self-center mt-4 relative w-full p-2 hover
+          shadow-lg focus:outline-none
           rounded-md"
           onClick={handleSubmit}
         >
