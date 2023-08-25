@@ -1,6 +1,6 @@
 import ProfessionListItem from "./ProfessionListItem";
 
-const ProfessionDropdown = ({ updateProfession, closeDropdown }) => {
+const SelectProfessionDropdown = ({ updateProfession, closeDropdown }) => {
   const professionList = [
     "Alchemy",
     "Blacksmithing",
@@ -14,11 +14,7 @@ const ProfessionDropdown = ({ updateProfession, closeDropdown }) => {
     "Tailoring",
   ];
   return (
-    <ul
-      className="w-full z-20 py-1 mt-1 overflow-auto text-base 
-    bg-gray-700 rounded-md shadow-lg max-h-80 ring-1 ring-black 
-    ring-opacity-5 focus:outline-none sm:text-sm"
-    >
+    <ul className="absolute w-full bg-white z-20 mt-1 border border-color rounded-md">
       {professionList.map((profession, index) => (
         <ProfessionListItem
           key={index}
@@ -31,4 +27,4 @@ const ProfessionDropdown = ({ updateProfession, closeDropdown }) => {
   );
 };
 
-export default ProfessionDropdown;
+export default SelectProfessionDropdown;

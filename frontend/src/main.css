@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --blue: #648fff;
+  --gray: #7e98b1;
+}
 /* Custom css */
 .fixed {
   position: fixed;
@@ -12,11 +17,35 @@
   top: 0;
 }
 
-.margin-top {
-  margin-top: 5rem;
+.bg-main {
+  background-color: #fafbfe;
 }
 
-.bg-darkest {
+.hover:hover {
+  background-color: #c0cad3;
+}
+
+.item-bg {
+  background-color: var(--gray);
+}
+
+.item-color {
+  color: var(--gray);
+}
+
+.border-color {
+  border-color: #c6d6df;
+}
+
+select {
+  -o-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* .bg-darkest {
   background-color: rgba(28, 30, 37);
 }
 
@@ -26,11 +55,7 @@
 
 .bg-medium-gray {
   background-color: rgba(35, 37, 43);
-}
-
-.border-color {
-  border-color: rgba(49, 50, 57);
-}
+} */
 
 .wowhead-link {
   color: #ffd100;

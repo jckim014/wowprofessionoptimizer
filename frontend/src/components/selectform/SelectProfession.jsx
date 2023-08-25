@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import ProfessionDropdown from "./ProfessionDropdown";
+import SelectProfessionDropdown from "./SelectProfessionDropdown";
 import useRowToggle from "../../customhooks/useRowToggle";
 import { PiCaretUpDownBold } from "react-icons/pi";
 
@@ -13,25 +13,28 @@ const SelectProfession = ({ professionState, updateProfession }) => {
   const { isOpen, toggle } = useRowToggle(openState);
 
   return (
-    <div className="">
+    <div className="pb-2">
+      <p className="text-lg font-bold">Profession</p>
       <button
-        className="flex justify-between items-center relative w-full mb-3 text-left bg-gray-700 
-      border border-gray-700 rounded-md shadow-sm cursor-pointer 
-      hover:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-brand-main 
-      focus:border-brand-main sm:text-sm"
+        className="flex justify-between items-center relative w-full text-left 
+        border border-color rounded-md cursor-pointer hover p-1 pl-3"
         type="button"
         onClick={toggle}
       >
         {professionState}
-        <PiCaretUpDownBold size="1.75em"></PiCaretUpDownBold>
+        <PiCaretUpDownBold
+          className="item-color"
+          size="1.75em"
+        ></PiCaretUpDownBold>
       </button>
-      {isOpen && (
-        <ProfessionDropdown
-          updateProfession={updateProfession}
-          closeDropdown={closeDropdown}
-        />
-      )}
-      {/* eventually make these buttons change state? */}
+      <div className="relative">
+        {isOpen && (
+          <SelectProfessionDropdown
+            updateProfession={updateProfession}
+            closeDropdown={closeDropdown}
+          />
+        )}
+      </div>
     </div>
   );
 };

@@ -17,8 +17,8 @@ const MainDisplay = () => {
   // data has .profession .server .faction .startingLevel
 
   return (
-    <div className="flex pt-20 bg-darkest text-white justify-around">
-      <div className="flex w-1/3 pl-5">
+    <div className="flex pt-16 bg-main justify-around">
+      <div className="flex w-1/4 p-8">
         <SelectForm
           profession={data.profession}
           server={data.server}
@@ -28,7 +28,7 @@ const MainDisplay = () => {
           updateFetchToggle={updateFetchToggle}
         ></SelectForm>
       </div>
-      <div className="optimalPathMain flex items-center flex-col ">
+      <div className="optimalPathMain w-3/4 flex flex-col items-center  ">
         <OptimalPathContent
           data={data}
           fetchToggle={fetchToggle}

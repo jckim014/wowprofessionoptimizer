@@ -60,31 +60,25 @@ const SelectForm = ({
 
   return (
     <aside className="flex flex-col w-full">
-      <div
-        className="flex flex-col bg-light-gray p-4 bg-light-gray 
-      border border-separate border-color rounded-lg"
-      >
+      <div className="flex flex-col p-4 border-2 border-separate border-color rounded-lg bg-white">
         <SelectProfession
           professionState={professionState}
           updateProfession={updateProfession}
         ></SelectProfession>
+        <SelectServer
+          serverState={serverState}
+          updateServer={updateServer}
+        ></SelectServer>
         <SelectStartingLevel
           startingLevelState={startingLevelState}
           updateStartingLevel={updateStartingLevel}
         ></SelectStartingLevel>
         {/* need to add EU vs NA functionality */}
-        <SelectServer
-          serverState={serverState}
-          updateServer={updateServer}
-        ></SelectServer>
+
         <RiskToleranceToggle
           riskToleranceState={riskToleranceState}
           updateRiskTolerance={updateRiskTolerance}
         ></RiskToleranceToggle>
-        <div>
-          {riskToleranceState && "True"}
-          {!riskToleranceState && "False"}
-        </div>
         <SelectFaction
           factionState={factionState}
           updateFaction={updateFaction}

@@ -116,13 +116,15 @@ app.post("/calculate-optimal-path", async (req, res) => {
 
   // Need to add goblin vs gnomish filter (or ignore entirely)
   let data = req.body;
-  console.log(data);
 
   let currentSkill = parseInt(data.startingLevel);
 
   // Call guaranteed path
   let responseObject = calculate.guaranteed(currentSkill);
   // Call risky path
+  if (data.riskTolerance) {
+    console.log("Guaranteed!");
+  }
 
   res.status(200).json(responseObject);
 });
@@ -164,6 +166,7 @@ app.get("/retrieve-recipes", async (req, res) => {
   console.log(allRecipes.length);
 
   const storedRecipes = JSON.stringify(allRecipes);
+
   storeLocal(storedRecipes, "recipe_storage", "stored_recipes");
 
   res.send(allRecipes);
@@ -219,19 +222,3 @@ app.get("/group-like-items", (req, res) => {
   );
   res.send("Identical items grouped and reagents updated");
 });
-
-function storeLocal(storedItem, folder, filename) {
-  const convertedItem = JSON.stringify(storedItem);
-  fs.writeFile(
-    `./${folder}/${filename}.json`,
-    convertedItem,
-    "utf8",
-    function (err) {
-      if (err) {
-        console.log("Error while writing JSON object to file");
-        return console.log(err);
-      }
-      // console.log(`JSON file saved to ${filename}.json`);
-    }
-  );
-}

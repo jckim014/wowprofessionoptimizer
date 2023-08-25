@@ -2,14 +2,11 @@ const SelectServer = ({ serverState, updateServer }) => {
   // Need to somehow generate server list later
   // Turn these into option components
   return (
-    <div
-      className="flex text-black justify-between items-center relative w-full py-2 px-3 text-left bg-gray-700 
-    border border-gray-700 rounded-md shadow-sm cursor-pointer 
-    hover:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-brand-main 
-    focus:border-brand-main sm:text-sm mb-3"
-    >
-      <div className="text-white">Server: </div>
+    <div className="pb-2">
+      <p className="text-lg font-bold">Server</p>
       <select
+        className="flex justify-between items-center relative w-full text-left 
+        border border-color rounded-md cursor-pointer hover py-1 pl-3 focus:outline-none"
         defaultValue={serverState}
         onChange={(e) => {
           console.log("click");

@@ -77,7 +77,7 @@ const OptimalPathContent = ({ data, fetchToggle }) => {
   return (
     <div className="content-container flex flex-col">
       <div
-        className="self-center flex flex-col w-4/5 bg-light-gray 
+        className="self-center flex flex-col m-24 my-0 bg-light-gray 
       border border-separate border-color rounded-lg"
       >
         {/* can do border-gray-700 */}
@@ -87,7 +87,7 @@ const OptimalPathContent = ({ data, fetchToggle }) => {
           shoppingList={shoppingList}
         ></ShoppingListContainer>
       </div>
-      <div className="optimal-path-container flex flex-col self-center mt-20 mb-20 w-4/5">
+      <div className="optimal-path-container flex flex-col self-center m-24">
         {/* add in "header" divs and break path into multiple tables */}
         <table className="justify-around border border-separate border-color rounded-lg bg-light-gray">
           <tbody className="">
