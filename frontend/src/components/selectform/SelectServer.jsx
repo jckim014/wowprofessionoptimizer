@@ -15,8 +15,8 @@ const SelectServer = ({ serverState, updateServer }) => {
   // Need to somehow generate server list later
   // Turn these into option components
   return (
-    <div className="pb-4">
-      <p className="text-lg font-bold">Server</p>
+    <div className="pb-6">
+      <p className="pb-2 text-lg font-bold">Server</p>
       <button
         className="flex justify-between items-center relative w-full text-left 
         border border-color rounded-md cursor-pointer hover p-1 pl-3"

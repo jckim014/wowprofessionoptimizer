@@ -13,8 +13,8 @@ const SelectProfession = ({ professionState, updateProfession }) => {
   const { isOpen, toggle } = useRowToggle(openState);
 
   return (
-    <div className="pb-4">
-      <p className="text-lg font-bold">Profession</p>
+    <div className="pb-6">
+      <p className="pb-2 text-lg font-bold">Profession</p>
       <button
         className="flex justify-between items-center relative w-full text-left 
         border border-color rounded-md cursor-pointer hover p-1 pl-3"

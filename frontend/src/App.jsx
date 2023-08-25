@@ -13,8 +13,8 @@ function App() {
           <Navbar />
           <div className="pages">
             <Routes>
-              <Route path="/" element={<Home />} />
-              {/* <Route path="/engineering" element={<MainDisplay />} /> */}
+              {/* <Route path="/" element={<Home />} /> */}
+              <Route path="/" element={<MainDisplay />} />
               <Route path="/profession/:profession" element={<MainDisplay />} />
             </Routes>
           </div>

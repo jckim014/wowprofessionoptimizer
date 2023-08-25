@@ -2,9 +2,9 @@ import Switch from "@mui/material/Switch";
 
 const SelectFactionSwitch = ({ factionState, updateFaction }) => {
   return (
-    <div className="flex flex-col items-center">
-      <p className="self-start text-lg font-bold pb-1">Faction</p>
-      <div className="relative flex justify-center pb-4">
+    <div className="flex flex-col items-center pb-6">
+      <p className="self-start text-lg font-bold pb-2">Faction</p>
+      <div className="relative flex justify-center">
         <span>
           <img
             src="https://www.warcrafttavern.com/wp-content/uploads/2021/07/WoW-Alliance-Crest.png"
