@@ -45,6 +45,11 @@
   border-color: #c6d6df;
 }
 
+.special {
+  position: fixed;
+  width: inherit;
+}
+
 .switch-size {
   height: 64px;
   width: 32px;

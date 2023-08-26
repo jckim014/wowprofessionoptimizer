@@ -59,7 +59,8 @@ const SelectForm = ({
   };
 
   return (
-    <aside className="flex flex-col w-full">
+    // hack for fixed sidebar
+    <aside className="flex flex-col w-full special pr-16">
       <div className="flex flex-col p-4 border-2 border-separate border-color rounded-md bg-white">
         <SelectProfession
           professionState={professionState}
