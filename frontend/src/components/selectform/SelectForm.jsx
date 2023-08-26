@@ -60,7 +60,7 @@ const SelectForm = ({
 
   return (
     <aside className="flex flex-col w-full">
-      <div className="flex flex-col p-4 border-2 border-separate border-color rounded-lg bg-white">
+      <div className="flex flex-col p-4 border-2 border-separate border-color rounded-md bg-white">
         <SelectProfession
           professionState={professionState}
           updateProfession={updateProfession}

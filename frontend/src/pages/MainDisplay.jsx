@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import OptimalPathContent from "../components/optimalpath/OptimalPathContent";
 import SelectForm from "../components/selectform/SelectForm";
+import EmptyPrompt from "../components/EmptyPrompt";
 
 // This page only works on redirect from request form
 const MainDisplay = () => {
@@ -29,7 +30,7 @@ const MainDisplay = () => {
   // data has .profession .server .faction .startingLevel
 
   return (
-    <div className="flex pt-16 bg-main justify-around">
+    <div className="flex bg-main justify-around">
       <div className="flex w-1/4 p-8">
         <SelectForm
           profession={profession}
@@ -40,15 +41,17 @@ const MainDisplay = () => {
           updateFetchToggle={updateFetchToggle}
         ></SelectForm>
       </div>
-      {data == undefined && <p className="mt-16">Test hello hello</p>}
-      {data != undefined && (
-        <div className="optimalPathMain w-3/4 flex flex-col items-center  ">
-          <OptimalPathContent
-            data={data}
-            fetchToggle={fetchToggle}
-          ></OptimalPathContent>
-        </div>
-      )}
+      <div className="flex w-3/4 p-8">
+        {data == undefined && <EmptyPrompt></EmptyPrompt>}
+        {data != undefined && (
+          <div className="optimalPathMain flex flex-col items-center  ">
+            <OptimalPathContent
+              data={data}
+              fetchToggle={fetchToggle}
+            ></OptimalPathContent>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

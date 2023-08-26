@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import useConvert from "../../customhooks/useConvert";
 // Components
 import ShoppingListContainer from "../shoppinglist/ShoppingListContainer";
 import OptimalPathSection from "./OptimalPathSection";
@@ -76,12 +75,7 @@ const OptimalPathContent = ({ data, fetchToggle }) => {
 
   return (
     <div className="content-container flex flex-col">
-      <div
-        className="self-center flex flex-col m-24 my-0 bg-light-gray 
-      border border-separate border-color rounded-lg"
-      >
-        {/* can do border-gray-700 */}
-        <h2 className="self-center text-lg font-bold">Shopping List</h2>
+      <div className="mb-8 bg-white">
         <ShoppingListContainer
           totalCost={totalCost}
           shoppingList={shoppingList}
@@ -89,9 +83,9 @@ const OptimalPathContent = ({ data, fetchToggle }) => {
           faction={faction}
         ></ShoppingListContainer>
       </div>
-      <div className="optimal-path-container flex flex-col self-center m-24">
+      <div className="optimal-path-container flex flex-col bg-white">
         {/* add in "header" divs and break path into multiple tables */}
-        <table className="justify-around border border-separate border-color rounded-lg bg-light-gray">
+        <table className="justify-around border border-separate border-color rounded-md">
           <tbody className="">
             <tr className="grid grid-cols-5 font-bold pt-2 px-2">
               <td>Skill Level</td>

@@ -1,5 +1,8 @@
+import { useEffect, useState } from "react";
+
+import ShoppingListDropdown from "./ShoppingListDropdown";
+import useRowToggle from "../../customhooks/useRowToggle";
 import useConvert from "../../customhooks/useConvert";
-import ShoppingItem from "./ShoppingItem";
 
 const ShoppingListContainer = ({
   totalCost,
@@ -7,10 +10,21 @@ const ShoppingListContainer = ({
   server,
   faction,
 }) => {
+  const [openState, setOpenState] = useState(false);
+
+  function closeDropdown() {
+    toggle();
+  }
+  const { isOpen, toggle } = useRowToggle(openState);
+
   const readableCost = useConvert(totalCost);
   return (
-    <div className="">
-      <div className="">
+    <div>
+      <div
+        className="flex self-start pl-4 pb-2 border border-color rounded-md hover cursor-pointer"
+        onClick={toggle}
+      >
+        <h2 className="self-center text-lg font-bold">Shopping List</h2>
         <p>
           <span className="font-bold">
             Total Cost on {server} - {faction}{" "}
@@ -26,12 +40,15 @@ const ShoppingListContainer = ({
           </span>
         </p>
       </div>
-      {/* <div className="flex flex-row flex-wrap overflow-scroll"> */}
-      <div className="grid max-h-40 grid-cols-4 overflow-y-scroll">
-        {shoppingList &&
-          shoppingList.map((item, index) => (
-            <ShoppingItem key={index} item={item} />
-          ))}
+      <div>
+        {isOpen && (
+          <ShoppingListDropdown
+            totalCost={totalCost}
+            shoppingList={shoppingList}
+            server={server}
+            faction={faction}
+          />
+        )}
       </div>
     </div>
   );

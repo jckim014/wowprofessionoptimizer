@@ -3,12 +3,12 @@ import { GiAnvilImpact } from "react-icons/gi";
 
 const Navbar = () => {
   return (
-    <header className="fixed top-0 z-20 w-full px-4 mx-auto bg-gray-800 shadow-md sm:px-6 lg:px-8">
-      <div className="relative flex items-center justify-between h-16">
+    <header className="w-full">
+      <div className="relative flex items-center justify-between p-2">
         <div className="flex">
           <Link to="/" className="flex items-center">
-            <GiAnvilImpact className="blizzard-blue text-5xl pb-3"></GiAnvilImpact>
-            <p className="text-white font-bold">WOTLK Professions</p>
+            <GiAnvilImpact className="text-5xl pb-1"></GiAnvilImpact>
+            <p className="text-2xl font-bold pl-2">WOTLK Professions</p>
           </Link>
         </div>
 

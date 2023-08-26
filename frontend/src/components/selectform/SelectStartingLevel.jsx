@@ -16,7 +16,6 @@ const SelectStartingLevel = ({ startingLevelState, updateStartingLevel }) => {
           ></input>
         </div>
       </div>
-
       <input
         type="range"
         min="1"
