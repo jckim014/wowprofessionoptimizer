@@ -21,9 +21,22 @@ const ShoppingListContainer = ({
   return (
     <div>
       <div
-        className="flex self-start pl-4 pb-2 border border-color rounded-md hover cursor-pointer"
+        className="flex p-2 self-start border border-color rounded-md hover cursor-pointer
+        items-center"
         onClick={toggle}
       >
+        <div className="flex items-center">
+          <span
+            className="material-symbols-outlined pt-1"
+            style={{
+              transform: `rotate(${isOpen ? 180 : 0}deg)`,
+              transition: "all",
+            }}
+          >
+            expand_more
+          </span>
+        </div>
+
         <h2 className="self-center text-lg font-bold">Shopping List</h2>
         <p>
           <span className="font-bold">
