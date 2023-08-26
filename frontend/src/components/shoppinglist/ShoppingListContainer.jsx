@@ -25,18 +25,6 @@ const ShoppingListContainer = ({
         items-center"
         onClick={toggle}
       >
-        <div className="flex items-center">
-          <span
-            className="material-symbols-outlined pt-1"
-            style={{
-              transform: `rotate(${isOpen ? 180 : 0}deg)`,
-              transition: "all",
-            }}
-          >
-            expand_more
-          </span>
-        </div>
-
         <h2 className="self-center text-lg font-bold">Shopping List</h2>
         <p>
           <span className="font-bold">
@@ -52,6 +40,28 @@ const ShoppingListContainer = ({
             {readableCost.copper.toLocaleString("en-us")}c
           </span>
         </p>
+        <div className="flex items-center ml-auto pr-2 toggle-color">
+          {!isOpen && (
+            <span
+              className="material-symbols-outlined pt-1"
+              style={{
+                transition: "all",
+              }}
+            >
+              add
+            </span>
+          )}
+          {isOpen && (
+            <span
+              className="material-symbols-outlined pt-1 toggle-color"
+              style={{
+                transition: "all",
+              }}
+            >
+              close
+            </span>
+          )}
+        </div>
       </div>
       <div>
         {isOpen && (
