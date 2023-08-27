@@ -26,7 +26,7 @@ const ShoppingListContainer = ({
         onClick={toggle}
       >
         <div className="text-lg font-bold">Shopping List</div>
-        <div className="flex flex-row pl-3 pb-0.5">
+        <div className="flex flex-row pl-2">
           <div className="currency-gold border rounded-md p-1 mr-1">
             {readableCost.gold.toLocaleString("en-us")}g
           </div>

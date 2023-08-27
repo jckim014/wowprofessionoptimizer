@@ -69,6 +69,18 @@
   border-color: #f6a27e;
 }
 
+.currency-text-gold {
+  color: #ebbc43;
+}
+
+.currency-text-silver {
+  color: #b5b5b5;
+}
+
+.currency-text-copper {
+  color: #f6a27e;
+}
+
 .switch-size {
   height: 64px;
   width: 32px;

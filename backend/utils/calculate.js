@@ -442,4 +442,6 @@ function storeLocal(storedItem, folder, filename) {
 module.exports = {
   risky: calculateRisky,
   guaranteed: calculateGuaranteed,
+  priceLookup: priceLookup,
+  storeLocal: storeLocal,
 };

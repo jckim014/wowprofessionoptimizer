@@ -81,7 +81,7 @@ app.get("/update-crafting-costs", async (req, res) => {
     const currentReagents = recipe.reagentList;
 
     const reagentCosts = currentReagents.map((reagent) => {
-      individualCost = priceLookup(reagent[0], ah_data);
+      individualCost = calculate.priceLookup(reagent[0], ah_data);
       return individualCost * reagent[1]; // individual cost x quantity
     });
 
@@ -165,9 +165,7 @@ app.get("/retrieve-recipes", async (req, res) => {
   // Should be 275
   console.log(allRecipes.length);
 
-  const storedRecipes = JSON.stringify(allRecipes);
-
-  storeLocal(storedRecipes, "recipe_storage", "stored_recipes");
+  calculate.storeLocal(allRecipes, "recipe_storage", "stored_recipes");
 
   res.send(allRecipes);
 });

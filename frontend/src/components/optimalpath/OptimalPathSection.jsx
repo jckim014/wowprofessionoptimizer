@@ -10,13 +10,8 @@ const OptimalPathSection = ({ recipe, skillRange }) => {
   const end = skillRange[1];
   const quantity = end - start;
 
-  // Image sources for coins - somewhat unreadable but good flavor
-  // <img src="https://wow.zamimg.com/images/icons/money-gold.gif" />
-  // <img src="https://wow.zamimg.com/images/icons/money-silver.gif" />
-  // <img src="https://wow.zamimg.com/images/icons/money-copper.gif" />
-
   const unconvertedCost = recipe.craftingCost;
-
+  // console.log(recipe);
   let individualCost = useConvert(unconvertedCost);
   let totalCost = useConvert(unconvertedCost * quantity);
 
@@ -26,13 +21,13 @@ const OptimalPathSection = ({ recipe, skillRange }) => {
 
   // Eventually add gold/silver/copper coin icons - maybe this can be a local img resource
   return (
-    <tbody>
+    <tbody className="bg-main">
       <tr
         className="grid grid-cols-5 py-6 px-2 cursor-pointer hover
-        border-b border-color"
+        border border-color mb-2 bg-white"
         onClick={toggle}
       >
-        <td className="flex items-center font-bold">
+        <td className="flex items-center">
           <p>
             {start} to {end}
           </p>
@@ -44,18 +39,40 @@ const OptimalPathSection = ({ recipe, skillRange }) => {
           </a>
         </td>
         <td className="flex items-center justify-center">x{end - start}</td>
-        <td className="flex items-center">Placeholder</td>
+        <td className="flex justify-center">
+          <div className="flex flex-row pl-2">
+            {individualCost.gold != 0 && (
+              <div className="currency-text-gold font-bold">
+                {individualCost.gold.toLocaleString("en-us")}g&nbsp;
+              </div>
+            )}
+            {individualCost.silver != 0 && (
+              <div className="currency-text-silver font-bold">
+                {individualCost.silver.toLocaleString("en-us")}s&nbsp;
+              </div>
+            )}
+            {individualCost.copper != 0 && (
+              <div className="currency-text-copper font-bold">
+                {individualCost.copper.toLocaleString("en-us")}c&nbsp;
+              </div>
+            )}
+          </div>
+        </td>
+        {/* <td className="flex items-center">Placeholder</td> */}
         {/* <td className="flex items-center">Vendor/Trainer</td> */}
-        <td className="flex items-center">
-          <span
-            className="material-symbols-outlined ml-auto pr-8"
-            style={{
-              transform: `rotate(${isOpen ? 180 : 0}deg)`,
-              transition: "all",
-            }}
-          >
-            expand_more
-          </span>
+        <td className="flex items-center justify-center">
+          <div>
+            {" "}
+            <span
+              className="material-symbols-outlined ml-auto"
+              style={{
+                transform: `rotate(${isOpen ? 180 : 0}deg)`,
+                transition: "all",
+              }}
+            >
+              expand_more
+            </span>
+          </div>
         </td>
       </tr>
       {isOpen && (
