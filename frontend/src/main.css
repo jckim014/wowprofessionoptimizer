@@ -54,6 +54,21 @@
   width: inherit;
 }
 
+.currency-gold {
+  background-color: #ebbc43;
+  border-color: #ebbc43;
+}
+
+.currency-silver {
+  background-color: #b5b5b5;
+  border-color: #b5b5b5;
+}
+
+.currency-copper {
+  background-color: #f6a27e;
+  border-color: #f6a27e;
+}
+
 .switch-size {
   height: 64px;
   width: 32px;
@@ -90,20 +105,12 @@ body,
   background-color: rgba(35, 37, 43);
 } */
 
-.wowhead-link {
-  color: #ffd100;
-}
-
 .wowhead-link:hover {
-  color: white;
+  color: #ffd100;
 }
 
 .inherit-width {
   width: inherit;
-}
-
-/* for wowhead tooltips */
-table {
 }
 
 /* Faction Button Styling */
@@ -114,7 +121,7 @@ html {
     sans-serif, Apple Color Emoji, Segoe UI Emoji;
 } */
 
-.text-currency-gold {
+/* .text-currency-gold {
   color: rgba(255, 215, 0);
 }
 .text-currency-silver {
@@ -123,7 +130,7 @@ html {
 
 .text-currency-copper {
   color: rgb(255, 138, 101);
-}
+} */
 
 /* .navbar {
   padding: 20px;

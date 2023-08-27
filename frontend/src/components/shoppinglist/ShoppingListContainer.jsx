@@ -25,21 +25,19 @@ const ShoppingListContainer = ({
         items-center"
         onClick={toggle}
       >
-        <h2 className="self-center text-lg font-bold">Shopping List</h2>
-        <p>
-          <span className="font-bold">
-            Total Cost on {server} - {faction}{" "}
-          </span>
-          <span className="text-currency-gold">
-            {readableCost.gold.toLocaleString("en-us")}g{" "}
-          </span>
-          <span className="text-currency-silver">
-            {readableCost.silver.toLocaleString("en-us")}s{" "}
-          </span>
-          <span className="text-currency-copper">
+        <div className="text-lg font-bold">Shopping List</div>
+        <div className="flex flex-row pl-3 pb-0.5">
+          <div className="currency-gold border rounded-md p-1 mr-1">
+            {readableCost.gold.toLocaleString("en-us")}g
+          </div>
+          <div className="currency-silver border rounded-md p-1 mr-1">
+            {" "}
+            {readableCost.silver.toLocaleString("en-us")}s
+          </div>
+          <div className="currency-copper border rounded-md p-1 mr-1">
             {readableCost.copper.toLocaleString("en-us")}c
-          </span>
-        </p>
+          </div>
+        </div>
         <div className="flex items-center ml-auto pr-2 toggle-color">
           {!isOpen && (
             <span

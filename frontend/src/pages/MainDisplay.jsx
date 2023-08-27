@@ -30,7 +30,7 @@ const MainDisplay = () => {
   // data has .profession .server .faction .startingLevel
 
   return (
-    <div className="flex bg-main justify-around">
+    <div className="flex bg-main justify-around h-screen">
       <div className="flex w-1/4 p-8">
         <SelectForm
           profession={profession}
@@ -41,10 +41,10 @@ const MainDisplay = () => {
           updateFetchToggle={updateFetchToggle}
         ></SelectForm>
       </div>
-      <div className="flex w-3/4 p-8">
+      <div className="flex w-3/4 h-1/2 p-8">
         {data == undefined && <EmptyPrompt></EmptyPrompt>}
         {data != undefined && (
-          <div className="optimalPathMain flex flex-col items-center  ">
+          <div className="optimalPathMain flex flex-col items-center h-full">
             <OptimalPathContent
               data={data}
               fetchToggle={fetchToggle}

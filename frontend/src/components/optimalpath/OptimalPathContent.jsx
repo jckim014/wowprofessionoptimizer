@@ -84,15 +84,18 @@ const OptimalPathContent = ({ data, fetchToggle }) => {
         ></ShoppingListContainer>
       </div>
       <div className="optimal-path-container flex flex-col bg-white">
-        {/* add in "header" divs and break path into multiple tables */}
+        <div className="text-lg font-bold p-2 bg-main">
+          Leveling Guide - {server} {faction}
+        </div>
+
         <table className="justify-around border border-separate border-color rounded-md">
           <tbody className="">
-            <tr className="grid grid-cols-5 font-bold pt-2 px-2">
+            <tr className="grid grid-cols-5 font-bold pt-2 px-2 border-b border-color">
               <td>Skill Level</td>
               <td>Item</td>
               <td className="flex justify-center">Quantity</td>
               <td>Required Materials</td>
-              <td>Learned From:</td>
+              {/* <td>Learned From:</td> */}
             </tr>
           </tbody>
           {optimalPath &&

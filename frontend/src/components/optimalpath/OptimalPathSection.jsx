@@ -28,21 +28,10 @@ const OptimalPathSection = ({ recipe, skillRange }) => {
   return (
     <tbody>
       <tr
-        className="grid grid-cols-6 py-6 px-2 cursor-pointer hover:bg-gray-700 
-        border border-color border-l-0 border-r-0"
+        className="grid grid-cols-5 py-6 px-2 cursor-pointer hover
+        border-b border-color"
         onClick={toggle}
       >
-        <td className="flex items-center">
-          <span
-            className="material-symbols-outlined"
-            style={{
-              transform: `rotate(${isOpen ? 180 : 0}deg)`,
-              transition: "all",
-            }}
-          >
-            expand_more
-          </span>
-        </td>
         <td className="flex items-center font-bold">
           <p>
             {start} to {end}
@@ -56,7 +45,18 @@ const OptimalPathSection = ({ recipe, skillRange }) => {
         </td>
         <td className="flex items-center justify-center">x{end - start}</td>
         <td className="flex items-center">Placeholder</td>
-        <td className="flex items-center">Vendor/Trainer</td>
+        {/* <td className="flex items-center">Vendor/Trainer</td> */}
+        <td className="flex items-center">
+          <span
+            className="material-symbols-outlined ml-auto pr-8"
+            style={{
+              transform: `rotate(${isOpen ? 180 : 0}deg)`,
+              transition: "all",
+            }}
+          >
+            expand_more
+          </span>
+        </td>
       </tr>
       {isOpen && (
         <ExpandedRow
