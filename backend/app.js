@@ -82,35 +82,7 @@ app.get("/fetch-realm-data", async (req, res) => {
 app.get("/update-crafting-costs", async (req, res) => {
   let price_data = total_ah_data["BenedictionAlliance"];
   updateCost.alchemy(price_data);
-  // // Retrieve all recipes from database
-  // const allRecipes = await EngineeringRecipe.find().lean();
 
-  // // Calculate the total cost and whether to craft or buy each reagent: return an object/array with this info
-  // const updatedRecipes = allRecipes.map((recipe) => {
-  //   const currentReagents = recipe.reagentList;
-
-  //   const reagentCosts = currentReagents.map((reagent) => {
-  //     individualCost = calculate.priceLookup(reagent[0], ah_data);
-  //     return individualCost * reagent[1]; // individual cost x quantity
-  //   });
-
-  //   const totalCost = reagentCosts.reduce((a, b) => {
-  //     return a + b;
-  //   });
-
-  //   recipe.craftingCost = totalCost;
-  //   return recipe;
-  // });
-
-  // // Update each craftingCost of each recipe in mongodb
-  // updatedRecipes.forEach(async (recipe) => {
-  //   const recipeDoc = await EngineeringRecipe.findOneAndUpdate(
-  //     {
-  //       recipeID: recipe.recipeID,
-  //     },
-  //     { craftingCost: recipe.craftingCost }
-  //   );
-  // });
   res.send("Recipe costs updated");
 });
 
@@ -141,7 +113,7 @@ app.post("/calculate-optimal-path", async (req, res) => {
 app.get("/upload-recipes", (req, res) => {
   // Be very careful with these!! Will override existing recipes
   // upload.engineering();
-  // upload.alchemy();
+  upload.alchemy();
 
   res.send("Recipes uploaded");
 });
@@ -153,7 +125,7 @@ app.get("/retrieve-recipes", async (req, res) => {
   let engineerRecipes = await EngineeringRecipe.find().lean();
   // console.log("Engineering(275): ", engineerRecipes.length);
   let alchemyRecipes = await AlchemyRecipe.find().lean();
-  // console.log("Alchemy(253): ", alchemyRecipes.length);
+  // console.log("Alchemy(201): ", alchemyRecipes.length);
 
   storedRecipes["Engineering"] = engineerRecipes;
   storedRecipes["Alchemy"] = alchemyRecipes;
