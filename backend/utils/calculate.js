@@ -1,13 +1,20 @@
 const fs = require("fs");
 
-const processedRecipes = require("../recipe_storage/stored_recipes.json");
-const ah_data = require("../ah_data/benediction-ally.json");
-const iconsObject = require("../icons/icons.json");
+const total_data = require("../ah_data/total_data.json");
+
+const allRecipes = require("../recipe_storage/stored_recipes.json");
+
+const engineerIcons = require("../icons/engineer_icons.json");
+const alchemyIcons = require("../icons/alchemy_icons.json");
 
 const MAX_SKILL_LEVEL = 450;
 const ACCEPTABLE_RISK = 90; // this could even be a user input variable
 
-function calculateGuaranteed(currentSkill) {
+function calculateGuaranteed(currentSkill, profession) {
+  let ah_data = total_data["BenedictionAlliance"];
+
+  let processedRecipes = allRecipes[profession];
+
   let recipePath = [];
   let inventory = new Map();
 
@@ -20,15 +27,18 @@ function calculateGuaranteed(currentSkill) {
     });
 
     // Filter false positives (recipes without orange skill)
-    const filteredRecipes = craftableRecipes.filter((recipe) => {
-      // Hack to filter out weird recipes, may have to revisit
-      return recipe.difficultyColors[1] - recipe.difficultyColors[0] < 50;
-    });
+    // const filteredRecipes = craftableRecipes.filter((recipe) => {
+    //   // Hack to filter out weird recipes, may have to revisit
+    //   console.log(recipe.difficultyColors[1] - recipe.difficultyColors[0] < 50);
+    //   return recipe.difficultyColors[1] - recipe.difficultyColors[0] < 50;
+    // });
+    const filteredRecipes = craftableRecipes;
 
     // Find cheapest recipe
     const [cheapestRecipe, quantityCreated, usedInventory] = getOptimalRecipe(
       filteredRecipes,
-      inventory
+      inventory,
+      ah_data
     );
     // Remove used items from inventory
     for (let i = 0; i < usedInventory.length; i++) {
@@ -63,6 +73,19 @@ function calculateGuaranteed(currentSkill) {
 
       // Initialize reagentObject for new reagents
       let reagentObject = {};
+
+      // Selectively choose the right icons object
+      let iconsObject;
+
+      switch (profession) {
+        case "Engineering":
+          iconsObject = engineerIcons;
+          break;
+        case "Alchemy":
+          iconsObject = alchemyIcons;
+          break;
+      }
+
       reagentObject.id = currentReagentID;
       reagentObject.name = iconsObject[currentReagentID].name_enus;
       reagentObject.icon = iconsObject[currentReagentID].icon;
@@ -171,7 +194,8 @@ function calculateRisky() {
 
     let [cheapestRecipe, quantityCreated, usedInventory] = getOptimalRecipe(
       filteredRecipes,
-      inventory
+      inventory,
+      ah_data
     );
 
     let price_ceiling = cheapestRecipe.cost;
@@ -191,7 +215,8 @@ function calculateRisky() {
 
     [cheapestRecipe, quantityCreated, usedInventory] = getOptimalRecipe(
       filteredRecipes,
-      inventory
+      inventory,
+      ah_data
     );
 
     // Remove used items from inventory
@@ -305,7 +330,7 @@ function calculateRisky() {
   return responseObject;
 }
 
-function getOptimalRecipe(recipes, inventory) {
+function getOptimalRecipe(recipes, inventory, ah_data) {
   minCost = Infinity;
   minIndex = 0;
 

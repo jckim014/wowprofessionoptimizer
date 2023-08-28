@@ -35,7 +35,7 @@ const SelectServerDropdown = ({ updateServer, closeDropdown }) => {
     "Windseeker",
   ];
   return (
-    <ul className="absolute w-full bg-white z-20 mt-1 border border-color rounded-md">
+    <ul className="absolute w-full bg-white z-20 mt-1 border border-color rounded-md h-80 overflow-y-auto">
       {serverList.map((server, index) => (
         <ServerListItem
           key={index}

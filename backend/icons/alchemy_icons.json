@@ -1,0 +1,8057 @@
+{
+  "2447": {
+    "name_enus": "Peacebloom",
+    "quality": 1,
+    "icon": "inv_misc_flower_02",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 48,
+      "buyprice": 40,
+      "reqskill": 773,
+      "reqskillrank": 1,
+      "sellprice": 10
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "765": {
+    "name_enus": "Silverleaf",
+    "quality": 1,
+    "icon": "inv_misc_herb_10",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 33,
+      "buyprice": 40,
+      "reqskill": 773,
+      "reqskillrank": 1,
+      "sellprice": 10
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3371": {
+    "name_enus": "Empty Vial",
+    "quality": 1,
+    "icon": "inv_drink_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1063,
+      "buyprice": 20,
+      "sellprice": 1
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "118": {
+    "name_enus": "Minor Healing Potion",
+    "quality": 1,
+    "icon": "inv_potion_49",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 37,
+      "cooldown": 60000,
+      "health": 80,
+      "reqlevel": 1,
+      "sellprice": 5
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "2449": {
+    "name_enus": "Earthroot",
+    "quality": 1,
+    "icon": "inv_misc_herb_07",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 52,
+      "buyprice": 80,
+      "reqskill": 773,
+      "reqskillrank": 1,
+      "sellprice": 20
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "2454": {
+    "name_enus": "Elixir of Lion's Strength",
+    "quality": 1,
+    "icon": "inv_potion_56",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 215,
+      "cooldown": 3000,
+      "reqlevel": 1,
+      "sellprice": 20,
+      "str": 4
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "785": {
+    "name_enus": "Mageroyal",
+    "quality": 1,
+    "icon": "inv_jewelry_talisman_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 216,
+      "buyprice": 80,
+      "reqskill": 773,
+      "sellprice": 20
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "2455": {
+    "name_enus": "Minor Mana Potion",
+    "quality": 1,
+    "icon": "inv_potion_70",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 33,
+      "buyprice": 40,
+      "cooldown": 60000,
+      "reqlevel": 5,
+      "sellprice": 10
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "2456": {
+    "name_enus": "Minor Rejuvenation Potion",
+    "quality": 1,
+    "icon": "inv_potion_02",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 93,
+      "cooldown": 60000,
+      "health": 120,
+      "reqlevel": 5,
+      "sellprice": 15
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "2458": {
+    "name_enus": "Elixir of Minor Fortitude",
+    "quality": 1,
+    "icon": "inv_potion_42",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 352,
+      "cooldown": 3000,
+      "health": 27,
+      "reqlevel": 2,
+      "sellprice": 15
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "2452": {
+    "name_enus": "Swiftthistle",
+    "quality": 1,
+    "icon": "inv_misc_herb_04",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 5222,
+      "reqskill": 773,
+      "reqskillrank": 25,
+      "sellprice": 15
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "2450": {
+    "name_enus": "Briarthorn",
+    "quality": 1,
+    "icon": "inv_misc_root_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 512,
+      "reqskill": 773,
+      "reqskillrank": 25,
+      "sellprice": 25
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "2459": {
+    "name_enus": "Swiftness Potion",
+    "quality": 1,
+    "icon": "inv_potion_95",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 7050,
+      "cooldown": 60000,
+      "reqlevel": 5,
+      "sellprice": 25
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "2460": {
+    "name_enus": "Elixir of Tongues (NYI)",
+    "quality": 1,
+    "icon": "inv_potion_12",
+    "screenshot": {},
+    "jsonequip": {
+      "reqlevel": 5,
+      "sellprice": 25
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "858": {
+    "name_enus": "Lesser Healing Potion",
+    "quality": 1,
+    "icon": "inv_potion_50",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 44,
+      "buyprice": 100,
+      "cooldown": 60000,
+      "health": 160,
+      "reqlevel": 3,
+      "sellprice": 25
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3383": {
+    "name_enus": "Elixir of Wisdom",
+    "quality": 1,
+    "icon": "inv_potion_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 418,
+      "cooldown": 3000,
+      "int": 6,
+      "reqlevel": 10,
+      "sellprice": 100
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3355": {
+    "name_enus": "Wild Steelbloom",
+    "quality": 1,
+    "icon": "inv_misc_flower_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 4140,
+      "buyprice": 200,
+      "reqskill": 773,
+      "reqskillrank": 75,
+      "sellprice": 50
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3384": {
+    "name_enus": "Minor Magic Resistance Potion",
+    "quality": 1,
+    "icon": "inv_potion_08",
+    "screenshot": {},
+    "jsonequip": {
+      "arcres": 25,
+      "avgbuyout": 4137,
+      "cooldown": 60000,
+      "firres": 25,
+      "frores": 25,
+      "holres": 25,
+      "natres": 25,
+      "reqlevel": 12,
+      "sellprice": 20,
+      "shares": 25
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3820": {
+    "name_enus": "Stranglekelp",
+    "quality": 1,
+    "icon": "inv_misc_herb_11",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1769,
+      "reqskill": 773,
+      "reqskillrank": 25,
+      "sellprice": 100
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3385": {
+    "name_enus": "Lesser Mana Potion",
+    "quality": 1,
+    "icon": "inv_potion_71",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 117,
+      "buyprice": 120,
+      "cooldown": 60000,
+      "reqlevel": 14,
+      "sellprice": 30
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "1288": {
+    "name_enus": "Large Venom Sac",
+    "quality": 1,
+    "icon": "inv_misc_organ_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 13500,
+      "sellprice": 185
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "2453": {
+    "name_enus": "Bruiseweed",
+    "quality": 1,
+    "icon": "inv_misc_herb_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 439,
+      "buyprice": 100,
+      "reqskill": 773,
+      "reqskillrank": 25,
+      "sellprice": 25
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3372": {
+    "name_enus": "Leaded Vial",
+    "quality": 1,
+    "icon": "inv_alchemy_leadedvial",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 990,
+      "buyprice": 200,
+      "sellprice": 10
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3386": {
+    "name_enus": "Potion of Curing",
+    "quality": 1,
+    "icon": "inv_potion_12",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 43399,
+      "cooldown": 60000,
+      "reqlevel": 14,
+      "sellprice": 35
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3388": {
+    "name_enus": "Strong Troll's Blood Elixir",
+    "quality": 1,
+    "icon": "inv_potion_78",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 2350,
+      "cooldown": 3000,
+      "healthrgn": 6,
+      "reqlevel": 15,
+      "sellprice": 40
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3389": {
+    "name_enus": "Elixir of Defense",
+    "quality": 1,
+    "icon": "inv_potion_64",
+    "screenshot": {},
+    "jsonequip": {
+      "armor": 150,
+      "avgbuyout": 2800,
+      "cooldown": 3000,
+      "reqlevel": 16,
+      "sellprice": 40
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3390": {
+    "name_enus": "Elixir of Lesser Agility",
+    "quality": 1,
+    "icon": "inv_potion_92",
+    "screenshot": {},
+    "jsonequip": {
+      "agi": 8,
+      "avgbuyout": 8049,
+      "cooldown": 3000,
+      "reqlevel": 18,
+      "sellprice": 35
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3356": {
+    "name_enus": "Kingsblood",
+    "quality": 1,
+    "icon": "inv_misc_herb_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 452,
+      "buyprice": 120,
+      "reqskill": 773,
+      "reqskillrank": 75,
+      "sellprice": 30
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3391": {
+    "name_enus": "Elixir of Ogre's Strength",
+    "quality": 1,
+    "icon": "inv_potion_57",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 2098,
+      "cooldown": 3000,
+      "reqlevel": 20,
+      "sellprice": 40,
+      "str": 8
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3382": {
+    "name_enus": "Weak Troll's Blood Elixir",
+    "quality": 1,
+    "icon": "inv_potion_77",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 200,
+      "cooldown": 3000,
+      "healthrgn": 2,
+      "reqlevel": 1,
+      "sellprice": 10
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "2457": {
+    "name_enus": "Elixir of Minor Agility",
+    "quality": 1,
+    "icon": "inv_potion_91",
+    "screenshot": {},
+    "jsonequip": {
+      "agi": 4,
+      "avgbuyout": 2499,
+      "cooldown": 3000,
+      "reqlevel": 2,
+      "sellprice": 15
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "929": {
+    "name_enus": "Healing Potion",
+    "quality": 1,
+    "icon": "inv_potion_51",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 321,
+      "buyprice": 300,
+      "cooldown": 60000,
+      "health": 320,
+      "reqlevel": 12,
+      "sellprice": 75
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3818": {
+    "name_enus": "Fadeleaf",
+    "quality": 1,
+    "icon": "inv_misc_herb_12",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 4992,
+      "reqskill": 773,
+      "reqskillrank": 125,
+      "sellprice": 125
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3823": {
+    "name_enus": "Lesser Invisibility Potion",
+    "quality": 1,
+    "icon": "inv_potion_18",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 8811,
+      "cooldown": 600000,
+      "reqlevel": 23,
+      "sellprice": 100
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3369": {
+    "name_enus": "Grave Moss",
+    "quality": 1,
+    "icon": "inv_misc_dust_02",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 6821,
+      "reqskill": 773,
+      "reqskillrank": 75,
+      "sellprice": 25
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3824": {
+    "name_enus": "Shadow Oil",
+    "quality": 1,
+    "icon": "inv_potion_23",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 42500,
+      "cooldown": 1000,
+      "reqlevel": 24,
+      "sellprice": 150
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3821": {
+    "name_enus": "Goldthorn",
+    "quality": 1,
+    "icon": "inv_misc_herb_15",
+    "screenshot": {
+      "id": 1080843,
+      "imageType": 2
+    },
+    "jsonequip": {
+      "avgbuyout": 2162,
+      "reqskill": 773,
+      "reqskillrank": 125,
+      "sellprice": 150
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3825": {
+    "name_enus": "Elixir of Fortitude",
+    "quality": 1,
+    "icon": "inv_potion_43",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 11349,
+      "cooldown": 3000,
+      "health": 120,
+      "reqlevel": 25,
+      "sellprice": 110
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3357": {
+    "name_enus": "Liferoot",
+    "quality": 1,
+    "icon": "inv_misc_root_02",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 683,
+      "buyprice": 300,
+      "reqskill": 773,
+      "reqskillrank": 75,
+      "sellprice": 75
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3826": {
+    "name_enus": "Major Troll's Blood Elixir",
+    "quality": 1,
+    "icon": "inv_potion_79",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 3150,
+      "cooldown": 3000,
+      "healthrgn": 12,
+      "reqlevel": 26,
+      "sellprice": 105
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3827": {
+    "name_enus": "Mana Potion",
+    "quality": 1,
+    "icon": "inv_potion_72",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 557,
+      "buyprice": 480,
+      "cooldown": 60000,
+      "reqlevel": 22,
+      "sellprice": 120
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3358": {
+    "name_enus": "Khadgar's Whisker",
+    "quality": 1,
+    "icon": "inv_misc_herb_08",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1033,
+      "buyprice": 700,
+      "reqskill": 773,
+      "reqskillrank": 125,
+      "sellprice": 175
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3828": {
+    "name_enus": "Elixir of Detect Lesser Invisibility",
+    "quality": 1,
+    "icon": "inv_potion_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 4433,
+      "cooldown": 3000,
+      "reqlevel": 29,
+      "sellprice": 150
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3819": {
+    "name_enus": "Wintersbite",
+    "quality": 1,
+    "icon": "inv_misc_flower_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 9207,
+      "reqskill": 773,
+      "reqskillrank": 125,
+      "sellprice": 100
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3829": {
+    "name_enus": "Frost Oil",
+    "quality": 1,
+    "icon": "inv_potion_20",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 24179,
+      "cooldown": 1000,
+      "reqlevel": 30,
+      "sellprice": 150
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3164": {
+    "name_enus": "Discolored Worg Heart",
+    "quality": 1,
+    "icon": "inv_misc_organ_02",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 133,
+      "sellprice": 33
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "4596": {
+    "name_enus": "Discolored Healing Potion",
+    "quality": 1,
+    "icon": "inv_potion_35",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 159,
+      "cooldown": 60000,
+      "health": 160,
+      "reqlevel": 5,
+      "sellprice": 25
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3858": {
+    "name_enus": "Mithril Ore",
+    "quality": 1,
+    "icon": "inv_ore_mithril_02",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 2275,
+      "reqskill": 755,
+      "reqskillrank": 175,
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "4623": {
+    "name_enus": "Lesser Stoneshield Potion",
+    "quality": 1,
+    "icon": "inv_potion_67",
+    "screenshot": {},
+    "jsonequip": {
+      "armor": 1000,
+      "avgbuyout": 2229,
+      "cooldown": 90000,
+      "reqlevel": 33,
+      "sellprice": 375
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6370": {
+    "name_enus": "Blackmouth Oil",
+    "quality": 1,
+    "icon": "inv_drink_12",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 4497,
+      "sellprice": 10
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "5634": {
+    "name_enus": "Free Action Potion",
+    "quality": 1,
+    "icon": "inv_potion_04",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 15047,
+      "cooldown": 60000,
+      "reqlevel": 20,
+      "sellprice": 75
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "5637": {
+    "name_enus": "Large Fang",
+    "quality": 1,
+    "icon": "inv_misc_bone_08",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1381,
+      "sellprice": 75
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "5633": {
+    "name_enus": "Great Rage Potion",
+    "quality": 1,
+    "icon": "inv_potion_21",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 4190,
+      "classes": 1025,
+      "cooldown": 60000,
+      "reqlevel": 25,
+      "sellprice": 150
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "5635": {
+    "name_enus": "Sharp Claw",
+    "quality": 1,
+    "icon": "inv_misc_monsterclaw_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 165,
+      "sellprice": 45
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "5631": {
+    "name_enus": "Rage Potion",
+    "quality": 1,
+    "icon": "inv_potion_24",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1889,
+      "classes": 1025,
+      "cooldown": 60000,
+      "reqlevel": 4,
+      "sellprice": 30
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "5996": {
+    "name_enus": "Elixir of Water Breathing",
+    "quality": 1,
+    "icon": "inv_potion_17",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 3100,
+      "cooldown": 3000,
+      "reqlevel": 8,
+      "sellprice": 95
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "1710": {
+    "name_enus": "Greater Healing Potion",
+    "quality": 1,
+    "icon": "inv_potion_52",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 562,
+      "buyprice": 500,
+      "cooldown": 60000,
+      "health": 520,
+      "reqlevel": 21,
+      "sellprice": 125
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "5997": {
+    "name_enus": "Elixir of Minor Defense",
+    "quality": 1,
+    "icon": "inv_potion_63",
+    "screenshot": {},
+    "jsonequip": {
+      "armor": 50,
+      "avgbuyout": 120,
+      "cooldown": 3000,
+      "reqlevel": 1,
+      "sellprice": 5
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "4402": {
+    "name_enus": "Small Flame Sac",
+    "quality": 1,
+    "icon": "inv_misc_organ_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 8749,
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6371": {
+    "name_enus": "Fire Oil",
+    "quality": 1,
+    "icon": "inv_potion_38",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 2193,
+      "sellprice": 12
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6049": {
+    "name_enus": "Fire Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_16",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 16150,
+      "cooldown": 60000,
+      "reqlevel": 23,
+      "sellprice": 170
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6050": {
+    "name_enus": "Frost Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_13",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 13253,
+      "cooldown": 60000,
+      "reqlevel": 28,
+      "sellprice": 300
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6051": {
+    "name_enus": "Holy Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_09",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 600,
+      "cooldown": 60000,
+      "reqlevel": 10,
+      "sellprice": 62
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6052": {
+    "name_enus": "Nature Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 8420,
+      "cooldown": 60000,
+      "reqlevel": 28,
+      "sellprice": 300
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6048": {
+    "name_enus": "Shadow Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_44",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 14906,
+      "cooldown": 60000,
+      "reqlevel": 17,
+      "sellprice": 100
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6358": {
+    "name_enus": "Oily Blackmouth",
+    "quality": 1,
+    "icon": "inv_misc_monsterhead_04",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1793,
+      "sellprice": 4
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6359": {
+    "name_enus": "Firefin Snapper",
+    "quality": 1,
+    "icon": "inv_misc_monsterhead_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 700,
+      "sellprice": 5
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6372": {
+    "name_enus": "Swim Speed Potion",
+    "quality": 1,
+    "icon": "inv_potion_13",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 6501,
+      "cooldown": 60000,
+      "reqlevel": 10,
+      "sellprice": 35
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6373": {
+    "name_enus": "Elixir of Firepower",
+    "quality": 1,
+    "icon": "inv_potion_33",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 2975,
+      "cooldown": 3000,
+      "firsplpwr": 10,
+      "reqlevel": 18,
+      "sellprice": 35
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6522": {
+    "name_enus": "Deviate Fish",
+    "quality": 1,
+    "icon": "inv_misc_monsterhead_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 3750,
+      "cooldown": 10000,
+      "sellprice": 4
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6662": {
+    "name_enus": "Elixir of Giant Growth",
+    "quality": 1,
+    "icon": "inv_potion_10",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 8600,
+      "cooldown": 3000,
+      "reqlevel": 8,
+      "sellprice": 95,
+      "str": 8
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "8949": {
+    "name_enus": "Elixir of Agility",
+    "quality": 1,
+    "icon": "inv_potion_93",
+    "screenshot": {},
+    "jsonequip": {
+      "agi": 15,
+      "avgbuyout": 2240,
+      "cooldown": 3000,
+      "reqlevel": 27,
+      "sellprice": 200
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "8951": {
+    "name_enus": "Elixir of Greater Defense",
+    "quality": 1,
+    "icon": "inv_potion_65",
+    "screenshot": {},
+    "jsonequip": {
+      "armor": 250,
+      "avgbuyout": 4444,
+      "cooldown": 3000,
+      "reqlevel": 29,
+      "sellprice": 200
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "4625": {
+    "name_enus": "Firebloom",
+    "quality": 1,
+    "icon": "inv_misc_herb_19",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 4865,
+      "reqskill": 773,
+      "reqskillrank": 175,
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "8925": {
+    "name_enus": "Crystal Vial",
+    "quality": 1,
+    "icon": "inv_alchemy_crystalvial",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 2000,
+      "buyprice": 2500,
+      "sellprice": 125
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "8956": {
+    "name_enus": "Oil of Immolation",
+    "quality": 1,
+    "icon": "inv_potion_11",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 8820,
+      "cooldown": 3000,
+      "reqlevel": 31,
+      "sellprice": 200
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6149": {
+    "name_enus": "Greater Mana Potion",
+    "quality": 1,
+    "icon": "inv_potion_73",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1601,
+      "buyprice": 1200,
+      "cooldown": 60000,
+      "reqlevel": 31,
+      "sellprice": 300
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "7067": {
+    "name_enus": "Elemental Earth",
+    "quality": 1,
+    "icon": "inv_ore_iron_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 26650,
+      "sellprice": 400
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9030": {
+    "name_enus": "Restorative Potion",
+    "quality": 1,
+    "icon": "inv_potion_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 28397,
+      "cooldown": 60000,
+      "reqlevel": 32,
+      "sellprice": 200
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "8831": {
+    "name_enus": "Purple Lotus",
+    "quality": 1,
+    "icon": "inv_misc_herb_17",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1777,
+      "reqskill": 773,
+      "reqskillrank": 175,
+      "sellprice": 300
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9036": {
+    "name_enus": "Magic Resistance Potion",
+    "quality": 1,
+    "icon": "inv_potion_16",
+    "screenshot": {},
+    "jsonequip": {
+      "arcres": 50,
+      "avgbuyout": 5146,
+      "cooldown": 60000,
+      "firres": 50,
+      "frores": 50,
+      "holres": 50,
+      "natres": 50,
+      "reqlevel": 32,
+      "sellprice": 150,
+      "shares": 50
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9260": {
+    "name_enus": "Volatile Rum",
+    "quality": 1,
+    "icon": "inv_drink_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 3850,
+      "buyprice": 1600,
+      "sellprice": 400
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9061": {
+    "name_enus": "Goblin Rocket Fuel",
+    "quality": 1,
+    "icon": "inv_cask_02",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 15973,
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "8838": {
+    "name_enus": "Sungrass",
+    "quality": 1,
+    "icon": "inv_misc_herb_18",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 2311,
+      "reqskill": 773,
+      "reqskillrank": 175,
+      "sellprice": 60
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3928": {
+    "name_enus": "Superior Healing Potion",
+    "quality": 1,
+    "icon": "inv_potion_53",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 973,
+      "buyprice": 1000,
+      "cooldown": 60000,
+      "health": 800,
+      "reqlevel": 35,
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "8153": {
+    "name_enus": "Wildvine",
+    "quality": 2,
+    "icon": "inv_misc_herb_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 4857,
+      "sellprice": 5
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9144": {
+    "name_enus": "Wildvine Potion",
+    "quality": 1,
+    "icon": "inv_potion_34",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 2800,
+      "cooldown": 60000,
+      "health": 750,
+      "reqlevel": 35,
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3575": {
+    "name_enus": "Iron Bar",
+    "quality": 1,
+    "icon": "inv_ingot_iron",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1857,
+      "sellprice": 200
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9262": {
+    "name_enus": "Black Vitriol",
+    "quality": 1,
+    "icon": "inv_misc_gem_sapphire_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1544,
+      "sellprice": 1000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9149": {
+    "name_enus": "Philosopher's Stone",
+    "quality": 2,
+    "icon": "inv_misc_orb_01",
+    "screenshot": {},
+    "jsonequip": {
+      "agi": 5,
+      "int": 5,
+      "reqlevel": 35,
+      "reqskill": 171,
+      "reqskillrank": 200,
+      "sellprice": 250,
+      "slotbak": 12,
+      "spi": 5,
+      "sta": 5,
+      "str": 5
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "8836": {
+    "name_enus": "Arthas' Tears",
+    "quality": 1,
+    "icon": "inv_misc_herb_13",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 673,
+      "reqskill": 773,
+      "reqskillrank": 175,
+      "sellprice": 95
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9154": {
+    "name_enus": "Elixir of Detect Undead",
+    "quality": 1,
+    "icon": "inv_potion_53",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 307,
+      "cooldown": 3000,
+      "reqlevel": 36,
+      "sellprice": 300
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "8839": {
+    "name_enus": "Blindweed",
+    "quality": 1,
+    "icon": "inv_misc_herb_14",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 5007,
+      "reqskill": 773,
+      "reqskillrank": 175,
+      "sellprice": 375
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9155": {
+    "name_enus": "Arcane Elixir",
+    "quality": 1,
+    "icon": "inv_potion_30",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 9150,
+      "cooldown": 3000,
+      "reqlevel": 37,
+      "sellprice": 400,
+      "spldmg": 20,
+      "splheal": 20
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "8845": {
+    "name_enus": "Ghost Mushroom",
+    "quality": 1,
+    "icon": "inv_mushroom_08",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 11515,
+      "buyprice": 1500,
+      "reqskill": 773,
+      "reqskillrank": 175,
+      "sellprice": 375
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9172": {
+    "name_enus": "Invisibility Potion",
+    "quality": 1,
+    "icon": "inv_potion_25",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 22144,
+      "cooldown": 600000,
+      "reqlevel": 37,
+      "sellprice": 500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9179": {
+    "name_enus": "Elixir of Greater Intellect",
+    "quality": 1,
+    "icon": "inv_potion_10",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 4850,
+      "cooldown": 3000,
+      "int": 25,
+      "reqlevel": 37,
+      "sellprice": 1000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9088": {
+    "name_enus": "Gift of Arthas",
+    "quality": 1,
+    "icon": "inv_potion_28",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 13000,
+      "cooldown": 3000,
+      "reqlevel": 38,
+      "sellprice": 250,
+      "shares": 10
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9187": {
+    "name_enus": "Elixir of Greater Agility",
+    "quality": 1,
+    "icon": "inv_potion_94",
+    "screenshot": {},
+    "jsonequip": {
+      "agi": 25,
+      "avgbuyout": 7303,
+      "cooldown": 3000,
+      "reqlevel": 38,
+      "sellprice": 600
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9197": {
+    "name_enus": "Elixir of Dream Vision",
+    "quality": 1,
+    "icon": "inv_potion_14",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 3513,
+      "cooldown": 3000,
+      "reqlevel": 38,
+      "sellprice": 600
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "8846": {
+    "name_enus": "Gromsblood",
+    "quality": 1,
+    "icon": "inv_misc_herb_16",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 5091,
+      "buyprice": 1000,
+      "reqskill": 773,
+      "reqskillrank": 175,
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9206": {
+    "name_enus": "Elixir of Giants",
+    "quality": 1,
+    "icon": "inv_potion_61",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 12495,
+      "cooldown": 3000,
+      "reqlevel": 38,
+      "sellprice": 700,
+      "str": 25
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "4342": {
+    "name_enus": "Purple Dye",
+    "quality": 1,
+    "icon": "inv_potion_02",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 7361,
+      "buyprice": 2500,
+      "sellprice": 625
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9210": {
+    "name_enus": "Ghost Dye",
+    "quality": 1,
+    "icon": "inv_poison_mindnumbing",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 29551,
+      "sellprice": 750
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9264": {
+    "name_enus": "Elixir of Shadow Power",
+    "quality": 1,
+    "icon": "inv_potion_46",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 41973,
+      "cooldown": 3000,
+      "reqlevel": 40,
+      "sellprice": 35,
+      "shasplpwr": 40
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9224": {
+    "name_enus": "Elixir of Demonslaying",
+    "quality": 1,
+    "icon": "inv_potion_27",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 19676,
+      "cooldown": 3000,
+      "reqlevel": 40,
+      "sellprice": 700
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9233": {
+    "name_enus": "Elixir of Detect Demon",
+    "quality": 1,
+    "icon": "inv_potion_53",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1250,
+      "cooldown": 3000,
+      "reqlevel": 40,
+      "sellprice": 500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3577": {
+    "name_enus": "Gold Bar",
+    "quality": 2,
+    "icon": "inv_ingot_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1552,
+      "sellprice": 600
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3860": {
+    "name_enus": "Mithril Bar",
+    "quality": 1,
+    "icon": "inv_ingot_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 2774,
+      "sellprice": 400
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6037": {
+    "name_enus": "Truesilver Bar",
+    "quality": 2,
+    "icon": "inv_ingot_08",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 2240,
+      "sellprice": 1250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "10592": {
+    "name_enus": "Catseye Elixir",
+    "quality": 1,
+    "icon": "inv_potion_36",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 3313,
+      "cooldown": 3000,
+      "reqlevel": 30,
+      "sellprice": 150
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "12190": {
+    "name_enus": "Dreamless Sleep Potion",
+    "quality": 1,
+    "icon": "inv_potion_83",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1570,
+      "cooldown": 60000,
+      "healthrgn": 300,
+      "manargn": 300,
+      "reqlevel": 35,
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "12359": {
+    "name_enus": "Thorium Bar",
+    "quality": 1,
+    "icon": "inv_ingot_07",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 3454,
+      "sellprice": 600
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "12363": {
+    "name_enus": "Arcane Crystal",
+    "quality": 2,
+    "icon": "inv_misc_gem_topaz_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 420200,
+      "sellprice": 2000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "12360": {
+    "name_enus": "Arcanite Bar",
+    "quality": 2,
+    "icon": "inv_misc_stonetablet_05",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 497400,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13422": {
+    "name_enus": "Stonescale Eel",
+    "quality": 1,
+    "icon": "inv_misc_fish_11",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 5345,
+      "sellprice": 10
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13423": {
+    "name_enus": "Stonescale Oil",
+    "quality": 1,
+    "icon": "inv_potion_68",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 9535,
+      "sellprice": 125
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13442": {
+    "name_enus": "Mighty Rage Potion",
+    "quality": 1,
+    "icon": "inv_potion_41",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 20187,
+      "classes": 1025,
+      "cooldown": 60000,
+      "reqlevel": 46,
+      "sellprice": 500,
+      "str": 60
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13443": {
+    "name_enus": "Superior Mana Potion",
+    "quality": 1,
+    "icon": "inv_potion_74",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 11525,
+      "buyprice": 1600,
+      "cooldown": 60000,
+      "reqlevel": 41,
+      "sellprice": 400
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13445": {
+    "name_enus": "Elixir of Superior Defense",
+    "quality": 1,
+    "icon": "inv_potion_66",
+    "screenshot": {},
+    "jsonequip": {
+      "armor": 450,
+      "avgbuyout": 20159,
+      "cooldown": 3000,
+      "reqlevel": 43,
+      "sellprice": 500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13463": {
+    "name_enus": "Dreamfoil",
+    "quality": 1,
+    "icon": "inv_misc_herb_dreamfoil",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 8722,
+      "buyprice": 400,
+      "reqskill": 773,
+      "reqskillrank": 225,
+      "sellprice": 100
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13466": {
+    "name_enus": "Plaguebloom",
+    "quality": 1,
+    "icon": "inv_misc_herb_plaguebloom",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 14150,
+      "reqskill": 773,
+      "reqskillrank": 225,
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13447": {
+    "name_enus": "Elixir of the Sages",
+    "quality": 1,
+    "icon": "inv_potion_29",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 14998,
+      "cooldown": 3000,
+      "int": 18,
+      "reqlevel": 44,
+      "sellprice": 1250,
+      "spi": 18
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13464": {
+    "name_enus": "Golden Sansam",
+    "quality": 1,
+    "icon": "inv_misc_herb_sansamroot",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1804,
+      "buyprice": 400,
+      "reqskill": 773,
+      "reqskillrank": 225,
+      "sellprice": 100
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13465": {
+    "name_enus": "Mountain Silversage",
+    "quality": 1,
+    "icon": "inv_misc_herb_mountainsilversage",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 9404,
+      "buyprice": 600,
+      "reqskill": 773,
+      "reqskillrank": 225,
+      "sellprice": 150
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13446": {
+    "name_enus": "Major Healing Potion",
+    "quality": 1,
+    "icon": "inv_potion_54",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 6693,
+      "buyprice": 4000,
+      "cooldown": 60000,
+      "health": 1400,
+      "reqlevel": 45,
+      "sellprice": 1000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13453": {
+    "name_enus": "Elixir of Brute Force",
+    "quality": 1,
+    "icon": "inv_potion_59",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 30999,
+      "cooldown": 3000,
+      "reqlevel": 45,
+      "sellprice": 1250,
+      "sta": 18,
+      "str": 18
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "7082": {
+    "name_enus": "Essence of Air",
+    "quality": 2,
+    "icon": "spell_nature_earthbind",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 129400,
+      "sellprice": 400
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "7078": {
+    "name_enus": "Essence of Fire",
+    "quality": 2,
+    "icon": "spell_fire_volcano",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 14709,
+      "sellprice": 400
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "7076": {
+    "name_enus": "Essence of Earth",
+    "quality": 2,
+    "icon": "spell_nature_strengthofearthtotem02",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 39890,
+      "sellprice": 400
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "7080": {
+    "name_enus": "Essence of Water",
+    "quality": 2,
+    "icon": "spell_nature_acid_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 107299,
+      "sellprice": 400
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "12803": {
+    "name_enus": "Living Essence",
+    "quality": 2,
+    "icon": "spell_nature_abolishmagic",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 14324,
+      "sellprice": 500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "12808": {
+    "name_enus": "Essence of Undeath",
+    "quality": 2,
+    "icon": "spell_shadow_shadetruesight",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 10535,
+      "sellprice": 1000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "10620": {
+    "name_enus": "Thorium Ore",
+    "quality": 1,
+    "icon": "inv_ore_thorium_02",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 2871,
+      "reqskill": 755,
+      "reqskillrank": 250,
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13455": {
+    "name_enus": "Greater Stoneshield Potion",
+    "quality": 1,
+    "icon": "inv_potion_69",
+    "screenshot": {},
+    "jsonequip": {
+      "armor": 2000,
+      "avgbuyout": 30500,
+      "cooldown": 120000,
+      "reqlevel": 46,
+      "sellprice": 750
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13452": {
+    "name_enus": "Elixir of the Mongoose",
+    "quality": 1,
+    "icon": "inv_potion_32",
+    "screenshot": {},
+    "jsonequip": {
+      "agi": 25,
+      "avgbuyout": 53625,
+      "cooldown": 3000,
+      "mlecritstrkrtng": 10,
+      "reqlevel": 46,
+      "rgdcritstrkrtng": 10,
+      "sellprice": 1250,
+      "splcritstrkrtng": 10
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13467": {
+    "name_enus": "Icecap",
+    "quality": 1,
+    "icon": "inv_misc_herb_icecap",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 4504,
+      "buyprice": 1000,
+      "reqskill": 773,
+      "reqskillrank": 225,
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13462": {
+    "name_enus": "Purification Potion",
+    "quality": 1,
+    "icon": "inv_potion_31",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 13333,
+      "cooldown": 60000,
+      "reqlevel": 47,
+      "sellprice": 750
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13454": {
+    "name_enus": "Greater Arcane Elixir",
+    "quality": 1,
+    "icon": "inv_potion_25",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 50483,
+      "cooldown": 3000,
+      "mlecritstrkrtng": 10,
+      "reqlevel": 47,
+      "rgdcritstrkrtng": 10,
+      "sellprice": 750,
+      "splcritstrkrtng": 10,
+      "spldmg": 35,
+      "splheal": 35
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "7068": {
+    "name_enus": "Elemental Fire",
+    "quality": 1,
+    "icon": "spell_fire_fire",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 33784,
+      "sellprice": 400
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13457": {
+    "name_enus": "Greater Fire Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_24",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 52480,
+      "cooldown": 60000,
+      "reqlevel": 48,
+      "sellprice": 750
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "7070": {
+    "name_enus": "Elemental Water",
+    "quality": 1,
+    "icon": "inv_potion_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 8350,
+      "sellprice": 400
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13456": {
+    "name_enus": "Greater Frost Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_20",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 47799,
+      "cooldown": 60000,
+      "reqlevel": 48,
+      "sellprice": 750
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13458": {
+    "name_enus": "Greater Nature Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_22",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 71378,
+      "cooldown": 60000,
+      "reqlevel": 48,
+      "sellprice": 750
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "11176": {
+    "name_enus": "Dream Dust",
+    "quality": 1,
+    "icon": "inv_enchant_dustdream",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 2991
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13461": {
+    "name_enus": "Greater Arcane Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_83",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 19100,
+      "cooldown": 60000,
+      "reqlevel": 48,
+      "sellprice": 750
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13459": {
+    "name_enus": "Greater Shadow Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_23",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 88722,
+      "cooldown": 60000,
+      "reqlevel": 48,
+      "sellprice": 750
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "7069": {
+    "name_enus": "Elemental Air",
+    "quality": 1,
+    "icon": "spell_nature_tranquility",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1875,
+      "sellprice": 400
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13460": {
+    "name_enus": "Greater Holy Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_09",
+    "screenshot": {},
+    "jsonequip": {
+      "cooldown": 60000,
+      "reqlevel": 48,
+      "sellprice": 750
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13444": {
+    "name_enus": "Major Mana Potion",
+    "quality": 1,
+    "icon": "inv_potion_76",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 29489,
+      "buyprice": 6000,
+      "cooldown": 60000,
+      "reqlevel": 49,
+      "sellprice": 1500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "25867": {
+    "name_enus": "Earthstorm Diamond",
+    "quality": 3,
+    "icon": "inv_misc_gem_diamond_04",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 805000,
+      "sellprice": 30000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "25868": {
+    "name_enus": "Skyfire Diamond",
+    "quality": 3,
+    "icon": "inv_misc_gem_diamond_05",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1092500,
+      "sellprice": 30000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22794": {
+    "name_enus": "Fel Lotus",
+    "quality": 2,
+    "icon": "inv_misc_herb_fellotus",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 86000,
+      "buyprice": 30000,
+      "sellprice": 7500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "23571": {
+    "name_enus": "Primal Might",
+    "quality": 3,
+    "icon": "spell_nature_lightningoverload",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 978696,
+      "sellprice": 16000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13503": {
+    "name_enus": "Alchemist's Stone",
+    "quality": 4,
+    "icon": "spell_holy_pureofheart",
+    "screenshot": {},
+    "jsonequip": {
+      "agi": 15,
+      "int": 15,
+      "maxcount": 1,
+      "reqskill": 171,
+      "reqskillrank": 350,
+      "sellprice": 25000,
+      "slotbak": 12,
+      "spi": 15,
+      "sta": 15,
+      "str": 15
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13506": {
+    "name_enus": "Potion of Petrification",
+    "quality": 1,
+    "icon": "inv_potion_26",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 681933,
+      "cooldown": 60000,
+      "reqlevel": 50,
+      "sellprice": 1250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13468": {
+    "name_enus": "Black Lotus",
+    "quality": 2,
+    "icon": "inv_misc_herb_blacklotus",
+    "screenshot": {
+      "id": 1078199,
+      "imageType": 2
+    },
+    "jsonequip": {
+      "avgbuyout": 754000,
+      "buyprice": 4000,
+      "sellprice": 1000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13510": {
+    "name_enus": "Flask of the Titans",
+    "quality": 1,
+    "icon": "inv_potion_62",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1812399,
+      "cooldown": 3000,
+      "health": 400,
+      "reqlevel": 50,
+      "sellprice": 1250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13511": {
+    "name_enus": "Flask of Distilled Wisdom",
+    "quality": 1,
+    "icon": "inv_potion_97",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1079500,
+      "cooldown": 3000,
+      "int": 65,
+      "reqlevel": 50,
+      "sellprice": 1250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13512": {
+    "name_enus": "Flask of Supreme Power",
+    "quality": 1,
+    "icon": "inv_potion_41",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1218750,
+      "cooldown": 3000,
+      "reqlevel": 50,
+      "sellprice": 1250,
+      "spldmg": 70,
+      "splheal": 70
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13513": {
+    "name_enus": "Flask of Chromatic Resistance",
+    "quality": 1,
+    "icon": "inv_potion_48",
+    "screenshot": {},
+    "jsonequip": {
+      "arcres": 25,
+      "avgbuyout": 670000,
+      "cooldown": 3000,
+      "firres": 25,
+      "frores": 25,
+      "holres": 25,
+      "natres": 25,
+      "reqlevel": 50,
+      "sellprice": 1250,
+      "shares": 25
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3387": {
+    "name_enus": "Limited Invulnerability Potion",
+    "quality": 1,
+    "icon": "inv_potion_62",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 34221,
+      "cooldown": 60000,
+      "reqlevel": 45,
+      "sellprice": 30
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "17708": {
+    "name_enus": "Elixir of Frost Power",
+    "quality": 1,
+    "icon": "inv_potion_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 37811,
+      "cooldown": 3000,
+      "frosplpwr": 15,
+      "reqlevel": 28,
+      "sellprice": 35
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "10286": {
+    "name_enus": "Heart of the Wild",
+    "quality": 1,
+    "icon": "inv_misc_herb_08",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 793,
+      "sellprice": 400
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "18256": {
+    "name_enus": "Imbued Vial",
+    "quality": 1,
+    "icon": "inv_alchemy_imbuedvial",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 9800,
+      "buyprice": 20000,
+      "sellprice": 1000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "18253": {
+    "name_enus": "Major Rejuvenation Potion",
+    "quality": 1,
+    "icon": "inv_potion_145",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 61873,
+      "cooldown": 60000,
+      "health": 1600,
+      "reqlevel": 50,
+      "sellprice": 1000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "7972": {
+    "name_enus": "Ichor of Undeath",
+    "quality": 1,
+    "icon": "inv_misc_slime_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 565,
+      "sellprice": 400
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "18294": {
+    "name_enus": "Elixir of Greater Water Breathing",
+    "quality": 1,
+    "icon": "inv_potion_05",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 4300,
+      "cooldown": 3000,
+      "reqlevel": 35,
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "12938": {
+    "name_enus": "Blood of Heroes",
+    "quality": 1,
+    "icon": "inv_potion_33",
+    "screenshot": {},
+    "jsonequip": {},
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "19943": {
+    "name_enus": "Massive Mojo",
+    "quality": 1,
+    "icon": "spell_nature_strength",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 2200,
+      "sellprice": 2000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "12804": {
+    "name_enus": "Powerful Mojo",
+    "quality": 1,
+    "icon": "spell_nature_astralrecalgroup",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 4455,
+      "sellprice": 2000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "19931": {
+    "name_enus": "Gurubashi Mojo Madness",
+    "quality": 3,
+    "icon": "inv_poison_mindnumbing",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 674984
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "20007": {
+    "name_enus": "Mageblood Elixir",
+    "quality": 1,
+    "icon": "inv_potion_45",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 78400,
+      "cooldown": 3000,
+      "manargn": 15,
+      "reqlevel": 40,
+      "sellprice": 1000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "20002": {
+    "name_enus": "Greater Dreamless Sleep Potion",
+    "quality": 1,
+    "icon": "inv_potion_83",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 23999,
+      "cooldown": 60000,
+      "healthrgn": 525,
+      "manargn": 525,
+      "reqlevel": 55,
+      "sellprice": 1000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "20008": {
+    "name_enus": "Living Action Potion",
+    "quality": 1,
+    "icon": "inv_potion_07",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 55452,
+      "cooldown": 60000,
+      "reqlevel": 47,
+      "sellprice": 600
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "20004": {
+    "name_enus": "Mighty Troll's Blood Elixir",
+    "quality": 1,
+    "icon": "inv_potion_80",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 74997,
+      "cooldown": 3000,
+      "healthrgn": 20,
+      "reqlevel": 53,
+      "sellprice": 1000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "7077": {
+    "name_enus": "Heart of Fire",
+    "quality": 1,
+    "icon": "spell_fire_lavaspawn",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 3281,
+      "sellprice": 400
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "21546": {
+    "name_enus": "Elixir of Greater Firepower",
+    "quality": 1,
+    "icon": "inv_potion_60",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 37600,
+      "cooldown": 3000,
+      "reqlevel": 40,
+      "sellprice": 35,
+      "spldmg": 40,
+      "splheal": 40
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22787": {
+    "name_enus": "Ragveil",
+    "quality": 1,
+    "icon": "inv_misc_herb_ragveil",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 3791,
+      "buyprice": 2400,
+      "reqskill": 773,
+      "reqskillrank": 275,
+      "sellprice": 600
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22785": {
+    "name_enus": "Felweed",
+    "quality": 1,
+    "icon": "inv_misc_herb_felweed",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 2415,
+      "buyprice": 2000,
+      "reqskill": 773,
+      "reqskillrank": 275,
+      "sellprice": 500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22823": {
+    "name_enus": "Elixir of Camouflage",
+    "quality": 1,
+    "icon": "inv_potion_150",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 2450,
+      "cooldown": 3000,
+      "reqlevel": 50,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22824": {
+    "name_enus": "Elixir of Major Strength",
+    "quality": 1,
+    "icon": "inv_potion_147",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 13988,
+      "cooldown": 3000,
+      "reqlevel": 50,
+      "sellprice": 2500,
+      "str": 35
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22786": {
+    "name_enus": "Dreaming Glory",
+    "quality": 1,
+    "icon": "inv_misc_herb_dreamingglory",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 6820,
+      "buyprice": 2000,
+      "reqskill": 773,
+      "reqskillrank": 275,
+      "sellprice": 500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22825": {
+    "name_enus": "Elixir of Healing Power",
+    "quality": 1,
+    "icon": "inv_potion_142",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 16699,
+      "cooldown": 3000,
+      "reqlevel": 50,
+      "sellprice": 2500,
+      "spi": 24,
+      "spldmg": 24,
+      "splheal": 24
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22826": {
+    "name_enus": "Sneaking Potion",
+    "quality": 1,
+    "icon": "inv_potion_110",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 8596,
+      "cooldown": 60000,
+      "reqlevel": 50,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22578": {
+    "name_enus": "Mote of Water",
+    "quality": 1,
+    "icon": "inv_elemental_mote_water01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 16332,
+      "buyprice": 1600,
+      "sellprice": 400
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22790": {
+    "name_enus": "Ancient Lichen",
+    "quality": 1,
+    "icon": "inv_misc_herb_ancientlichen",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 2393,
+      "buyprice": 3000,
+      "reqskill": 773,
+      "reqskillrank": 275,
+      "sellprice": 750
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22827": {
+    "name_enus": "Elixir of Major Frost Power",
+    "quality": 1,
+    "icon": "inv_potion_148",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 36600,
+      "cooldown": 3000,
+      "frosplpwr": 55,
+      "reqlevel": 50,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22789": {
+    "name_enus": "Terocone",
+    "quality": 1,
+    "icon": "inv_misc_herb_terrocone",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 39962,
+      "buyprice": 2000,
+      "reqskill": 773,
+      "reqskillrank": 275,
+      "sellprice": 500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22828": {
+    "name_enus": "Insane Strength Potion",
+    "quality": 1,
+    "icon": "inv_potion_109",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 62499,
+      "cooldown": 60000,
+      "defrtng": -75,
+      "reqlevel": 50,
+      "sellprice": 2500,
+      "str": 120
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22830": {
+    "name_enus": "Elixir of the Searching Eye",
+    "quality": 1,
+    "icon": "inv_potion_135",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 9999,
+      "cooldown": 3000,
+      "reqlevel": 55,
+      "sellprice": 4000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22791": {
+    "name_enus": "Netherbloom",
+    "quality": 1,
+    "icon": "inv_misc_herb_netherbloom",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 17970,
+      "buyprice": 4000,
+      "reqskill": 773,
+      "reqskillrank": 275,
+      "sellprice": 1000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22829": {
+    "name_enus": "Super Healing Potion",
+    "quality": 1,
+    "icon": "inv_potion_131",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 7605,
+      "buyprice": 20000,
+      "cooldown": 60000,
+      "health": 2000,
+      "reqlevel": 55,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22831": {
+    "name_enus": "Elixir of Major Agility",
+    "quality": 1,
+    "icon": "inv_potion_127",
+    "screenshot": {},
+    "jsonequip": {
+      "agi": 30,
+      "avgbuyout": 50096,
+      "cooldown": 3000,
+      "mlecritstrkrtng": 12,
+      "reqlevel": 55,
+      "rgdcritstrkrtng": 12,
+      "sellprice": 4000,
+      "splcritstrkrtng": 12
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22871": {
+    "name_enus": "Shrouding Potion",
+    "quality": 1,
+    "icon": "inv_potion_144",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 6900,
+      "cooldown": 60000,
+      "reqlevel": 55,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22832": {
+    "name_enus": "Super Mana Potion",
+    "quality": 1,
+    "icon": "inv_potion_137",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 20779,
+      "buyprice": 20000,
+      "cooldown": 60000,
+      "reqlevel": 55,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22574": {
+    "name_enus": "Mote of Fire",
+    "quality": 1,
+    "icon": "inv_elemental_mote_fire01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 23200,
+      "buyprice": 1600,
+      "sellprice": 400
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22833": {
+    "name_enus": "Elixir of Major Firepower",
+    "quality": 1,
+    "icon": "inv_potion_146",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 70102,
+      "cooldown": 3000,
+      "firsplpwr": 55,
+      "reqlevel": 50,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22834": {
+    "name_enus": "Elixir of Major Defense",
+    "quality": 1,
+    "icon": "inv_potion_122",
+    "screenshot": {},
+    "jsonequip": {
+      "armor": 550,
+      "avgbuyout": 45900,
+      "cooldown": 3000,
+      "reqlevel": 55,
+      "sellprice": 4000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22792": {
+    "name_enus": "Nightmare Vine",
+    "quality": 1,
+    "icon": "inv_misc_herb_nightmarevine",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 18998,
+      "buyprice": 5000,
+      "reqskill": 773,
+      "reqskillrank": 275,
+      "sellprice": 1250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22835": {
+    "name_enus": "Elixir of Major Shadow Power",
+    "quality": 1,
+    "icon": "inv_potion_145",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 23498,
+      "cooldown": 3000,
+      "reqlevel": 60,
+      "sellprice": 6000,
+      "shasplpwr": 55
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22836": {
+    "name_enus": "Major Dreamless Sleep Potion",
+    "quality": 1,
+    "icon": "inv_potion_139",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 7500,
+      "cooldown": 60000,
+      "healthrgn": 900,
+      "manargn": 900,
+      "reqlevel": 60,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22837": {
+    "name_enus": "Heroic Potion",
+    "quality": 1,
+    "icon": "inv_potion_106",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 49799,
+      "cooldown": 60000,
+      "health": 700,
+      "reqlevel": 60,
+      "sellprice": 5000,
+      "str": 70
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22838": {
+    "name_enus": "Haste Potion",
+    "quality": 1,
+    "icon": "inv_potion_108",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 99700,
+      "cooldown": 60000,
+      "mlehastertng": 400,
+      "reqlevel": 60,
+      "rgdhastertng": 400,
+      "sellprice": 5000,
+      "splhastertng": 400
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22839": {
+    "name_enus": "Destruction Potion",
+    "quality": 1,
+    "icon": "inv_potion_107",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 65199,
+      "cooldown": 60000,
+      "reqlevel": 60,
+      "sellprice": 5000,
+      "splcritstrkpct": 2,
+      "spldmg": 120,
+      "splheal": 120
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22451": {
+    "name_enus": "Primal Air",
+    "quality": 2,
+    "icon": "inv_elemental_primal_air",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 184979,
+      "sellprice": 4000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "21884": {
+    "name_enus": "Primal Fire",
+    "quality": 2,
+    "icon": "inv_elemental_primal_fire",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 229099,
+      "sellprice": 4000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22452": {
+    "name_enus": "Primal Earth",
+    "quality": 2,
+    "icon": "inv_elemental_primal_earth",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 37000,
+      "sellprice": 4000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "21885": {
+    "name_enus": "Primal Water",
+    "quality": 2,
+    "icon": "inv_elemental_primal_water",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 166319,
+      "sellprice": 4000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22840": {
+    "name_enus": "Elixir of Major Mageblood",
+    "quality": 1,
+    "icon": "inv_potion_151",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 32529,
+      "cooldown": 3000,
+      "manargn": 20,
+      "reqlevel": 60,
+      "sellprice": 6000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22457": {
+    "name_enus": "Primal Mana",
+    "quality": 2,
+    "icon": "inv_elemental_primal_mana",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 152397,
+      "sellprice": 4000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22793": {
+    "name_enus": "Mana Thistle",
+    "quality": 1,
+    "icon": "inv_misc_herb_manathistle",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 91495,
+      "buyprice": 6000,
+      "reqskill": 773,
+      "reqskillrank": 275,
+      "sellprice": 1500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22845": {
+    "name_enus": "Major Arcane Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_128",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 45993,
+      "buyprice": 20000,
+      "cooldown": 60000,
+      "reqlevel": 60,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22841": {
+    "name_enus": "Major Fire Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_124",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 81100,
+      "cooldown": 60000,
+      "reqlevel": 60,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22842": {
+    "name_enus": "Major Frost Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_126",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 59500,
+      "cooldown": 60000,
+      "reqlevel": 60,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "21886": {
+    "name_enus": "Primal Life",
+    "quality": 2,
+    "icon": "inv_elemental_primal_life",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 88882,
+      "sellprice": 4000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22847": {
+    "name_enus": "Major Holy Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_125",
+    "screenshot": {},
+    "jsonequip": {
+      "cooldown": 60000,
+      "reqlevel": 60,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22844": {
+    "name_enus": "Major Nature Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_127",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 54500,
+      "cooldown": 60000,
+      "reqlevel": 60,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22456": {
+    "name_enus": "Primal Shadow",
+    "quality": 2,
+    "icon": "inv_elemental_primal_shadow",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 171000,
+      "sellprice": 4000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22846": {
+    "name_enus": "Major Shadow Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_123",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 57417,
+      "buyprice": 20000,
+      "cooldown": 60000,
+      "reqlevel": 60,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22848": {
+    "name_enus": "Elixir of Empowerment",
+    "quality": 1,
+    "icon": "inv_potion_136",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 70998,
+      "cooldown": 3000,
+      "reqlevel": 60,
+      "sellprice": 7000,
+      "splpen": 30
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22573": {
+    "name_enus": "Mote of Earth",
+    "quality": 1,
+    "icon": "inv_elemental_mote_earth01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 4149,
+      "buyprice": 1600,
+      "sellprice": 400
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22849": {
+    "name_enus": "Ironshield Potion",
+    "quality": 1,
+    "icon": "inv_potion_133",
+    "screenshot": {},
+    "jsonequip": {
+      "armor": 2500,
+      "avgbuyout": 32509,
+      "cooldown": 120000,
+      "reqlevel": 60,
+      "sellprice": 7000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22850": {
+    "name_enus": "Super Rejuvenation Potion",
+    "quality": 1,
+    "icon": "inv_potion_134",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 6999,
+      "cooldown": 60000,
+      "health": 2200,
+      "reqlevel": 65,
+      "sellprice": 7000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22861": {
+    "name_enus": "Flask of Blinding Light",
+    "quality": 1,
+    "icon": "inv_potion_116",
+    "screenshot": {},
+    "jsonequip": {
+      "arcsplpwr": 80,
+      "avgbuyout": 521273,
+      "cooldown": 3000,
+      "holsplpwr": 80,
+      "natsplpwr": 80,
+      "reqlevel": 65,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22851": {
+    "name_enus": "Flask of Fortification",
+    "quality": 1,
+    "icon": "inv_potion_119",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 486000,
+      "cooldown": 3000,
+      "defrtng": 10,
+      "health": 500,
+      "reqlevel": 65,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22853": {
+    "name_enus": "Flask of Mighty Restoration",
+    "quality": 1,
+    "icon": "inv_potion_118",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 451999,
+      "cooldown": 3000,
+      "manargn": 31,
+      "reqlevel": 65,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22854": {
+    "name_enus": "Flask of Relentless Assault",
+    "quality": 1,
+    "icon": "inv_potion_117",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 641000,
+      "cooldown": 3000,
+      "mleatkpwr": 120,
+      "reqlevel": 65,
+      "rgdatkpwr": 120,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22866": {
+    "name_enus": "Flask of Pure Death",
+    "quality": 1,
+    "icon": "inv_potion_115",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 538794,
+      "cooldown": 3000,
+      "firsplpwr": 80,
+      "frosplpwr": 80,
+      "reqlevel": 65,
+      "sellprice": 5000,
+      "shasplpwr": 80
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "23079": {
+    "name_enus": "Deep Peridot",
+    "quality": 2,
+    "icon": "inv_misc_gem_deepperidot_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 8025,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "23107": {
+    "name_enus": "Shadow Draenite",
+    "quality": 2,
+    "icon": "inv_misc_gem_ebondraenite_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 8125,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "23112": {
+    "name_enus": "Golden Draenite",
+    "quality": 2,
+    "icon": "inv_misc_gem_goldendraenite_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 16100,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "23077": {
+    "name_enus": "Blood Garnet",
+    "quality": 2,
+    "icon": "inv_misc_gem_bloodgem_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 29594,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "21929": {
+    "name_enus": "Flame Spessarite",
+    "quality": 2,
+    "icon": "inv_misc_gem_flamespessarite_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 5333,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "23117": {
+    "name_enus": "Azure Moonstone",
+    "quality": 2,
+    "icon": "inv_misc_gem_azuredraenite_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 6448,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "28100": {
+    "name_enus": "Volatile Healing Potion",
+    "quality": 1,
+    "icon": "inv_potion_40",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1311,
+      "buyprice": 4000,
+      "cooldown": 60000,
+      "health": 1400,
+      "reqlevel": 55,
+      "sellprice": 1000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "28102": {
+    "name_enus": "Onslaught Elixir",
+    "quality": 1,
+    "icon": "inv_potion_58",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 9798,
+      "cooldown": 3000,
+      "mleatkpwr": 60,
+      "reqlevel": 50,
+      "rgdatkpwr": 60,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "28103": {
+    "name_enus": "Adept's Elixir",
+    "quality": 1,
+    "icon": "inv_potion_96",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 13847,
+      "cooldown": 3000,
+      "mlecritstrkrtng": 24,
+      "reqlevel": 50,
+      "rgdcritstrkrtng": 24,
+      "sellprice": 2500,
+      "splcritstrkrtng": 24,
+      "spldmg": 24,
+      "splheal": 24
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "28101": {
+    "name_enus": "Unstable Mana Potion",
+    "quality": 1,
+    "icon": "inv_potion_75",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 10700,
+      "buyprice": 6000,
+      "cooldown": 60000,
+      "reqlevel": 55,
+      "sellprice": 1500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "28104": {
+    "name_enus": "Elixir of Mastery",
+    "quality": 1,
+    "icon": "inv_potion_111",
+    "screenshot": {},
+    "jsonequip": {
+      "agi": 15,
+      "avgbuyout": 74400,
+      "cooldown": 3000,
+      "int": 15,
+      "reqlevel": 50,
+      "sellprice": 2500,
+      "spi": 15,
+      "sta": 15,
+      "str": 15
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "31080": {
+    "name_enus": "Mercurial Stone",
+    "quality": 2,
+    "icon": "inv_misc_gem_lionseye_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 380000,
+      "hitrtng": 27,
+      "reqlevel": 65,
+      "sellprice": 4000,
+      "slotbak": 12,
+      "sta": 27
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "31679": {
+    "name_enus": "Fel Strength Elixir",
+    "quality": 1,
+    "icon": "inv_potion_152",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 80000,
+      "cooldown": 3000,
+      "mleatkpwr": 90,
+      "reqlevel": 60,
+      "rgdatkpwr": 90,
+      "sellprice": 3000,
+      "sta": -10
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "31676": {
+    "name_enus": "Fel Regeneration Potion",
+    "quality": 1,
+    "icon": "inv_potion_140",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 18400,
+      "cooldown": 60000,
+      "healthrgn": 400,
+      "reqlevel": 60,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "31677": {
+    "name_enus": "Fel Mana Potion",
+    "quality": 1,
+    "icon": "inv_potion_138",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 116999,
+      "cooldown": 60000,
+      "manargn": 400,
+      "reqlevel": 60,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "32062": {
+    "name_enus": "Elixir of Major Fortitude",
+    "quality": 1,
+    "icon": "inv_potion_158",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 18181,
+      "cooldown": 3000,
+      "health": 250,
+      "healthrgn": 10,
+      "reqlevel": 50,
+      "sellprice": 1250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "32063": {
+    "name_enus": "Earthen Elixir",
+    "quality": 1,
+    "icon": "inv_potion_154",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 14600,
+      "cooldown": 3000,
+      "reqlevel": 50,
+      "sellprice": 1500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "32067": {
+    "name_enus": "Elixir of Draenic Wisdom",
+    "quality": 1,
+    "icon": "inv_potion_155",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 47250,
+      "cooldown": 3000,
+      "int": 30,
+      "reqlevel": 50,
+      "sellprice": 1500,
+      "spi": 30
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "32068": {
+    "name_enus": "Elixir of Ironskin",
+    "quality": 1,
+    "icon": "inv_potion_159",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 17885,
+      "cooldown": 3000,
+      "reqlevel": 55,
+      "resirtng": 30,
+      "sellprice": 1500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "23782": {
+    "name_enus": "Fel Iron Casing",
+    "quality": 1,
+    "icon": "inv_gizmo_felironcasing",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 56398,
+      "buyprice": 32000,
+      "sellprice": 8000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "32839": {
+    "name_enus": "Cauldron of Major Arcane Protection",
+    "quality": 1,
+    "icon": "inv_misc_cauldron_arcane",
+    "screenshot": {},
+    "jsonequip": {
+      "reqlevel": 60,
+      "sellprice": 750
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "32849": {
+    "name_enus": "Cauldron of Major Fire Protection",
+    "quality": 1,
+    "icon": "inv_misc_cauldron_fire",
+    "screenshot": {},
+    "jsonequip": {
+      "reqlevel": 60,
+      "sellprice": 750
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "32850": {
+    "name_enus": "Cauldron of Major Frost Protection",
+    "quality": 1,
+    "icon": "inv_misc_cauldron_frost",
+    "screenshot": {},
+    "jsonequip": {
+      "reqlevel": 60,
+      "sellprice": 750
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "32851": {
+    "name_enus": "Cauldron of Major Nature Protection",
+    "quality": 1,
+    "icon": "inv_misc_cauldron_nature",
+    "screenshot": {},
+    "jsonequip": {
+      "reqlevel": 60,
+      "sellprice": 750
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "32852": {
+    "name_enus": "Cauldron of Major Shadow Protection",
+    "quality": 1,
+    "icon": "inv_misc_cauldron_shadow",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 438892,
+      "reqlevel": 60,
+      "sellprice": 750
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "33208": {
+    "name_enus": "Flask of Chromatic Wonder",
+    "quality": 1,
+    "icon": "inv_potion_48",
+    "screenshot": {},
+    "jsonequip": {
+      "agi": 18,
+      "arcres": 35,
+      "avgbuyout": 184888,
+      "cooldown": 3000,
+      "firres": 35,
+      "frores": 35,
+      "holres": 35,
+      "int": 18,
+      "natres": 35,
+      "reqlevel": 65,
+      "sellprice": 1250,
+      "shares": 35,
+      "spi": 18,
+      "sta": 18,
+      "str": 18
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "34440": {
+    "name_enus": "Mad Alchemist's Potion",
+    "quality": 1,
+    "icon": "inv_potion_28",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 8300,
+      "cooldown": 60000,
+      "health": 2200,
+      "reqlevel": 60,
+      "reqskill": 171,
+      "reqskillrank": 315,
+      "sellprice": 7000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "30183": {
+    "name_enus": "Nether Vortex",
+    "quality": 4,
+    "icon": "inv_elemental_mote_nether",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 270000,
+      "sellprice": 20000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "35751": {
+    "name_enus": "Assassin's Alchemist Stone",
+    "quality": 4,
+    "icon": "classic_spell_nature_healingway",
+    "screenshot": {},
+    "jsonequip": {
+      "maxcount": 1,
+      "mleatkpwr": 108,
+      "reqskill": 171,
+      "reqskillrank": 350,
+      "rgdatkpwr": 108,
+      "sellprice": 25000,
+      "slotbak": 12
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "35748": {
+    "name_enus": "Guardian's Alchemist Stone",
+    "quality": 4,
+    "icon": "classic_spell_nature_healingway",
+    "screenshot": {},
+    "jsonequip": {
+      "defrtng": 54,
+      "maxcount": 1,
+      "reqskill": 171,
+      "reqskillrank": 350,
+      "sellprice": 25000,
+      "slotbak": 12
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "35750": {
+    "name_enus": "Redeemer's Alchemist Stone",
+    "quality": 4,
+    "icon": "classic_spell_nature_healingway",
+    "screenshot": {},
+    "jsonequip": {
+      "maxcount": 1,
+      "reqskill": 171,
+      "reqskillrank": 350,
+      "sellprice": 25000,
+      "slotbak": 12,
+      "spldmg": 63,
+      "splheal": 63
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "35749": {
+    "name_enus": "Sorcerer's Alchemist Stone",
+    "quality": 4,
+    "icon": "classic_spell_nature_healingway",
+    "screenshot": {},
+    "jsonequip": {
+      "maxcount": 1,
+      "reqskill": 171,
+      "reqskillrank": 350,
+      "sellprice": 25000,
+      "slotbak": 12,
+      "spldmg": 63,
+      "splheal": 63
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40199": {
+    "name_enus": "Pygmy Suckerfish",
+    "quality": 1,
+    "icon": "inv_misc_fish_55",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 21775,
+      "sellprice": 50
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40195": {
+    "name_enus": "Pygmy Oil",
+    "quality": 1,
+    "icon": "inv_potion_07",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 18860,
+      "cooldown": 1000,
+      "sellprice": 750
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36901": {
+    "name_enus": "Goldclover",
+    "quality": 1,
+    "icon": "inv_misc_herb_goldclover",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 9980,
+      "buyprice": 3000,
+      "reqskill": 773,
+      "reqskillrank": 325,
+      "sellprice": 750
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36906": {
+    "name_enus": "Icethorn",
+    "quality": 1,
+    "icon": "inv_misc_herb_icethorn",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 12128,
+      "buyprice": 8000,
+      "reqskill": 773,
+      "reqskillrank": 325,
+      "sellprice": 2000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "33447": {
+    "name_enus": "Runic Healing Potion",
+    "quality": 1,
+    "icon": "inv_alchemy_elixir_05",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 6186,
+      "buyprice": 24000,
+      "cooldown": 60000,
+      "health": 3600,
+      "reqlevel": 70,
+      "sellprice": 6000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36905": {
+    "name_enus": "Lichbloom",
+    "quality": 1,
+    "icon": "inv_misc_herb_whispervine",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 20729,
+      "buyprice": 8000,
+      "reqskill": 773,
+      "reqskillrank": 325,
+      "sellprice": 2000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "33448": {
+    "name_enus": "Runic Mana Potion",
+    "quality": 1,
+    "icon": "inv_alchemy_elixir_02",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 11389,
+      "buyprice": 24000,
+      "cooldown": 60000,
+      "reqlevel": 70,
+      "sellprice": 6000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "39671": {
+    "name_enus": "Resurgent Healing Potion",
+    "quality": 1,
+    "icon": "inv_potion_120",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 35585,
+      "cooldown": 60000,
+      "health": 2000,
+      "reqlevel": 65,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36903": {
+    "name_enus": "Adder's Tongue",
+    "quality": 1,
+    "icon": "inv_misc_herb_evergreenmoss",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 12119,
+      "buyprice": 5000,
+      "reqskill": 773,
+      "reqskillrank": 325,
+      "sellprice": 1250
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "39666": {
+    "name_enus": "Elixir of Mighty Agility",
+    "quality": 1,
+    "icon": "inv_potion_162",
+    "screenshot": {},
+    "jsonequip": {
+      "agi": 45,
+      "avgbuyout": 8294,
+      "cooldown": 3000,
+      "reqlevel": 70,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36904": {
+    "name_enus": "Tiger Lily",
+    "quality": 1,
+    "icon": "inv_misc_herb_tigerlily",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 9185,
+      "buyprice": 3000,
+      "reqskill": 773,
+      "reqskillrank": 325,
+      "sellprice": 750
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40070": {
+    "name_enus": "Spellpower Elixir",
+    "quality": 1,
+    "icon": "inv_alchemy_potion_05",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 9941,
+      "cooldown": 3000,
+      "reqlevel": 70,
+      "sellprice": 5000,
+      "spldmg": 58,
+      "splheal": 58
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36907": {
+    "name_enus": "Talandra's Rose",
+    "quality": 1,
+    "icon": "inv_misc_herb_talandrasrose",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 11429,
+      "buyprice": 3000,
+      "reqskill": 773,
+      "reqskillrank": 325,
+      "sellprice": 750
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40072": {
+    "name_enus": "Elixir of Spirit",
+    "quality": 1,
+    "icon": "inv_potion_02",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 6096,
+      "cooldown": 3000,
+      "reqlevel": 70,
+      "sellprice": 5000,
+      "spi": 50
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40077": {
+    "name_enus": "Crazy Alchemist's Potion",
+    "quality": 1,
+    "icon": "inv_potion_27",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 15099,
+      "cooldown": 60000,
+      "health": 3300,
+      "reqlevel": 70,
+      "reqskill": 171,
+      "reqskillrank": 400,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40078": {
+    "name_enus": "Elixir of Mighty Fortitude",
+    "quality": 1,
+    "icon": "inv_potion_164",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 7366,
+      "cooldown": 3000,
+      "health": 350,
+      "healthrgn": 20,
+      "reqlevel": 70,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40081": {
+    "name_enus": "Potion of Nightmares",
+    "quality": 1,
+    "icon": "inv_alchemy_elixir_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 6870,
+      "cooldown": 60000,
+      "healthrgn": 900,
+      "manargn": 900,
+      "reqlevel": 70,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40093": {
+    "name_enus": "Indestructible Potion",
+    "quality": 1,
+    "icon": "inv_alchemy_elixir_empty",
+    "screenshot": {},
+    "jsonequip": {
+      "armor": 3500,
+      "avgbuyout": 25346,
+      "cooldown": 120000,
+      "reqlevel": 70,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40087": {
+    "name_enus": "Powerful Rejuvenation Potion",
+    "quality": 1,
+    "icon": "inv_alchemy_elixir_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 11997,
+      "cooldown": 60000,
+      "health": 3300,
+      "reqlevel": 70,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36908": {
+    "name_enus": "Frost Lotus",
+    "quality": 2,
+    "icon": "inv_misc_herb_frostlotus",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 21934,
+      "buyprice": 40000,
+      "sellprice": 10000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40411": {
+    "name_enus": "Enchanted Vial",
+    "quality": 1,
+    "icon": "inv_alchemy_enchantedvial",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 12545,
+      "buyprice": 50000,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "46377": {
+    "name_enus": "Flask of Endless Rage",
+    "quality": 1,
+    "icon": "inv_alchemy_endlessflask_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 108498,
+      "cooldown": 3000,
+      "mleatkpwr": 180,
+      "reqlevel": 75,
+      "rgdatkpwr": 180,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "37704": {
+    "name_enus": "Crystallized Life",
+    "quality": 1,
+    "icon": "inv_elemental_crystal_life",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 13599,
+      "buyprice": 2400,
+      "sellprice": 600
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "46379": {
+    "name_enus": "Flask of Stoneblood",
+    "quality": 1,
+    "icon": "inv_alchemy_endlessflask_05",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 111394,
+      "cooldown": 3000,
+      "health": 1300,
+      "reqlevel": 75,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "46376": {
+    "name_enus": "Flask of the Frost Wyrm",
+    "quality": 1,
+    "icon": "inv_alchemy_endlessflask_04",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 103993,
+      "cooldown": 3000,
+      "reqlevel": 75,
+      "sellprice": 2500,
+      "spldmg": 125,
+      "splheal": 125
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "37921": {
+    "name_enus": "Deadnettle",
+    "quality": 1,
+    "icon": "inv_misc_herb_constrictorgrass",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 9098,
+      "buyprice": 3000,
+      "reqskill": 773,
+      "reqskillrank": 325,
+      "sellprice": 750
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40079": {
+    "name_enus": "Lesser Flask of Toughness",
+    "quality": 1,
+    "icon": "inv_alchemy_endlessflask_02",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 24961,
+      "cooldown": 3000,
+      "reqlevel": 70,
+      "resirtng": 50,
+      "sellprice": 875
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40076": {
+    "name_enus": "Guru's Elixir",
+    "quality": 1,
+    "icon": "inv_potion_112",
+    "screenshot": {},
+    "jsonequip": {
+      "agi": 20,
+      "avgbuyout": 31096,
+      "cooldown": 3000,
+      "int": 20,
+      "reqlevel": 70,
+      "sellprice": 5000,
+      "spi": 20,
+      "sta": 20,
+      "str": 20
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40068": {
+    "name_enus": "Wrath Elixir",
+    "quality": 1,
+    "icon": "inv_potion_114",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 6000,
+      "cooldown": 3000,
+      "mleatkpwr": 90,
+      "reqlevel": 70,
+      "rgdatkpwr": 90,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40067": {
+    "name_enus": "Icy Mana Potion",
+    "quality": 1,
+    "icon": "inv_potion_126",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 15000,
+      "cooldown": 60000,
+      "reqlevel": 65,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "35623": {
+    "name_enus": "Eternal Air",
+    "quality": 2,
+    "icon": "inv_elemental_eternal_air",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 81993,
+      "sellprice": 6000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "35624": {
+    "name_enus": "Eternal Earth",
+    "quality": 2,
+    "icon": "inv_elemental_eternal_earth",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 75198,
+      "sellprice": 6000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "35622": {
+    "name_enus": "Eternal Water",
+    "quality": 2,
+    "icon": "inv_elemental_eternal_water",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 33396,
+      "sellprice": 6000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "35627": {
+    "name_enus": "Eternal Shadow",
+    "quality": 2,
+    "icon": "inv_elemental_eternal_shadow",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 40492,
+      "sellprice": 6000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36860": {
+    "name_enus": "Eternal Fire",
+    "quality": 2,
+    "icon": "inv_elemental_eternal_fire",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 191492,
+      "sellprice": 6000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "35625": {
+    "name_enus": "Eternal Life",
+    "quality": 2,
+    "icon": "inv_elemental_eternal_life",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 118043,
+      "sellprice": 6000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "37703": {
+    "name_enus": "Crystallized Shadow",
+    "quality": 1,
+    "icon": "inv_elemental_crystal_shadow",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 6286,
+      "buyprice": 2400,
+      "sellprice": 600
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40216": {
+    "name_enus": "Mighty Nature Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_155",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 99959,
+      "cooldown": 60000,
+      "reqlevel": 70,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "37701": {
+    "name_enus": "Crystallized Earth",
+    "quality": 1,
+    "icon": "inv_elemental_crystal_earth",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 8364,
+      "buyprice": 2400,
+      "sellprice": 600
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40213": {
+    "name_enus": "Mighty Arcane Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_159",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 89998,
+      "cooldown": 60000,
+      "reqlevel": 70,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "37702": {
+    "name_enus": "Crystallized Fire",
+    "quality": 1,
+    "icon": "inv_elemental_crystal_fire",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 22222,
+      "buyprice": 2400,
+      "sellprice": 600
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40215": {
+    "name_enus": "Mighty Frost Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_156",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 97974,
+      "cooldown": 60000,
+      "reqlevel": 70,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40217": {
+    "name_enus": "Mighty Shadow Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_158",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 37157,
+      "cooldown": 60000,
+      "reqlevel": 70,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "37705": {
+    "name_enus": "Crystallized Water",
+    "quality": 1,
+    "icon": "inv_elemental_crystal_water",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 6144,
+      "buyprice": 2400,
+      "sellprice": 600
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40214": {
+    "name_enus": "Mighty Fire Protection Potion",
+    "quality": 1,
+    "icon": "inv_potion_146",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 26998,
+      "cooldown": 60000,
+      "reqlevel": 70,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40248": {
+    "name_enus": "Eternal Might",
+    "quality": 3,
+    "icon": "spell_shadow_manaburn",
+    "screenshot": {},
+    "jsonequip": {
+      "sellprice": 16000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "46378": {
+    "name_enus": "Flask of Pure Mojo",
+    "quality": 1,
+    "icon": "inv_alchemy_endlessflask_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 32985,
+      "cooldown": 3000,
+      "manargn": 45,
+      "reqlevel": 75,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40073": {
+    "name_enus": "Elixir of Mighty Strength",
+    "quality": 1,
+    "icon": "inv_potion_165",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 8732,
+      "cooldown": 3000,
+      "reqlevel": 70,
+      "sellprice": 5000,
+      "str": 50
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40097": {
+    "name_enus": "Elixir of Protection",
+    "quality": 1,
+    "icon": "inv_alchemy_potion_empty",
+    "screenshot": {},
+    "jsonequip": {
+      "armor": 800,
+      "avgbuyout": 12999,
+      "cooldown": 3000,
+      "reqlevel": 70,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40211": {
+    "name_enus": "Potion of Speed",
+    "quality": 1,
+    "icon": "inv_alchemy_elixir_04",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 45565,
+      "cooldown": 60000,
+      "mlehastertng": 500,
+      "reqlevel": 70,
+      "rgdhastertng": 500,
+      "sellprice": 5000,
+      "splhastertng": 500
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40212": {
+    "name_enus": "Potion of Wild Magic",
+    "quality": 1,
+    "icon": "inv_alchemy_elixir_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 67874,
+      "cooldown": 60000,
+      "mlecritstrkrtng": 200,
+      "reqlevel": 70,
+      "rgdcritstrkrtng": 200,
+      "sellprice": 5000,
+      "splcritstrkrtng": 200,
+      "spldmg": 200,
+      "splheal": 200
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "40109": {
+    "name_enus": "Elixir of Mighty Mageblood",
+    "quality": 1,
+    "icon": "inv_potion_129",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 8113,
+      "cooldown": 3000,
+      "manargn": 30,
+      "reqlevel": 70,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36917": {
+    "name_enus": "Bloodstone",
+    "quality": 2,
+    "icon": "inv_jewelcrafting_gem_12",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 16362,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36923": {
+    "name_enus": "Chalcedony",
+    "quality": 2,
+    "icon": "inv_jewelcrafting_gem_10",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 13857,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "41266": {
+    "name_enus": "Skyflare Diamond",
+    "quality": 3,
+    "icon": "inv_jewelcrafting_icediamond_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 186000,
+      "sellprice": 30000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36932": {
+    "name_enus": "Dark Jade",
+    "quality": 2,
+    "icon": "inv_jewelcrafting_gem_07",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 8577,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36929": {
+    "name_enus": "Huge Citrine",
+    "quality": 2,
+    "icon": "inv_jewelcrafting_gem_09",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 14578,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "41334": {
+    "name_enus": "Earthsiege Diamond",
+    "quality": 3,
+    "icon": "inv_jewelcrafting_shadowspirit_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 305000,
+      "sellprice": 30000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "43570": {
+    "name_enus": "Endless Mana Potion",
+    "quality": 3,
+    "icon": "inv_alchemy_endlessflask_04",
+    "screenshot": {},
+    "jsonequip": {
+      "cooldown": 60000,
+      "reqskill": 171,
+      "reqskillrank": 400
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "43569": {
+    "name_enus": "Endless Healing Potion",
+    "quality": 3,
+    "icon": "inv_alchemy_endlessflask_06",
+    "screenshot": {},
+    "jsonequip": {
+      "cooldown": 60000,
+      "health": 2000,
+      "reqskill": 171,
+      "reqskillrank": 400
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "44323": {
+    "name_enus": "Indestructible Alchemist's Stone",
+    "quality": 3,
+    "icon": "spell_holy_aspiration",
+    "screenshot": {},
+    "jsonequip": {
+      "dodgertng": 50,
+      "maxcount": 1,
+      "reqlevel": 75,
+      "reqskill": 171,
+      "reqskillrank": 400,
+      "sellprice": 80507,
+      "slotbak": 12,
+      "sta": 75
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "44322": {
+    "name_enus": "Mercurial Alchemist Stone",
+    "quality": 3,
+    "icon": "spell_holy_aspiration",
+    "screenshot": {},
+    "jsonequip": {
+      "hastertng": 50,
+      "maxcount": 1,
+      "reqlevel": 75,
+      "reqskill": 171,
+      "reqskillrank": 400,
+      "sellprice": 80507,
+      "slotbak": 12,
+      "spldmg": 59,
+      "splheal": 59
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "44324": {
+    "name_enus": "Mighty Alchemist's Stone",
+    "quality": 3,
+    "icon": "spell_holy_aspiration",
+    "screenshot": {},
+    "jsonequip": {
+      "critstrkrtng": 50,
+      "maxcount": 1,
+      "mleatkpwr": 100,
+      "reqlevel": 75,
+      "reqskill": 171,
+      "reqskillrank": 400,
+      "rgdatkpwr": 100,
+      "sellprice": 80507,
+      "slotbak": 12
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "44325": {
+    "name_enus": "Elixir of Accuracy",
+    "quality": 1,
+    "icon": "inv_potion_61",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 9403,
+      "cooldown": 3000,
+      "mlehitrtng": 45,
+      "reqlevel": 70,
+      "rgdhitrtng": 45,
+      "sellprice": 5000,
+      "splhitrtng": 45
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "44327": {
+    "name_enus": "Elixir of Deadly Strikes",
+    "quality": 1,
+    "icon": "inv_alchemy_potion_02",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 6246,
+      "cooldown": 3000,
+      "mlecritstrkrtng": 45,
+      "reqlevel": 70,
+      "rgdcritstrkrtng": 45,
+      "sellprice": 5000,
+      "splcritstrkrtng": 45
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "44328": {
+    "name_enus": "Elixir of Mighty Defense",
+    "quality": 1,
+    "icon": "inv_alchemy_potion_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 11261,
+      "cooldown": 3000,
+      "defrtng": 45,
+      "reqlevel": 70,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "44329": {
+    "name_enus": "Elixir of Expertise",
+    "quality": 1,
+    "icon": "inv_alchemy_potion_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 7082,
+      "cooldown": 3000,
+      "exprtng": 45,
+      "reqlevel": 70,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "44330": {
+    "name_enus": "Elixir of Armor Piercing",
+    "quality": 1,
+    "icon": "inv_alchemy_potion_06",
+    "screenshot": {},
+    "jsonequip": {
+      "armorpenrtng": 45,
+      "avgbuyout": 5062,
+      "cooldown": 3000,
+      "reqlevel": 70,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "44331": {
+    "name_enus": "Elixir of Lightning Speed",
+    "quality": 1,
+    "icon": "inv_alchemy_potion_04",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 20624,
+      "cooldown": 3000,
+      "mlehastertng": 45,
+      "reqlevel": 70,
+      "rgdhastertng": 45,
+      "sellprice": 5000,
+      "splhastertng": 45
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "44332": {
+    "name_enus": "Elixir of Mighty Thoughts",
+    "quality": 1,
+    "icon": "inv_potion_161",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 22224,
+      "cooldown": 3000,
+      "int": 45,
+      "reqlevel": 70,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36913": {
+    "name_enus": "Saronite Bar",
+    "quality": 1,
+    "icon": "inv_ingot_yoggthorite",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 36253,
+      "buyprice": 50000,
+      "sellprice": 12500
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "41163": {
+    "name_enus": "Titanium Bar",
+    "quality": 2,
+    "icon": "inv_ingot_platinum",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 101586,
+      "buyprice": 75000,
+      "sellprice": 18750
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "39970": {
+    "name_enus": "Fire Leaf",
+    "quality": 1,
+    "icon": "inv_misc_herb_11a",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 18000,
+      "reqskill": 773,
+      "reqskillrank": 325,
+      "sellprice": 750
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "44939": {
+    "name_enus": "Lesser Flask of Resistance",
+    "quality": 1,
+    "icon": "inv_potion_118",
+    "screenshot": {},
+    "jsonequip": {
+      "arcres": 50,
+      "avgbuyout": 129257,
+      "cooldown": 3000,
+      "firres": 50,
+      "frores": 50,
+      "holres": 50,
+      "natres": 50,
+      "reqlevel": 70,
+      "sellprice": 875,
+      "shares": 50
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "41814": {
+    "name_enus": "Glassfin Minnow",
+    "quality": 1,
+    "icon": "inv_misc_fish_69",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 4298,
+      "sellprice": 8
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "44958": {
+    "name_enus": "Ethereal Oil",
+    "quality": 1,
+    "icon": "inv_drink_11",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 22299,
+      "sellprice": 10
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "8827": {
+    "name_enus": "Elixir of Water Walking",
+    "quality": 1,
+    "icon": "inv_potion_166",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 5018,
+      "cooldown": 3000,
+      "reqlevel": 35,
+      "sellprice": 125
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "45621": {
+    "name_enus": "Elixir of Minor Accuracy",
+    "quality": 1,
+    "icon": "inv_potion_159",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 9999,
+      "cooldown": 3000,
+      "mlehitrtng": 10,
+      "reqlevel": 15,
+      "rgdhitrtng": 10,
+      "sellprice": 95,
+      "splhitrtng": 10
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36933": {
+    "name_enus": "Forest Emerald",
+    "quality": 3,
+    "icon": "inv_jewelcrafting_gem_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 57493,
+      "sellprice": 30000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36934": {
+    "name_enus": "Eye of Zul",
+    "quality": 4,
+    "icon": "inv_jewelcrafting_gem_34",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 300000,
+      "sellprice": 50000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36930": {
+    "name_enus": "Monarch Topaz",
+    "quality": 3,
+    "icon": "inv_jewelcrafting_gem_02",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 249000,
+      "sellprice": 30000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36931": {
+    "name_enus": "Ametrine",
+    "quality": 4,
+    "icon": "inv_jewelcrafting_gem_33",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1009896,
+      "sellprice": 50000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36918": {
+    "name_enus": "Scarlet Ruby",
+    "quality": 3,
+    "icon": "inv_jewelcrafting_gem_04",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1048116,
+      "sellprice": 30000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36919": {
+    "name_enus": "Cardinal Ruby",
+    "quality": 4,
+    "icon": "inv_jewelcrafting_gem_32",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1880998,
+      "sellprice": 50000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36921": {
+    "name_enus": "Autumn's Glow",
+    "quality": 3,
+    "icon": "inv_jewelcrafting_gem_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 134997,
+      "sellprice": 30000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36922": {
+    "name_enus": "King's Amber",
+    "quality": 4,
+    "icon": "inv_jewelcrafting_gem_36",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1249998,
+      "sellprice": 50000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36927": {
+    "name_enus": "Twilight Opal",
+    "quality": 3,
+    "icon": "inv_jewelcrafting_gem_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 124491,
+      "sellprice": 30000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36928": {
+    "name_enus": "Dreadstone",
+    "quality": 4,
+    "icon": "inv_jewelcrafting_gem_31",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 943800,
+      "sellprice": 50000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36924": {
+    "name_enus": "Sky Sapphire",
+    "quality": 3,
+    "icon": "inv_jewelcrafting_gem_05",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 76959,
+      "sellprice": 30000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36925": {
+    "name_enus": "Majestic Zircon",
+    "quality": 4,
+    "icon": "inv_jewelcrafting_gem_35",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1219795,
+      "sellprice": 50000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "47499": {
+    "name_enus": "Flask of the North",
+    "quality": 3,
+    "icon": "inv_alchemy_endlessflask_05",
+    "screenshot": {},
+    "jsonequip": {
+      "cooldown": 1000,
+      "reqskill": 171,
+      "reqskillrank": 400
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "2553": {
+    "name_enus": "Recipe: Elixir of Minor Agility",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 5384,
+      "reqskill": 171,
+      "reqskillrank": 50,
+      "sellprice": 25
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "2555": {
+    "name_enus": "Recipe: Swiftness Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 30225,
+      "reqskill": 171,
+      "reqskillrank": 60,
+      "sellprice": 40
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "2556": {
+    "name_enus": "Recipe: Elixir of Tongues",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 70,
+      "sellprice": 40
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3393": {
+    "name_enus": "Recipe: Minor Magic Resistance Potion",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 13200,
+      "reqskill": 171,
+      "reqskillrank": 110,
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3394": {
+    "name_enus": "Recipe: Potion of Curing",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 75000,
+      "reqskill": 171,
+      "reqskillrank": 120,
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3395": {
+    "name_enus": "Recipe: Limited Invulnerability Potion",
+    "quality": 2,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 30709,
+      "reqskill": 171,
+      "reqskillrank": 250,
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3396": {
+    "name_enus": "Recipe: Elixir of Lesser Agility",
+    "quality": 2,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 26525,
+      "reqskill": 171,
+      "reqskillrank": 140,
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3830": {
+    "name_enus": "Recipe: Elixir of Fortitude",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 4800,
+      "reqskill": 171,
+      "reqskillrank": 175,
+      "sellprice": 500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3831": {
+    "name_enus": "Recipe: Major Troll's Blood Elixir",
+    "quality": 2,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 19000,
+      "reqskill": 171,
+      "reqskillrank": 180,
+      "sellprice": 550
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3832": {
+    "name_enus": "Recipe: Elixir of Detect Lesser Invisibility",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 12400,
+      "reqskill": 171,
+      "reqskillrank": 195,
+      "sellprice": 550
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "4597": {
+    "name_enus": "Recipe: Discolored Healing Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 3333,
+      "reqskill": 171,
+      "reqskillrank": 50,
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "4624": {
+    "name_enus": "Recipe: Lesser Stoneshield Potion",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 7410,
+      "reqskill": 171,
+      "reqskillrank": 215,
+      "sellprice": 550
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "5640": {
+    "name_enus": "Recipe: Rage Potion",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 3749,
+      "buyprice": 100,
+      "reqskill": 171,
+      "reqskillrank": 60,
+      "sellprice": 25
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "5641": {
+    "name_enus": "Recipe: Cowardly Flight Potion",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 125,
+      "sellprice": 375
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "5642": {
+    "name_enus": "Recipe: Free Action Potion",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 19199,
+      "buyprice": 1800,
+      "reqskill": 171,
+      "reqskillrank": 150,
+      "sellprice": 450
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "5643": {
+    "name_enus": "Recipe: Great Rage Potion",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 15499,
+      "buyprice": 2000,
+      "reqskill": 171,
+      "reqskillrank": 175,
+      "sellprice": 500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6053": {
+    "name_enus": "Recipe: Holy Protection Potion",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 11767,
+      "buyprice": 800,
+      "reqskill": 171,
+      "reqskillrank": 100,
+      "sellprice": 200
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6054": {
+    "name_enus": "Recipe: Shadow Protection Potion",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 29550,
+      "buyprice": 900,
+      "reqskill": 171,
+      "reqskillrank": 135,
+      "sellprice": 225
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6055": {
+    "name_enus": "Recipe: Fire Protection Potion",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 27200,
+      "buyprice": 1500,
+      "reqskill": 171,
+      "reqskillrank": 165,
+      "sellprice": 375
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6056": {
+    "name_enus": "Recipe: Frost Protection Potion",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 22000,
+      "buyprice": 2000,
+      "reqskill": 171,
+      "reqskillrank": 190,
+      "sellprice": 500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6057": {
+    "name_enus": "Recipe: Nature Protection Potion",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 11000,
+      "buyprice": 2000,
+      "reqskill": 171,
+      "reqskillrank": 190,
+      "sellprice": 500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6068": {
+    "name_enus": "Recipe: Shadow Oil",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 23000,
+      "buyprice": 1500,
+      "reqskill": 171,
+      "reqskillrank": 165,
+      "sellprice": 375
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6211": {
+    "name_enus": "Recipe: Elixir of Ogre's Strength",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 8808,
+      "reqskill": 171,
+      "reqskillrank": 150,
+      "sellprice": 450
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6663": {
+    "name_enus": "Recipe: Elixir of Giant Growth",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 25000,
+      "reqskill": 171,
+      "reqskillrank": 90,
+      "sellprice": 150
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9293": {
+    "name_enus": "Recipe: Magic Resistance Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 29900,
+      "reqskill": 171,
+      "reqskillrank": 210,
+      "sellprice": 1250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9294": {
+    "name_enus": "Recipe: Wildvine Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 3510,
+      "reqskill": 171,
+      "reqskillrank": 225,
+      "sellprice": 2000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9295": {
+    "name_enus": "Recipe: Invisibility Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 22099,
+      "reqskill": 171,
+      "reqskillrank": 235,
+      "sellprice": 2000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9296": {
+    "name_enus": "Recipe: Gift of Arthas",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 12500,
+      "reqskill": 171,
+      "reqskillrank": 240,
+      "sellprice": 2000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9297": {
+    "name_enus": "Recipe: Elixir of Dream Vision",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 208000,
+      "reqskill": 171,
+      "reqskillrank": 240,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9298": {
+    "name_enus": "Recipe: Elixir of Giants",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 36398,
+      "reqskill": 171,
+      "reqskillrank": 245,
+      "sellprice": 2250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9300": {
+    "name_enus": "Recipe: Elixir of Demonslaying",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 51773,
+      "buyprice": 10000,
+      "reqskill": 171,
+      "reqskillrank": 250,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9301": {
+    "name_enus": "Recipe: Elixir of Shadow Power",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 32500,
+      "buyprice": 10000,
+      "reqskill": 171,
+      "reqskillrank": 250,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9302": {
+    "name_enus": "Recipe: Ghost Dye",
+    "quality": 1,
+    "icon": "inv_scroll_05",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 32056,
+      "buyprice": 9000,
+      "reqskill": 171,
+      "reqskillrank": 245,
+      "sellprice": 2250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9303": {
+    "name_enus": "Recipe: Philosopher's Stone",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 33095,
+      "buyprice": 8000,
+      "reqskill": 171,
+      "reqskillrank": 225,
+      "sellprice": 2000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9304": {
+    "name_enus": "Recipe: Transmute Iron to Gold",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 18738,
+      "buyprice": 8000,
+      "reqskill": 171,
+      "reqskillrank": 225,
+      "sellprice": 2000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "9305": {
+    "name_enus": "Recipe: Transmute Mithril to Truesilver",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 12998,
+      "buyprice": 8000,
+      "reqskill": 171,
+      "reqskillrank": 225,
+      "sellprice": 2000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "10644": {
+    "name_enus": "Recipe: Goblin Rocket Fuel",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 20099,
+      "reqskill": 171,
+      "reqskillrank": 210,
+      "sellprice": 500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "12958": {
+    "name_enus": "Recipe: Transmute Arcanite",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 76500,
+      "buyprice": 50000,
+      "reqskill": 171,
+      "reqskillrank": 275,
+      "sellprice": 12500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13476": {
+    "name_enus": "Recipe: Mighty Rage Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 104500,
+      "reqskill": 171,
+      "reqskillrank": 255,
+      "sellprice": 3000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13477": {
+    "name_enus": "Recipe: Superior Mana Potion",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 21700,
+      "buyprice": 12000,
+      "reqskill": 171,
+      "reqskillrank": 260,
+      "sellprice": 3000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13478": {
+    "name_enus": "Recipe: Elixir of Superior Defense",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 27500,
+      "buyprice": 13000,
+      "reqskill": 171,
+      "reqskillrank": 265,
+      "sellprice": 3250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13479": {
+    "name_enus": "Recipe: Elixir of the Sages",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 56998,
+      "reqskill": 171,
+      "reqskillrank": 270,
+      "sellprice": 3500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13480": {
+    "name_enus": "Recipe: Major Healing Potion",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 41033,
+      "buyprice": 15000,
+      "reqskill": 171,
+      "reqskillrank": 275,
+      "sellprice": 3750
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13481": {
+    "name_enus": "Recipe: Elixir of Brute Force",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 905079,
+      "reqskill": 171,
+      "reqskillrank": 275,
+      "sellprice": 3750
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13482": {
+    "name_enus": "Recipe: Transmute Air to Fire",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 15000,
+      "reqfaction": 529,
+      "reqrep": 5,
+      "reqskill": 171,
+      "reqskillrank": 275
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13483": {
+    "name_enus": "Recipe: Transmute Fire to Earth",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 15000,
+      "reqskill": 171,
+      "reqskillrank": 275
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13484": {
+    "name_enus": "Recipe: Transmute Earth to Water",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 15000,
+      "reqfaction": 576,
+      "reqrep": 4,
+      "reqskill": 171,
+      "reqskillrank": 275
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13485": {
+    "name_enus": "Recipe: Transmute Water to Air",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 15000,
+      "reqskill": 171,
+      "reqskillrank": 275
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13486": {
+    "name_enus": "Recipe: Transmute Undeath to Water",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 3382500,
+      "reqskill": 171,
+      "reqskillrank": 275,
+      "sellprice": 3750
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13487": {
+    "name_enus": "Recipe: Transmute Water to Undeath",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 245000,
+      "reqskill": 171,
+      "reqskillrank": 275,
+      "sellprice": 3750
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13488": {
+    "name_enus": "Recipe: Transmute Life to Earth",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 600000,
+      "reqskill": 171,
+      "reqskillrank": 275,
+      "sellprice": 3750
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13489": {
+    "name_enus": "Recipe: Transmute Earth to Life",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 269999,
+      "reqskill": 171,
+      "reqskillrank": 275,
+      "sellprice": 3750
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13490": {
+    "name_enus": "Recipe: Greater Stoneshield Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 48652,
+      "reqskill": 171,
+      "reqskillrank": 280,
+      "sellprice": 4000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13491": {
+    "name_enus": "Recipe: Elixir of the Mongoose",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 10006,
+      "reqskill": 171,
+      "reqskillrank": 280,
+      "sellprice": 4000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13492": {
+    "name_enus": "Recipe: Purification Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 30800,
+      "reqskill": 171,
+      "reqskillrank": 285,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13493": {
+    "name_enus": "Recipe: Greater Arcane Elixir",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 5739999,
+      "reqskill": 171,
+      "reqskillrank": 285,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13494": {
+    "name_enus": "Recipe: Greater Fire Protection Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 850000,
+      "reqskill": 171,
+      "reqskillrank": 290,
+      "sellprice": 6000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13495": {
+    "name_enus": "Recipe: Greater Frost Protection Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 175500,
+      "reqskill": 171,
+      "reqskillrank": 290,
+      "sellprice": 6000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13496": {
+    "name_enus": "Recipe: Greater Nature Protection Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 718000,
+      "reqskill": 171,
+      "reqskillrank": 290,
+      "sellprice": 6000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13497": {
+    "name_enus": "Recipe: Greater Arcane Protection Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 94999,
+      "reqskill": 171,
+      "reqskillrank": 290,
+      "sellprice": 6000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13499": {
+    "name_enus": "Recipe: Greater Shadow Protection Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 349900,
+      "reqskill": 171,
+      "reqskillrank": 290,
+      "sellprice": 6000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13500": {
+    "name_enus": "Recipe: Greater Holy Protection Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 290,
+      "sellprice": 6000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13501": {
+    "name_enus": "Recipe: Major Mana Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 30000,
+      "reqskill": 171,
+      "reqskillrank": 295,
+      "sellprice": 7500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13517": {
+    "name_enus": "Recipe: Alchemist's Stone",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 80000,
+      "reqfaction": 935,
+      "reqrep": 6,
+      "reqskill": 171,
+      "reqskillrank": 350,
+      "sellprice": 20000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13518": {
+    "name_enus": "Recipe: Potion of Petrification",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 430000,
+      "reqskill": 171,
+      "reqskillrank": 300,
+      "sellprice": 10000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13519": {
+    "name_enus": "Recipe: Flask of the Titans",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 3597499,
+      "reqskill": 171,
+      "reqskillrank": 300,
+      "sellprice": 10000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13520": {
+    "name_enus": "Recipe: Flask of Distilled Wisdom",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1050000,
+      "reqskill": 171,
+      "reqskillrank": 300,
+      "sellprice": 10000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13521": {
+    "name_enus": "Recipe: Flask of Supreme Power",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1450000,
+      "reqskill": 171,
+      "reqskillrank": 300,
+      "sellprice": 10000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "13522": {
+    "name_enus": "Recipe: Flask of Chromatic Resistance",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 345467,
+      "reqskill": 171,
+      "reqskillrank": 300,
+      "sellprice": 10000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "14634": {
+    "name_enus": "Recipe: Frost Oil",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 30999,
+      "buyprice": 2500,
+      "reqskill": 171,
+      "reqskillrank": 200,
+      "sellprice": 625
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "17709": {
+    "name_enus": "Recipe: Elixir of Frost Power",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 899999,
+      "reqskill": 171,
+      "reqskillrank": 190,
+      "sellprice": 500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "18257": {
+    "name_enus": "Recipe: Major Rejuvenation Potion",
+    "quality": 3,
+    "icon": "inv_scroll_05",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 2500000,
+      "reqskill": 171,
+      "reqskillrank": 300,
+      "sellprice": 50000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "20011": {
+    "name_enus": "Recipe: Mageblood Elixir",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 50000,
+      "reqfaction": 270,
+      "reqrep": 6,
+      "reqskill": 171,
+      "reqskillrank": 275,
+      "sellprice": 12500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "20012": {
+    "name_enus": "Recipe: Greater Dreamless Sleep Potion",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 50000,
+      "reqfaction": 270,
+      "reqrep": 4,
+      "reqskill": 171,
+      "reqskillrank": 275,
+      "sellprice": 12500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "20013": {
+    "name_enus": "Recipe: Living Action Potion",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 50000,
+      "reqfaction": 270,
+      "reqrep": 7,
+      "reqskill": 171,
+      "reqskillrank": 285,
+      "sellprice": 12500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "20014": {
+    "name_enus": "Recipe: Mighty Troll's Blood Elixir",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 50000,
+      "reqfaction": 270,
+      "reqrep": 5,
+      "reqskill": 171,
+      "reqskillrank": 290,
+      "sellprice": 12500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "20761": {
+    "name_enus": "Recipe: Transmute Elemental Fire",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 120000,
+      "reqfaction": 59,
+      "reqrep": 4,
+      "reqskill": 171,
+      "reqskillrank": 300,
+      "sellprice": 30000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "21547": {
+    "name_enus": "Recipe: Elixir of Greater Firepower",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 178498,
+      "reqskill": 171,
+      "reqskillrank": 250,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22900": {
+    "name_enus": "Recipe: Elixir of Camouflage",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 30000,
+      "reqskill": 171,
+      "reqskillrank": 305,
+      "sellprice": 7500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22901": {
+    "name_enus": "Recipe: Sneaking Potion",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 72000,
+      "buyprice": 30000,
+      "reqskill": 171,
+      "reqskillrank": 315,
+      "sellprice": 7500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22902": {
+    "name_enus": "Recipe: Elixir of Major Frost Power",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 59973,
+      "buyprice": 40000,
+      "reqskill": 171,
+      "reqskillrank": 320,
+      "sellprice": 10000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22903": {
+    "name_enus": "Recipe: Insane Strength Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 657033,
+      "reqskill": 171,
+      "reqskillrank": 320,
+      "sellprice": 10000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22904": {
+    "name_enus": "Recipe: Elixir of the Searching Eye",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 189374,
+      "reqskill": 171,
+      "reqskillrank": 325,
+      "sellprice": 10000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22905": {
+    "name_enus": "Recipe: Elixir of Major Agility",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 50000,
+      "reqfaction": 946,
+      "reqrep": 5,
+      "reqskill": 171,
+      "reqskillrank": 330,
+      "sellprice": 12500
+    },
+    "attainable": 0,
+    "flags2": 24582,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22906": {
+    "name_enus": "Recipe: Shrouding Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "reqfaction": 970,
+      "reqrep": 7,
+      "reqskill": 171,
+      "reqskillrank": 335
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22907": {
+    "name_enus": "Recipe: Super Mana Potion",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 50000,
+      "reqskill": 171,
+      "reqskillrank": 340,
+      "sellprice": 12500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22908": {
+    "name_enus": "Recipe: Elixir of Major Firepower",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 60000,
+      "reqfaction": 934,
+      "reqrep": 6,
+      "reqskill": 171,
+      "reqskillrank": 345,
+      "sellprice": 15000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22909": {
+    "name_enus": "Recipe: Elixir of Major Defense",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 50000,
+      "reqskill": 171,
+      "reqskillrank": 345,
+      "sellprice": 12500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22910": {
+    "name_enus": "Recipe: Elixir of Major Shadow Power",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 80000,
+      "reqfaction": 1011,
+      "reqrep": 6,
+      "reqskill": 171,
+      "reqskillrank": 350,
+      "sellprice": 20000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22911": {
+    "name_enus": "Recipe: Major Dreamless Sleep Potion",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 50000,
+      "reqskill": 171,
+      "reqskillrank": 350,
+      "sellprice": 12500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22912": {
+    "name_enus": "Recipe: Heroic Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 637000,
+      "reqskill": 171,
+      "reqskillrank": 350,
+      "sellprice": 20000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22913": {
+    "name_enus": "Recipe: Haste Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 6900000,
+      "reqskill": 171,
+      "reqskillrank": 350,
+      "sellprice": 20000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22914": {
+    "name_enus": "Recipe: Destruction Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 5956969,
+      "reqskill": 171,
+      "reqskillrank": 350,
+      "sellprice": 20000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22915": {
+    "name_enus": "Recipe: Transmute Primal Air to Fire",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 80000,
+      "reqfaction": 935,
+      "reqrep": 6,
+      "reqskill": 171,
+      "reqskillrank": 350,
+      "sellprice": 20000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22916": {
+    "name_enus": "Recipe: Transmute Primal Earth to Water",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "reqfaction": 970,
+      "reqrep": 6,
+      "reqskill": 171,
+      "reqskillrank": 350
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22917": {
+    "name_enus": "Recipe: Transmute Primal Fire to Earth",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 80000,
+      "reqfaction": 941,
+      "reqrep": 6,
+      "reqskill": 171,
+      "reqskillrank": 350,
+      "sellprice": 20000
+    },
+    "attainable": 0,
+    "flags2": 24581,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22918": {
+    "name_enus": "Recipe: Transmute Primal Water to Air",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 80000,
+      "reqfaction": 942,
+      "reqrep": 6,
+      "reqskill": 171,
+      "reqskillrank": 350,
+      "sellprice": 20000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22919": {
+    "name_enus": "Recipe: Elixir of Major Mageblood",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 4200000,
+      "reqskill": 171,
+      "reqskillrank": 355,
+      "sellprice": 25000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22920": {
+    "name_enus": "Recipe: Major Fire Protection Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 360,
+      "sellprice": 15000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22921": {
+    "name_enus": "Recipe: Major Frost Protection Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 360,
+      "sellprice": 15000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22922": {
+    "name_enus": "Recipe: Major Nature Protection Potion",
+    "quality": 1,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 100000,
+      "reqfaction": 942,
+      "reqrep": 7,
+      "reqskill": 171,
+      "reqskillrank": 360,
+      "sellprice": 25000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22923": {
+    "name_enus": "Recipe: Major Arcane Protection Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 360,
+      "sellprice": 25000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22924": {
+    "name_enus": "Recipe: Major Shadow Protection Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 360,
+      "sellprice": 25000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22925": {
+    "name_enus": "Recipe: Major Holy Protection Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 360,
+      "sellprice": 25000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22926": {
+    "name_enus": "Recipe: Elixir of Empowerment",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 380000,
+      "reqskill": 171,
+      "reqskillrank": 365,
+      "sellprice": 25000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22927": {
+    "name_enus": "Recipe: Ironshield Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 365,
+      "sellprice": 15000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "23574": {
+    "name_enus": "Recipe: Transmute Primal Might",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 80000,
+      "reqskill": 171,
+      "reqskillrank": 350,
+      "sellprice": 20000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "24001": {
+    "name_enus": "Recipe: Elixir of Major Agility",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 50000,
+      "reqfaction": 947,
+      "reqrep": 5,
+      "reqskill": 171,
+      "reqskillrank": 330,
+      "sellprice": 12500
+    },
+    "attainable": 0,
+    "flags2": 24581,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "25869": {
+    "name_enus": "Recipe: Transmute Earthstorm Diamond",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 80000,
+      "reqfaction": 942,
+      "reqrep": 5,
+      "reqskill": 171,
+      "reqskillrank": 350,
+      "sellprice": 20000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "25870": {
+    "name_enus": "Recipe: Transmute Skyfire Diamond",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 80000,
+      "reqfaction": 946,
+      "reqrep": 5,
+      "reqskill": 171,
+      "reqskillrank": 350,
+      "sellprice": 20000
+    },
+    "attainable": 0,
+    "flags2": 24582,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "29232": {
+    "name_enus": "Recipe: Transmute Skyfire Diamond",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 80000,
+      "reqfaction": 947,
+      "reqrep": 5,
+      "reqskill": 171,
+      "reqskillrank": 350,
+      "sellprice": 20000
+    },
+    "attainable": 0,
+    "flags2": 24581,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "30443": {
+    "name_enus": "Recipe: Transmute Primal Fire to Earth",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 80000,
+      "reqfaction": 978,
+      "reqrep": 6,
+      "reqskill": 171,
+      "reqskillrank": 350,
+      "sellprice": 20000
+    },
+    "attainable": 0,
+    "flags2": 24582,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "31354": {
+    "name_enus": "Recipe: Flask of the Titans",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 40000,
+      "reqfaction": 935,
+      "reqrep": 7,
+      "reqskill": 171,
+      "reqskillrank": 300,
+      "sellprice": 10000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "31355": {
+    "name_enus": "Recipe: Flask of Supreme Power",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 40000,
+      "reqfaction": 989,
+      "reqrep": 7,
+      "reqskill": 171,
+      "reqskillrank": 300,
+      "sellprice": 10000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "31356": {
+    "name_enus": "Recipe: Flask of Distilled Wisdom",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 40000,
+      "reqfaction": 942,
+      "reqrep": 7,
+      "reqskill": 171,
+      "reqskillrank": 300,
+      "sellprice": 10000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "31357": {
+    "name_enus": "Recipe: Flask of Chromatic Resistance",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 40000,
+      "reqfaction": 1011,
+      "reqrep": 7,
+      "reqskill": 171,
+      "reqskillrank": 300,
+      "sellprice": 10000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "31680": {
+    "name_enus": "Recipe: Fel Strength Elixir",
+    "quality": 3,
+    "icon": "inv_scroll_05",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 335,
+      "sellprice": 10000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "31681": {
+    "name_enus": "Recipe: Fel Regeneration Potion",
+    "quality": 3,
+    "icon": "inv_scroll_05",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 345,
+      "sellprice": 10000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "31682": {
+    "name_enus": "Recipe: Fel Mana Potion",
+    "quality": 3,
+    "icon": "inv_scroll_05",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 360,
+      "sellprice": 10000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "32070": {
+    "name_enus": "Recipe: Earthen Elixir",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 40000,
+      "reqfaction": 942,
+      "reqrep": 5,
+      "reqskill": 171,
+      "reqskillrank": 320,
+      "sellprice": 10000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "32071": {
+    "name_enus": "Recipe: Elixir of Ironskin",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 330
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "33209": {
+    "name_enus": "Recipe: Flask of Chromatic Wonder",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 150000,
+      "buyprice": 40000,
+      "reqfaction": 967,
+      "reqrep": 5,
+      "reqskill": 171,
+      "reqskillrank": 375,
+      "sellprice": 10000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "34481": {
+    "name_enus": "Recipe: Mad Alchemist's Potion",
+    "quality": 1,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "reqfaction": 942,
+      "reqrep": 4,
+      "reqskill": 171,
+      "reqskillrank": 325,
+      "sellprice": 75000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "35294": {
+    "name_enus": "Recipe: Elixir of Empowerment",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 365,
+      "sellprice": 25000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "35295": {
+    "name_enus": "Recipe: Haste Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 350,
+      "sellprice": 20000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "35752": {
+    "name_enus": "Recipe: Guardian's Alchemist Stone",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 250000,
+      "reqfaction": 1077,
+      "reqrep": 7,
+      "reqskill": 171,
+      "reqskillrank": 375,
+      "sellprice": 62500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "35753": {
+    "name_enus": "Recipe: Sorcerer's Alchemist Stone",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 250000,
+      "reqfaction": 1077,
+      "reqrep": 7,
+      "reqskill": 171,
+      "reqskillrank": 375,
+      "sellprice": 62500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "35754": {
+    "name_enus": "Recipe: Redeemer's Alchemist Stone",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 250000,
+      "reqfaction": 1077,
+      "reqrep": 7,
+      "reqskill": 171,
+      "reqskillrank": 375,
+      "sellprice": 62500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "35755": {
+    "name_enus": "Recipe: Assassin's Alchemist Stone",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 250000,
+      "reqfaction": 1077,
+      "reqrep": 7,
+      "reqskill": 171,
+      "reqskillrank": 375,
+      "sellprice": 62500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36841": {
+    "name_enus": "Recipe: Alchemy Recipe Template 01 (Standard)",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 275,
+      "sellprice": 3750
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36842": {
+    "name_enus": "Recipe: Alchemy Recipe Template 02 (Good)",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 275,
+      "sellprice": 3750
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36843": {
+    "name_enus": "Recipe: Alchemy Recipe Template 03 (Superior)",
+    "quality": 3,
+    "icon": "inv_scroll_05",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 275,
+      "sellprice": 3750
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "36844": {
+    "name_enus": "Recipe: Alchemy Recipe Template 04 (Epic)",
+    "quality": 4,
+    "icon": "inv_scroll_04",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 275,
+      "sellprice": 3750
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "44508": {
+    "name_enus": "Discovery!",
+    "quality": 1,
+    "icon": "inv_potion_106",
+    "screenshot": {},
+    "jsonequip": {},
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "44564": {
+    "name_enus": "Recipe: Mighty Arcane Protection Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 400,
+      "sellprice": 8500
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "44565": {
+    "name_enus": "Recipe: Mighty Fire Protection Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 400,
+      "sellprice": 8500
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "44566": {
+    "name_enus": "Recipe: Mighty Frost Protection Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 400,
+      "sellprice": 8500
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "44567": {
+    "name_enus": "Recipe: Mighty Nature Protection Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 400,
+      "sellprice": 8500
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "44568": {
+    "name_enus": "Recipe: Mighty Shadow Protection Potion",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 400,
+      "sellprice": 8500
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "47507": {
+    "name_enus": "Recipe: Flask of the North",
+    "quality": 2,
+    "icon": "inv_scroll_06",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 425
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "39971": {
+    "name_enus": "Runic Battle Potion",
+    "quality": 3,
+    "icon": "inv_potion_160",
+    "screenshot": {},
+    "jsonequip": {
+      "cooldown": 60000,
+      "health": 2500,
+      "maxcount": 1,
+      "reqlevel": 70,
+      "reqskill": 171,
+      "reqskillrank": 400
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "46110": {
+    "name_enus": "Alchemist's Cache",
+    "quality": 3,
+    "icon": "inv_misc_bag_18",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 171,
+      "reqskillrank": 425,
+      "sellprice": 625
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  }
+}
