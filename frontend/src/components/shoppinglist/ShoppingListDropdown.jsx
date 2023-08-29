@@ -3,6 +3,7 @@ import ShoppingItem from "./ShoppingItem";
 const ShoppingListDropdown = ({ totalCost, shoppingList, server, faction }) => {
   return (
     <div className="flex flex-col items-center border border-color rounded-md border-t-0 py-1">
+      {console.log(shoppingList)}
       {/* <div className="flex flex-row flex-wrap overflow-scroll"> */}
       {/* <div className="grid max-h-40 grid-cols-4 overflow-y-scroll"> */}
       <div className="flex flex-col flex-wrap min-w-full max-w-full max-h-screen items-center overflow-scroll">

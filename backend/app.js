@@ -9,20 +9,13 @@ dotenv.config();
 const mongoose = require("mongoose");
 const EngineeringRecipe = require("./models/engineering.js");
 const AlchemyRecipe = require("./models/alchemy.js");
+const BlacksmithingRecipe = require("./models/blacksmithing.js");
+const CookingRecipe = require("./models/cooking.js");
+const EnchantingRecipe = require("./models/enchanting.js");
 
-// Moving, may delete
-// const recipesObject = require("./recipe_jsons/engineer.json");
-
-// Moving, may delete
-// const iconsObject = require("./icons/icons.json");
 const ah_data = require("./ah_data/benediction-ally.json");
 
 const total_ah_data = require("./ah_data/total_data.json");
-
-// Moving, may delete
-// const optimalPathData = require("./optimal_path/optimal_path.json");
-// const groupedPathData = require("./optimal_path/grouped_path.json");
-// const shoppingListData = require("./optimal_path/shopping_list.json");
 
 const calculate = require("./utils/calculate.js");
 const upload = require("./utils/upload_recipes.js");
@@ -81,7 +74,11 @@ app.get("/fetch-realm-data", async (req, res) => {
 // Iterate through all recipes and update their crafting costs
 app.get("/update-crafting-costs", async (req, res) => {
   let price_data = total_ah_data["BenedictionAlliance"];
-  updateCost.alchemy(price_data);
+  // updateCost.engineering(price_data);
+  // updateCost.alchemy(price_data);
+  // updateCost.blacksmithing(price_data);
+  // updateCost.updateCost(price_data, "Cooking");
+  updateCost.updateCost(price_data, "Enchanting");
 
   res.send("Recipe costs updated");
 });
@@ -100,11 +97,11 @@ app.post("/calculate-optimal-path", async (req, res) => {
   let profession = data.profession;
   let currentSkill = parseInt(data.startingLevel);
 
-  // Call guaranteed path
-  let responseObject = calculate.guaranteed(currentSkill, profession);
-  // Call risky path
-  if (data.riskTolerance) {
-    console.log("Guaranteed!");
+  let responseObject;
+  if (profession == "Enchanting") {
+    responseObject = calculate.enchanting(currentSkill);
+  } else {
+    responseObject = calculate.guaranteed(currentSkill, profession);
   }
 
   res.status(200).json(responseObject);
@@ -113,7 +110,10 @@ app.post("/calculate-optimal-path", async (req, res) => {
 app.get("/upload-recipes", (req, res) => {
   // Be very careful with these!! Will override existing recipes
   // upload.engineering();
-  upload.alchemy();
+  // upload.alchemy();
+  // upload.blacksmithing();
+  // upload.cooking();
+  upload.enchanting();
 
   res.send("Recipes uploaded");
 });
@@ -123,12 +123,21 @@ app.get("/retrieve-recipes", async (req, res) => {
   let storedRecipes = {};
 
   let engineerRecipes = await EngineeringRecipe.find().lean();
-  // console.log("Engineering(275): ", engineerRecipes.length);
+  console.log("Engineering(275): ", engineerRecipes.length);
   let alchemyRecipes = await AlchemyRecipe.find().lean();
-  // console.log("Alchemy(201): ", alchemyRecipes.length);
+  console.log("Alchemy(201): ", alchemyRecipes.length);
+  let blacksmithingRecipes = await BlacksmithingRecipe.find().lean();
+  console.log("Blacksmithing(469): ", BlacksmithingRecipe.length);
+  let cookingRecipes = await CookingRecipe.find().lean();
+  console.log("Cooking(154): ", cookingRecipes.length);
+  let enchantingRecipes = await EnchantingRecipe.find().lean();
+  console.log("Enchanting(286): ", enchantingRecipes.length);
 
   storedRecipes["Engineering"] = engineerRecipes;
   storedRecipes["Alchemy"] = alchemyRecipes;
+  storedRecipes["Blacksmithing"] = blacksmithingRecipes;
+  storedRecipes["Cooking"] = cookingRecipes;
+  storedRecipes["Enchanting"] = enchantingRecipes;
 
   calculate.storeLocal(storedRecipes, "recipe_storage", "stored_recipes");
 

@@ -2,8 +2,6 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 // Schemas define the structure of the documents, models "wrap around"
-// Work on validation letter as a "nice to have"
-
 const alchemyRecipeSchema = new Schema(
   {
     itemName: String,

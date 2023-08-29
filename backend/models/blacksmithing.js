@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 // Schemas define the structure of the documents, models "wrap around"
-const engineeringRecipeSchema = new Schema(
+const blacksmithingRecipeSchema = new Schema(
   {
     itemName: String,
     recipeID: Number,
@@ -18,9 +18,9 @@ const engineeringRecipeSchema = new Schema(
   { timestamps: true } // not sure if this is helpful
 );
 
-const engineeringRecipe = mongoose.model(
-  "engineering_recipe",
-  engineeringRecipeSchema
+const blacksmithingRecipe = mongoose.model(
+  "blacksmithing_recipe",
+  blacksmithingRecipeSchema
 );
 
-module.exports = engineeringRecipe;
+module.exports = blacksmithingRecipe;

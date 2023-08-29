@@ -27,7 +27,4 @@ const ShoppingItem = ({ item }) => {
   );
 };
 
-{
-}
-
 export default ShoppingItem;
