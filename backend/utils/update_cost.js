@@ -3,6 +3,11 @@ const AlchemyRecipe = require("../models/alchemy.js");
 const BlacksmithingRecipe = require("../models/blacksmithing.js");
 const CookingRecipe = require("../models/cooking.js");
 const EnchantingRecipe = require("../models/enchanting.js");
+const FirstaidRecipe = require("../models/firstaid.js");
+const InscriptionRecipe = require("../models/inscription.js");
+const JewelcraftingRecipe = require("../models/jewelcrafting.js");
+const LeatherworkingRecipe = require("../models/leatherworking.js");
+const TailoringRecipe = require("../models/tailoring.js");
 
 const calculate = require("./calculate.js");
 
@@ -26,6 +31,16 @@ async function updateCost(priceData, profession) {
       break;
     case "Enchanting":
       allRecipes = await EnchantingRecipe.find().lean();
+    case "First Aid":
+      allRecipes = await FirstaidRecipe.find().lean();
+    case "Inscription":
+      allRecipes = await InscriptionRecipe.find().lean();
+    case "Jewelcrafting":
+      allRecipes = await JewelcraftingRecipe.find().lean();
+    case "Leatherworking":
+      allRecipes = await LeatherworkingRecipe.find().lean();
+    case "Tailoring":
+      allRecipes = await TailoringRecipe.find().lean();
   }
 
   // Calculate the total cost and whether to craft or buy each reagent: return an object/array with this info
@@ -82,6 +97,46 @@ async function updateCost(priceData, profession) {
         break;
       case "Enchanting":
         recipeDoc = await EnchantingRecipe.findOneAndUpdate(
+          {
+            recipeID: recipe.recipeID,
+          },
+          { craftingCost: recipe.craftingCost }
+        );
+        break;
+      case "First Aid":
+        recipeDoc = await FirstaidRecipe.findOneAndUpdate(
+          {
+            recipeID: recipe.recipeID,
+          },
+          { craftingCost: recipe.craftingCost }
+        );
+        break;
+      case "Inscription":
+        recipeDoc = await InscriptionRecipe.findOneAndUpdate(
+          {
+            recipeID: recipe.recipeID,
+          },
+          { craftingCost: recipe.craftingCost }
+        );
+        break;
+      case "Jewelcrafting":
+        recipeDoc = await JewelcraftingRecipe.findOneAndUpdate(
+          {
+            recipeID: recipe.recipeID,
+          },
+          { craftingCost: recipe.craftingCost }
+        );
+        break;
+      case "Leatherworking":
+        recipeDoc = await LeatherworkingRecipe.findOneAndUpdate(
+          {
+            recipeID: recipe.recipeID,
+          },
+          { craftingCost: recipe.craftingCost }
+        );
+        break;
+      case "Tailoring":
+        recipeDoc = await TailoringRecipe.findOneAndUpdate(
           {
             recipeID: recipe.recipeID,
           },

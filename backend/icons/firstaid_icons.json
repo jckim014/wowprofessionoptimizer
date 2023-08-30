@@ -1,0 +1,963 @@
+{
+  "2589": {
+    "name_enus": "Linen Cloth",
+    "quality": 1,
+    "icon": "inv_fabric_linen_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 60,
+      "buyprice": 55,
+      "sellprice": 13
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "1251": {
+    "name_enus": "Linen Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_15",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 85,
+      "cooldown": 1000,
+      "healthrgn": 11,
+      "reqskill": 129,
+      "reqskillrank": 1,
+      "sellprice": 8
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "2581": {
+    "name_enus": "Heavy Linen Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_18",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 18,
+      "cooldown": 1000,
+      "healthrgn": 19,
+      "reqskill": 129,
+      "reqskillrank": 20,
+      "sellprice": 20
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "2592": {
+    "name_enus": "Wool Cloth",
+    "quality": 1,
+    "icon": "inv_fabric_wool_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 347,
+      "buyprice": 135,
+      "sellprice": 33
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3530": {
+    "name_enus": "Wool Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_14",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 120,
+      "cooldown": 1000,
+      "healthrgn": 23,
+      "reqskill": 129,
+      "reqskillrank": 50,
+      "sellprice": 25
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "3531": {
+    "name_enus": "Heavy Wool Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_17",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 52,
+      "cooldown": 1000,
+      "healthrgn": 43,
+      "reqskill": 129,
+      "reqskillrank": 75,
+      "sellprice": 57
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "4306": {
+    "name_enus": "Silk Cloth",
+    "quality": 1,
+    "icon": "inv_fabric_silk_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 251,
+      "buyprice": 600,
+      "sellprice": 150
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6450": {
+    "name_enus": "Silk Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 258,
+      "cooldown": 1000,
+      "healthrgn": 50,
+      "reqskill": 129,
+      "reqskillrank": 100,
+      "sellprice": 170
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6451": {
+    "name_enus": "Heavy Silk Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_02",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 462,
+      "cooldown": 1000,
+      "healthrgn": 80,
+      "reqskill": 129,
+      "reqskillrank": 125,
+      "sellprice": 400
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "1475": {
+    "name_enus": "Small Venom Sac",
+    "quality": 1,
+    "icon": "inv_misc_organ_02",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1833,
+      "sellprice": 82
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6452": {
+    "name_enus": "Anti-Venom",
+    "quality": 1,
+    "icon": "inv_misc_slime_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 3026,
+      "cooldown": 60000,
+      "sellprice": 28
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "1288": {
+    "name_enus": "Large Venom Sac",
+    "quality": 1,
+    "icon": "inv_misc_organ_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 13500,
+      "sellprice": 185
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6453": {
+    "name_enus": "Strong Anti-Venom",
+    "quality": 1,
+    "icon": "inv_misc_slime_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 18700,
+      "cooldown": 60000,
+      "sellprice": 62
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "4338": {
+    "name_enus": "Mageweave Cloth",
+    "quality": 1,
+    "icon": "inv_fabric_mageweave_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 659,
+      "buyprice": 1000,
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "8544": {
+    "name_enus": "Mageweave Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_19",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 615,
+      "cooldown": 1000,
+      "healthrgn": 100,
+      "reqskill": 129,
+      "reqskillrank": 150,
+      "sellprice": 340
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "8545": {
+    "name_enus": "Heavy Mageweave Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_20",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1415,
+      "cooldown": 1000,
+      "healthrgn": 138,
+      "reqskill": 129,
+      "reqskillrank": 175,
+      "sellprice": 800
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "14047": {
+    "name_enus": "Runecloth",
+    "quality": 1,
+    "icon": "inv_fabric_purplefire_01",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 739,
+      "sellprice": 400
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "14529": {
+    "name_enus": "Runecloth Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_11",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1321,
+      "cooldown": 1000,
+      "healthrgn": 170,
+      "reqskill": 129,
+      "reqskillrank": 200,
+      "sellprice": 425
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "14530": {
+    "name_enus": "Heavy Runecloth Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_12",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1800,
+      "buyprice": 4000,
+      "cooldown": 1000,
+      "healthrgn": 250,
+      "reqskill": 129,
+      "reqskillrank": 225,
+      "sellprice": 1000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "19441": {
+    "name_enus": "Huge Venom Sac",
+    "quality": 1,
+    "icon": "inv_misc_organ_04",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 5831,
+      "sellprice": 1500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "19440": {
+    "name_enus": "Powerful Anti-Venom",
+    "quality": 1,
+    "icon": "inv_drink_14",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 30000,
+      "cooldown": 60000,
+      "reqskill": 129,
+      "reqskillrank": 300,
+      "sellprice": 500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "21877": {
+    "name_enus": "Netherweave Cloth",
+    "quality": 1,
+    "icon": "inv_fabric_netherweave",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1537,
+      "sellprice": 800
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "21990": {
+    "name_enus": "Netherweave Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_netherweave",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1250,
+      "cooldown": 1000,
+      "healthrgn": 350,
+      "reqskill": 129,
+      "reqskillrank": 300,
+      "sellprice": 1275
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "21991": {
+    "name_enus": "Heavy Netherweave Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_netherweave_heavy",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 2874,
+      "cooldown": 1000,
+      "healthrgn": 425,
+      "reqskill": 129,
+      "reqskillrank": 325,
+      "sellprice": 3000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "33470": {
+    "name_enus": "Frostweave Cloth",
+    "quality": 1,
+    "icon": "inv_fabric_soulcloth",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 5352,
+      "buyprice": 5000,
+      "sellprice": 1250
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "34721": {
+    "name_enus": "Frostweave Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_frostweave",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 1926,
+      "cooldown": 1000,
+      "healthrgn": 600,
+      "reqskill": 129,
+      "reqskillrank": 350,
+      "sellprice": 1250
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "34722": {
+    "name_enus": "Heavy Frostweave Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_frostweave_heavy",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 2976,
+      "cooldown": 1000,
+      "healthrgn": 725,
+      "reqskill": 129,
+      "reqskillrank": 400,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "6454": {
+    "name_enus": "Manual: Strong Anti-Venom",
+    "quality": 2,
+    "icon": "inv_misc_book_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 62500,
+      "reqskill": 129,
+      "reqskillrank": 130,
+      "sellprice": 225
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "16084": {
+    "name_enus": "Expert First Aid - Under Wraps",
+    "quality": 1,
+    "icon": "inv_misc_book_08",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 16920,
+      "buyprice": 10000,
+      "reqskill": 129,
+      "reqskillrank": 125,
+      "sellprice": 2500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "16085": {
+    "name_enus": "Artisan First Aid - Heal Thyself",
+    "quality": 1,
+    "icon": "inv_misc_book_10",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 129,
+      "reqskillrank": 200,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "16112": {
+    "name_enus": "Manual: Heavy Silk Bandage",
+    "quality": 1,
+    "icon": "inv_misc_book_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 10087,
+      "buyprice": 2200,
+      "reqskill": 129,
+      "reqskillrank": 180,
+      "sellprice": 550
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "16113": {
+    "name_enus": "Manual: Mageweave Bandage",
+    "quality": 1,
+    "icon": "inv_misc_book_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 11575,
+      "buyprice": 5000,
+      "reqskill": 129,
+      "reqskillrank": 210,
+      "sellprice": 1250
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "19442": {
+    "name_enus": "Formula: Powerful Anti-Venom",
+    "quality": 1,
+    "icon": "inv_scroll_03",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 100000,
+      "reqfaction": 529,
+      "reqrep": 5,
+      "reqskill": 129,
+      "reqskillrank": 300,
+      "sellprice": 25000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "21992": {
+    "name_enus": "Manual: Netherweave Bandage",
+    "quality": 1,
+    "icon": "inv_misc_book_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 60000,
+      "buyprice": 20000,
+      "reqskill": 129,
+      "reqskillrank": 330,
+      "sellprice": 5000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "21993": {
+    "name_enus": "Manual: Heavy Netherweave Bandage",
+    "quality": 1,
+    "icon": "inv_misc_book_03",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 76000,
+      "buyprice": 40000,
+      "reqskill": 129,
+      "reqskillrank": 360,
+      "sellprice": 10000
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "22012": {
+    "name_enus": "Master First Aid - Doctor in the House",
+    "quality": 1,
+    "icon": "inv_misc_book_10",
+    "screenshot": {},
+    "jsonequip": {
+      "avgbuyout": 79995,
+      "buyprice": 50000,
+      "reqskill": 129,
+      "reqskillrank": 300,
+      "sellprice": 12500
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "39152": {
+    "name_enus": "Manual: Heavy Frostweave Bandage",
+    "quality": 2,
+    "icon": "inv_misc_book_03",
+    "screenshot": {},
+    "jsonequip": {
+      "reqskill": 129,
+      "reqskillrank": 400,
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "39153": {
+    "name_enus": "Manual: Dense Frostweave Bandage",
+    "quality": 0,
+    "icon": "inv_misc_book_03",
+    "screenshot": {},
+    "jsonequip": {
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "8546": {
+    "name_enus": "Powerful Smelling Salts",
+    "quality": 1,
+    "icon": "inv_misc_ammo_gunpowder_02",
+    "screenshot": {},
+    "jsonequip": {
+      "cooldown": 1000,
+      "maxcount": 1,
+      "reqskill": 129,
+      "reqskillrank": 200,
+      "sellprice": 50
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "19066": {
+    "name_enus": "Warsong Gulch Runecloth Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_12",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 2000,
+      "cooldown": 1000,
+      "healthrgn": 250,
+      "reqlevel": 45,
+      "reqskill": 129,
+      "reqskillrank": 225,
+      "sellprice": 100
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "19067": {
+    "name_enus": "Warsong Gulch Mageweave Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_20",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 1500,
+      "cooldown": 1000,
+      "healthrgn": 138,
+      "reqlevel": 35,
+      "reqskill": 129,
+      "reqskillrank": 175,
+      "sellprice": 75
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "19068": {
+    "name_enus": "Warsong Gulch Silk Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_02",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 1000,
+      "cooldown": 1000,
+      "healthrgn": 80,
+      "reqlevel": 25,
+      "reqskill": 129,
+      "reqskillrank": 125,
+      "sellprice": 50
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "19307": {
+    "name_enus": "Alterac Heavy Runecloth Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_12",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 8000,
+      "cooldown": 1000,
+      "healthrgn": 250,
+      "reqskill": 129,
+      "reqskillrank": 225,
+      "sellprice": 100
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "20065": {
+    "name_enus": "Arathi Basin Mageweave Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_20",
+    "screenshot": {},
+    "jsonequip": {
+      "cooldown": 1000,
+      "healthrgn": 138,
+      "reqlevel": 35,
+      "reqskill": 129,
+      "reqskillrank": 175,
+      "sellprice": 75
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "20066": {
+    "name_enus": "Arathi Basin Runecloth Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_12",
+    "screenshot": {},
+    "jsonequip": {
+      "cooldown": 1000,
+      "healthrgn": 250,
+      "reqlevel": 45,
+      "reqskill": 129,
+      "reqskillrank": 225,
+      "sellprice": 100
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "20067": {
+    "name_enus": "Arathi Basin Silk Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_02",
+    "screenshot": {},
+    "jsonequip": {
+      "cooldown": 1000,
+      "healthrgn": 80,
+      "reqlevel": 25,
+      "reqskill": 129,
+      "reqskillrank": 125,
+      "sellprice": 50
+    },
+    "attainable": 0,
+    "flags2": 24580,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "20232": {
+    "name_enus": "Defiler's Mageweave Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_20",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 1500,
+      "cooldown": 1000,
+      "healthrgn": 138,
+      "reqlevel": 35,
+      "reqskill": 129,
+      "reqskillrank": 175,
+      "sellprice": 75
+    },
+    "attainable": 0,
+    "flags2": 24581,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "20234": {
+    "name_enus": "Defiler's Runecloth Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_12",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 2000,
+      "cooldown": 1000,
+      "healthrgn": 250,
+      "reqlevel": 45,
+      "reqskill": 129,
+      "reqskillrank": 225,
+      "sellprice": 100
+    },
+    "attainable": 0,
+    "flags2": 24581,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "20235": {
+    "name_enus": "Defiler's Silk Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_02",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 1000,
+      "cooldown": 1000,
+      "healthrgn": 80,
+      "reqlevel": 25,
+      "reqskill": 129,
+      "reqskillrank": 125,
+      "sellprice": 50
+    },
+    "attainable": 0,
+    "flags2": 24581,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "20237": {
+    "name_enus": "Highlander's Mageweave Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_20",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 1500,
+      "cooldown": 1000,
+      "healthrgn": 138,
+      "reqlevel": 35,
+      "reqskill": 129,
+      "reqskillrank": 175,
+      "sellprice": 75
+    },
+    "attainable": 0,
+    "flags2": 24582,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "20243": {
+    "name_enus": "Highlander's Runecloth Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_12",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 2000,
+      "cooldown": 1000,
+      "healthrgn": 250,
+      "reqlevel": 45,
+      "reqskill": 129,
+      "reqskillrank": 225,
+      "sellprice": 100
+    },
+    "attainable": 0,
+    "flags2": 24582,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "20244": {
+    "name_enus": "Highlander's Silk Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_02",
+    "screenshot": {},
+    "jsonequip": {
+      "buyprice": 1000,
+      "cooldown": 1000,
+      "healthrgn": 80,
+      "reqlevel": 25,
+      "reqskill": 129,
+      "reqskillrank": 125,
+      "sellprice": 50
+    },
+    "attainable": 0,
+    "flags2": 24582,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "38640": {
+    "name_enus": "Dense Frostweave Bandage",
+    "quality": 1,
+    "icon": "inv_fabric_purple_02",
+    "screenshot": {},
+    "jsonequip": {
+      "cooldown": 1000,
+      "healthrgn": 1025,
+      "reqskill": 129,
+      "reqskillrank": 425,
+      "sellprice": 3000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "38643": {
+    "name_enus": "Thick Frostweave Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_07",
+    "screenshot": {},
+    "jsonequip": {
+      "cooldown": 1000,
+      "healthrgn": 850,
+      "reqskill": 129,
+      "reqskillrank": 375,
+      "sellprice": 4000
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "44646": {
+    "name_enus": "Dalaran Bandage",
+    "quality": 1,
+    "icon": "inv_misc_bandage_18",
+    "screenshot": {},
+    "jsonequip": {
+      "cooldown": 1000,
+      "healthrgn": 19,
+      "reqskill": 129,
+      "reqskillrank": 20,
+      "sellprice": 20
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "49192": {
+    "name_enus": "Horde Trauma Certification",
+    "quality": 0,
+    "icon": "inv_misc_note_05",
+    "screenshot": {},
+    "jsonequip": {
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  },
+  "49193": {
+    "name_enus": "Alliance Trauma Certification",
+    "quality": 0,
+    "icon": "inv_misc_note_05",
+    "screenshot": {},
+    "jsonequip": {
+      "sellprice": 250
+    },
+    "attainable": 0,
+    "flags2": 24576,
+    "displayName": "",
+    "qualityTier": 0
+  }
+}

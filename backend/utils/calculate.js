@@ -9,6 +9,11 @@ const alchemyIcons = require("../icons/alchemy_icons.json");
 const blacksmithingIcons = require("../icons/blacksmithing_icons.json");
 const cookingIcons = require("../icons/cooking_icons.json");
 const enchantingIcons = require("../icons/enchanting_icons.json");
+const firstaidIcons = require("../icons/firstaid_icons.json");
+const inscriptionIcons = require("../icons/inscription_icons.json");
+const jewelcraftingIcons = require("../icons/jewelcrafting_icons.json");
+const leatherworkingIcons = require("../icons/leatherworking_icons.json");
+const tailoringIcons = require("../icons/tailoring_icons.json");
 
 const MAX_SKILL_LEVEL = 450;
 const ACCEPTABLE_RISK = 90; // this could even be a user input variable
@@ -237,6 +242,18 @@ function calculateGuaranteed(currentSkill, profession) {
         case "Enchanting":
           iconsObject = enchantingIcons;
           break;
+        case "Inscription":
+          iconsObject = inscriptionIcons;
+          break;
+        case "Jewelcrafting":
+          iconsObject = jewelcraftingIcons;
+          break;
+        case "Leatherworking":
+          iconsObject = leatherworkingIcons;
+          break;
+        case "Tailoring":
+          iconsObject = tailoringIcons;
+          break;
       }
 
       reagentObject.id = currentReagentID;
@@ -444,6 +461,493 @@ function calculateEnchanting(currentSkill) {
   };
   return responseObject;
 }
+
+function calculateFirstaid(currentSkill) {
+  let ah_data = total_data["BenedictionAlliance"];
+
+  let processedRecipes = allRecipes["First Aid"];
+
+  let recipePath = [];
+  let inventory = new Map();
+
+  const craftableRecipes = processedRecipes;
+
+  while (currentSkill < MAX_SKILL_LEVEL) {
+    if (currentSkill < 40) {
+      let specialRecipe = {
+        _id: "64eed38cdaad6952225720d4",
+        itemName: "Linen Bandage",
+        recipeID: 3275,
+        reagentList: [[2589, 1]],
+        learnedAt: 1,
+        difficultyColors: [1, 30, 45, 60],
+        craftingCost: 591,
+        icon: "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bandage_15.jpg",
+        link: "https://wowhead.com/wotlk/spell=3275/Linen-Bandage",
+        createdAt: "2023-08-30T05:28:44.868Z",
+        updatedAt: "2023-08-30T05:28:47.659Z",
+        __v: 0,
+      };
+      // Add special crafted to inventory
+      const specialCrafted = specialRecipe.craftedItemID;
+      const specialQuantity = specialRecipe.quantityCreated;
+      inventory.set(
+        specialCrafted,
+        inventory.get(specialCrafted) + specialQuantity || 1
+      );
+      // Record special recipe
+      recipePath.push(specialRecipe); // Can include other information as an array of arrays
+      currentSkill = currentSkill + 1;
+      continue;
+    }
+    if (currentSkill >= 40 && currentSkill < 80) {
+      let specialRecipe = {
+        _id: "64eed38cdaad6952225720d5",
+        itemName: "Heavy Linen Bandage",
+        recipeID: 3276,
+        reagentList: [[2589, 2]],
+        learnedAt: 40,
+        difficultyColors: [40, 50, 75, 100],
+        craftingCost: 1182,
+        icon: "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bandage_18.jpg",
+        link: "https://wowhead.com/wotlk/spell=3276/Heavy-Linen-Bandage",
+        createdAt: "2023-08-30T05:28:44.868Z",
+        updatedAt: "2023-08-30T05:28:47.659Z",
+        __v: 0,
+      };
+      // Add special crafted to inventory
+      const specialCrafted = specialRecipe.craftedItemID;
+      const specialQuantity = specialRecipe.quantityCreated;
+      inventory.set(
+        specialCrafted,
+        inventory.get(specialCrafted) + specialQuantity || 1
+      );
+      // Record special recipe
+      recipePath.push(specialRecipe); // Can include other information as an array of arrays
+      currentSkill = currentSkill + 1;
+      continue;
+    }
+    if (currentSkill >= 80 && currentSkill < 115) {
+      let specialRecipe = {
+        _id: "64eed38cdaad6952225720d6",
+        itemName: "Wool Bandage",
+        recipeID: 3277,
+        reagentList: [[2592, 1]],
+        learnedAt: 80,
+        difficultyColors: [80, 80, 115, 150],
+        craftingCost: 4099,
+        icon: "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bandage_14.jpg",
+        link: "https://wowhead.com/wotlk/spell=3277/Wool-Bandage",
+        createdAt: "2023-08-30T05:28:44.868Z",
+        updatedAt: "2023-08-30T05:28:47.659Z",
+        __v: 0,
+      };
+      // Add special crafted to inventory
+      const specialCrafted = specialRecipe.craftedItemID;
+      const specialQuantity = specialRecipe.quantityCreated;
+      inventory.set(
+        specialCrafted,
+        inventory.get(specialCrafted) + specialQuantity || 1
+      );
+      // Record special recipe
+      recipePath.push(specialRecipe); // Can include other information as an array of arrays
+      currentSkill = currentSkill + 1;
+      continue;
+    }
+    if (currentSkill >= 115 && currentSkill < 150) {
+      let specialRecipe = {
+        _id: "64eed38cdaad6952225720d7",
+        itemName: "Heavy Wool Bandage",
+        recipeID: 3278,
+        reagentList: [[2592, 2]],
+        learnedAt: 115,
+        difficultyColors: [115, 115, 150, 185],
+        craftingCost: 8198,
+        icon: "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bandage_17.jpg",
+        link: "https://wowhead.com/wotlk/spell=3278/Heavy-Wool-Bandage",
+        createdAt: "2023-08-30T05:28:44.868Z",
+        updatedAt: "2023-08-30T05:28:47.659Z",
+        __v: 0,
+      };
+      // Add special crafted to inventory
+      const specialCrafted = specialRecipe.craftedItemID;
+      const specialQuantity = specialRecipe.quantityCreated;
+      inventory.set(
+        specialCrafted,
+        inventory.get(specialCrafted) + specialQuantity || 1
+      );
+      // Record special recipe
+      recipePath.push(specialRecipe); // Can include other information as an array of arrays
+      currentSkill = currentSkill + 1;
+      continue;
+    }
+    if (currentSkill >= 150 && currentSkill < 180) {
+      let specialRecipe = {
+        _id: "64eed38cdaad6952225720d8",
+        itemName: "Silk Bandage",
+        recipeID: 7928,
+        reagentList: [[4306, 1]],
+        learnedAt: 150,
+        difficultyColors: [150, 150, 180, 210],
+        craftingCost: 2026,
+        icon: "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bandage_01.jpg",
+        link: "https://wowhead.com/wotlk/spell=7928/Silk-Bandage",
+        createdAt: "2023-08-30T05:28:44.868Z",
+        updatedAt: "2023-08-30T05:28:47.659Z",
+        __v: 0,
+      };
+      // Add special crafted to inventory
+      const specialCrafted = specialRecipe.craftedItemID;
+      const specialQuantity = specialRecipe.quantityCreated;
+      inventory.set(
+        specialCrafted,
+        inventory.get(specialCrafted) + specialQuantity || 1
+      );
+      // Record special recipe
+      recipePath.push(specialRecipe); // Can include other information as an array of arrays
+      currentSkill = currentSkill + 1;
+      continue;
+    }
+    if (currentSkill >= 180 && currentSkill < 210) {
+      let specialRecipe = {
+        _id: "64eed38cdaad6952225720d9",
+        itemName: "Heavy Silk Bandage",
+        recipeID: 7929,
+        reagentList: [[4306, 2]],
+        learnedAt: 180,
+        difficultyColors: [180, 180, 210, 240],
+        craftingCost: 4052,
+        icon: "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bandage_02.jpg",
+        link: "https://wowhead.com/wotlk/spell=7929/Heavy-Silk-Bandage",
+        createdAt: "2023-08-30T05:28:44.868Z",
+        updatedAt: "2023-08-30T05:28:47.659Z",
+        __v: 0,
+      };
+      // Add special crafted to inventory
+      const specialCrafted = specialRecipe.craftedItemID;
+      const specialQuantity = specialRecipe.quantityCreated;
+      inventory.set(
+        specialCrafted,
+        inventory.get(specialCrafted) + specialQuantity || 1
+      );
+      // Record special recipe
+      recipePath.push(specialRecipe); // Can include other information as an array of arrays
+      currentSkill = currentSkill + 1;
+      continue;
+    }
+    if (currentSkill >= 210 && currentSkill < 240) {
+      let specialRecipe = {
+        _id: "64eed38cdaad6952225720dc",
+        itemName: "Mageweave Bandage",
+        recipeID: 10840,
+        reagentList: [[4338, 1]],
+        learnedAt: 210,
+        difficultyColors: [210, 210, 240, 270],
+        craftingCost: 4944,
+        icon: "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bandage_19.jpg",
+        link: "https://wowhead.com/wotlk/spell=10840/Mageweave-Bandage",
+        createdAt: "2023-08-30T05:28:44.868Z",
+        updatedAt: "2023-08-30T05:28:47.659Z",
+        __v: 0,
+      };
+      // Add special crafted to inventory
+      const specialCrafted = specialRecipe.craftedItemID;
+      const specialQuantity = specialRecipe.quantityCreated;
+      inventory.set(
+        specialCrafted,
+        inventory.get(specialCrafted) + specialQuantity || 1
+      );
+      // Record special recipe
+      recipePath.push(specialRecipe); // Can include other information as an array of arrays
+      currentSkill = currentSkill + 1;
+      continue;
+    }
+    if (currentSkill >= 240 && currentSkill < 260) {
+      let specialRecipe = {
+        _id: "64eed38cdaad6952225720dd",
+        itemName: "Heavy Mageweave Bandage",
+        recipeID: 10841,
+        reagentList: [[4338, 2]],
+        learnedAt: 240,
+        difficultyColors: [240, 240, 270, 300],
+        craftingCost: 9888,
+        icon: "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bandage_20.jpg",
+        link: "https://wowhead.com/wotlk/spell=10841/Heavy-Mageweave-Bandage",
+        createdAt: "2023-08-30T05:28:44.869Z",
+        updatedAt: "2023-08-30T05:28:47.659Z",
+        __v: 0,
+      };
+      // Add special crafted to inventory
+      const specialCrafted = specialRecipe.craftedItemID;
+      const specialQuantity = specialRecipe.quantityCreated;
+      inventory.set(
+        specialCrafted,
+        inventory.get(specialCrafted) + specialQuantity || 1
+      );
+      // Record special recipe
+      recipePath.push(specialRecipe); // Can include other information as an array of arrays
+      currentSkill = currentSkill + 1;
+      continue;
+    }
+    if (currentSkill >= 260 && currentSkill < 290) {
+      let specialRecipe = {
+        _id: "64eed38cdaad6952225720de",
+        itemName: "Runecloth Bandage",
+        recipeID: 18629,
+        reagentList: [[14047, 1]],
+        learnedAt: 260,
+        difficultyColors: [260, 260, 290, 320],
+        craftingCost: 1999,
+        icon: "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bandage_11.jpg",
+        link: "https://wowhead.com/wotlk/spell=18629/Runecloth-Bandage",
+        createdAt: "2023-08-30T05:28:44.869Z",
+        updatedAt: "2023-08-30T05:28:47.659Z",
+        __v: 0,
+      };
+      // Add special crafted to inventory
+      const specialCrafted = specialRecipe.craftedItemID;
+      const specialQuantity = specialRecipe.quantityCreated;
+      inventory.set(
+        specialCrafted,
+        inventory.get(specialCrafted) + specialQuantity || 1
+      );
+      // Record special recipe
+      recipePath.push(specialRecipe); // Can include other information as an array of arrays
+      currentSkill = currentSkill + 1;
+      continue;
+    }
+    if (currentSkill >= 290 && currentSkill < 300) {
+      let specialRecipe = {
+        _id: "64eed38cdaad6952225720df",
+        itemName: "Heavy Runecloth Bandage",
+        recipeID: 18630,
+        reagentList: [[14047, 2]],
+        learnedAt: 290,
+        difficultyColors: [290, 290, 320, 350],
+        craftingCost: 3998,
+        icon: "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bandage_12.jpg",
+        link: "https://wowhead.com/wotlk/spell=18630/Heavy-Runecloth-Bandage",
+        createdAt: "2023-08-30T05:28:44.869Z",
+        updatedAt: "2023-08-30T05:28:47.659Z",
+        __v: 0,
+      };
+      // Add special crafted to inventory
+      const specialCrafted = specialRecipe.craftedItemID;
+      const specialQuantity = specialRecipe.quantityCreated;
+      inventory.set(
+        specialCrafted,
+        inventory.get(specialCrafted) + specialQuantity || 1
+      );
+      // Record special recipe
+      recipePath.push(specialRecipe); // Can include other information as an array of arrays
+      currentSkill = currentSkill + 1;
+      continue;
+    }
+    if (currentSkill >= 300 && currentSkill < 330) {
+      let specialRecipe = {
+        _id: "64eed38cdaad6952225720e1",
+        itemName: "Netherweave Bandage",
+        recipeID: 27032,
+        reagentList: [[21877, 1]],
+        learnedAt: 300,
+        difficultyColors: [300, 330, 347, 365],
+        craftingCost: 1460,
+        icon: "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bandage_netherweave.jpg",
+        link: "https://wowhead.com/wotlk/spell=27032/Netherweave-Bandage",
+        createdAt: "2023-08-30T05:28:44.869Z",
+        updatedAt: "2023-08-30T05:28:47.659Z",
+        __v: 0,
+      };
+      // Add special crafted to inventory
+      const specialCrafted = specialRecipe.craftedItemID;
+      const specialQuantity = specialRecipe.quantityCreated;
+      inventory.set(
+        specialCrafted,
+        inventory.get(specialCrafted) + specialQuantity || 1
+      );
+      // Record special recipe
+      recipePath.push(specialRecipe); // Can include other information as an array of arrays
+      currentSkill = currentSkill + 1;
+      continue;
+    }
+    if (currentSkill >= 330 && currentSkill < 350) {
+      let specialRecipe = {
+        _id: "64eed38cdaad6952225720e2",
+        itemName: "Heavy Netherweave Bandage",
+        recipeID: 27033,
+        reagentList: [[21877, 2]],
+        learnedAt: 330,
+        difficultyColors: [330, 360, 367, 375],
+        craftingCost: 2920,
+        icon: "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bandage_netherweave_heavy.jpg",
+        link: "https://wowhead.com/wotlk/spell=27033/Heavy-Netherweave-Bandage",
+        createdAt: "2023-08-30T05:28:44.869Z",
+        updatedAt: "2023-08-30T05:28:47.659Z",
+        __v: 0,
+      };
+      // Add special crafted to inventory
+      const specialCrafted = specialRecipe.craftedItemID;
+      const specialQuantity = specialRecipe.quantityCreated;
+      inventory.set(
+        specialCrafted,
+        inventory.get(specialCrafted) + specialQuantity || 1
+      );
+      // Record special recipe
+      recipePath.push(specialRecipe); // Can include other information as an array of arrays
+      currentSkill = currentSkill + 1;
+      continue;
+    }
+    if (currentSkill >= 350 && currentSkill < 400) {
+      let specialRecipe = {
+        _id: "64eed38cdaad6952225720e3",
+        itemName: "Frostweave Bandage",
+        recipeID: 45545,
+        reagentList: [[33470, 1]],
+        learnedAt: 350,
+        difficultyColors: [350, 375, 392, 410],
+        craftingCost: 4397,
+        icon: "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bandage_frostweave.jpg",
+        link: "https://wowhead.com/wotlk/spell=45545/Frostweave-Bandage",
+        createdAt: "2023-08-30T05:28:44.869Z",
+        updatedAt: "2023-08-30T05:28:47.659Z",
+        __v: 0,
+      };
+      // Add special crafted to inventory
+      const specialCrafted = specialRecipe.craftedItemID;
+      const specialQuantity = specialRecipe.quantityCreated;
+      inventory.set(
+        specialCrafted,
+        inventory.get(specialCrafted) + specialQuantity || 1
+      );
+      // Record special recipe
+      recipePath.push(specialRecipe); // Can include other information as an array of arrays
+      currentSkill = currentSkill + 1;
+      continue;
+    }
+    if (currentSkill >= 400 && currentSkill < 450) {
+      let specialRecipe = {
+        _id: "64eed38cdaad6952225720e4",
+        itemName: "Heavy Frostweave Bandage",
+        recipeID: 45546,
+        reagentList: [[33470, 2]],
+        learnedAt: 400,
+        difficultyColors: [400, 450, 455, 470],
+        craftingCost: 8794,
+        icon: "https://wow.zamimg.com/images/wow/icons/large/inv_misc_bandage_frostweave_heavy.jpg",
+        link: "https://wowhead.com/wotlk/spell=45546/Heavy-Frostweave-Bandage",
+        createdAt: "2023-08-30T05:28:44.869Z",
+        updatedAt: "2023-08-30T05:28:47.659Z",
+        __v: 0,
+      };
+      // Add special crafted to inventory
+      const specialCrafted = specialRecipe.craftedItemID;
+      const specialQuantity = specialRecipe.quantityCreated;
+      inventory.set(
+        specialCrafted,
+        inventory.get(specialCrafted) + specialQuantity || 1
+      );
+      // Record special recipe
+      recipePath.push(specialRecipe); // Can include other information as an array of arrays
+      currentSkill = currentSkill + 1;
+      continue;
+    }
+  }
+
+  // Record shoppingList working backwards
+  // {reagentID: {property values}}
+  const shoppingList = new Map();
+
+  for (let i = recipePath.length - 1; i >= 0; i--) {
+    let currentRecipe = recipePath[i];
+    let reagentList = currentRecipe.reagentList;
+
+    // Add the required amount of reagents for crafting
+    for (let j = 0; j < reagentList.length; j++) {
+      let currentReagentID = reagentList[j][0];
+      let reagentQuantity = reagentList[j][1];
+
+      // Initialize reagentObject for new reagents
+      let reagentObject = {};
+
+      let iconsObject = firstaidIcons;
+
+      reagentObject.id = currentReagentID;
+      reagentObject.name = iconsObject[currentReagentID].name_enus;
+      reagentObject.icon = iconsObject[currentReagentID].icon;
+      reagentObject.price = priceLookup(currentReagentID, ah_data);
+      reagentObject.requiredAmount = reagentQuantity;
+
+      let convertedString = iconsObject[currentReagentID].name_enus.replace(
+        /\s/g,
+        "-"
+      );
+      reagentObject.link = `https://wowhead.com/wotlk/item=${currentReagentID}/${convertedString}`;
+
+      if (shoppingList.has(currentReagentID)) {
+        let tempObject = shoppingList.get(currentReagentID);
+        let tempQuantity = tempObject.requiredAmount;
+        tempQuantity += reagentQuantity;
+        tempObject.requiredAmount = tempQuantity;
+        shoppingList.set(currentReagentID, tempObject);
+      } else {
+        shoppingList.set(currentReagentID, reagentObject);
+      }
+    }
+
+    // Subtract finished product from required reagent list, ignore items that aren't on the list
+    let craftedItemID = currentRecipe.craftedItemID;
+    let craftedQuantity = currentRecipe.quantityCreated;
+
+    if (shoppingList.has(craftedItemID)) {
+      let tempObject = shoppingList.get(craftedItemID);
+      let tempQuantity = tempObject.requiredAmount;
+      tempQuantity -= craftedQuantity;
+      tempObject.requiredAmount = tempQuantity;
+      shoppingList.set(craftedItemID, tempObject);
+    }
+  }
+
+  const shoppingArray = [];
+
+  shoppingList.forEach((value, key, map) => {
+    if (value.requiredAmount > 0) {
+      shoppingArray.push(value);
+    }
+  });
+
+  const orderedShoppingList = shoppingArray.reverse();
+
+  storeLocal(orderedShoppingList, "optimal_path", "shopping_list");
+
+  // Group identical items
+  const groupedPath = [];
+  const seenItems = new Set();
+
+  for (let i = 0; i < recipePath.length; i++) {
+    let currentID = recipePath[i].recipeID;
+    if (seenItems.has(currentID)) {
+      continue;
+    }
+    let count = 0;
+    for (let j = i; j < recipePath.length; j++) {
+      if (currentID == recipePath[j].recipeID) {
+        count += 1;
+      }
+    }
+    recipePath[i].quantityToCraft = count;
+    groupedPath.push(recipePath[i]);
+    seenItems.add(currentID);
+  }
+
+  storeLocal(groupedPath, "optimal_path", "optimal_path");
+
+  // Send data to frontend
+  let responseObject = {
+    optimalPathData: groupedPath,
+    shoppingListData: orderedShoppingList,
+  };
+  return responseObject;
+}
 // For each skill point, just calculate the cheapest
 
 // For each skill point, find a risk adjusted cost
@@ -498,7 +1002,7 @@ function getOptimalRecipe(recipes, inventory, ah_data) {
   }
 
   const recipeObject = recipes[minIndex];
-  // console.log(recipeObject.itemName);
+
   recipeObject.cost = minCost;
 
   const quantityCreated = recipes[minIndex].quantityCreated;
@@ -565,6 +1069,7 @@ function storeLocal(storedItem, folder, filename) {
 module.exports = {
   guaranteed: calculateGuaranteed,
   enchanting: calculateEnchanting,
+  firstaid: calculateFirstaid,
   priceLookup: priceLookup,
   storeLocal: storeLocal,
 };

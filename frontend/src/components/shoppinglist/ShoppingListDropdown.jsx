@@ -6,7 +6,7 @@ const ShoppingListDropdown = ({ totalCost, shoppingList, server, faction }) => {
       {console.log(shoppingList)}
       {/* <div className="flex flex-row flex-wrap overflow-scroll"> */}
       {/* <div className="grid max-h-40 grid-cols-4 overflow-y-scroll"> */}
-      <div className="flex flex-col flex-wrap min-w-full max-w-full max-h-screen items-center overflow-scroll">
+      <div className="flex flex-col flex-wrap min-w-full max-w-full max-h-screen items-center">
         {shoppingList &&
           shoppingList.map((item, index) => (
             <ShoppingItem key={index} item={item} />

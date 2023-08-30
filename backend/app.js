@@ -12,6 +12,11 @@ const AlchemyRecipe = require("./models/alchemy.js");
 const BlacksmithingRecipe = require("./models/blacksmithing.js");
 const CookingRecipe = require("./models/cooking.js");
 const EnchantingRecipe = require("./models/enchanting.js");
+const FirstaidRecipe = require("./models/firstaid.js");
+const InscriptionRecipe = require("./models/inscription.js");
+const JewelcraftingRecipe = require("./models/jewelcrafting.js");
+const LeatherworkingRecipe = require("./models/leatherworking.js");
+const TailoringRecipe = require("./models/tailoring.js");
 
 const ah_data = require("./ah_data/benediction-ally.json");
 
@@ -78,7 +83,12 @@ app.get("/update-crafting-costs", async (req, res) => {
   // updateCost.alchemy(price_data);
   // updateCost.blacksmithing(price_data);
   // updateCost.updateCost(price_data, "Cooking");
-  updateCost.updateCost(price_data, "Enchanting");
+  // updateCost.updateCost(price_data, "Enchanting");
+  // updateCost.updateCost(price_data, "First Aid");
+  // updateCost.updateCost(price_data, "Inscription");
+  // updateCost.updateCost(price_data, "Jewelcrafting");
+  // updateCost.updateCost(price_data, "Leatherworking");
+  updateCost.updateCost(price_data, "Tailoring");
 
   res.send("Recipe costs updated");
 });
@@ -100,6 +110,8 @@ app.post("/calculate-optimal-path", async (req, res) => {
   let responseObject;
   if (profession == "Enchanting") {
     responseObject = calculate.enchanting(currentSkill);
+  } else if (profession == "First Aid") {
+    responseObject = calculate.firstaid(currentSkill);
   } else {
     responseObject = calculate.guaranteed(currentSkill, profession);
   }
@@ -113,7 +125,12 @@ app.get("/upload-recipes", (req, res) => {
   // upload.alchemy();
   // upload.blacksmithing();
   // upload.cooking();
-  upload.enchanting();
+  // upload.enchanting();
+  // upload.firstaid();
+  // upload.inscription();
+  // upload.jewelcrafting();
+  // upload.leatherworking();
+  upload.tailoring();
 
   res.send("Recipes uploaded");
 });
@@ -127,17 +144,32 @@ app.get("/retrieve-recipes", async (req, res) => {
   let alchemyRecipes = await AlchemyRecipe.find().lean();
   console.log("Alchemy(201): ", alchemyRecipes.length);
   let blacksmithingRecipes = await BlacksmithingRecipe.find().lean();
-  console.log("Blacksmithing(469): ", BlacksmithingRecipe.length);
+  console.log("Blacksmithing(469): ", blacksmithingRecipes.length);
   let cookingRecipes = await CookingRecipe.find().lean();
   console.log("Cooking(154): ", cookingRecipes.length);
   let enchantingRecipes = await EnchantingRecipe.find().lean();
   console.log("Enchanting(286): ", enchantingRecipes.length);
+  let firstaidRecipes = await FirstaidRecipe.find().lean();
+  console.log("First Aid(17): ", firstaidRecipes.length);
+  let inscriptionRecipes = await InscriptionRecipe.find().lean();
+  console.log("Inscription(69): ", inscriptionRecipes.length);
+  let jewelcraftingRecipes = await JewelcraftingRecipe.find().lean();
+  console.log("Jewelcrafting(518): ", jewelcraftingRecipes.length);
+  let leatherworkingRecipes = await LeatherworkingRecipe.find().lean();
+  console.log("Leatherworking(530): ", leatherworkingRecipes.length);
+  let tailoringRecipes = await TailoringRecipe.find().lean();
+  console.log("Tailoring(424): ", tailoringRecipes.length);
 
   storedRecipes["Engineering"] = engineerRecipes;
   storedRecipes["Alchemy"] = alchemyRecipes;
   storedRecipes["Blacksmithing"] = blacksmithingRecipes;
   storedRecipes["Cooking"] = cookingRecipes;
   storedRecipes["Enchanting"] = enchantingRecipes;
+  storedRecipes["First Aid"] = firstaidRecipes;
+  storedRecipes["Inscription"] = inscriptionRecipes;
+  storedRecipes["Jewelcrafting"] = jewelcraftingRecipes;
+  storedRecipes["Leatherworking"] = leatherworkingRecipes;
+  storedRecipes["Tailoring"] = tailoringRecipes;
 
   calculate.storeLocal(storedRecipes, "recipe_storage", "stored_recipes");
 
