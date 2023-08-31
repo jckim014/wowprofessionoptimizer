@@ -78,10 +78,10 @@ const SelectForm = ({
           factionState={factionState}
           updateFaction={updateFaction}
         ></SelectFactionSwitch>
-        <RiskToleranceToggle
+        {/* <RiskToleranceToggle
           riskToleranceState={riskToleranceState}
           updateRiskTolerance={updateRiskTolerance}
-        ></RiskToleranceToggle>
+        ></RiskToleranceToggle> */}
 
         <button
           type="submit"

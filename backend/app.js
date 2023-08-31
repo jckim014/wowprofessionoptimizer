@@ -118,28 +118,55 @@ app.post("/calculate-optimal-path", async (req, res) => {
 
   // Need to add goblin vs gnomish filter (or ignore entirely)
   let data = req.body;
+
+  let deadRealms = [
+    "Atiesh Horde",
+    "Benediction Horde",
+    "Bloodsail Buccaneers Horde",
+    "Earthshaker Horde",
+    "Everlook Horde",
+    "Gehennas Alliance",
+    "Golemagg Alliance",
+    "Faerlina Alliance",
+    "Firemaw Horde",
+    "Lakeshire Horde",
+    "Mograine Alliance",
+    "Pagle Horde",
+    "Pyrewood Village Horde",
+    "Remulos Horde",
+    "Venoxis Alliance",
+    "Whitemane Alliance",
+  ];
+
   let profession = data.profession;
   let currentSkill = parseInt(data.startingLevel);
   let server = data.server;
   let faction = data.faction;
 
-  // Update prices to the correct server
-  let price_data = total_ah_data[server + " " + faction];
-  updateCost.updateCost(price_data, profession);
-
-  // Calculate optimal path
+  let realmSlug = server + " " + faction;
   let responseObject;
-  if (profession == "Enchanting") {
-    responseObject = calculate.enchanting(currentSkill, server, faction);
-  } else if (profession == "First Aid") {
-    responseObject = calculate.firstaid(currentSkill, server, faction);
+
+  if (deadRealms.includes(realmSlug)) {
+    responseObject = { deadRealm: true };
   } else {
-    responseObject = calculate.guaranteed(
-      currentSkill,
-      profession,
-      server,
-      faction
-    );
+    // Update prices to the correct server
+    let price_data = total_ah_data[server + " " + faction];
+    updateCost.updateCost(price_data, profession);
+
+    // Calculate optimal path
+
+    if (profession == "Enchanting") {
+      responseObject = calculate.enchanting(currentSkill, server, faction);
+    } else if (profession == "First Aid") {
+      responseObject = calculate.firstaid(currentSkill, server, faction);
+    } else {
+      responseObject = calculate.guaranteed(
+        currentSkill,
+        profession,
+        server,
+        faction
+      );
+    }
   }
 
   res.status(200).json(responseObject);

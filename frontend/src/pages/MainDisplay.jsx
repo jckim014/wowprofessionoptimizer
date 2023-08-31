@@ -44,7 +44,7 @@ const MainDisplay = () => {
       <div className="flex w-3/4 h-1/2 p-8">
         {data == undefined && <EmptyPrompt></EmptyPrompt>}
         {data != undefined && (
-          <div className="optimalPathMain flex flex-col items-center h-full">
+          <div className="optimalPathMain flex flex-col items-center h-full w-full">
             <OptimalPathContent
               data={data}
               fetchToggle={fetchToggle}
