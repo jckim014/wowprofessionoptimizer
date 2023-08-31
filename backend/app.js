@@ -6,6 +6,15 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 dotenv.config();
 
+const test_data = require("./ah_data/benediction-ally.json");
+
+const total_ah_data = require("./ah_data/total_data.json");
+const realmList = require("./ah_data/realmlist.json");
+
+const calculate = require("./utils/calculate.js");
+const upload = require("./utils/upload_recipes.js");
+const updateCost = require("./utils/update_cost.js");
+
 const mongoose = require("mongoose");
 const EngineeringRecipe = require("./models/engineering.js");
 const AlchemyRecipe = require("./models/alchemy.js");
@@ -17,14 +26,6 @@ const InscriptionRecipe = require("./models/inscription.js");
 const JewelcraftingRecipe = require("./models/jewelcrafting.js");
 const LeatherworkingRecipe = require("./models/leatherworking.js");
 const TailoringRecipe = require("./models/tailoring.js");
-
-const ah_data = require("./ah_data/benediction-ally.json");
-
-const total_ah_data = require("./ah_data/total_data.json");
-
-const calculate = require("./utils/calculate.js");
-const upload = require("./utils/upload_recipes.js");
-const updateCost = require("./utils/update_cost.js");
 
 // Express app
 const app = express();
@@ -43,42 +44,56 @@ mongoose
   })
   .catch((err) => console.log(err));
 
-async function fetchRealmData(url) {
+async function fetchRealmData(url, realm) {
   const response = await fetch(url, {
     headers: { Authorization: `Bearer ${tsmToken}` },
   });
 
-  console.log(tsmToken);
   let ah_object = await response.json();
 
-  realm_name = "benediction-ally";
-  calculate.storeLocal(ah_object, "ah_data", `${realm_name}`);
+  let totalPriceData = total_ah_data;
+  totalPriceData[realm] = ah_object;
+  calculate.storeLocal(totalPriceData, "ah_data", "total_data");
+  console.log(`Retrieved ${realm}`);
 }
 
 app.use(cors({ origin: "http://localhost:5173" }));
 app.use(express.json());
 
 app.get("/testing", async (req, res) => {
-  let totalPriceData = total_ah_data;
-  let server = "Benediction";
-  let faction = "Horde";
-  totalPriceData[server + faction] = ah_data;
-  calculate.storeLocal(totalPriceData, "ah_data", "total_data");
+  // let totalPriceData = total_ah_data;
+
+  // let server = "Benediction";
+  // let faction = "Horde";
+  // totalPriceData[server + " " + faction] = ah_data;
+  // console.log(totalPriceData);
+
+  let test = realmList;
+
+  for (key in test) {
+    console.log(typeof key);
+  }
+
   res.send("tested");
 });
 
-// Grab the realm auction house data and store into file (allowed 100/24 hours)
+// Fetch realm auction house data and store (allowed 100/24 hours)
 app.get("/fetch-realm-data", async (req, res) => {
-  url = "https://pricing-api.tradeskillmaster.com/ah/347";
-  fetchRealmData(url);
-
-  console.log("fetched");
-  res.send("Fetched realm data");
+  // Disable code for safety when not using
+  for (realm in realmList) {
+    let realmID = realmList[realm];
+    console.log(realm);
+    let url = `https://pricing-api.tradeskillmaster.com/ah/${realmID}`;
+    fetchRealmData(url, realm);
+    setTimeout(() => {}, 5000);
+  }
+  console.log("fetched/disabled");
+  res.send(`Fetched realm data`);
 });
 
 // Iterate through all recipes and update their crafting costs
 app.get("/update-crafting-costs", async (req, res) => {
-  let price_data = total_ah_data["BenedictionAlliance"];
+  let price_data = total_ah_data["Benediction Alliance"];
   // updateCost.engineering(price_data);
   // updateCost.alchemy(price_data);
   // updateCost.blacksmithing(price_data);
@@ -88,7 +103,7 @@ app.get("/update-crafting-costs", async (req, res) => {
   // updateCost.updateCost(price_data, "Inscription");
   // updateCost.updateCost(price_data, "Jewelcrafting");
   // updateCost.updateCost(price_data, "Leatherworking");
-  updateCost.updateCost(price_data, "Tailoring");
+  updateCost.updateCost(price_data, "Engineering");
 
   res.send("Recipe costs updated");
 });
@@ -106,14 +121,27 @@ app.post("/calculate-optimal-path", async (req, res) => {
   let data = req.body;
   let profession = data.profession;
   let currentSkill = parseInt(data.startingLevel);
+  let server = data.server;
+  let faction = data.faction;
 
+  // Update prices to the correct server
+  let price_data = total_ah_data[server + " " + faction];
+  updateCost.updateCost(price_data, profession);
+  console.log(server, faction, "updated");
+
+  // Calculate optimal path
   let responseObject;
   if (profession == "Enchanting") {
-    responseObject = calculate.enchanting(currentSkill);
+    responseObject = calculate.enchanting(currentSkill, server, faction);
   } else if (profession == "First Aid") {
-    responseObject = calculate.firstaid(currentSkill);
+    responseObject = calculate.firstaid(currentSkill, server, faction);
   } else {
-    responseObject = calculate.guaranteed(currentSkill, profession);
+    responseObject = calculate.guaranteed(
+      currentSkill,
+      profession,
+      server,
+      faction
+    );
   }
 
   res.status(200).json(responseObject);

@@ -18,8 +18,9 @@ const tailoringIcons = require("../icons/tailoring_icons.json");
 const MAX_SKILL_LEVEL = 450;
 const ACCEPTABLE_RISK = 90; // this could even be a user input variable
 
-function calculateGuaranteed(currentSkill, profession) {
-  let ah_data = total_data["BenedictionAlliance"];
+function calculateGuaranteed(currentSkill, profession, server, faction) {
+  let ah_data = total_data[server + " " + faction];
+  console.log(ah_data[0]);
 
   let processedRecipes = allRecipes[profession];
 
@@ -334,8 +335,8 @@ function calculateGuaranteed(currentSkill, profession) {
   return responseObject;
 }
 
-function calculateEnchanting(currentSkill) {
-  let ah_data = total_data["BenedictionAlliance"];
+function calculateEnchanting(currentSkill, server, faction) {
+  let ah_data = total_data[server + " " + faction];
 
   let processedRecipes = allRecipes["Enchanting"];
 
@@ -462,8 +463,8 @@ function calculateEnchanting(currentSkill) {
   return responseObject;
 }
 
-function calculateFirstaid(currentSkill) {
-  let ah_data = total_data["BenedictionAlliance"];
+function calculateFirstaid(currentSkill, server, faction) {
+  let ah_data = total_data[server + " " + faction];
 
   let processedRecipes = allRecipes["First Aid"];
 
