@@ -20,7 +20,6 @@ const ACCEPTABLE_RISK = 90; // this could even be a user input variable
 
 function calculateGuaranteed(currentSkill, profession, server, faction) {
   let ah_data = total_data[server + " " + faction];
-  console.log(ah_data[0]);
 
   let processedRecipes = allRecipes[profession];
 

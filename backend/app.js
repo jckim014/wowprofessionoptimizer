@@ -82,10 +82,9 @@ app.get("/fetch-realm-data", async (req, res) => {
   // Disable code for safety when not using
   for (realm in realmList) {
     let realmID = realmList[realm];
-    console.log(realm);
     let url = `https://pricing-api.tradeskillmaster.com/ah/${realmID}`;
     fetchRealmData(url, realm);
-    setTimeout(() => {}, 5000);
+    setTimeout(() => {}, 3000);
   }
   console.log("fetched/disabled");
   res.send(`Fetched realm data`);
@@ -127,7 +126,6 @@ app.post("/calculate-optimal-path", async (req, res) => {
   // Update prices to the correct server
   let price_data = total_ah_data[server + " " + faction];
   updateCost.updateCost(price_data, profession);
-  console.log(server, faction, "updated");
 
   // Calculate optimal path
   let responseObject;
