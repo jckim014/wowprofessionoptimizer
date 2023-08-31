@@ -10,6 +10,7 @@ const OptimalPathContent = ({ data, fetchToggle }) => {
   const [skillRanges, setSkillRanges] = useState(null);
   const [totalCost, setTotalCost] = useState(0);
   const [deadRealm, setDeadRealm] = useState(false);
+  const [reagentInfo, setReagentInfo] = useState(null);
 
   let profession = data.profession;
   let server = data.server;
@@ -45,10 +46,12 @@ const OptimalPathContent = ({ data, fetchToggle }) => {
         setDeadRealm(false);
         const optimalPathObject = json.optimalPathData;
         const shoppingListObject = json.shoppingListData;
+        const reagentInfo = json.iconData;
 
         if (response.ok) {
           setOptimalPath(optimalPathObject);
           setShoppingList(shoppingListObject);
+          setReagentInfo(reagentInfo);
         }
 
         // Initialize skill ranges
@@ -117,6 +120,7 @@ const OptimalPathContent = ({ data, fetchToggle }) => {
                   key={index}
                   recipe={recipe}
                   skillRange={skillRanges[index]}
+                  reagentInfo={reagentInfo}
                 />
               ))}
           </table>

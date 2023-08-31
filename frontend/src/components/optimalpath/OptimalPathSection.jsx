@@ -3,7 +3,7 @@ import ExpandedRow from "./ExpandedRow";
 import useConvert from "../../customhooks/useConvert";
 import useRowToggle from "../../customhooks/useRowToggle";
 
-const OptimalPathSection = ({ recipe, skillRange }) => {
+const OptimalPathSection = ({ recipe, skillRange, reagentInfo }) => {
   const { isOpen, toggle } = useRowToggle(false);
 
   const start = skillRange[0];
@@ -80,6 +80,7 @@ const OptimalPathSection = ({ recipe, skillRange }) => {
           recipe={recipe}
           individualCost={individualCost}
           totalCost={totalCost}
+          reagentInfo={reagentInfo}
         ></ExpandedRow>
       )}
     </tbody>

@@ -22,6 +22,37 @@ function calculateGuaranteed(currentSkill, profession, server, faction) {
   let ah_data = total_data[server + " " + faction];
 
   let processedRecipes = allRecipes[profession];
+  // Selectively choose the right icons object
+  let iconsObject;
+  switch (profession) {
+    case "Engineering":
+      iconsObject = engineerIcons;
+      break;
+    case "Alchemy":
+      iconsObject = alchemyIcons;
+      break;
+    case "Blacksmithing":
+      iconsObject = blacksmithingIcons;
+      break;
+    case "Cooking":
+      iconsObject = cookingIcons;
+      break;
+    case "Enchanting":
+      iconsObject = enchantingIcons;
+      break;
+    case "Inscription":
+      iconsObject = inscriptionIcons;
+      break;
+    case "Jewelcrafting":
+      iconsObject = jewelcraftingIcons;
+      break;
+    case "Leatherworking":
+      iconsObject = leatherworkingIcons;
+      break;
+    case "Tailoring":
+      iconsObject = tailoringIcons;
+      break;
+  }
 
   let recipePath = [];
   let inventory = new Map();
@@ -224,38 +255,6 @@ function calculateGuaranteed(currentSkill, profession, server, faction) {
       // Initialize reagentObject for new reagents
       let reagentObject = {};
 
-      // Selectively choose the right icons object
-      let iconsObject;
-      switch (profession) {
-        case "Engineering":
-          iconsObject = engineerIcons;
-          break;
-        case "Alchemy":
-          iconsObject = alchemyIcons;
-          break;
-        case "Blacksmithing":
-          iconsObject = blacksmithingIcons;
-          break;
-        case "Cooking":
-          iconsObject = cookingIcons;
-          break;
-        case "Enchanting":
-          iconsObject = enchantingIcons;
-          break;
-        case "Inscription":
-          iconsObject = inscriptionIcons;
-          break;
-        case "Jewelcrafting":
-          iconsObject = jewelcraftingIcons;
-          break;
-        case "Leatherworking":
-          iconsObject = leatherworkingIcons;
-          break;
-        case "Tailoring":
-          iconsObject = tailoringIcons;
-          break;
-      }
-
       reagentObject.id = currentReagentID;
       reagentObject.name = iconsObject[currentReagentID].name_enus;
       reagentObject.icon = iconsObject[currentReagentID].icon;
@@ -330,6 +329,7 @@ function calculateGuaranteed(currentSkill, profession, server, faction) {
   let responseObject = {
     optimalPathData: groupedPath,
     shoppingListData: orderedShoppingList,
+    iconData: iconsObject,
   };
   return responseObject;
 }
@@ -338,6 +338,7 @@ function calculateEnchanting(currentSkill, server, faction) {
   let ah_data = total_data[server + " " + faction];
 
   let processedRecipes = allRecipes["Enchanting"];
+  let iconsObject = enchantingIcons;
 
   let recipePath = [];
 
@@ -381,8 +382,6 @@ function calculateEnchanting(currentSkill, server, faction) {
 
       // Initialize reagentObject for new reagents
       let reagentObject = {};
-
-      let iconsObject = enchantingIcons;
 
       reagentObject.id = currentReagentID;
       reagentObject.name = iconsObject[currentReagentID].name_enus;
@@ -458,6 +457,7 @@ function calculateEnchanting(currentSkill, server, faction) {
   let responseObject = {
     optimalPathData: groupedPath,
     shoppingListData: orderedShoppingList,
+    iconData: iconsObject,
   };
   return responseObject;
 }
@@ -466,6 +466,7 @@ function calculateFirstaid(currentSkill, server, faction) {
   let ah_data = total_data[server + " " + faction];
 
   let processedRecipes = allRecipes["First Aid"];
+  let iconsObject = firstaidIcons;
 
   let recipePath = [];
   let inventory = new Map();
@@ -869,8 +870,6 @@ function calculateFirstaid(currentSkill, server, faction) {
       // Initialize reagentObject for new reagents
       let reagentObject = {};
 
-      let iconsObject = firstaidIcons;
-
       reagentObject.id = currentReagentID;
       reagentObject.name = iconsObject[currentReagentID].name_enus;
       reagentObject.icon = iconsObject[currentReagentID].icon;
@@ -945,6 +944,7 @@ function calculateFirstaid(currentSkill, server, faction) {
   let responseObject = {
     optimalPathData: groupedPath,
     shoppingListData: orderedShoppingList,
+    iconData: iconsObject,
   };
   return responseObject;
 }
