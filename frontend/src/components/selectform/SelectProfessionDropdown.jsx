@@ -14,7 +14,7 @@ const SelectProfessionDropdown = ({ updateProfession, closeDropdown }) => {
     "Tailoring",
   ];
   return (
-    <ul className="absolute w-full bg-white z-20 mt-1 border border-color rounded-md">
+    <ul className="absolute w-full bg-white z-20 mt-1 border border-b-0 border-color rounded-md">
       {professionList.map((profession, index) => (
         <ProfessionListItem
           key={index}

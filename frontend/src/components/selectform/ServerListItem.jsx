@@ -3,7 +3,7 @@ import useRowToggle from "../../customhooks/useRowToggle";
 const ServerListItem = ({ server, updateServer, closeDropdown }) => {
   return (
     <li
-      className="hover cursor-pointer select-none relative py-2 pl-3 pr-9"
+      className="hover cursor-pointer select-none relative py-2 pl-3 pr-9 border-b border-color"
       value={{ server }}
       onClick={() => {
         updateServer(server);

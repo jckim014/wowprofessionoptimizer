@@ -11,6 +11,45 @@ const SelectProfession = ({ professionState, updateProfession }) => {
     toggle();
   }
   const { isOpen, toggle } = useRowToggle(openState);
+  let icon;
+  switch (professionState) {
+    case "Engineering":
+      icon =
+        "https://wow.zamimg.com/images/wow/icons/tiny/trade_engineering.gif";
+      break;
+    case "Alchemy":
+      icon = "https://wow.zamimg.com/images/wow/icons/tiny/trade_alchemy.gif";
+      break;
+    case "Blacksmithing":
+      icon =
+        "https://wow.zamimg.com/images/wow/icons/tiny/trade_blacksmithing.gif";
+      break;
+    case "Cooking":
+      icon =
+        "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_food_15.gif";
+      break;
+    case "Enchanting":
+      icon = "https://wow.zamimg.com/images/wow/icons/tiny/trade_engraving.gif";
+      break;
+    case "First Aid":
+      icon =
+        "https://wow.zamimg.com/images/wow/icons/tiny/spell_holy_sealofsacrifice.gif";
+      break;
+    case "Inscription":
+      icon =
+        "https://wow.zamimg.com/images/wow/icons/tiny/inv_inscription_tradeskill01.gif";
+      break;
+    case "Jewelcrafting":
+      icon = "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_gem_01.gif";
+      break;
+    case "Leatherworking":
+      icon =
+        "https://wow.zamimg.com/images/wow/icons/tiny/inv_misc_armorkit_17.gif";
+      break;
+    case "Tailoring":
+      icon = "https://wow.zamimg.com/images/wow/icons/tiny/trade_tailoring.gif";
+      break;
+  }
 
   return (
     <div className="pb-6">
@@ -21,7 +60,9 @@ const SelectProfession = ({ professionState, updateProfession }) => {
         type="button"
         onClick={toggle}
       >
-        {professionState}
+        {" "}
+        <img className="pr-1" src={icon}></img>
+        <span className="mr-auto">{professionState}</span>
         <PiCaretUpDownBold
           className="item-color"
           size="1.75em"
