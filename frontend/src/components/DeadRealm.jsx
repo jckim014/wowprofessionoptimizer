@@ -9,7 +9,11 @@ const DeadRealm = ({ server, faction }) => {
         </span>{" "}
         does not have enough auctions to support leveling a profession.
       </p>
-      <p className="">Please choose another faction or server.</p>
+      <p className="">
+        Please choose another faction or server. (
+        <span className="font-bold">Benediction - Alliance</span> is recommended
+        for testing purposes)
+      </p>
       {/* <p className="text-lg font-bold">
         Please select your Profession, Server, Starting Level, Faction, and Risk
         Tolerance.

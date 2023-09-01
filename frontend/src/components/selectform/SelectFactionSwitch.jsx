@@ -5,11 +5,12 @@ const SelectFactionSwitch = ({ factionState, updateFaction }) => {
     <div className="flex flex-col items-center pb-6">
       <p className="self-start text-lg font-bold pb-2">Faction</p>
       <div className="relative flex justify-center">
-        <span>
+        <span className="flex flex-col items-center">
           <img
             src="https://www.warcrafttavern.com/wp-content/uploads/2021/07/WoW-Alliance-Crest.png"
             className="w-10"
           ></img>
+          Alliance
         </span>
         <Switch
           color="default"
@@ -21,11 +22,12 @@ const SelectFactionSwitch = ({ factionState, updateFaction }) => {
             }
           }}
         />
-        <span>
+        <span className="flex flex-col items-center">
           <img
             src="https://www.warcrafttavern.com/wp-content/uploads/2021/07/WoW-Horde-Crest.png"
             className="w-10"
           ></img>
+          Horde
         </span>
       </div>
     </div>

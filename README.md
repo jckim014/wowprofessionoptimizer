@@ -2,7 +2,9 @@
 <p align="center">Live Demo Coming Soon!</p>
 
 <p align="left">
-<br>This application dynamically calculates the most cost-effective recipes for leveling any crafting profession in World of Warcraft: Wrath of the Lich King Classic. Unlike existing profession leveling guides, which are handwritten and static, my tool takes into account real-time price variations based on server and faction.</p>
+<br>This application dynamically calculates the most cost-effective recipes for leveling any crafting profession in World of Warcraft: Wrath of the Lich King Classic. Unlike existing profession leveling guides, which are handwritten and static, my tool takes into account real-time price variations based on server and faction. <br>
+<br>
+Price information is obtained via third-party API at regular intervals.</p>
 <br/>
 
 <h2>Home Page</h2>
@@ -30,7 +32,7 @@
 <p>Here the user has selected the Alchemy profession starting at level 100 on the Ashkandi server, Horde.</p>
 
 <h2>Unpopulated Realms</h2>
-<img src="./readme_screenshots/DeadServer.png"/>
+<img src="./readme_screenshots/EmptyServer.png"/>
 <p>Not all server and faction combinations have a sufficient player population or enough 
 items on the market to support leveling a profession. An error message is displayed and
 user is prompted to make another selection.</p>
