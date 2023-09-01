@@ -6,7 +6,8 @@
 <br/>
 
 <h2>Home Page</h2>
-<img src="./readme_screenshots/HomePage.png"/>
+![HomePage](./readme_screenshots/HomePage.png)
+![HomePage](https://github.com/jckim014/wowprofessionoptimizer/assets/76502137/8032656c-09fd-49f9-b877-cd6df9365552)
 
 <h2>About</h2>
 Context and progress go here
