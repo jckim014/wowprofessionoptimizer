@@ -24,3 +24,13 @@
 <h2>Item Hover</h2>
 <img src="./readme_screenshots/Hover.png"/>
 <p>All items (both recipes and reagents) link to their wowhead webpage and are also hoverable for a quick preview.</p>
+
+<h2>Selection Demo</h2>
+<img src="./readme_screenshots/AlternativeSelection.png"/>
+<p>Here the user has selected the Alchemy profession on the Ashkandi server, Horde.</p>
+
+<h2>Unpopulated Realms</h2>
+<img src="./readme_screenshots/DeadServer.png"/>
+<p>Not all server and faction combinations have a sufficient player population or enough 
+items on the market to support leveling a profession. An error message is displayed and
+user is prompted to make another selection.</p>
