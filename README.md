@@ -1,11 +1,13 @@
 <h1 align="center">WOTLK Profession Leveling Optimizer</h1>
-<p align="center"><strong>Description</strong>
-<br>This application dynamically calculates the cheapest recipes to level any crafting profession in World of Warcraft:
-Wrath of the Lich King Classic. Currently, all of the existing profession leveling guides are handwritten and
-don't account for differing prices based on server and time. Additionally, the popularity of these guides creates
-artificial price inflation based on the included recipes despite equal availability of cheaper alternative recipes.</p>
+<p align="center"><a>Live Demo hosted at www.poggers.com</a></p>
+
+<p align="left">
+<br>This application dynamically calculates the most cost-effective recipes for leveling any crafting profession in World of Warcraft: Wrath of the Lich King Classic. Unlike existing profession leveling guides, which are handwritten and static, my tool takes into account real-time price variations based on server and faction.</p>
 <br/>
-<div align="center"><img src="demo.gif"></img></div>
+
+<h2>Home Page</h2>
+![Alt Text](readme_screenshots/HomePage.png)
+
 <h2>About</h2>
 Context and progress go here
 
@@ -22,27 +24,3 @@ The idea behind first implementation. What is expected, what should be included,
 - concise
 
 If project has been improved after submission, here is a good place to specify it.
-
-<h2>Installation</h2>
-
-1. Download this project as zip and extract it
-2. Import it in Android Studio
-3. Sync Gradle and run on your device/emulator
-
-Or use <a href="https://github.com/cesarferreira/dryrun" target="_blank">`dryrun`</a> by <a href="https://github.com/cesarferreira" target="_blank">@CesarFerreira</a>
-
-<h2>Contributing</h2>
-Mention pull requests. Link to an example and/or put it down here
-
-<h2>Project status</h2>
-Insert here
-
-<h2>Credits</h2>
-
-- Author: <a href="https://twitter.com/r4dixx" target="_blank">Amaël Sikel</a>
-- Illustrations
-- Colors
-- Any material
-
-<h2>Copyright</h2>
-This project is licensed under the terms of the MIT license and protected by Udacity Honor Code and Community Code of Conduct. See <a href="LICENSE.md">license</a> and <a href="LICENSE.DISCLAIMER.md">disclaimer</a>.
