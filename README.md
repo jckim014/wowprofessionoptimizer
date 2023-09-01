@@ -7,20 +7,20 @@
 
 <h2>Home Page</h2>
 <img src="./readme_screenshots/HomePage.png"/>
+<p>The user is initially prompted to make selections and can choose their desired profession (and starting level) as well as their server and faction. The displayed choices are selected by default.</p>
 
-<h2>About</h2>
-Context and progress go here
+<h2>Leveling Guide</h2>
+<img src="./readme_screenshots/Calculate1.png"/>
+<p>After making selections and pressing calculate, a leveling guide and associated shopping list are displayed.</p>
 
-<h2>Goal and requirements</h2>
+<h2>Shopping List</h2>
+<img src="./readme_screenshots/ShoppingList.png"/>
+<p>The shopping list is a collapsible menu that provides a simple list of all the items a player must acquire before starting. This menu also displays the current total cost of all required items.</p>
 
-The idea behind first implementation. What is expected, what should be included, what should not be included.
+<h2>Expandable Items</h2>
+<img src="./readme_screenshots/RecipeExpand.png"/>
+<p>Individual recipe items can be expanded to view the required materials specific to that recipe. Also note the scrolling selection menu for usability.</p>
 
-<h2>Key learnings</h2>
-
-- Be
-- clear
-- brief
-- and
-- concise
-
-If project has been improved after submission, here is a good place to specify it.
+<h2>Item Hover</h2>
+<img src="./readme_screenshots/Hover.png"/>
+<p>All items (both recipes and reagents) link to their wowhead webpage and are also hoverable for a quick preview.</p>
