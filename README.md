@@ -27,7 +27,7 @@
 
 <h2>Selection Demo</h2>
 <img src="./readme_screenshots/AlternativeSelection.png"/>
-<p>Here the user has selected the Alchemy profession on the Ashkandi server, Horde.</p>
+<p>Here the user has selected the Alchemy profession starting at level 100 on the Ashkandi server, Horde.</p>
 
 <h2>Unpopulated Realms</h2>
 <img src="./readme_screenshots/DeadServer.png"/>
