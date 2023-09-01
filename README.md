@@ -6,7 +6,7 @@
 <br/>
 
 <h2>Home Page</h2>
-![HomePage](https://github.com/jckim014/wowprofessionoptimizer/assets/76502137/4726c924-58dd-47b1-9c12-3e9d80b79b00)
+![HomePage](https://github.com/jckim014/wowprofessionoptimizer/readme_screenshots/HomePage.png)
 
 <h2>About</h2>
 Context and progress go here
