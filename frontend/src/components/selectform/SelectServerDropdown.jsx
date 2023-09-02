@@ -26,7 +26,6 @@ const SelectServerDropdown = ({ updateServer, closeDropdown }) => {
     "Old Blanchy",
     "Pagle",
     "Pyrewood Village",
-    "Razorfen",
     "Remulos",
     "Sulfuron",
     "Venoxis",

@@ -1,5 +1,5 @@
 <h1 align="center">WOTLK Profession Leveling Optimizer</h1>
-<p align="center">Live Demo Coming Soon!</p>
+<!-- <p align="center">Live Demo Coming Soon!</p> -->
 
 <p align="left">
 <br>This application dynamically calculates the most cost-effective recipes for leveling any crafting profession in World of Warcraft: Wrath of the Lich King Classic. Unlike existing profession leveling guides, which are handwritten and static, my tool takes into account real-time price variations based on server and faction.

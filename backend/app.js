@@ -9,13 +9,17 @@ dotenv.config();
 const test_data = require("./ah_data/benediction-ally.json");
 
 const total_ah_data = require("./ah_data/total_data.json");
-const realmList = require("./ah_data/realmlist.json");
+const realmList1 = require("./ah_data/realmlist1.json");
+const realmList2 = require("./ah_data/realmlist2.json");
+const realmList3 = require("./ah_data/realmlist3.json");
+const realmList4 = require("./ah_data/realmlist4.json");
 
 const calculate = require("./utils/calculate.js");
 const upload = require("./utils/upload_recipes.js");
 const updateCost = require("./utils/update_cost.js");
 
 const mongoose = require("mongoose");
+
 const EngineeringRecipe = require("./models/engineering.js");
 const AlchemyRecipe = require("./models/alchemy.js");
 const BlacksmithingRecipe = require("./models/blacksmithing.js");
@@ -44,53 +48,48 @@ mongoose
   })
   .catch((err) => console.log(err));
 
-async function fetchRealmData(url, realm) {
+async function fetchRealmData(url, realm, count) {
   const response = await fetch(url, {
     headers: { Authorization: `Bearer ${tsmToken}` },
   });
+  console.log("Fetch complete");
 
   let ah_object = await response.json();
 
   let totalPriceData = total_ah_data;
   totalPriceData[realm] = ah_object;
   calculate.storeLocal(totalPriceData, "ah_data", "total_data");
-  console.log(`Retrieved ${realm}`);
+  console.log(`Retrieved ${realm}`, count, response.status);
 }
 
 app.use(cors({ origin: "http://localhost:5173" }));
 app.use(express.json());
 
-app.get("/testing", async (req, res) => {
-  // let totalPriceData = total_ah_data;
-
-  // let server = "Benediction";
-  // let faction = "Horde";
-  // totalPriceData[server + " " + faction] = ah_data;
-  // console.log(totalPriceData);
-
-  let test = realmList;
-
-  for (key in test) {
-    console.log(typeof key);
-  }
-
-  res.send("tested");
-});
-
 // Fetch realm auction house data and store (allowed 100/24 hours)
 app.get("/fetch-realm-data", async (req, res) => {
+  let count = 1;
+  let realm = "Auberdine Horde";
+  let url = `https://pricing-api.tradeskillmaster.com/ah/364`;
+  fetchRealmData(url, realm, count);
   // Disable code for safety when not using
-  for (realm in realmList) {
-    let realmID = realmList[realm];
-    let url = `https://pricing-api.tradeskillmaster.com/ah/${realmID}`;
-    fetchRealmData(url, realm);
-    setTimeout(() => {}, 3000);
-  }
-  console.log("fetched/disabled");
-  res.send(`Fetched realm data`);
+  // let count = 1;
+
+  // let realmList = realmList4; // Change 1/2/3/4
+
+  // for (realm in realmList) {
+  //   let realmID = realmList[realm];
+  //   let url = `https://pricing-api.tradeskillmaster.com/ah/${realmID}`;
+  //   fetchRealmData(url, realm, count);
+  //   setTimeout(() => {}, 30000);
+  //   console.log(count);
+  //   count += 1;
+  // }
+
+  console.log("Fetching/Disabled");
+  res.send(`Fetching realm data`);
 });
 
-// Iterate through all recipes and update their crafting costs
+// Iterate through all recipes and update their crafting costs (only for setup)
 app.get("/update-crafting-costs", async (req, res) => {
   let price_data = total_ah_data["Benediction Alliance"];
   // updateCost.engineering(price_data);
@@ -130,11 +129,13 @@ app.post("/calculate-optimal-path", async (req, res) => {
     "Faerlina Alliance",
     "Firemaw Horde",
     "Lakeshire Horde",
+    "Mankrik Alliance",
     "Mograine Alliance",
     "Pagle Horde",
     "Pyrewood Village Horde",
     "Remulos Horde",
     "Venoxis Alliance",
+    "Westfall Horde",
     "Whitemane Alliance",
   ];
 
