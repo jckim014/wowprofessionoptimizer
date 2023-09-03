@@ -65,7 +65,7 @@ async function fetchRealmData(url, realm, count) {
   console.log(`Retrieved ${realm}`, count, response.status);
 }
 
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://wotlk-professions.onrender.com/" }));
 app.use(express.json());
 
 // Fetch realm auction house data and store (allowed 100/24 hours)
