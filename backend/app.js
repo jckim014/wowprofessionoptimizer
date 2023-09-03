@@ -34,16 +34,19 @@ const TailoringRecipe = require("./models/tailoring.js");
 // Express app
 const app = express();
 
+const PORT = process.env.PORT || 3001;
 const mongoURL = process.env.MONGODB_CONNECT_STRING;
 const tsmToken = process.env.TSM_BEARER_TOKEN;
 
 // Connect to mongodb with mongoose
 const dbURI = mongoURL;
 
+console.log(mongoose.version);
+
 mongoose
   .connect(dbURI)
   .then((result) => {
-    app.listen(3000); // Only start listening for requests once the database has been retrieved
+    app.listen(PORT); // Only start listening for requests once the database has been retrieved
     console.log("mongoose connected to db");
   })
   .catch((err) => console.log(err));
