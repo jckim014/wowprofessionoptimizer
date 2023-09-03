@@ -1,7 +1,7 @@
 const EmptyPrompt = () => {
   return (
     <div className="flex flex-col justify-center items-center w-full border-2 border-separate border-color rounded-md bg-white">
-      <p className="text-lg font-bold p-2">
+      <p className="text-lg text-center p-2">
         (Please wait 1-2 minutes to allow application to spin up from inactivity
         and retrieve data if this is your first time here!)
       </p>
