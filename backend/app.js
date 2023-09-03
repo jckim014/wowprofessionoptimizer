@@ -51,6 +51,12 @@ mongoose
   })
   .catch((err) => console.log(err));
 
+app.post("/ping", (req, res) => {
+  let response = { hello: "Backend active!" };
+
+  res.status(200).json(response);
+});
+
 async function fetchRealmData(url, realm, count) {
   const response = await fetch(url, {
     headers: { Authorization: `Bearer ${tsmToken}` },

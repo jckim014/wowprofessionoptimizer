@@ -4,9 +4,19 @@ import OptimalPathContent from "../components/optimalpath/OptimalPathContent";
 import SelectForm from "../components/selectform/SelectForm";
 import EmptyPrompt from "../components/EmptyPrompt";
 
-// This page only works on redirect from request form
 const MainDisplay = () => {
   const [fetchToggle, setFetchToggle] = useState(false);
+  useEffect(() => {
+    const pingBackend = async () => {
+      const response = await fetch("https://wotlk-app.onrender.com/ping", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+      });
+      const json = await response.json();
+      console.log(json.hello);
+    };
+    pingBackend();
+  }, []);
 
   function updateFetchToggle(currentToggle) {
     setFetchToggle(!currentToggle);
