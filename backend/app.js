@@ -51,6 +51,9 @@ mongoose
   })
   .catch((err) => console.log(err));
 
+app.use(cors({ origin: "https://wotlk-professions.onrender.com" }));
+app.use(express.json());
+
 app.post("/ping", (req, res) => {
   let response = { hello: "Backend active!" };
 
@@ -70,9 +73,6 @@ async function fetchRealmData(url, realm, count) {
   calculate.storeLocal(totalPriceData, "ah_data", "total_data");
   console.log(`Retrieved ${realm}`, count, response.status);
 }
-
-app.use(cors({ origin: "https://wotlk-professions.onrender.com" }));
-app.use(express.json());
 
 // Fetch realm auction house data and store (allowed 100/24 hours)
 app.get("/fetch-realm-data", async (req, res) => {
