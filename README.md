@@ -1,14 +1,13 @@
 <h1 align="center">WOTLK Profession Leveling Optimizer</h1>
-<!-- <p align="center">Live Demo Coming Soon!</p> -->
+<p align="center"><a href="https://wotlk-professions.onrender.com/">>>Live Demo hosted on Render<<</a></p>
 
 <p align="left">
 <br>This application dynamically calculates the most cost-effective recipes for leveling any crafting profession in World of Warcraft: Wrath of the Lich King Classic. Unlike existing profession leveling guides, which are handwritten and static, my tool takes into account real-time price variations based on server and faction.
 <br/>
 <br/>
-I specifically wanted to solve the problem of artificial price inflation on certain recipe materials caused by current guides. A majority of players utilize the same leveling guide which causes the materials needed to follow the guide to skyrocket in price. There are almost always alternative recipes with much cheaper materials. Additionally, there are often significant fluctuations in material prices which limits the usefulness of a handwritten guide. Instead of manually searching up each recipe, looking up prices, and comparing each one, I decided to make this application to do that automatically.
+I specifically wanted to solve the problem of artificial price inflation on certain recipe materials caused by current guides. A majority of players utilize the same leveling guide which causes the specific materials needed to follow the guide to skyrocket in price. There are almost always alternative recipes with much cheaper materials. Additionally, there are often significant fluctuations in material prices which limits the usefulness of a handwritten guide. Instead of manually searching up each recipe, looking up prices, and comparing each one, I decided to make this application to do that automatically.
 </p>
 <br/>
-
 
 <h2>Home Page</h2>
 <img src="./readme_screenshots/HomePage.png"/>
