@@ -67,10 +67,10 @@ app.use(express.json());
 
 // Fetch realm auction house data and store (allowed 100/24 hours)
 app.get("/fetch-realm-data", async (req, res) => {
-  let count = 1;
-  let realm = "Auberdine Horde";
-  let url = `https://pricing-api.tradeskillmaster.com/ah/364`;
-  fetchRealmData(url, realm, count);
+  // let count = 1;
+  // let realm = "Auberdine Horde";
+  // let url = `https://pricing-api.tradeskillmaster.com/ah/364`;
+  // fetchRealmData(url, realm, count);
   // Disable code for safety when not using
   // let count = 1;
 
@@ -91,17 +91,17 @@ app.get("/fetch-realm-data", async (req, res) => {
 
 // Iterate through all recipes and update their crafting costs (only for setup)
 app.get("/update-crafting-costs", async (req, res) => {
-  let price_data = total_ah_data["Benediction Alliance"];
-  // updateCost.engineering(price_data);
-  // updateCost.alchemy(price_data);
-  // updateCost.blacksmithing(price_data);
-  // updateCost.updateCost(price_data, "Cooking");
-  // updateCost.updateCost(price_data, "Enchanting");
-  // updateCost.updateCost(price_data, "First Aid");
-  // updateCost.updateCost(price_data, "Inscription");
-  // updateCost.updateCost(price_data, "Jewelcrafting");
-  // updateCost.updateCost(price_data, "Leatherworking");
-  updateCost.updateCost(price_data, "Engineering");
+  // let price_data = total_ah_data["Benediction Alliance"];
+  // // updateCost.engineering(price_data);
+  // // updateCost.alchemy(price_data);
+  // // updateCost.blacksmithing(price_data);
+  // // updateCost.updateCost(price_data, "Cooking");
+  // // updateCost.updateCost(price_data, "Enchanting");
+  // // updateCost.updateCost(price_data, "First Aid");
+  // // updateCost.updateCost(price_data, "Inscription");
+  // // updateCost.updateCost(price_data, "Jewelcrafting");
+  // // updateCost.updateCost(price_data, "Leatherworking");
+  // updateCost.updateCost(price_data, "Engineering");
 
   res.send("Recipe costs updated");
 });
@@ -175,7 +175,7 @@ app.post("/calculate-optimal-path", async (req, res) => {
 
 app.get("/upload-recipes", (req, res) => {
   // Be very careful with these!! Will override existing recipes
-  // upload.engineering();
+  upload.engineering();
   // upload.alchemy();
   // upload.blacksmithing();
   // upload.cooking();
@@ -184,7 +184,7 @@ app.get("/upload-recipes", (req, res) => {
   // upload.inscription();
   // upload.jewelcrafting();
   // upload.leatherworking();
-  upload.tailoring();
+  // upload.tailoring();
 
   res.send("Recipes uploaded");
 });
@@ -194,7 +194,7 @@ app.get("/retrieve-recipes", async (req, res) => {
   let storedRecipes = {};
 
   let engineerRecipes = await EngineeringRecipe.find().lean();
-  console.log("Engineering(275): ", engineerRecipes.length);
+  console.log("Engineering(272): ", engineerRecipes.length);
   let alchemyRecipes = await AlchemyRecipe.find().lean();
   console.log("Alchemy(201): ", alchemyRecipes.length);
   let blacksmithingRecipes = await BlacksmithingRecipe.find().lean();

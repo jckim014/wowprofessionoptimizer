@@ -10,7 +10,7 @@ const OptimalPathSection = ({ recipe, skillRange, reagentInfo }) => {
   const end = skillRange[1];
   const quantity = end - start;
 
-  const unconvertedCost = recipe.craftingCost;
+  const unconvertedCost = recipe.craftingCost * quantity;
   // console.log(recipe);
   let individualCost = useConvert(unconvertedCost);
   let totalCost = useConvert(unconvertedCost * quantity);
@@ -40,7 +40,7 @@ const OptimalPathSection = ({ recipe, skillRange, reagentInfo }) => {
         </td>
         <td className="flex items-center justify-center">x{end - start}</td>
         <td className="flex justify-center">
-          <div className="flex flex-row pl-2">
+          <div className="flex flex-row pl-2 items-center">
             {individualCost.gold != 0 && (
               <div className="currency-text-gold font-bold">
                 {individualCost.gold.toLocaleString("en-us")}g&nbsp;

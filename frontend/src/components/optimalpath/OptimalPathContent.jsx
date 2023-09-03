@@ -111,7 +111,7 @@ const OptimalPathContent = ({ data, fetchToggle }) => {
                 <td>Item</td>
                 <td className="flex justify-center">Quantity</td>
                 {/* <td></td> */}
-                <td className="flex justify-center">Individual Cost </td>
+                <td className="flex justify-center"> Cost </td>
               </tr>
             </tbody>
             {optimalPath &&

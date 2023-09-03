@@ -8,14 +8,20 @@ const ExpandedRow = ({ recipe, individualCost, totalCost, reagentInfo }) => {
         {recipe.reagentList.map((reagent, i) => (
           <div className="flex pr-8 pb-2 pl-1 flex-wrap" key={i}>
             <p className="pr-1">x{reagent[1]}</p>
-            {console.log(recipe)}
             <img
               className="object-none pr-1"
               src={`https://wow.zamimg.com/images/wow/icons/tiny/${
                 reagentInfo[reagent[0]].icon
               }.gif`}
             ></img>
-            {reagentInfo[reagent[0]].name_enus}
+            <a
+              className="wowhead-link"
+              href={`https://www.wowhead.com/wotlk/item=${reagent[0]}/${
+                reagentInfo[reagent[0]].name_enus
+              }`}
+            >
+              {reagentInfo[reagent[0]].name_enus}
+            </a>
           </div>
         ))}
       </div>
@@ -31,7 +37,14 @@ const ExpandedRow = ({ recipe, individualCost, totalCost, reagentInfo }) => {
                 reagentInfo[reagent[0]].icon
               }.gif`}
             ></img>
-            {reagentInfo[reagent[0]].name_enus}
+            <a
+              className="wowhead-link"
+              href={`https://www.wowhead.com/wotlk/item=${reagent[0]}/${
+                reagentInfo[reagent[0]].name_enus
+              }`}
+            >
+              {reagentInfo[reagent[0]].name_enus}
+            </a>
           </div>
         ))}
       </div>

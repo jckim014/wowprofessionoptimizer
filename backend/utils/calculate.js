@@ -144,6 +144,41 @@ function calculateGuaranteed(currentSkill, profession, server, faction) {
         continue;
       }
     }
+    // Manual fix for Engineering 385-390
+    if (profession == "Engineering") {
+      if (currentSkill >= 385 && currentSkill < 390) {
+        let specialRecipe = {
+          _id: "64f4540f64dfaeac98aa23e1",
+          itemName: "Explosive Decoy",
+          recipeID: 56463,
+          craftedItemID: 40536,
+          reagentList: [
+            [33470, 1],
+            [39690, 3],
+          ],
+          learnedAt: 375,
+          difficultyColors: [375, 385, 390, 395],
+          craftingCost: 79469,
+          quantityCreated: 5,
+          icon: "https://wow.zamimg.com/images/wow/icons/large/ability_seal.jpg",
+          link: "https://wowhead.com/wotlk/spell=56463/Explosive-Decoy",
+          createdAt: "2023-09-03T09:38:23.500Z",
+          updatedAt: "2023-09-03T09:39:18.192Z",
+          __v: 0,
+        };
+        // Add special crafted to inventory
+        const specialCrafted = specialRecipe.craftedItemID;
+        const specialQuantity = specialRecipe.quantityCreated;
+        inventory.set(
+          specialCrafted,
+          inventory.get(specialCrafted) + specialQuantity || 1
+        );
+        // Record special recipe
+        recipePath.push(specialRecipe); // Can include other information as an array of arrays
+        currentSkill = currentSkill + 1;
+        continue;
+      }
+    }
     // Manual fix for cooking 375-400 and 435-440
     if (profession == "Cooking") {
       if (currentSkill >= 375 && currentSkill < 400) {
