@@ -54,10 +54,8 @@ mongoose
 app.use(cors({ origin: "https://wotlk-professions.onrender.com" }));
 app.use(express.json());
 
-app.post("/ping", (req, res) => {
-  let response = { hello: "Backend active!" };
-
-  res.status(200).json(response);
+app.get("/ping", (req, res) => {
+  res.status(200).send("Ping successful");
 });
 
 async function fetchRealmData(url, realm, count) {

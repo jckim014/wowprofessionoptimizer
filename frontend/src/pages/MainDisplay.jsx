@@ -6,17 +6,17 @@ import EmptyPrompt from "../components/EmptyPrompt";
 
 const MainDisplay = () => {
   const [fetchToggle, setFetchToggle] = useState(false);
-  useEffect(() => {
-    const pingBackend = async () => {
-      const response = await fetch("https://wotlk-app.onrender.com/ping", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-      });
-      const json = await response.json();
-      console.log(json.hello);
-    };
-    pingBackend();
-  }, []);
+  // useEffect(() => {
+  //   const pingBackend = async () => {
+  //     const response = await fetch("https://wotlk-app.onrender.com/ping", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //     });
+  //     const json = await response.json();
+  //     console.log(json.hello);
+  //   };
+  //   pingBackend();
+  // }, []);
 
   function updateFetchToggle(currentToggle) {
     setFetchToggle(!currentToggle);
