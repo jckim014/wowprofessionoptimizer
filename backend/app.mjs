@@ -1,35 +1,35 @@
-const express = require("express");
-const fetch = require("node-fetch-commonjs");
-const fs = require("fs");
-const cors = require("cors");
+import express from "express";
+import fetch from "node-fetch-commonjs";
+import fs from "fs";
+import cors from "cors";
 
-const dotenv = require("dotenv");
+import dotenv from "dotenv";
 dotenv.config();
 
-const test_data = require("./ah_data/benediction-ally.json");
+// import test_data from "./ah_data/benediction-ally.json";
 
-const total_ah_data = require("./ah_data/total_data.json");
-const realmList1 = require("./ah_data/realmlist1.json");
-const realmList2 = require("./ah_data/realmlist2.json");
-const realmList3 = require("./ah_data/realmlist3.json");
-const realmList4 = require("./ah_data/realmlist4.json");
+import total_ah_data from "./ah_data/total_data.json" assert { type: "json" };
+// import realmList1 from "./ah_data/realmlist1.json";
+// import realmList2 from "./ah_data/realmlist2.json";
+// import realmList3 from "./ah_data/realmlist3.json";
+// import realmList4 from "./ah_data/realmlist4.json";
 
-const calculate = require("./utils/calculate.js");
-const upload = require("./utils/upload_recipes.js");
-const updateCost = require("./utils/update_cost.js");
+import calculate from "./utils/calculate.js";
+import upload from "./utils/upload_recipes.js";
+import updateCost from "./utils/update_cost.js";
 
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
-const EngineeringRecipe = require("./models/engineering.js");
-const AlchemyRecipe = require("./models/alchemy.js");
-const BlacksmithingRecipe = require("./models/blacksmithing.js");
-const CookingRecipe = require("./models/cooking.js");
-const EnchantingRecipe = require("./models/enchanting.js");
-const FirstaidRecipe = require("./models/firstaid.js");
-const InscriptionRecipe = require("./models/inscription.js");
-const JewelcraftingRecipe = require("./models/jewelcrafting.js");
-const LeatherworkingRecipe = require("./models/leatherworking.js");
-const TailoringRecipe = require("./models/tailoring.js");
+import EngineeringRecipe from "./models/engineering.js";
+import AlchemyRecipe from "./models/alchemy.js";
+import BlacksmithingRecipe from "./models/blacksmithing.js";
+import CookingRecipe from "./models/cooking.js";
+import EnchantingRecipe from "./models/enchanting.js";
+import FirstaidRecipe from "./models/firstaid.js";
+import InscriptionRecipe from "./models/inscription.js";
+import JewelcraftingRecipe from "./models/jewelcrafting.js";
+import LeatherworkingRecipe from "./models/leatherworking.js";
+import TailoringRecipe from "./models/tailoring.js";
 
 // Express app
 const app = express();
@@ -40,17 +40,6 @@ const tsmToken = process.env.TSM_BEARER_TOKEN;
 
 // Connect to mongodb with mongoose
 // const dbURI = mongoURL;
-
-// AWS Paramater Store
-// const boto3 = require("boto3");
-// client = boto3.client("ssm");
-
-// MONGODB_CONNECT_STRING = client.get_parameter(
-//   (Name = "MongoDBToken"),
-//   (WithDecryption = True)
-// );
-// const AWS = require;
-// console.log("Connecting to mongodb atlas cluster...");
 
 mongoose
   .connect(process.env.MONGODB_CONNECT_STRING)
