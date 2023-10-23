@@ -53,11 +53,12 @@ ssmClient.getParameter(
   (err, data) => {
     if (data?.Parameter) {
       mongoParameter = data.Parameter;
+      console.log(mongoParameter);
+    } else {
+      console.log(err);
     }
   }
 );
-
-console.log(mongoParameter);
 
 const MONGODB_CONNECT_STRING = mongoParameter.Value;
 
