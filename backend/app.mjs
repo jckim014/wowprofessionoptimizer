@@ -43,41 +43,68 @@ const tsmToken = process.env.TSM_BEARER_TOKEN;
 
 //AWS
 import AWS from "aws-sdk";
-const ssmClient = new AWS.SSM({ region: "us-west-1" });
+const ssm = new AWS.SSM({ region: "us-west-1" });
 
-const getMongoParam = async () => {
+const getMongoDBParameter = async () => {
   try {
     const ssmResponse = await ssm
-    .getParameter(
-      {
-        Name: "MongoDBToken",
-        WithDecryption: true,
-      },
-  }
-}
-let mongoParameter = "";
+      .getParameter({ Name: "MongoDBToken", WithDecryption: true })
+      .promise();
 
-ssmClient.
-  (err, data) => {
-    if (err) {
-      console.log("error!", err);
-    } else {
-      console.log(data.Parameter);
-      mongoParameter = data.Parameter;
-      console.log(mongoParameter.value);
+    const mongoParameter = ssmResponse.Parameter;
+    const MONGODB_CONNECT_STRING = mongoParameter.Value;
+
+    // Now that you have the parameter value, you can connect to MongoDB
+    await mongoose.connect(MONGODB_CONNECT_STRING);
+
+    console.log("Mongoose connected to the database");
+    return true;
+  } catch (error) {
+    console.error("Error:", error);
+    return false;
+  }
+};
+
+// Start your Express app only after MongoDB connection is established
+getMongoDBParameter()
+  .then((connected) => {
+    if (connected) {
+      app.listen(PORT, () => {
+        console.log(`Server is running on port ${PORT}`);
+      });
     }
-  }
-);
-
-const MONGODB_CONNECT_STRING = mongoParameter.value;
-
-mongoose
-  .connect(MONGODB_CONNECT_STRING)
-  .then((result) => {
-    app.listen(PORT); // Only start listening for requests once the database has been retrieved
-    console.log("mongoose connected to db");
   })
-  .catch((err) => console.log(err));
+  .catch((error) => {
+    console.error("Failed to connect to MongoDB:", error);
+  });
+
+// let mongoParameter = "";
+
+// ssmClient.getParameter(
+//   {
+//     Name: "MongoDBToken",
+//     WithDecryption: true,
+//   },
+//   (err, data) => {
+//     if (err) {
+//       console.log("error!", err);
+//     } else {
+//       console.log(data.Parameter);
+//       mongoParameter = data.Parameter;
+//       console.log(mongoParameter.value);
+//     }
+//   }
+// );
+
+// const MONGODB_CONNECT_STRING = mongoParameter.value;
+
+// mongoose
+//   .connect(MONGODB_CONNECT_STRING)
+//   .then((result) => {
+//     app.listen(PORT); // Only start listening for requests once the database has been retrieved
+//     console.log("mongoose connected to db");
+//   })
+//   .catch((err) => console.log(err));
 
 // app.use(cors({ origin: "https://wotlk-professions.onrender.com" }));
 app.use(cors({ origin: "http://localhost:5173" }));
