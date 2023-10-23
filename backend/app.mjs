@@ -41,8 +41,19 @@ const tsmToken = process.env.TSM_BEARER_TOKEN;
 // Connect to mongodb with mongoose
 // const dbURI = mongoURL;
 
+//AWS
+import AWS from "aws-sdk";
+const ssmClient = new AWS.SSM({ region: "us-west-1" });
+
+mongoParameter = ssmClient.getParameter({
+  Name: "MongoDBToken",
+  WithDecryption: true,
+});
+
+MONGODB_CONNECT_STRING = mongoParameter.value;
+
 mongoose
-  .connect(process.env.MONGODB_CONNECT_STRING)
+  .connect(MONGODB_CONNECT_STRING)
   .then((result) => {
     app.listen(PORT); // Only start listening for requests once the database has been retrieved
     console.log("mongoose connected to db");
