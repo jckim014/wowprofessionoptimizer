@@ -45,14 +45,21 @@ const tsmToken = process.env.TSM_BEARER_TOKEN;
 import AWS from "aws-sdk";
 const ssmClient = new AWS.SSM({ region: "us-west-1" });
 
-const mongoParameter = ssmClient.getParameter({
-  Name: "MongoDBToken",
-  WithDecryption: true,
-});
+ssmClient.getParameter(
+  {
+    Name: "MongoDBToken",
+    WithDecryption: true,
+  },
+  (err, data) => {
+    if (data?.Parameter) {
+      mongoParameter = data.Parameter;
+    }
+  }
+);
 
 console.log(mongoParameter);
 
-const MONGODB_CONNECT_STRING = mongoParameter.value;
+const MONGODB_CONNECT_STRING = mongoParameter.Value;
 
 mongoose
   .connect(MONGODB_CONNECT_STRING)
