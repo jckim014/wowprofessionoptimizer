@@ -42,18 +42,18 @@ const tsmToken = process.env.TSM_BEARER_TOKEN;
 // const dbURI = mongoURL;
 
 // AWS Paramater Store
-const boto3 = require("boto3");
-client = boto3.client("ssm");
+// const boto3 = require("boto3");
+// client = boto3.client("ssm");
 
-MONGODB_CONNECT_STRING = client.get_parameter(
-  (Name = "MongoDBToken"),
-  (WithDecryption = True)
-);
-
-console.log("Connecting to mongodb atlas cluster...");
+// MONGODB_CONNECT_STRING = client.get_parameter(
+//   (Name = "MongoDBToken"),
+//   (WithDecryption = True)
+// );
+// const AWS = require;
+// console.log("Connecting to mongodb atlas cluster...");
 
 mongoose
-  .connect(MONGODB_CONNECT_STRING)
+  .connect(process.env.MONGODB_CONNECT_STRING)
   .then((result) => {
     app.listen(PORT); // Only start listening for requests once the database has been retrieved
     console.log("mongoose connected to db");
