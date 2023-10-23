@@ -51,17 +51,13 @@ ssmClient.getParameter(
     WithDecryption: true,
   },
   (err, data) => {
-    console.log("hello!");
     if (data?.Parameter) {
-      mongoParameter = data.Parameter;
-      console.log(mongoParameter);
-      const MONGODB_CONNECT_STRING = mongoParameter.Value;
-    } else {
-      console.log(err);
+      console.log(data.Parameter);
     }
   }
 );
 
+const MONGODB_CONNECT_STRING = mongoParameter.Value;
 mongoose
   .connect(MONGODB_CONNECT_STRING)
   .then((result) => {
