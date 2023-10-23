@@ -50,6 +50,8 @@ const mongoParameter = ssmClient.getParameter({
   WithDecryption: true,
 });
 
+console.log(mongoParameter);
+
 const MONGODB_CONNECT_STRING = mongoParameter.value;
 
 mongoose
