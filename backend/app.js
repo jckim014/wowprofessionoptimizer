@@ -51,7 +51,8 @@ mongoose
   })
   .catch((err) => console.log(err));
 
-app.use(cors({ origin: "https://wotlk-professions.onrender.com" }));
+// app.use(cors({ origin: "https://wotlk-professions.onrender.com" }));
+app.use(cors({ origin: "http://localhost:5173" }));
 app.use(express.json());
 
 app.get("/ping", (req, res) => {
