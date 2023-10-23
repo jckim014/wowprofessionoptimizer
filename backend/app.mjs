@@ -45,7 +45,7 @@ const tsmToken = process.env.TSM_BEARER_TOKEN;
 import AWS from "aws-sdk";
 const ssmClient = new AWS.SSM({ region: "us-west-1" });
 
-mongoParameter = ssmClient.getParameter({
+const mongoParameter = ssmClient.getParameter({
   Name: "MongoDBToken",
   WithDecryption: true,
 });
