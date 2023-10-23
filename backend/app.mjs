@@ -56,13 +56,13 @@ ssmClient.getParameter(
     if (err) {
       console.log(err);
     } else {
-      console.log(data);
-      console.log(data.Parameter);
       mongoParameter = data.Parameter;
+      console.log(mongoParameter.Value);
     }
   }
 );
 
+console.log(mongoParameter.Value);
 const MONGODB_CONNECT_STRING = mongoParameter.Value;
 
 mongoose
