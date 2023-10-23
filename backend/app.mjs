@@ -45,13 +45,19 @@ const tsmToken = process.env.TSM_BEARER_TOKEN;
 import AWS from "aws-sdk";
 const ssmClient = new AWS.SSM({ region: "us-west-1" });
 
+const getMongoParam = async () => {
+  try {
+    const ssmResponse = await ssm
+    .getParameter(
+      {
+        Name: "MongoDBToken",
+        WithDecryption: true,
+      },
+  }
+}
 let mongoParameter = "";
 
-ssmClient.getParameter(
-  {
-    Name: "MongoDBToken",
-    WithDecryption: true,
-  },
+ssmClient.
   (err, data) => {
     if (err) {
       console.log("error!", err);
