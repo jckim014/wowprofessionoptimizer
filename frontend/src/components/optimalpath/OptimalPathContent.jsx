@@ -32,7 +32,7 @@ const OptimalPathContent = ({ data, fetchToggle }) => {
 
       const response = await fetch(
         // "https://wotlk-app.onrender.com/calculate-optimal-path",
-        "http://localhost:3001/calculate-optimal-path",
+        "52.53.183.192:3001/calculate-optimal-path",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
