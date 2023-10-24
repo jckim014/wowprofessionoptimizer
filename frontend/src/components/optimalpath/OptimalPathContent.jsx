@@ -29,10 +29,10 @@ const OptimalPathContent = ({ data, fetchToggle }) => {
       };
 
       const request = JSON.stringify(data);
-
+      const backendURL = "http://52.53.183.192:3001";
       const response = await fetch(
         // "https://wotlk-app.onrender.com/calculate-optimal-path",
-        "52.53.183.192:3001/calculate-optimal-path",
+        `${backendURL}/calculate-optimal-path`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
