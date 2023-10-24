@@ -55,6 +55,7 @@ const getMongoDBParameter = async () => {
     const MONGODB_CONNECT_STRING = mongoParameter.Value;
 
     // Now that you have the parameter value, you can connect to MongoDB
+    console.log("Attempting to connect to MongoDB Atlas...");
     await mongoose.connect(MONGODB_CONNECT_STRING);
 
     console.log("Mongoose connected to the database");
