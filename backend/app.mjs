@@ -108,7 +108,7 @@ getMongoDBParameter()
 //   .catch((err) => console.log(err));
 
 // app.use(cors({ origin: "https://wotlk-professions.onrender.com" }));
-app.use(cors({ origin: "52.53.183.192:5173" }));
+app.use(cors({ origin: "http://52.53.183.192:5173" }));
 app.use(express.json());
 
 app.get("/ping", (req, res) => {
